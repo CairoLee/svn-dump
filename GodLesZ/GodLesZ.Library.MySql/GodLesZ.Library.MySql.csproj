@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{325A2F59-02F9-4F1E-88EC-6D282DD370F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GodLesZ.Library.MySql</RootNamespace>
+    <AssemblyName>GodLesZ.Library.MySql</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\GodLesZ.Library.MySql.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\GodLesZ.Library.MySql.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\GodLesZ.Library.MySql.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\GodLesZ.Library.MySql.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions.cs" />
+    <Compile Include="HelperCrypt.cs" />
+    <Compile Include="Mysql.Data\Common\Cache.cs" />
+    <Compile Include="Mysql.Data\Common\ContextString.cs" />
+    <Compile Include="Mysql.Data\Common\DBVersion.cs" />
+    <Compile Include="Mysql.Data\Common\NamedPipeStream.cs" />
+    <Compile Include="Mysql.Data\Common\NativeMethods.cs" />
+    <Compile Include="Mysql.Data\Common\Platform.cs" />
+    <Compile Include="Mysql.Data\Common\SHA1Hash.cs" />
+    <Compile Include="Mysql.Data\Common\SharedMemoryStream.cs" />
+    <Compile Include="Mysql.Data\Common\SqlTokenizer.cs" />
+    <Compile Include="Mysql.Data\Common\StreamCreator.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\CharacterSet.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\CharSetMap.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\ClientFlags.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\ColumnFlags.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\CompressedStream.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\ConnectionProtocolDescriptor.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\Crypt.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\CustomInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Mysql.Data\MySqlClient\DBCmd.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\Driver.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\DriverTransactionManager.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\Field_Type.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\ISSchemaProvider.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\Keyword.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\Logger.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlBulkLoader.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlBulkLoaderConflictOption.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlBulkLoaderPriority.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlClientFactory.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Mysql.Data\MySqlClient\MySqlCommandBuilder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Mysql.Data\MySqlClient\MySqlConnection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Mysql.Data\MySqlClient\MySqlConnectionProtocol.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlConnectionStringBuilder.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlDataAdapter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Mysql.Data\MySqlClient\MySqlDataReader.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlDbType.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlDriverType.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlError.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlErrorCode.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlException.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlField.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlHelper.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlInfoMessageEventArgs.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlInfoMessageEventHandler.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlParameter.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlParameterCollection.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlParameterConverter.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlPool.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlPoolManager.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlPromotableTransaction.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlRowUpdatedEventArgs.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlRowUpdatedEventHandler.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlRowUpdatingEventArgs.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlRowUpdatingEventHandler.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlScript.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlScriptErrorEventArgs.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlScriptErrorEventHandler.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlScriptEventArgs.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlStatementExecutedEventHandler.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlStream.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\MySqlTransaction.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\NativeDriver.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\PerformanceMonitor.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\PreparableStatement.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\ProcedureCache.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\SchemaProvider.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\ScriptStatement.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\ServerStatusFlags.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\Statement.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\StoredProcedure.cs" />
+    <Compile Include="Mysql.Data\MySqlClient\UsageAdvisor.cs" />
+    <Compile Include="Mysql.Data\Types\IMySqlValue.cs" />
+    <Compile Include="Mysql.Data\Types\MetaData.cs" />
+    <Compile Include="Mysql.Data\Types\MySqlBinary.cs" />
+    <Compile Include="Mysql.Data\Types\MySqlBit.cs" />
+    <Compile Include="Mysql.Data\Types\MySqlByte.cs" />
+    <Compile Include="Mysql.Data\Types\MySqlConversionException.cs" />
+    <Compile Include="Mysql.Data\Types\MySqlDateTime.cs" />
+    <Compile Include="Mysql.Data\Types\MySqlDecimal.cs" />
+    <Compile Include="Mysql.Data\Types\MySqlDouble.cs" />
+    <Compile Include="Mysql.Data\Types\MySqlInt16.cs" />
+    <Compile Include="Mysql.Data\Types\MySqlInt32.cs" />
+    <Compile Include="Mysql.Data\Types\MySqlInt64.cs" />
+    <Compile Include="Mysql.Data\Types\MySqlSingle.cs" />
+    <Compile Include="Mysql.Data\Types\MySqlString.cs" />
+    <Compile Include="Mysql.Data\Types\MySqlTimeSpan.cs" />
+    <Compile Include="Mysql.Data\Types\MySqlUByte.cs" />
+    <Compile Include="Mysql.Data\Types\MySqlUInt16.cs" />
+    <Compile Include="Mysql.Data\Types\MySqlUInt32.cs" />
+    <Compile Include="Mysql.Data\Types\MySqlUInt64.cs" />
+    <Compile Include="Mysql.Data\zlib\Adler32.cs" />
+    <Compile Include="Mysql.Data\zlib\Deflate.cs" />
+    <Compile Include="Mysql.Data\zlib\InfBlocks.cs" />
+    <Compile Include="Mysql.Data\zlib\InfCodes.cs" />
+    <Compile Include="Mysql.Data\zlib\Inflate.cs" />
+    <Compile Include="Mysql.Data\zlib\InfTree.cs" />
+    <Compile Include="Mysql.Data\zlib\StaticTree.cs" />
+    <Compile Include="Mysql.Data\zlib\SupportClass.cs" />
+    <Compile Include="Mysql.Data\zlib\Tree.cs" />
+    <Compile Include="Mysql.Data\zlib\ZInputStream.cs" />
+    <Compile Include="Mysql.Data\zlib\zlibConst.cs" />
+    <Compile Include="Mysql.Data\zlib\ZOutputStream.cs" />
+    <Compile Include="Mysql.Data\zlib\ZStream.cs" />
+    <Compile Include="Mysql.Data\zlib\ZStreamException.cs" />
+    <Compile Include="Mysql.Wrapper\ConnectionHolder.cs" />
+    <Compile Include="Mysql.Wrapper\EMysqlConnectionError.cs" />
+    <Compile Include="Mysql.Wrapper\EMysqlConnectionState.cs" />
+    <Compile Include="Mysql.Wrapper\MySqlWrapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\keywords.txt" />
+    <EmbeddedResource Include="Properties\ReservedWords.txt" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CEFE27FD-ACBE-4347-85A6-59638D75A806}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GodLesZ.Library.MonoGame</RootNamespace>
+    <AssemblyName>GodLesZ.Library.MonoGame</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Awesomium.Core, Version=1.7.2.2, Culture=neutral, PublicKeyToken=e1a0d7c8071a5214, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Awesomium.NET-v1.7.2.2\Awesomium.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Awesomium.Windows.Controls, Version=1.7.2.2, Culture=neutral, PublicKeyToken=7a34e179b8b61c39, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Awesomium.NET-v1.7.2.2\Awesomium.Windows.Controls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Awesomium.Windows.Forms, Version=1.7.2.2, Culture=neutral, PublicKeyToken=9bd24830fbe304a0, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Awesomium.NET-v1.7.2.2\Awesomium.Windows.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\log4net\net\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\MonoGame-v3.0\Assemblies\WindowsGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Awesomium\AwesomiumComponent.cs" />
+    <Compile Include="Awesomium\AwesomiumGameComponent.cs" />
+    <Compile Include="Awesomium\BitmapSurfaceExtensions.cs" />
+    <Compile Include="Awesomium\DirectX\D3DlockedRect.cs" />
+    <Compile Include="Awesomium\DirectX\D3DsurfaceDesc.cs" />
+    <Compile Include="Awesomium\DirectX\ED3Dformat.cs" />
+    <Compile Include="Awesomium\DirectX\ED3DmultisampleType.cs" />
+    <Compile Include="Awesomium\DirectX\ED3Dpool.cs" />
+    <Compile Include="Awesomium\DirectX\ED3Dresourcetype.cs" />
+    <Compile Include="Awesomium\DirectX\IDirect3DTexture9.cs" />
+    <Compile Include="Awesomium\DirectX\Rect.cs" />
+    <Compile Include="Awesomium\EventInputHandling.cs" />
+    <Compile Include="Awesomium\TextureConverter.cs" />
+    <Compile Include="Content\Extended\AssetChangedEventArgs.cs" />
+    <Compile Include="Content\Extended\EAssetStatus.cs" />
+    <Compile Include="DeviceFake\GraphicsDeviceControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DeviceFake\GraphicsDeviceService.cs" />
+    <Compile Include="DeviceFake\ServiceContainer.cs" />
+    <Compile Include="DeviceFake\TileDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Geometry\Camera\BaseCamera.cs" />
+    <Compile Include="ColorFade.cs" />
+    <Compile Include="Content\ContentLoader.cs" />
+    <Compile Include="Content\EFileListType.cs" />
+    <Compile Include="Content\Extended\AssetTracker.cs" />
+    <Compile Include="Content\Extended\ExtendedContentManager.cs" />
+    <Compile Include="Content\Extended\ExtendedContentManagerAsync.cs" />
+    <Compile Include="Content\FileList.cs" />
+    <Compile Include="Content\FileListEntry.cs" />
+    <Compile Include="Content\FileListLoader.cs" />
+    <Compile Include="Extensions\KeyboardStateExtensions.cs" />
+    <Compile Include="Extensions\SpritebatchExtensions.cs" />
+    <Compile Include="Extensions\StreamExtensions.cs" />
+    <Compile Include="GameClock.cs" />
+    <Compile Include="Geometry\Camera\Camera2D.cs" />
+    <Compile Include="Geometry\DirectionExtensions.cs" />
+    <Compile Include="Geometry\EDirection.cs" />
+    <Compile Include="Geometry\IPoint.cs" />
+    <Compile Include="Geometry\IPoint2D.cs" />
+    <Compile Include="Geometry\IPoint3D.cs" />
+    <Compile Include="Geometry\IRectangle.cs" />
+    <Compile Include="Geometry\IRectangle2D.cs" />
+    <Compile Include="Geometry\ICamera2D.cs" />
+    <Compile Include="Geometry\Point2D.cs" />
+    <Compile Include="Geometry\Point3D.cs" />
+    <Compile Include="Geometry\Rectangle2D.cs" />
+    <Compile Include="Geometry\Rectangle3D.cs" />
+    <Compile Include="Geometry\RectangleF.cs" />
+    <Compile Include="Geometry\ICamera.cs" />
+    <Compile Include="Geometry\Camera\MouseCamera.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleTimer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GodLesZ.Library.BlubbZip\GodLesZ.Library.BlubbZip.csproj">
+      <Project>{929e3880-1ce1-415e-9ba9-b9e45c5002f0}</Project>
+      <Name>GodLesZ.Library.BlubbZip</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GodLesZ.Library\GodLesZ.Library.csproj">
+      <Project>{22086451-a9a2-414c-8a81-5be02fc5c8ee}</Project>
+      <Name>GodLesZ.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

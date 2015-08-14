@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{17B100E8-832D-4FE4-A14D-9BA6C5E99EEF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GodLesZ.Library.Imaging</RootNamespace>
+    <AssemblyName>GodLesZ.Library.Imaging</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\GodLesZ.Library.Imaging.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\GodLesZ.Library.Imaging.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\GodLesZ.Library.Imaging.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\GodLesZ.Library.Imaging.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Blob.cs" />
+    <Compile Include="BlobCounter.cs" />
+    <Compile Include="ColorConverter.cs" />
+    <Compile Include="ComplexImage.cs" />
+    <Compile Include="Dds\DdsFile.cs" />
+    <Compile Include="Dds\DDS\CubemapFlags.cs" />
+    <Compile Include="Dds\Endian.cs" />
+    <Compile Include="Dds\DDS\FileFormat.cs" />
+    <Compile Include="Dds\DDS\Header.cs" />
+    <Compile Include="Dds\DDS\HeaderFlags.cs" />
+    <Compile Include="Dds\DDS\PixelFormat.cs" />
+    <Compile Include="Dds\DDS\PixelFormatFlags.cs" />
+    <Compile Include="Dds\DDS\SurfaceFlags.cs" />
+    <Compile Include="Dds\DDS\VolumeFlags.cs" />
+    <Compile Include="Dds\IO\ByteBufferReader.cs" />
+    <Compile Include="Dds\IO\NumberHelpers\Align.cs" />
+    <Compile Include="Dds\IO\NumberHelpers\BigEndian.cs" />
+    <Compile Include="Dds\IO\NumberHelpers\LittleEndian.cs" />
+    <Compile Include="Dds\IO\NumberHelpers\RotateLeft.cs" />
+    <Compile Include="Dds\IO\NumberHelpers\RotateRight.cs" />
+    <Compile Include="Dds\IO\NumberHelpers\Swap.cs" />
+    <Compile Include="Dds\IO\StreamHelpers.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Aligned.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Boolean.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Enum.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Guid.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Numbers\F32.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Numbers\F64.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Numbers\S08.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Numbers\S16.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Numbers\S32.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Numbers\S64.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Numbers\U08.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Numbers\U16.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Numbers\U32.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Numbers\U64.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Strings\Default.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Strings\Internal.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Strings\Supplied.cs" />
+    <Compile Include="Dds\IO\StreamHelpers\Structure.cs" />
+    <Compile Include="Dds\Native.cs" />
+    <Compile Include="FastBitmap.cs" />
+    <Compile Include="Filters\AdaptiveSmooth.cs" />
+    <Compile Include="Filters\Add.cs" />
+    <Compile Include="Filters\BayerDithering.cs" />
+    <Compile Include="Filters\Blur.cs" />
+    <Compile Include="Filters\BrightnessCorrection.cs" />
+    <Compile Include="Filters\BurkesDithering.cs" />
+    <Compile Include="Filters\CannyEdgeDetector.cs" />
+    <Compile Include="Filters\ChannelFiltering.cs" />
+    <Compile Include="Filters\Closing.cs" />
+    <Compile Include="Filters\ColorFiltering.cs" />
+    <Compile Include="Filters\ConnectedComponentsLabeling.cs" />
+    <Compile Include="Filters\ConservativeSmoothing.cs" />
+    <Compile Include="Filters\ContrastCorrection.cs" />
+    <Compile Include="Filters\Convolution.cs" />
+    <Compile Include="Filters\Correlation.cs" />
+    <Compile Include="Filters\Crop.cs" />
+    <Compile Include="Filters\Difference.cs" />
+    <Compile Include="Filters\DifferenceEdgeDetector.cs" />
+    <Compile Include="Filters\Dilatation.cs" />
+    <Compile Include="Filters\Edges.cs" />
+    <Compile Include="Filters\Erosion.cs" />
+    <Compile Include="Filters\ErrorDiffusionDithering.cs" />
+    <Compile Include="Filters\EuclideanColorFiltering.cs" />
+    <Compile Include="Filters\ExtractChannel.cs" />
+    <Compile Include="Filters\FilterIterator.cs" />
+    <Compile Include="Filters\FiltersSequence.cs" />
+    <Compile Include="Filters\FloydSteinbergDithering.cs" />
+    <Compile Include="Filters\GammaCorrection.cs" />
+    <Compile Include="Filters\GaussianBlur.cs" />
+    <Compile Include="Filters\Grayscale.cs" />
+    <Compile Include="Filters\GrayscaleBT709.cs" />
+    <Compile Include="Filters\GrayscaleRMY.cs" />
+    <Compile Include="Filters\GrayscaleToRGB.cs" />
+    <Compile Include="Filters\GrayscaleY.cs" />
+    <Compile Include="Filters\HitAndMiss.cs" />
+    <Compile Include="Filters\HitAndMissMode.cs" />
+    <Compile Include="Filters\HomogenityEdgeDetector.cs" />
+    <Compile Include="Filters\HSLFiltering.cs" />
+    <Compile Include="Filters\HSLLinear.cs" />
+    <Compile Include="Filters\HueModifier.cs" />
+    <Compile Include="Filters\IFilter.cs" />
+    <Compile Include="Filters\Intersect.cs" />
+    <Compile Include="Filters\Invert.cs" />
+    <Compile Include="Filters\JarvisJudiceNinkeDithering.cs" />
+    <Compile Include="Filters\Jitter.cs" />
+    <Compile Include="Filters\LevelsLinear.cs" />
+    <Compile Include="Filters\MaskedFilter.cs" />
+    <Compile Include="Filters\Mean.cs" />
+    <Compile Include="Filters\Median.cs" />
+    <Compile Include="Filters\Merge.cs" />
+    <Compile Include="Filters\MoveTowards.cs" />
+    <Compile Include="Filters\OilPainting.cs" />
+    <Compile Include="Filters\Opening.cs" />
+    <Compile Include="Filters\OrderedDithering.cs" />
+    <Compile Include="Filters\Pixellate.cs" />
+    <Compile Include="Filters\ReplaceChannel.cs" />
+    <Compile Include="Filters\Resize.cs" />
+    <Compile Include="Filters\Rotate.cs" />
+    <Compile Include="Filters\RotateChannels.cs" />
+    <Compile Include="Filters\SaturationCorrection.cs" />
+    <Compile Include="Filters\Sepia.cs" />
+    <Compile Include="Filters\Sharpen.cs" />
+    <Compile Include="Filters\SharpenEx.cs" />
+    <Compile Include="Filters\Shrink.cs" />
+    <Compile Include="Filters\SierraDithering.cs" />
+    <Compile Include="Filters\SimpleSkeletonization.cs" />
+    <Compile Include="Filters\SISThreshold.cs" />
+    <Compile Include="Filters\SobelEdgeDetector.cs" />
+    <Compile Include="Filters\StevensonArceDithering.cs" />
+    <Compile Include="Filters\StuckiDithering.cs" />
+    <Compile Include="Filters\Subtract.cs" />
+    <Compile Include="Filters\TestFilter.cs" />
+    <Compile Include="Filters\Threshold.cs" />
+    <Compile Include="Filters\ThresholdCarry.cs" />
+    <Compile Include="HSL.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="ImageStatistics.cs" />
+    <Compile Include="Interpolation.cs" />
+    <Compile Include="InterpolationMethod.cs" />
+    <Compile Include="Mathematic\Complex.cs" />
+    <Compile Include="Mathematic\FourierDirection.cs" />
+    <Compile Include="Mathematic\FourierTransform.cs" />
+    <Compile Include="Mathematic\Gaussian.cs" />
+    <Compile Include="Mathematic\Histogram.cs" />
+    <Compile Include="Mathematic\HistogramD.cs" />
+    <Compile Include="Mathematic\Range.cs" />
+    <Compile Include="Mathematic\RangeD.cs" />
+    <Compile Include="Mathematic\Statistics.cs" />
+    <Compile Include="Mathematic\Tools.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RGB.cs" />
+    <Compile Include="Targa\ETargaFirstPixelDestination.cs" />
+    <Compile Include="Targa\ETargaHorizontalTransferOrder.cs" />
+    <Compile Include="Targa\ETargaImageType.cs" />
+    <Compile Include="Targa\ETargaRLEPacketType.cs" />
+    <Compile Include="Targa\ETargaVerticalTransferOrder.cs" />
+    <Compile Include="Targa\ETargetColorMapType.cs" />
+    <Compile Include="Targa\ETGAFormat.cs" />
+    <Compile Include="Targa\TargaConstants.cs" />
+    <Compile Include="Targa\TargaExtensionArea.cs" />
+    <Compile Include="Targa\TargaFooter.cs" />
+    <Compile Include="Targa\TargaHeader.cs" />
+    <Compile Include="Targa\TargaImage.cs" />
+    <Compile Include="Targa\TargaUtilities.cs" />
+    <Compile Include="Win32.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
