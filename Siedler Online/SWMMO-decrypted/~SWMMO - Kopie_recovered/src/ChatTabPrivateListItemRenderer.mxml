@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Label id="_ChatTabPrivateListItemRenderer_Label1" null="100" minWidth="60" maxWidth="60" null.left="this" text="{(data as ChannelVO).name}"/>
+	<mx:Button styleName="closeSmall" width="13" height="12" right="3" bottom="6" click="{this.HandleRemoveClick(event);}"/>
+
+</mx:Canvas>

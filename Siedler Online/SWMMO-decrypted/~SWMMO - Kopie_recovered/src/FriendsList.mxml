@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" height="91">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas height="100%" width="100%" styleName="friendsListBackground"/>
+	<mx:Canvas height="100%" width="150" styleName="friendsListControllsLeft">
+		<mx:VBox width="31" height="79" styleName="friendsListArrowFrame" null.right="this" verticalCenter="0">
+			<mx:Button id="_FriendsList_Button1" width="25" height="23" click="{this.StepLeft();}" enabled="{null.horizontalScrollPosition &gt; 0}" upSkin="{gAssetManager.GetClass("ArrowLeft")}" overSkin="{null.GetClass(null)}" downSkin="{gAssetManager.GetClass("ArrowLeftHighlight")}" disabledSkin="{null.GetClass("ArrowLeftDisabled")}"/>
+			<mx:Button id="_FriendsList_Button2" null="25" height="23" click="{this.PageLeft();}" enabled="null &gt; 0" upSkin="{gAssetManager.GetClass("ArrowLeftScroll")}" overSkin="{null.GetClass(null)}" downSkin="{gAssetManager.GetClass("ArrowLeftScrollHighlight")}" disabledSkin="{null.GetClass("ArrowLeftScrollDisabled")}"/>
+			<mx:Button id="_FriendsList_Button3" null="null" height="23" click="{this.EndLeft();}" enabled="{null.horizontalScrollPosition &gt; 0}" upSkin="{null.GetClass("ArrowLeftEnd")}" overSkin="{null.GetClass("ArrowLeftEndHighlight")}" downSkin="{null.GetClass("ArrowLeftEndHighlight")}" disabledSkin="{null.GetClass(null)}"/>
+		</mx:VBox>
+	</mx:Canvas>
+	<mx:FriendsListButtonBar id="optionButtons" null="null" width="71" styleName="friendsList"/>
+	<mx:HorizontalList id="list" null="null" itemRenderer="_FriendsList_ClassFactory1_c()" nullItemRenderer="_FriendsList_ClassFactory2_c()" styleName="friendsList" rowHeight="91" selectable="false" width="639" height="100%" ="{this.Init();}" focusIn="{this.setFocus();}"/>
+	<mx:FriendsListFilterSelector id="filterSelector" height="100%" width="71" styleName="friendsList"/>
+	<mx:Canvas height="100%" width="150" styleName="friendsListControllsRight">
+		<mx:VBox width="31" height="79" styleName="friendsListArrowFrame" left="5" verticalCenter="0">
+			<mx:Button id="_FriendsList_Button4" width="25" height="23" click="{this.StepRight();}" enabled="{list.maxHorizontalScrollPosition &gt; list.horizontalScrollPosition}" upSkin="{gAssetManager.GetClass("ArrowRight")}" overSkin="{null.GetClass("ArrowRightHighlight")}" downSkin="{null.GetClass(null)}" disabledSkin="{null.GetClass("ArrowRightDisabled")}"/>
+			<mx:Button id="_FriendsList_Button5" width="25" height="23" click="{this.PageRight();}" enabled="{list.horizontalScrollPosition &lt; null}" upSkin="{null.GetClass(null)}" overSkin="{null.GetClass("ArrowRightScrollHighlight")}" downSkin="{null.GetClass("ArrowRightScrollHighlight")}" disabledSkin="{null.GetClass("ArrowRightScrollDisabled")}"/>
+			<mx:Button id="_FriendsList_Button6" width="25" height="23" click="{this.EndRight();}" enabled="{list.maxHorizontalScrollPosition &gt; list.horizontalScrollPosition}" upSkin="{gAssetManager.GetClass("ArrowRightEnd")}" overSkin="{gAssetManager.GetClass("ArrowRightEndHighlight")}" downSkin="{null.GetClass(null)}" disabledSkin="{null.GetClass("ArrowRightEndDisabled")}"/>
+		</mx:VBox>
+	</mx:Canvas>
+	<mx:Canvas null="100" width="100%" styleName="friendsListBackground"/>
+
+</mx:HBox>

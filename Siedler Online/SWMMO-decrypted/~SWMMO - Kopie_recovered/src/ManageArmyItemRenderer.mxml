@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="125" height="50">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas id="background" width="100%" height="100%" backgroundSize="100%" backgroundImage="{null.GetClass("BackgroundNormal")}"/>
+	<mx:Image id="unitIcon" null="26" height="25" null.top="this" left="5" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.MILITARY_UNIT_EXTENDED_string, event);}"/>
+	<mx:Label id="nameLabel" null="95" null.left="this" textAlign="center" top="2" color="#00ffffff" fontWeight="bold" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}"/>
+	<mx:Label id="amountLabel" text="" horizontalCenter="10" top="15" color="#00ffffff" fontWeight="normal"/>
+	<mx:ExtendedHSlider id="amountSlider" liveDragging="true" minimum="0" left="4" right="5" bottom="6" change="{this.UpdateAmount(event);}"/>
+
+</mx:Canvas>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="741" height="610" _embed_mxml_____data_src_gfx_embedded_battlewindow_battle_ornamental_bottom01_png_913026074="BattleWindow__embed_mxml_____data_src_gfx_embedded_battlewindow_battle_ornamental_bottom01_png_913026074" _embed_mxml_____data_src_gfx_embedded_battlewindow_battle_ornamental_left01_png_222845990="BattleWindow__embed_mxml_____data_src_gfx_embedded_battlewindow_battle_ornamental_left01_png_222845990" _embed_mxml_____data_src_gfx_embedded_battlewindow_battle_ornamental_right01_png_165926790="BattleWindow__embed_mxml_____data_src_gfx_embedded_battlewindow_battle_ornamental_right01_png_165926790" _embed_mxml_____data_src_gfx_embedded_battlewindow_battle_ornamental_top01_png_1904853944="BattleWindow__embed_mxml_____data_src_gfx_embedded_battlewindow_battle_ornamental_top01_png_1904853944">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas id="content" horizontalScrollPolicy="off" verticalScrollPolicy="off" styleName="basicPanel" null.left="this" right="18" top="110" bottom="17">
+		<mx:CloseButton id="btnClose" top="5" right="15"/>
+		<mx:Image id="map" null="_embed_mxml_____data_src_gfx_embedded_battlewindow_battle_bg_map_png_260211384" horizontalCenter="3" verticalCenter="15"/>
+		<mx:Canvas width="320" left="18" top="32" bottom="0">
+			<mx:Canvas styleName="detailsSubHeader" width="100%" height="18">
+				<mx:Label id="attackerNameLabel" top="1" horizontalCenter="0" color="#00ffffff" fontWeight="bold"/>
+			</mx:Canvas>
+			<mx:Canvas id="attackerPanel" backgroundColor="#00514735" backgroundAlpha="0.6" left="1" right="1" top="18" bottom="11"/>
+		</mx:Canvas>
+		<mx:Canvas width="320" right="16" top="32" bottom="0">
+			<mx:Canvas styleName="detailsSubHeader" width="100%" height="18">
+				<mx:Label id="defenderNameLabel" null.top="this" horizontalCenter="0" color="#00ffffff" fontWeight="bold"/>
+			</mx:Canvas>
+			<mx:Canvas id="defenderPanel" null.backgroundColor="this" backgroundAlpha="0.6" left="1" right="1" top="18" bottom="11"/>
+		</mx:Canvas>
+	</mx:Canvas>
+	<mx:Image id="curtainLeft" null="_embed_mxml_____data_src_gfx_embedded_battlewindow_battle_ornamental_left01_png_222845990" top="140" left="30"/>
+	<mx:Image id="curtainRight" source="_embed_mxml_____data_src_gfx_embedded_battlewindow_battle_ornamental_right01_png_165926790" top="140" right="24"/>
+	<mx:Image null="null" null.top="this" horizontalCenter="-1"/>
+	<mx:Canvas id="rotationContainer" clipContent="false" top="374" horizontalCenter="21">
+		<mx:Image id="indicator" null="null" height="88" x="-44" y="-44" source="_embed_mxml_____data_src_gfx_embedded_battlewindow_compass01_needle_png_1375800998"/>
+	</mx:Canvas>
+	<mx:Canvas id="attackerHolder" width="318" left="37" top="160" bottom="28">
+		<mx:BattleSlotItemRenderer id="attackerSlot01" top="5" right="0"/>
+		<mx:BattleSlotItemRenderer id="attackerSlot02" top="100" right="0"/>
+		<mx:BattleSlotItemRenderer id="attackerSlot03" top="195" right="0"/>
+		<mx:BattleSlotItemRenderer id="attackerSlot04" null.top="this" right="0"/>
+		<mx:BattleSlotItemRenderer id="attackerSlot05" top="50" right="100"/>
+		<mx:BattleSlotItemRenderer id="attackerSlot06" null.top="this" right="100"/>
+		<mx:BattleSlotItemRenderer id="attackerSlot07" top="240" right="100"/>
+		<mx:BattleSlotItemRenderer id="attackerSlot00" top="80" right="215"/>
+		<mx:BattleSlotItemRenderer id="attackerSlot08" top="190" right="200"/>
+		<mx:BattleSlotItemRenderer id="attackerSlot09" null.top="this" right="200"/>
+	</mx:Canvas>
+	<mx:Canvas id="defenderHolder" width="318" null.right="this" top="160" bottom="28">
+		<mx:BattleSlotItemRenderer id="defenderSlot01" null.top="this" left="0"/>
+		<mx:BattleSlotItemRenderer id="defenderSlot02" top="100" left="0"/>
+		<mx:BattleSlotItemRenderer id="defenderSlot03" top="195" left="0"/>
+		<mx:BattleSlotItemRenderer id="defenderSlot04" top="290" left="0"/>
+		<mx:BattleSlotItemRenderer id="defenderSlot05" top="50" left="100"/>
+		<mx:BattleSlotItemRenderer id="defenderSlot06" top="145" left="100"/>
+		<mx:BattleSlotItemRenderer id="defenderSlot07" top="240" left="100"/>
+		<mx:BattleSlotItemRenderer id="defenderSlot00" null.top="this" left="215"/>
+		<mx:BattleSlotItemRenderer id="defenderSlot08" top="190" left="200"/>
+		<mx:BattleSlotItemRenderer id="defenderSlot09" top="285" left="200"/>
+	</mx:Canvas>
+	<mx:SpriteLibAnimation id="attackAnimation" animationName="guianim_attack" visible="false" width="140" height="174"/>
+	<mx:AvatarListItemRenderer id="attackerAvatar" top="138" left="32"/>
+	<mx:AvatarListItemRenderer id="defenderAvatar" top="138" right="30"/>
+	<mx:Image id="ornamentalTop" null="_embed_mxml_____data_src_gfx_embedded_battlewindow_battle_ornamental_top01_png_1904853944" top="0" horizontalCenter="0"/>
+	<mx:Image id="ornamentalBottom" null="null" null.bottom="this" horizontalCenter="0"/>
+	<mx:Label id="roundLabel" null.fontWeight="this" color="#00000000" horizontalCenter="0" top="120" fontSize="16"/>
+	<mx:Label id="phaseLabel" fontWeight="bold" color="#00000000" horizontalCenter="0" bottom="16"/>
+	<mx:Text id="overlayTextPhase" null="null" visible="false" width="600" filters="[_BattleWindow_GlowFilter1_c(), _BattleWindow_GlowFilter2_c()]" fontWeight="bold" color="#00d19b39" fontSize="38" horizontalCenter="0" verticalCenter="40" textAlign="center" showEffect="showOverlayText" hideEffect="hideOverlayText"/>
+	<mx:Text id="overlayTextRound" selectable="false" visible="false" width="600" filters="[_BattleWindow_GlowFilter3_c(), _BattleWindow_GlowFilter4_c()]" fontWeight="bold" color="#00d19b39" fontSize="50" horizontalCenter="0" verticalCenter="40" textAlign="center" showEffect="showOverlayText" hideEffect="hideOverlayText"/>
+
+</mx:Canvas>

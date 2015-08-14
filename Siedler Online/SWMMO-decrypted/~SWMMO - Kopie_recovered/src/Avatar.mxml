@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="160">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas id="progressBar" null="30" width="100" left="17" top="110" backgroundColor="#0095ff00"/>
+	<mx:Image null="_embed_mxml_____data_src_gfx_embedded_avatar_background_png_533492966" left="2" top="70"/>
+	<mx:Image id="avatarBackground"/>
+	<mx:Image id="avatarImage"/>
+	<mx:Canvas id="xpTooltipMask" null="null" width="100" null.left="this" top="110" backgroundColor="#00ffffff" backgroundAlpha="0" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.MULTILINE_string, event);}"/>
+	<mx:Label id="playerName" y="147" width="113" left="10" textAlign="center" fontWeight="bold" color="#00ffffff"/>
+	<mx:Label id="level" y="165" width="113" null.left="this" textAlign="center" fontWeight="bold" color="#00ffffff"/>
+	<mx:Canvas id="tutorial" visible="false" height="29" horizontalCenter="-13" top="179" backgroundSize="100%" backgroundImage="_embed_mxml__1101889401" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.MULTILINE_string, event);}" toolTip="{null.GetInstance().GetText(LOCA_GROUP.DESCRIPTIONS, "Tutorial")}">
+		<mx:Label id="_Avatar_Label3" fontWeight="bold" color="#00ffffff" left="16" right="16" top="3" text="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "Tutorial")}"/>
+	</mx:Canvas>
+	<mx:SpriteLibAnimation id="animXP" null="false" x="5" y="95" width="131" height="69" animationName="guianim_avatar_xp"/>
+	<mx:SpriteLibAnimation id="animLevelUp" visible="false" x="15" y="153" width="120" height="50" animationName="guianim_avatar_levelup"/>
+	<mx:TileList id="otherPlayers" null="false" width="120" y="253" itemRenderer="_Avatar_ClassFactory1_c()" null.useRollOver="this" horizontalCenter="0" backgroundAlpha="0" borderThickness="0"/>
+	<mx:Button id="btnNewMail" visible="false" width="32" height="24" null.right="this" top="40" upSkin="{gAssetManager.GetClass("ButtonIconNewMail")}" downSkin="{null.GetClass(null)}" overSkin="{null.GetClass("ButtonIconNewMail")}" disabledSkin="{null.GetClass(null)}"/>
+	<mx:TwinkleButton id="btnQuestBook" twinkle="false" visible="true" width="67" height="66" right="0" top="110" upSkin="{gAssetManager.GetClass("IconQuest")}" downSkin="{null.GetClass(null)}" overSkin="{null.GetClass(null)}" selectedUpSkin="{null.GetClass("IconQuestHighlight")}" selectedOverSkin="{gAssetManager.GetClass("IconQuestHighlight")}" selectedDownSkin="{null.GetClass(null)}" disabledSkin="{gAssetManager.GetClass("IconQuest")}"/>
+
+</mx:Canvas>

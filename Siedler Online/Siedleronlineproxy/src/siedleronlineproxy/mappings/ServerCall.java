@@ -1,0 +1,25 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package siedleronlineproxy.mappings;
+
+/**
+ *
+ * @author nspecht
+ */
+public class ServerCall extends GenericMapping {
+    public Object data;
+    public Integer type;
+    public Integer zoneID;
+
+    @Override
+    public void proceed() {
+        
+    }
+
+    @Override
+    public void manipulate(boolean incoming) {
+    }
+}

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="164" height="112" click="" rollOver="" rollOut="" toolTipCreate="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas id="background" null="null" height="100%" backgroundSize="100%"/>
+	<mx:Label id="nameLabel" null="150" null.textAlign="this" color="#00000000" fontWeight="bold" left="4" top="3" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}"/>
+	<mx:Frame id="frame" type="specialist" contentType="shopitem" right="15" verticalCenter="7"/>
+	<mx:Image id="framedIcon" width="56" height="70" right="15" verticalCenter="7"/>
+	<mx:Image id="_ShopItemRenderer_Image2" horizontalCenter="0" verticalCenter="7" source="{null.GetBitmap(null)}"/>
+	<mx:VBox id="costsList" left="10" top="20" verticalCenter="7" verticalGap="0"/>
+	<mx:Image id="lockedIcon" null.right="this" bottom="7" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_ERROR_string, event, true);}" source="{null.GetBitmap(null)}"/>
+
+</mx:Canvas>

@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9EDB4345-A260-407E-B9D6-8B7253E5B33F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shaiya.Extended.Server</RootNamespace>
+    <AssemblyName>Shaiya.Extended.Server</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>Shaiya.Extended.Server.Core</StartupObject>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes.cs" />
+    <Compile Include="Config\ApplicationSettings.cs" />
+    <Compile Include="Core.cs" />
+    <Compile Include="Database\MySQL Wrapper\ConnectionHolder.cs" />
+    <Compile Include="Database\MySQL Wrapper\Core Wrapper.cs" />
+    <Compile Include="Database\MySQL Wrapper\Extensions.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Common\Cache.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Common\ContextString.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Common\DBVersion.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Common\NamedPipeStream.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Common\NativeMethods.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Common\Platform.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Common\SHA1Hash.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Common\SharedMemoryStream.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Common\SqlTokenizer.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Common\StreamCreator.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\CharacterSet.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\CharSetMap.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\ClientFlags.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\ColumnFlags.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\CompressedStream.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\ConnectionProtocolDescriptor.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\Crypt.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\DBCmd.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\Driver.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\DriverTransactionManager.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\Field_Type.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\ISSchemaProvider.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\Keyword.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\Logger.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlBulkLoader.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlBulkLoaderConflictOption.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlBulkLoaderPriority.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlClientFactory.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlCommandBuilder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlConnection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlConnectionProtocol.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlConnectionStringBuilder.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlDataAdapter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlDataReader.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlDbType.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlDriverType.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlError.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlErrorCode.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlException.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlField.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlHelper.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlInfoMessageEventArgs.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlInfoMessageEventHandler.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlParameter.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlParameterCollection.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlParameterConverter.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlPool.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlPoolManager.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlPromotableTransaction.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlRowUpdatedEventArgs.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlRowUpdatedEventHandler.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlRowUpdatingEventArgs.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlRowUpdatingEventHandler.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlScript.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlScriptErrorEventArgs.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlScriptErrorEventHandler.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlScriptEventArgs.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlStatementExecutedEventHandler.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlStream.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\MySqlTransaction.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\NativeDriver.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\PerformanceMonitor.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\PreparableStatement.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\ProcedureCache.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\Properties\Resources.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\SchemaProvider.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\ScriptStatement.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\ServerStatusFlags.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\Statement.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\StoredProcedure.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\MySqlClient\UsageAdvisor.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\IMySqlValue.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MetaData.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MySqlBinary.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MySqlBit.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MySqlByte.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MySqlConversionException.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MySqlDateTime.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MySqlDecimal.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MySqlDouble.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MySqlInt16.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MySqlInt32.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MySqlInt64.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MySqlSingle.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MySqlString.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MySqlTimeSpan.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MySqlUByte.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MySqlUInt16.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MySqlUInt32.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\Types\MySqlUInt64.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\zlib\Adler32.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\zlib\Deflate.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\zlib\InfBlocks.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\zlib\InfCodes.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\zlib\Inflate.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\zlib\InfTree.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\zlib\StaticTree.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\zlib\SupportClass.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\zlib\Tree.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\zlib\ZInputStream.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\zlib\zlibConst.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\zlib\ZOutputStream.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\zlib\ZStream.cs" />
+    <Compile Include="Database\MySQL Wrapper\Mysql.Data\zlib\ZStreamException.cs" />
+    <Compile Include="Database\MySQL Wrapper\ResultRow.cs" />
+    <Compile Include="Database\MySQL Wrapper\Tools.cs" />
+    <Compile Include="Database\Serial.cs" />
+    <Compile Include="Database\SeriaObjectManager.cs" />
+    <Compile Include="Diagnostics\TimerProfile.cs" />
+    <Compile Include="Eventing\Events.cs" />
+    <Compile Include="ExceptionHandler.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Geometry\EventTile.cs" />
+    <Compile Include="Geometry\Map.cs" />
+    <Compile Include="LogoPrinter.cs" />
+    <Compile Include="Network\Handler\ClientPacketHandler.cs" />
+    <Compile Include="Network\NetState.cs" />
+    <Compile Include="Network\PacketHandler.cs" />
+    <Compile Include="Network\Packets\PlayerPackets.cs" />
+    <Compile Include="Network\PacketType.cs" />
+    <Compile Include="Network\SocketConnector.cs" />
+    <Compile Include="Network\SocketListener.cs" />
+    <Compile Include="Network\SocketPool.cs" />
+    <Compile Include="Objects\Account.cs" />
+    <Compile Include="Objects\BaseItem.cs" />
+    <Compile Include="Objects\BaseMob.cs" />
+    <Compile Include="Objects\BaseNPC.cs" />
+    <Compile Include="Objects\Character.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Scripting\BaseScript.cs" />
+    <Compile Include="Scripting\NpcScript.cs" />
+    <Compile Include="Scripting\ScriptCompiler.cs" />
+    <Compile Include="Scripting\ScriptDatabase.cs" />
+    <Compile Include="Timer.cs" />
+    <Compile Include="World.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config\Maplist.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Network.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Config\ScriptAssemblies.conf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shaiya.Extended.Library\Shaiya.Extended.Library.csproj">
+      <Project>{5D138CB0-09C2-428E-9706-92A5777BFD8C}</Project>
+      <Name>Shaiya.Extended.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shaiya Monster Map", "Shaiya Monster Map.csproj", "{A0AEDE2D-DCBE-4E9E-9A53-12E29A27EB12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySQL", "..\..\SQL Library\MySQL\MySQL.csproj", "{B7BEF904-68C6-4FB4-ABDD-EF13F426D856}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Updater.Library", "..\..\AutoUpdater\Updater.Library\Updater.Library.csproj", "{DB4C5C13-4F6B-4FA8-A9D5-88DC736E0EEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0AEDE2D-DCBE-4E9E-9A53-12E29A27EB12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0AEDE2D-DCBE-4E9E-9A53-12E29A27EB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0AEDE2D-DCBE-4E9E-9A53-12E29A27EB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0AEDE2D-DCBE-4E9E-9A53-12E29A27EB12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7BEF904-68C6-4FB4-ABDD-EF13F426D856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7BEF904-68C6-4FB4-ABDD-EF13F426D856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7BEF904-68C6-4FB4-ABDD-EF13F426D856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7BEF904-68C6-4FB4-ABDD-EF13F426D856}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB4C5C13-4F6B-4FA8-A9D5-88DC736E0EEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB4C5C13-4F6B-4FA8-A9D5-88DC736E0EEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB4C5C13-4F6B-4FA8-A9D5-88DC736E0EEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB4C5C13-4F6B-4FA8-A9D5-88DC736E0EEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

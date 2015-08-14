@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="99" height="108" toolTipCreate="" creationComplete="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Image id="inCombatHighlight" null="99" height="108" visible="false"/>
+	<mx:Image id="selected" null="false" source="_embed_mxml_____data_src_gfx_embedded_battlewindow_battle_card_selected01_png_1074558104"/>
+	<mx:Image id="emptyBackground" x="3" y="1" source="_embed_mxml_____data_src_gfx_embedded_battlewindow_battle_card00_png_157680316"/>
+	<mx:Image id="background" null="3" y="1"/>
+	<mx:Image id="playerColor" null="null" y="10"/>
+	<mx:Image id="damageHighlightOverlay" null="null" x="3" y="1" source="_embed_mxml_____data_src_gfx_embedded_battlewindow_battle_card_attack01_png_804305062"/>
+	<mx:Label id="amountLabel" horizontalCenter="0" color="#00ffffff" fontWeight="normal" top="58"/>
+	<mx:BattleHealthBar id="health" null="null" y="75"/>
+	<mx:Image id="unit" null="21" y="1" width="54" height="64"/>
+	<mx:Label id="deadUnits" selectable="false" visible="false" y="35" filters="[_BattleSlotItemRenderer_GlowFilter1_c(), _BattleSlotItemRenderer_GlowFilter2_c()]" null.fontWeight="this" color="#00c31212" fontSize="16" horizontalCenter="20" showEffect="showDeadUnits"/>
+
+</mx:Canvas>

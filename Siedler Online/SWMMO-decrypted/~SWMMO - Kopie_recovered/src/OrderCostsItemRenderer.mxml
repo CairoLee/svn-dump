@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="50" height="60" toolTipCreate="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Image id="resourceIcon" null="null" height="25" horizontalCenter="0"/>
+	<mx:Label id="amountLabel" top="24" color="#00ffffff" left="5" right="5" fontWeight="normal" textAlign="center"/>
+	<mx:Label id="totalAmountLabel" top="41" color="#00ffffff" left="5" right="5" horizontalCenter="0" fontWeight="bold" textAlign="center"/>
+
+</mx:Canvas>

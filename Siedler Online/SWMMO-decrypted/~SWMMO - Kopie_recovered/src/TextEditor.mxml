@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas id="highlight" visible="false" alpha="0.2" width="100%" height="100%" backgroundColor="#00ffffff"/>
+	<mx:Canvas id="editPanel" visible="false" width="23" right="0" top="0">
+		<mx:Button id="btnEdit" visible="true" width="27" height="21" horizontalCenter="0" upSkin="_embed_mxml_____data_src_gfx_embedded_guild_icon_pencil_standard_png_1495349248" downSkin="_embed_mxml_____data_src_gfx_embedded_guild_icon_pencil_push_png_181730546" overSkin="_embed_mxml_____data_src_gfx_embedded_guild_icon_pencil_mouseover_png_664613118" disabledSkin="_embed_mxml_____data_src_gfx_embedded_guild_icon_pencil_disable_png_232772064" ="{this.edit();}" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}" toolTip="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "GuildEdit")}"/>
+		<mx:Button id="btnSave" null="null" width="27" height="21" horizontalCenter="0" upSkin="_embed_mxml_____data_src_gfx_embedded_guild_checkmark_standard_png_1382152580" downSkin="_embed_mxml_____data_src_gfx_embedded_guild_checkmark_push_png_1073021234" overSkin="_embed_mxml_____data_src_gfx_embedded_guild_checkmark_mouseover_png_232320834" disabledSkin="_embed_mxml_____data_src_gfx_embedded_guild_checkmark_disable_png_98462628" ="{this.save();}" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}" toolTip="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "GuildSave")}"/>
+		<mx:Button id="btnDiscard" null="false" width="27" height="21" null.horizontalCenter="this" top="23" upSkin="_embed_mxml_____data_src_gfx_embedded_mailwindow_x_button_standard_png_770916986" downSkin="_embed_mxml_____data_src_gfx_embedded_mailwindow_x_button_push_png_1727123388" overSkin="_embed_mxml_____data_src_gfx_embedded_mailwindow_x_button_mouseover_png_2116628968" disabledSkin="_embed_mxml_____data_src_gfx_embedded_mailwindow_x_button_disable_png_639665702" ="{this.discard();}" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}" toolTip="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "GuildDiscard")}"/>
+	</mx:Canvas>
+	<mx:Canvas horizontalScrollPolicy="off" verticalScrollPolicy="auto" null.left="this" top="5" right="25" bottom="3">
+		<mx:TextArea id="textfield" restrict="^\\\\" width="100%" height="100%" editable="false" selectable="false" paddingRight="10" backgroundAlpha="0" borderThickness="0" focusAlpha="0" color="#00ffffff" fontWeight="normal" maxChars="_maxChars"/>
+	</mx:Canvas>
+
+</mx:Canvas>

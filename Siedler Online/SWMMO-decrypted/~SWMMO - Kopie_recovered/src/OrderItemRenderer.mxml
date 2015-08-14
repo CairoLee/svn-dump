@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="225" height="63" toolTipCreate="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas id="background" null="null" height="100%" backgroundSize="100%" backgroundImage="{gAssetManager.GetClass("QueueBackground")}"/>
+	<mx:Image id="orderIcon" null="26" height="25" verticalCenter="-8" left="10"/>
+	<mx:Label id="orderName" null.top="this" left="43" color="#00ffffff"/>
+	<mx:Label id="progressLabel" color="#00ffffff" fontWeight="normal" left="43" top="30"/>
+	<mx:ProgressBar id="progressBar" null="130" left="45" top="21" value="{(data as cTimedProduction).GetProductionProgress()}"/>
+	<mx:Button id="btnHalfProductionTime" null="null" toolTip="InstantFinishProduction" width="25" height="23" null.right="this" bottom="5" ="{cToolTipUtil.createToolTip(cToolTipUtil.INSTANT_BUILD_string, event, (data as cTimedProduction).GetInstantBuildCosts());}" click="{this.btnHalfProductionTime.enabled = false;this.dispatchEvent(new ListEvent(cTimedProductionInfoPanel.HALF_TIME, true, false, 0, this.index));}" upSkin="{null.GetClass(null)}" downSkin="{null.GetClass("HalfTimeHighlight")}" overSkin="{null.GetClass("HalfTimeHighlight")}" disabledSkin="{null.GetClass(null)}"/>
+	<mx:Button id="btnRemove" null="null" height="23" right="15" bottom="5" click="{this.dispatchEvent(new ListEvent(cTimedProductionInfoPanel.REMOVE, true, false, 0, this.index));}" upSkin="{gAssetManager.GetClass("Close")}" downSkin="{gAssetManager.GetClass("CloseHighlight")}" overSkin="{gAssetManager.GetClass("CloseHighlight")}" disabledSkin="{gAssetManager.GetClass("CloseDisabled")}"/>
+
+</mx:Canvas>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="230" height="70" toolTipCreate="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas styleName="detailsContentBox" left="10" right="5" top="3" bottom="3">
+		<mx:Canvas styleName="detailsSubContentBox" width="100%" height="22">
+			<mx:Label id="specialistType" horizontalCenter="20" verticalCenter="0"/>
+		</mx:Canvas>
+		<mx:CustomText id="currentMission" null="null" null.color="this" fontWeight="normal" textAlign="left" left="50" right="5" bottom="2" top="24" text="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "FindDepositCoal")}"/>
+	</mx:Canvas>
+	<mx:StarMenuItemRenderer id="specialistRenderer" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SEND_ARMY, event, data);}"/>
+
+</mx:Canvas>

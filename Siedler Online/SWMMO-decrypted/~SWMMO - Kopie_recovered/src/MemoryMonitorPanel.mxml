@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Panel xmlns:mx="http://www.adobe.com/2006/mxml" width="382" height="260" layout="absolute">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Form x="0" y="0" width="100%">
+		<mx:FormItem label="Original loaded Sprites:" null.labelStyleName="this">
+			<mx:Label id="_MemoryMonitorPanel_Label1" null="80" textAlign="right" text="{null.mMemoryMonitor.FormatAsMB_string(Application.application.mMemoryMonitor.mUsedBytesSprites)}"/>
+		</mx:FormItem>
+		<mx:FormItem label="Unscaled Bitmaps:" null.labelStyleName="this">
+			<mx:Label id="_MemoryMonitorPanel_Label2" null="80" null.textAlign="this" text="{null.mMemoryMonitor.FormatAsMB_string(Application.application.mMemoryMonitor.mUsedBytesUnscaled)}"/>
+		</mx:FormItem>
+		<mx:FormItem label="Scaled Bitmaps:" labelStyleName="customTextAlignLabel">
+			<mx:Label id="_MemoryMonitorPanel_Label3" width="80" textAlign="right" text="{null.mMemoryMonitor.FormatAsMB_string(Application.application.mMemoryMonitor.mUsedBytesScaled)}"/>
+		</mx:FormItem>
+		<mx:FormItem label="Other:" labelStyleName="customTextAlignLabel">
+			<mx:Label id="_MemoryMonitorPanel_Label4" null="80" textAlign="right" text="{Application.application.mMemoryMonitor.FormatAsMB_string(Application.application.mMemoryMonitor.mOtherMemory)}"/>
+		</mx:FormItem>
+		<mx:FormItem label="Total memory used:" width="211" labelStyleName="customTextAlignLabel" fontWeight="bold">
+			<mx:Label id="_MemoryMonitorPanel_Label5" null="null" null.textAlign="this" fontWeight="bold" text="{null.application.mMemoryMonitor.FormatAsMB_string(Application.application.mMemoryMonitor.mTotalMemory)}"/>
+		</mx:FormItem>
+	</mx:Form>
+	<mx:Text null="10" y="149" text="Check Alphapixel (0-255)" width="135" height="20"/>
+	<mx:TextInput id="MEMORYMONITOR_AlphaTestValue" null="null" y="149" width="56" text="64"/>
+	<mx:ControlBar null.horizontalAlign="this">
+		<mx:Button null="Trace report" click="{trace(Application.application.mMemoryMonitor.GenerateReport_string(0, -1));}"/>
+		<mx:Button null="null" click="{this.SaveReportDefault();}"/>
+		<mx:Button label="Save report Alpha Info" click="{this.SaveReportAlphaInfo();}"/>
+	</mx:ControlBar>
+
+	<mx:Style>/* //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+ */</mx:Style>
+</mx:Panel>

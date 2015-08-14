@@ -1,0 +1,16 @@
+/* This CSS file defines ONLY the outlook of all chat messages */
+
+.important {
+	color: #517CFF;
+	font-weight: bold;
+}
+
+.ownname {
+	color: #FF8644;	
+	font-weight: bold;
+}
+
+.moderator {
+	color: #DBBA00;
+	font-weight: bold;
+}

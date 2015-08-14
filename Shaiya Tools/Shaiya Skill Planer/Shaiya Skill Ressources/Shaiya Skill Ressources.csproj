@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28255C8E-7310-4A95-94FA-FCCBF0A6BF65}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shaiya_Skill_Ressources</RootNamespace>
+    <AssemblyName>Shaiya Skill Ressources</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dummy.cs" />
+    <Compile Include="EClass.cs" />
+    <Compile Include="EGameMode.cs" />
+    <Compile Include="ESkillElement.cs" />
+    <Compile Include="ESkillType.cs" />
+    <Compile Include="ImageComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Structs\Skill.cs" />
+    <Compile Include="Structs\SkillLevel.cs" />
+    <Compile Include="Structs\SkillList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skills\Archer_Elf.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skills\Assasin_Vail.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skills\Defender_Human.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skills\Fighter_Human.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skills\Guardian_Nordein.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skills\Hunter_Nordein.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skills\Mage_Elf.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skills\Oracle_Vail.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skills\Pagan_Vail.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skills\Priest_Human.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skills\Ranger_Elf.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Skills\Warrior_Nordein.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mon_fire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mon_ground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mon_not.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mon_water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mon_wind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Embedded\icons\icon-0.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-1.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-10.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-100.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-101.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-102.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-103.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-104.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-105.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-106.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-107.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-108.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-109.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-11.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-110.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-111.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-112.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-113.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-114.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-115.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-116.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-117.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-118.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-119.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-12.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-120.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-121.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-122.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-123.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-124.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-125.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-126.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-127.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-128.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-129.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-13.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-130.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-131.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-132.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-133.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-134.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-135.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-136.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-137.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-138.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-139.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-14.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-140.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-141.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-142.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-143.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-144.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-145.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-146.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-147.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-148.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-149.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-15.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-150.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-151.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-152.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-153.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-154.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-155.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-156.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-157.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-158.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-159.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-16.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-160.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-161.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-162.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-163.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-164.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-165.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-166.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-167.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-168.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-169.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-17.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-170.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-171.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-172.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-173.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-174.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-175.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-176.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-177.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-178.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-179.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-18.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-180.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-181.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-182.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-183.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-184.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-19.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-2.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-20.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-21.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-22.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-23.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-24.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-25.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-255.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-26.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-27.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-28.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-29.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-3.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-30.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-31.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-32.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-33.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-34.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-35.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-36.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-37.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-38.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-39.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-4.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-40.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-41.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-42.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-43.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-44.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-45.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-46.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-47.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-48.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-49.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-5.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-50.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-51.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-52.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-53.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-54.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-55.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-56.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-57.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-58.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-59.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-6.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-60.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-61.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-62.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-63.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-64.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-65.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-66.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-67.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-68.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-69.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-7.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-70.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-71.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-72.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-73.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-74.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-75.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-76.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-77.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-78.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-79.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-8.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-80.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-81.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-82.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-83.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-84.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-85.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-86.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-87.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-88.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-89.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-9.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-90.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-91.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-92.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-93.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-94.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-95.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-96.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-97.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-98.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-99.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-0.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-1.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-10.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-11.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-12.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-13.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-14.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-15.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-16.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-17.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-18.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-19.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-2.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-20.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-21.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-22.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-23.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-24.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-25.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-26.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-27.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-28.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-29.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-3.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-30.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-31.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-32.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-4.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-5.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-6.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-7.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-8.png" />
+    <EmbeddedResource Include="Embedded\icons\icon-new-9.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

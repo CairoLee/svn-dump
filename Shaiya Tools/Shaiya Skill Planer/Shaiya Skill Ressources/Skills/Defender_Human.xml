@@ -1,0 +1,458 @@
+<?xml version="1.0"?>
+<SkillList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Skills>
+    <Skill IconName="icons.defender01.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Körpertraining" Mana="0" Range="0" RequiredLevel="1" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Grundverteidigung um 11.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Körpertraining" Mana="0" Range="0" RequiredLevel="28" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Grundverteidigung um 28..</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Körpertraining" Mana="0" Range="0" RequiredLevel="49" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Grundverteidigung um 49.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender02.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Scharfe Waffe-Aufwertung" Mana="0" Range="0" RequiredLevel="5" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 5, wenn ein einhändiges Schwert oder eine einhändige Axt ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Scharfe Waffe-Aufwertung" Mana="0" Range="0" RequiredLevel="16" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 12, wenn ein einhändiges Schwert oder eine einhändige Axt ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Scharfe Waffe-Aufwertung" Mana="0" Range="0" RequiredLevel="25" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 20, wenn ein einhändiges Schwert oder eine einhändige Axt ausgerüstet ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender03.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schwere Waffen-Aufwertung" Mana="0" Range="0" RequiredLevel="5" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 5, wenn eine einhändige oder zweihändige schwere Waffe ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schwere Waffen-Aufwertung" Mana="0" Range="0" RequiredLevel="16" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 12, wenn eine einhändige oder zweihändige schwere Waffe ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schwere Waffen-Aufwertung" Mana="0" Range="0" RequiredLevel="25" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 20, wenn eine einhändige oder zweihändige schwere Waffe ausgerüstet ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender04.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="6" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 4% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="15" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 6% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="26" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 8% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender05.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="13" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler , etwa  30% dessen zu verstehen was der Gegner sagt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="22" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler , etwa  60% dessen zu verstehen was der Gegner sagt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="51" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler alles zu verstehen was der Gegner sagt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender06.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Klingenmeister" Mana="0" Range="0" RequiredLevel="14" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffsgeschwindigkeit des Spielers um eine Stufe wenn ein einhändiges Schwert oder eine einhändige Axt ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Klingenmeister" Mana="0" Range="0" RequiredLevel="35" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffsgeschwindigkeit des Spielers um eine Stufe wenn ein einhändiges Schwert oder eine einhändige Axt ausgerüstet ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender07.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schwere Waffen-Beherrschung" Mana="0" Range="0" RequiredLevel="14" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffsgeschwindigkeit des Spielers um eine Stufe, wenn eine einhändige oder zweihändige schwere Waffe ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schwere Waffen-Beherrschung" Mana="0" Range="0" RequiredLevel="35" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffsgeschwindigkeit des Spielers um eine Stufe, wenn eine einhändige oder zweihändige schwere Waffe ausgerüstet ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender08.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="12" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 3.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="26" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 4.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="46" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 5.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender09.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dickes Fell" Mana="5" Range="0" RequiredLevel="2" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Zauber, erhöht die LP des Spielers um 64 und die Physische Abwehrkraft um 4  für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dickes Fell" Mana="12" Range="0" RequiredLevel="10" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Zauber, erhöht die LP des Spielers um 117 und die Physische Abwehrkraft um 7 für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dickes Fell" Mana="25" Range="0" RequiredLevel="20" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Zauber, erhöht die LP des Spielers um 244 und die Physische Abwehrkraft um 13 für 5 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender10.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Konzentration" Mana="40" Range="0" RequiredLevel="3" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Häufigkeit der erfolgreichen Angriffe des Spielers um 7% für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Konzentration" Mana="70" Range="0" RequiredLevel="17" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Häufigkeit der erfolgreichen Angriffe des Spielers um 14% für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Konzentration" Mana="100" Range="0" RequiredLevel="30" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Häufigkeit der erfolgreichen Angriffe des Spielers um 21% für 5 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender11.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schlag zu" Mana="40" Range="0" RequiredLevel="4" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Häufigkeit der Kritischen Angriffe 5% für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schlag zu" Mana="70" Range="0" RequiredLevel="18" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Häufigkeit der Kritischen Angriffe 10% für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schlag zu" Mana="100" Range="0" RequiredLevel="31" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Häufigkeit der Kritischen Angriffe 15% für 5 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender12.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Verspotten" Mana="10" Range="0" RequiredLevel="6" SkillPunkte="3" Stamina="0" Status="" Delay="20">
+          <Description>Diese Fähigkeit macht alle Monster in 3 Metern Umkreis von dem den Spieler aggressiv. Basierend auf ERH.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Verspotten" Mana="30" Range="0" RequiredLevel="32" SkillPunkte="3" Stamina="0" Status="" Delay="20">
+          <Description>Diese Fähigkeit macht alle Monster in 3 Metern Umkreis von dem den Spieler aggressiv.  Effektiver als Stufe 1.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Verspotten" Mana="50" Range="0" RequiredLevel="52" SkillPunkte="3" Stamina="0" Status="" Delay="20">
+          <Description>Diese Fähigkeit macht alle Monster in 4 Metern Umkreis von dem den Spieler aggressiv.  Effektiver als Stufe 2.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender13.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schwere Klatsche" Mana="0" Range="2" RequiredLevel="9" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, der den Gegner anhaltend quetscht und Schaden verursacht für 200 Punkte Schaden. Hält insgesamt für 30 Sekunden. Ein Erfolgreicher Angriff wird den Gegner reizen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schwere Klatsche" Mana="0" Range="2" RequiredLevel="19" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, der den Gegner anhaltend quetscht und Schaden verursacht für 350 Punkte Schaden. Hält insgesamt für 30 Sekunden. Ein Erfolgreicher Angriff wird den Gegner reizen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schwere Klatsche" Mana="0" Range="2" RequiredLevel="28" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, der den Gegner anhaltend quetscht und Schaden verursacht für 650 Punkte Schaden. Hält insgesamt für 30 Sekunden. Ein Erfolgreicher Angriff wird den Gegner reizen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender14.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Selbstentfluchung" Mana="45" Range="0" RequiredLevel="13" SkillPunkte="3" Stamina="0" Status="" Delay="90">
+          <Description>Zauber, entzaubert des Spielers Gift, Krankheit, Verzehrung, Angst, Unheil, Blind, und Pech.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Selbstentfluchung" Mana="95" Range="0" RequiredLevel="31" SkillPunkte="4" Stamina="0" Status="" Delay="90">
+          <Description>Zauber, der des Spielers Gift, Krankheit, Verzehrung, Angst, Unheil, Blind, Pech, Schlaf, Dunkelheit, Halt, und Verlangsamen entzaubert.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Selbstentfluchung" Mana="180" Range="0" RequiredLevel="52" SkillPunkte="4" Stamina="0" Status="" Delay="90">
+          <Description>Zauber, der den Spieler komplett entflucht.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender15.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Eigene Wunden verbinden" Mana="45" Range="0" RequiredLevel="13" SkillPunkte="3" Stamina="0" Status="" Delay="180">
+          <Description>Angriff, der die LP des Spielers erhöht, und zwar sofort um 291 plus seine WEI.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Eigene Wunden verbinden" Mana="90" Range="0" RequiredLevel="31" SkillPunkte="4" Stamina="0" Status="" Delay="180">
+          <Description>Angriff, der die LP des Spielers erhöht, und zwar sofort um 702 plus seine WEI.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Eigene Wunden verbinden" Mana="180" Range="0" RequiredLevel="52" SkillPunkte="4" Stamina="0" Status="" Delay="180">
+          <Description>Angriff, der die LP des Spielers erhöht, und zwar sofort um 1401 plus seine WEI.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender16.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schildstoß" Mana="0" Range="2" RequiredLevel="1" SkillPunkte="2" Stamina="0" Status="Sterbend" Delay="30">
+          <Description>Angriff, der die LP eines Gegners reduziert, und zwar um 5% zusätzlich wird er betäubt für 2 Sekunden wegen einen Schildstoß. Der Effekt ist auf einige Monster limitiert.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schildstoß" Mana="0" Range="2" RequiredLevel="12" SkillPunkte="3" Stamina="0" Status="Sterbend" Delay="30">
+          <Description>Angriff, der die LP eines Gegners reduziert, und zwar um 7% zusätzlich wird er betäubt für 2 Sekunden wegen einen Schildstoß. Der Effekt ist auf einige Monster limitiert.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schildstoß" Mana="0" Range="2" RequiredLevel="23" SkillPunkte="3" Stamina="0" Status="Sterbend" Delay="30">
+          <Description>Angriff, der die LP eines Gegners reduziert, und zwar um 10% zusätzlich wird er betäubt für 3 Sekunden wegen einen Schildstoß. Der Effekt ist auf einige Monster limitiert.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender17.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Fluch" Mana="5" Range="24" RequiredLevel="2" SkillPunkte="3" Stamina="0" Status="Verderben" Delay="0">
+          <Description>Angriff. Senkt die physische Angriffskraft des Gegners um 15 Punkte für 20 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Fluch" Mana="15" Range="24" RequiredLevel="15" SkillPunkte="3" Stamina="0" Status="Verderben" Delay="0">
+          <Description>Angriff. Verflucht alle Gegner innerhalb 6 Metern des Ziels und senkt deren physische Angriffskraft um 40 Punkte für 20 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Fluch" Mana="35" Range="24" RequiredLevel="36" SkillPunkte="3" Stamina="0" Status="Verderben" Delay="0">
+          <Description>Angriff. Verflucht alle Gegner innerhalb 16 Metern des Ziels und senkt deren physische Angriffskraft um 75 Punkte für 20 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender18.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Panik" Mana="5" Range="24" RequiredLevel="7" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Schwächungszauber. Senkt die gegnerische physische Verteidigung um 11 Punkte für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Panik" Mana="10" Range="24" RequiredLevel="27" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Schwächungszauber. Senkt die gegnerische physische Verteidigung um 45 Punkte für 60 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Panik" Mana="20" Range="24" RequiredLevel="38" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Schwächungszauber. Senkt die gegnerische physische Verteidigung um 75 Punkte für 60 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender19.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="2" Element="None" Name="Opferung" Mana="0" Range="24" RequiredLevel="8" SkillPunkte="3" Stamina="0" Status="" Delay="600">
+          <Description>Heilfähigkeit, regeneriert die SP eines Verbündeten auf kosten der gesamten Reserve des Spielers.</Description>
+        </Level>
+        <Level AoE="0" CastTime="2" Element="None" Name="Opferung" Mana="-1" Range="24" RequiredLevel="18" SkillPunkte="3" Stamina="0" Status="" Delay="600">
+          <Description>Heilfähigkeit, regeneriert die AP und MP eines Verbündeten auf kosten der gesamten Reserve des Spielers.</Description>
+        </Level>
+        <Level AoE="0" CastTime="2" Element="None" Name="Opferung" Mana="-1" Range="24" RequiredLevel="33" SkillPunkte="4" Stamina="0" Status="" Delay="1800">
+          <Description>Heilzauber, der regeneriert eines Freundes HP durch Aufopferung des Spielers gesamte Reserve von SP und MP.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender20.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Aufrüttelnder Schlag" Mana="10" Range="2" RequiredLevel="8" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, trifft mit Grundschaden und reizt Monster gegen den anvisierten Gegner. Je Höher die ERH desto Effektiver.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Aufrüttelnder Schlag" Mana="30" Range="2" RequiredLevel="27" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, trifft mit Grundschaden und reizt Monster gegen den anvisierten Gegner. Je Höher die ERH desto Effektiver.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Aufrüttelnder Schlag" Mana="50" Range="2" RequiredLevel="48" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, trifft mit Grundschaden und reizt Monster gegen den anvisierten Gegner. Je Höher die ERH desto Effektiver.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender21.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Bodenwelle" Mana="10" Range="2" RequiredLevel="9" SkillPunkte="3" Stamina="0" Status="" Delay="60">
+          <Description>Angriff, welcher schaden an Gegnern innerhalb von  6 Metern des Ziels anrichtet und verringert deren Laufgeschwindigkeit und Angriffsgeschwindigkeit um 1 Stufe für 5 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Bodenwelle" Mana="30" Range="2" RequiredLevel="29" SkillPunkte="3" Stamina="0" Status="" Delay="60">
+          <Description>Angriff, welcher schaden an Gegnern innerhalb von  10 Metern des Ziels für 36 Punkte Schaden  anrichtet und verringert deren Laufgeschwindigkeit um 1 Stufe und Angriffsgeschwindigkeit um 2 Stufen für 7 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Bodenwelle" Mana="40" Range="2" RequiredLevel="39" SkillPunkte="4" Stamina="0" Status="" Delay="60">
+          <Description>Angriff, welcher schaden an Gegnern innerhalb von  16 Metern des Ziels für 70 Punkte Schaden anrichtet und verringert deren Laufgeschwindigkeit und Angriffsgeschwindigkeit um 2 Stufen für 9 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender22.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Kontrollierte Energie" Mana="70" Range="0" RequiredLevel="11" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Verstärkungszauber, erhöht die AP des Spieles auf ein Maximum von 500 und hält 30 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Kontrollierte Energie" Mana="100" Range="0" RequiredLevel="21" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Verstärkungszauber, erhöht die AP des Spieles auf ein Maximum von 600 und hält 30 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Kontrollierte Energie" Mana="110" Range="0" RequiredLevel="40" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Verstärkungszauber, erhöht die AP des Spieles auf ein Maximum von 800 und hält 30 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender23.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Finsterer Schlag" Mana="20" Range="2" RequiredLevel="19" SkillPunkte="5" Stamina="0" Status="" Delay="30">
+          <Description>Angriff, der mit der physischen Angriffskraft zuschlägt und Dunkelheit mit einer 75% Erfolgschance bewirkt. Dunkelheit verhindert das das Ziel physische oder Fernkampfattacken für 6 Sekunden benutzt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Finsterer Schlag" Mana="35" Range="2" RequiredLevel="37" SkillPunkte="6" Stamina="0" Status="" Delay="30">
+          <Description>Angriff, der Dunkelheit auf alle Feinde innerhalb 6 Metern des Ziels mit einer 75% Erfolgschance wirkt. Dunkelheit verbietet physische oder Fernkampfattacken für 6 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Finsterer Schlag" Mana="55" Range="2" RequiredLevel="55" SkillPunkte="7" Stamina="0" Status="" Delay="30">
+          <Description>Angriff, der Dunkelheit auf alle Gegner innerhalb 16 Metern des Ziels mit einer 75% Erfolgschance Zaubert. Dunkelheit verhindert physische und Fernkampfattacken für 12 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender24.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Aufhaltender Schlag" Mana="25" Range="2" RequiredLevel="20" SkillPunkte="5" Stamina="0" Status="Pause" Delay="30">
+          <Description>Angriff, der den Gegner durch einen Angriff auf den Unterkörper stoppt. Er verursacht die Punkte Schaden, die der physischen Angriffskraft entspricht und hat eine 75% Erfolgschance. Hält 6 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Aufhaltender Schlag" Mana="30" Range="2" RequiredLevel="30" SkillPunkte="6" Stamina="0" Status="Pause" Delay="30">
+          <Description>Angriff, der stoppend auf jeden Gegner innerhalb 6 Metern des Ziels wirkt indem er die Beine angreift. Er verursacht Punkte Schaden, die der physischen Angriffskraft entspricht und hat eine 75%  Erfolgschance. Hält 9 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Aufhaltender Schlag" Mana="25" Range="2" RequiredLevel="41" SkillPunkte="7" Stamina="0" Status="Pause" Delay="30">
+          <Description>Angriff, der stoppend auf jeden Gegner innerhalb 16 Metern des Ziels wirkt indem er die Beine angreift. Er verursacht Punkte Schaden, die der physischen Angriffskraft entspricht und hat eine 75%  Erfolgschance. Hält 12 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender25.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Stiller Schlag" Mana="25" Range="2" RequiredLevel="24" SkillPunkte="5" Stamina="0" Status="Stille" Delay="30">
+          <Description>Angriff, der mit der physischen Angriffskraft zuschlägt und verstummt mit einer 75% Erfolgschance. Verstummte Ziele können für 6 Sekunden nicht Zaubern.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Stiller Schlag" Mana="35" Range="2" RequiredLevel="34" SkillPunkte="6" Stamina="0" Status="Stille" Delay="30">
+          <Description>Angriff, der alle Gegner innerhalb 6 Metern des Ziels mit einer 75% Erfolgschance verstummt. Verstummte Gegner können für 9 Sekunden nicht Zaubern.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Stiller Schlag" Mana="45" Range="2" RequiredLevel="45" SkillPunkte="7" Stamina="0" Status="Stille" Delay="30">
+          <Description>Angriff, der alle Gegner innerhalb 16 Metern des Ziels mit einer 75% Erfolgschance verstummt. Verstummte Gegner können für 12 Sekunden nicht Zaubern.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender26.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Verlangsamen" Mana="100" Range="2" RequiredLevel="33" SkillPunkte="4" Stamina="0" Status="Langsam" Delay="60">
+          <Description>Schwächungszauber, der die Bewegungsrate des Gegners und Angriffsgeschwindigkeit für 9 Sekunden senkt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Verlangsamen" Mana="140" Range="2" RequiredLevel="43" SkillPunkte="4" Stamina="0" Status="Langsam" Delay="60">
+          <Description>Schwächungszauber, der die Bewegungsrate des Gegners und Angriffsgeschwindigkeit innerhalb 8 Metern des Ziels für 12 Sekunden senkt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Verlangsamen" Mana="190" Range="2" RequiredLevel="53" SkillPunkte="5" Stamina="0" Status="Langsam" Delay="60">
+          <Description>Schwächungszauber, der die Bewegungsrate des Gegners und Angriffsgeschwindigkeit innerhalb 10 Metern des Ziels für 15 Sekunden senkt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender27.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Reichweite der Spinne" Mana="105" Range="2" RequiredLevel="34" SkillPunkte="4" Stamina="0" Status="" Delay="60">
+          <Description>Schwächungszauber, bewirkt das verringern der Ausweichrate des Gegners innerhalb 6 Metern des Ziels um 15% für 15 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Reichweite der Spinne" Mana="145" Range="2" RequiredLevel="44" SkillPunkte="4" Stamina="0" Status="" Delay="60">
+          <Description>Schwächungszauber, bewirkt das verringern der Ausweichrate des Gegners innerhalb 8 Metern des Ziels um 15% für 20 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Reichweite der Spinne" Mana="210" Range="2" RequiredLevel="57" SkillPunkte="5" Stamina="0" Status="" Delay="60">
+          <Description>Schwächungszauber, bewirkt das verringern der Ausweichrate des Gegners innerhalb 10 Metern des Ziels um 15% für 30 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender28.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Taktische Formation" Mana="75" Range="0" RequiredLevel="7" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Dieser Spruch steigert physische Verteidigungskraft Aller Gruppenmitglieder innerhalb 100 Metern um den Spieler um 14 Punkte für 10 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Taktische Formation" Mana="145" Range="0" RequiredLevel="24" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Dieser Spruch steigert physische Verteidigungskraft Aller Gruppenmitglieder innerhalb 100 Metern um den Spieler um 26 Punkte für 10 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Taktische Formation" Mana="350" Range="0" RequiredLevel="52" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Dieser Spruch steigert physische Verteidigungskraft Aller Gruppenmitglieder innerhalb 100 Metern um den Spieler um 42 Punkte für 10 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender29.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Tänzeln" Mana="0" Range="0" RequiredLevel="17" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Ausweichrate des Spielers Gegen physische Nah- und Fernkampfattacken um 50% für 30 Sekunden. Wirkt automatisch bei LP unter 10%; wieder verfügbar nach 3 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Tänzeln" Mana="0" Range="0" RequiredLevel="29" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Ausweichrate des Spielers Gegen physische Nah- und Fernkampfattacken um 60% für 30 Sekunden. Wirkt automatisch bei LP unter 15%; wieder verfügbar nach 3 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Tänzeln" Mana="0" Range="0" RequiredLevel="50" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Ausweichrate des Spielers Gegen physische Nah- und Fernkampfattacken um 70% für 30 Sekunden. Wirkt automatisch bei LP unter 20%; wieder verfügbar nach 3 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender30.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Unangreifbar" Mana="85" Range="0" RequiredLevel="22" SkillPunkte="3" Stamina="0" Status="" Delay="300">
+          <Description>Fähigkeit der absoluten Macht. schützt gegen alle Angriffe für 7 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Unangreifbar" Mana="163" Range="0" RequiredLevel="42" SkillPunkte="4" Stamina="0" Status="" Delay="300">
+          <Description>Fähigkeit der absoluten Macht. schützt gegen alle Angriffe für 10 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Unangreifbar" Mana="230" Range="0" RequiredLevel="54" SkillPunkte="5" Stamina="0" Status="" Delay="300">
+          <Description>Fähigkeit der absoluten Macht. schützt gegen alle Angriffe für 13 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender31.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schildwall" Mana="45" Range="0" RequiredLevel="23" SkillPunkte="4" Stamina="0" Status="" Delay="900">
+          <Description>Angriff, der des Spielers physische Verteidigungskraft um 200 erhöht und verringert die physische Angriffskraft um 500 für 20 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schildwall" Mana="75" Range="0" RequiredLevel="32" SkillPunkte="5" Stamina="0" Status="" Delay="900">
+          <Description>Angriff, der des Spielers physische Verteidigungskraft um 350 erhöht und die physische Angriffskraft um 500 verringert für 20 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schildwall" Mana="110" Range="0" RequiredLevel="43" SkillPunkte="6" Stamina="0" Status="" Delay="900">
+          <Description>Angriff, Erhöht des Spielers physische Verteidigungskraft um 500, verringert die physische Angriffskraft um 500 für 20 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender32.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Lebensentzug" Mana="95" Range="2" RequiredLevel="27" SkillPunkte="6" Stamina="0" Status="" Delay="600">
+          <Description>Angriff, der das Ziel verwundet für 337 Punkte von Punkte Schaden mit einer 75% Erfolgschance und entzieht LP in Höhe des verursachten Schadens.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Lebensentzug" Mana="0" Range="2" RequiredLevel="37" SkillPunkte="7" Stamina="0" Status="" Delay="600">
+          <Description>Angriff, der das Ziel verwundet für 470 Punkte von Punkte Schaden mit einer 75% Erfolgschance und entzieht LP in Höhe des verursachten Schadens.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Lebensentzug" Mana="0" Range="2" RequiredLevel="47" SkillPunkte="8" Stamina="0" Status="" Delay="600">
+          <Description>Angriff, der das Ziel verwundet für 693 Punkte von Punkte Schaden mit einer 75% Erfolgschance und entzieht LP in Höhe des verursachten Schadens.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender33.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dämonen Schlag" Mana="52" Range="5" RequiredLevel="36" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Angriff  mit physischer Angriffskraft plus 101 aus 5 Metern Entfernung.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dämonen Schlag" Mana="63" Range="5" RequiredLevel="46" SkillPunkte="6" Stamina="0" Status="" Delay="0">
+          <Description>Angriff  mit physischer Angriffskraft plus 168 aus 5 Metern Entfernung.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dämonen Schlag" Mana="71" Range="5" RequiredLevel="56" SkillPunkte="7" Stamina="0" Status="" Delay="0">
+          <Description>Angriff  mit physischer Angriffskraft plus 280 aus 5 Metern Entfernung.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender34.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Riposte" Mana="150" Range="0" RequiredLevel="38" SkillPunkte="7" Stamina="0" Status="" Delay="900">
+          <Description>Angriff, der physischen Schaden der erhalten wurde für 8 Sekunden reflektiert. Keine Wirkung auf Monster.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Riposte" Mana="195" Range="0" RequiredLevel="48" SkillPunkte="8" Stamina="0" Status="" Delay="900">
+          <Description>Angriff, der physischen Schaden der erhalten wurde für 10 Sekunden reflektiert. Keine Wirkung auf Monster.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Riposte" Mana="255" Range="0" RequiredLevel="58" SkillPunkte="9" Stamina="0" Status="" Delay="900">
+          <Description>Angriff, der physischen Schaden der erhalten wurde für 15 Sekunden reflektiert. Keine Wirkung auf Monster.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender35.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Stärke der Wacht" Mana="330" Range="0" RequiredLevel="49" SkillPunkte="8" Stamina="0" Status="" Delay="900">
+          <Description>Angriff. Beschützt alle Gruppenmitglieder innerhalb 40 Metern um den Spieler gegen jeglichen Schaden für 10 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Stärke der Wacht" Mana="430" Range="0" RequiredLevel="59" SkillPunkte="9" Stamina="0" Status="" Delay="900">
+          <Description>Angriff. Beschützt alle Gruppenmitglieder innerhalb 40 Metern um den Spieler gegen jeglichen Schaden für 20 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.defender36.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schild des Armus" Mana="470" Range="0" RequiredLevel="60" SkillPunkte="9" Stamina="0" Status="" Delay="480">
+          <Description>Mächtiger Angriff, der alle Gruppenmitgliedern innerhalb von 15 Metern um den Spieler schützt. Reflektiert für 40 Sekunden jeglichen Schaden. . Der Effekt ist auf einige Monster limitiert</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+  </Skills>
+</SkillList>

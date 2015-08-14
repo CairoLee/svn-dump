@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Label id="_BuildingsListTip_Label1" top="9" left="13" right="60" fontWeight="bold" color="#00ffffff" textAlign="center" text="_text"/>
+	<mx:HBox id="costBox" height="26" verticalAlign="middle" left="10" right="50" bottom="8" paddingLeft="5" paddingRight="5">
+		<mx:Label id="costsLabel" fontWeight="bold" color="#00ffffff" textAlign="left"/>
+		<mx:HBox id="costsList"/>
+	</mx:HBox>
+	<mx:CustomText id="description" left="14" right="56" top="26" bottom="43" color="#00ffffff"/>
+	<mx:VBox right="8" top="10" bottom="10" horizontalAlign="center" verticalAlign="middle">
+		<mx:VBox id="inputList"/>
+		<mx:Image id="productionArrow" source="{gAssetManager.GetBitmap("ProductionArrowDown")}"/>
+		<mx:Image id="outputIcon" height="25"/>
+	</mx:VBox>
+
+</mx:Canvas>

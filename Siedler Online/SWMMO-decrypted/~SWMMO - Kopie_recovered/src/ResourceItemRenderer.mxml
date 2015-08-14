@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" height="26" verticalAlign="middle" creationComplete="" toolTipCreate="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Image id="resourceIcon" null="26" height="25"/>
+	<mx:Label id="amountLabel" fontWeight="bold"/>
+
+</mx:HBox>

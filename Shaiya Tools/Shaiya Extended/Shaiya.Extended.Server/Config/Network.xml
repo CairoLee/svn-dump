@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<PrivateSettingFileSerializeable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileName>Network.xml</FileName>
+  <FileType>Network</FileType>
+  <Settings>
+    <Setting Name="Server IP" Value="127.0.0.1" />
+    <Setting Name="Server Port" Value="30800" />
+    <Setting Name="DB Server" Value="127.0.0.1" />
+    <Setting Name="DB Port" Value="3306" />
+    <Setting Name="DB User" Value="shaiya.extended" />
+    <Setting Name="DB Password" Value="Exkx5gu625" />
+    <Setting Name="DB Database" Value="shaiya_extended" />
+  </Settings>
+</PrivateSettingFileSerializeable>

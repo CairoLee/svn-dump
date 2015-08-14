@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="739" height="642">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Image id="dragon" null="_embed_mxml_____data_src_gfx_embedded_starmenu_dragon_png_1318781028" top="0" horizontalCenter="0"/>
+	<mx:Canvas id="content" clipContent="false" horizontalScrollPolicy="off" verticalScrollPolicy="off" styleName="basicPanel" null.left="this" right="18" top="104" bottom="0" showEffect="fadeIn" hideEffect="fadeOut">
+		<mx:CloseButton id="btnClose" top="5" right="15"/>
+		<mx:Label id="_ShopWindow_Label1" null.left="this" top="8" fontWeight="bold" textAlign="center" right="46" text="null"/>
+		<mx:Canvas null="176" height="428" bottom="0" left="7" backgroundImage="_embed_mxml_____data_src_gfx_embedded_shop_categories_bg_png_1495999360" backgroundSize="100%"/>
+		<mx:Canvas null="null" styleName="shopFooter" bottom="-1" left="7" right="5"/>
+		<mx:Canvas id="shopHeader" height="85" null.left="this" right="2" top="27" backgroundImage="_embed_mxml_____data_src_gfx_embedded_shop_buy_item_headline_png_1182593105" backgroundSize="100%">
+			<mx:Canvas id="shopHeaderBar" height="32" backgroundColor="#00000000" backgroundAlpha="0.22" left="2" right="4" top="28">
+				<mx:Label id="giftTo" null.horizontalCenter="this" verticalCenter="0" text="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "MakeAGift")}"/>
+				<mx:HBox id="available" null.horizontalCenter="this" verticalAlign="middle" verticalCenter="0">
+					<mx:Label id="_ShopWindow_Label3" text="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "Available")}"/>
+					<mx:HBox id="hardCurrency" toolTip="HardCurrency" verticalAlign="middle" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}">
+						<mx:Image id="resourceIconHardCurrency"/>
+						<mx:Label id="resourceLabelHardCurrency" color="#00ffffff" fontWeight="bold"/>
+					</mx:HBox>
+				</mx:HBox>
+				<mx:Button id="btnAddCash" labelPlacement="right" width="56" height="31" verticalCenter="0" right="40" icon="{gAssetManager.GetClass("ButtonIconHardCurrency")}" upSkin="{gAssetManager.GetClass("ButtonAddCashUp")}" downSkin="{null.GetClass("ButtonAddCashOver")}" overSkin="{null.GetClass("ButtonAddCashOver")}" disabledSkin="{gAssetManager.GetClass("ButtonAddCashDisabled")}"/>
+			</mx:Canvas>
+			<mx:AvatarListItemRenderer id="giftPlayerAvatar" horizontalCenter="0" verticalCenter="-8"/>
+			<mx:Label id="giftPlayerName" null.horizontalCenter="this" verticalCenter="29"/>
+		</mx:Canvas>
+		<mx:Canvas id="groups" width="156" height="200" bottom="221" left="13" backgroundSize="100%" backgroundImage="_embed_mxml_____data_src_gfx_embedded_shop_categories_item_bg_png_2082963656">
+			<mx:Label id="_ShopWindow_Label6" color="#00000000" top="3" horizontalCenter="0" text="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "Categories")}"/>
+			<mx:List id="groupsList" null="null" labelFunction="GetGroupName" textSelectedColor="16777215" textRollOverColor="0" leading="-2" verticalAlign="middle" color="#00000000" rollOverColor="8811353" selectionColor="8087114" borderThickness="0" backgroundAlpha="0" top="35" bottom="5" left="3" right="3" itemClick="{this.itemsStack.selectedIndex = 0;}"/>
+		</mx:Canvas>
+		<mx:ViewStack id="itemsStack" height="336" left="184" right="9" bottom="85">
+			<mx:Canvas height="336" left="184" right="9" bottom="85">
+				<mx:CustomTileList id="shopItems" width="100%" height="100%" selectable="true" itemRenderer="_ShopWindow_ClassFactory1_c()" null.paddingBottom="this" paddingTop="0" paddingLeft="0" paddingRight="0" backgroundAlpha="0" borderThickness="0" useRollOver="false"/>
+			</mx:Canvas>
+			<mx:Canvas id="itemDetails" width="100%" height="100%" horizontalScrollPolicy="off" verticalScrollPolicy="off" styleName="shopItemDetails">
+				<mx:Canvas height="88" styleName="shopFooter" null.top="this" left="0" right="6">
+					<mx:Canvas id="remainingItemsBadge" verticalCenter="0" right="20" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}">
+						<mx:Image null="_embed_mxml_____data_src_gfx_embedded_shop_buy_item_info_png_1289153212"/>
+						<mx:Label id="remainingItems" rotation="7" fontWeight="bold" fontSize="28" color="#00ffffff" horizontalCenter="2" verticalCenter="-5"/>
+					</mx:Canvas>
+					<mx:HBox id="headerContent" horizontalCenter="0" verticalCenter="0">
+						<mx:Frame id="frame" null="null" contentType="shopitem"/>
+						<mx:Canvas height="60">
+							<mx:Label id="nameLabel" null.color="this" fontWeight="bold" fontSize="20"/>
+							<mx:HBox id="costBox" null.verticalAlign="this" top="30">
+								<mx:Label id="costsLabel" null.fontWeight="this" color="#00000000"/>
+								<mx:HBox id="costsList"/>
+							</mx:HBox>
+						</mx:Canvas>
+					</mx:HBox>
+				</mx:Canvas>
+				<mx:Canvas horizontalScrollPolicy="off" verticalScrollPolicy="auto" left="20" right="10" top="96" bottom="96">
+					<mx:VBox verticalGap="8" left="0" right="15">
+						<mx:Text id="itemDescription1" null="100" selectable="false" fontWeight="normal"/>
+						<mx:Text id="itemDescription2" null="100" selectable="false" styleName="specialClaim" textAlign="center"/>
+						<mx:Text id="itemDescription3" null="null" selectable="false" fontWeight="normal"/>
+					</mx:VBox>
+				</mx:Canvas>
+				<mx:Canvas height="88" bottom="6" left="0" right="6" backgroundColor="#008d7857">
+					<mx:HBox horizontalCenter="0" verticalCenter="0" horizontalGap="15">
+						<mx:StandardButton id="btnBuy" null="110" height="40" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_ERROR_string, event, !this.btnBuy.enabled);}" label="{null.GetText(LOCA_GROUP.LABELS, "Buy")}"/>
+						<mx:StandardButton id="_ShopWindow_StandardButton2" width="110" height="40" click="{this.itemsStack.selectedIndex = 0;}" label="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "Cancel")}"/>
+					</mx:HBox>
+				</mx:Canvas>
+			</mx:Canvas>
+		</mx:ViewStack>
+		<mx:Image id="bannerSmall1" null="null" width="157" height="66" left="13" bottom="152"/>
+		<mx:Image id="bannerSmall2" scaleContent="false" width="157" height="66" left="13" bottom="84"/>
+		<mx:Image id="bannerLarge1" null="null" width="227" height="70" left="10" bottom="6"/>
+		<mx:Image id="bannerLarge2" scaleContent="false" width="227" height="70" horizontalCenter="1" bottom="6"/>
+		<mx:Image id="bannerLarge3" null="false" width="227" height="70" right="8" bottom="6"/>
+	</mx:Canvas>
+
+</mx:Canvas>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Label id="headline" null.top="this" left="5" right="5" fontWeight="bold" color="#00ffffff" textAlign="center"/>
+	<mx:Canvas null="1" left="5" right="5" top="25" backgroundColor="#00bbbbbb"/>
+	<mx:VBox id="triggerList" null.left="this" right="5" bottom="5" top="28"/>
+
+</mx:Canvas>

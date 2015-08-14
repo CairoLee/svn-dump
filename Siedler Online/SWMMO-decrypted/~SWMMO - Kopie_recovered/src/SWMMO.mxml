@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" _embed_css_____data_src_gfx_embedded_quest_quest_ornamental1_png_1017257770="SWMMO__embed_css_____data_src_gfx_embedded_quest_quest_ornamental1_png_1017257770" layout="absolute" applicationComplete="" creationComplete="" enterFrame="" click="" mouseDown="" mouseUp="" mouseMove="" mouseOut="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas id="myCanvas" null="0" y="0" width="100%" height="100%"/>
+
+	<mx:Style>/* //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+ */</mx:Style>
+</mx:Application>

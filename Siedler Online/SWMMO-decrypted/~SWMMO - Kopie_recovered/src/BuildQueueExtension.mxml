@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="122" height="50" toolTipCreate="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas id="background" width="100%" height="100%" backgroundSize="100%" backgroundImage="{null.GetClass(null)}">
+		<mx:StandardButton id="btnBuyTempSlot" width="65" height="25" enabled="true" verticalCenter="-4" horizontalCenter="0" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SHOP_ITEM_WITH_COSTS_string, event, cShopItem.GetShopItem(8007));}" icon="{null.GetClass(null)}"/>
+		<mx:Button id="resizeWindow" null="chatScaleButton" bottom="3" horizontalCenter="-2" mouseDown="{this.StartResizing(event);}"/>
+	</mx:Canvas>
+
+</mx:Canvas>

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JabberTest", "JabberTest.csproj", "{FD5A155A-011F-412C-9ECD-49A9BE43A823}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodLesZ.Library.XMPP", "..\..\GodLesZ\GodLesZ.Library.XMPP\GodLesZ.Library.XMPP.csproj", "{91EA0D0B-D3BA-497F-AFEB-2CAD59DEBA0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodLesZ.Library", "..\..\GodLesZ\GodLesZ.Library\GodLesZ.Library.csproj", "{22086451-A9A2-414C-8A81-5BE02FC5C8EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD5A155A-011F-412C-9ECD-49A9BE43A823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD5A155A-011F-412C-9ECD-49A9BE43A823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD5A155A-011F-412C-9ECD-49A9BE43A823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD5A155A-011F-412C-9ECD-49A9BE43A823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91EA0D0B-D3BA-497F-AFEB-2CAD59DEBA0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91EA0D0B-D3BA-497F-AFEB-2CAD59DEBA0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91EA0D0B-D3BA-497F-AFEB-2CAD59DEBA0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91EA0D0B-D3BA-497F-AFEB-2CAD59DEBA0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22086451-A9A2-414C-8A81-5BE02FC5C8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22086451-A9A2-414C-8A81-5BE02FC5C8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22086451-A9A2-414C-8A81-5BE02FC5C8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22086451-A9A2-414C-8A81-5BE02FC5C8EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

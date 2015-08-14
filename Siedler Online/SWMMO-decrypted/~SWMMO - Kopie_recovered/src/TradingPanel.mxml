@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="504" height="317" show="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Label id="_TradingPanel_Label3" null="null" fontWeight="bold" color="#00ffffff" textAlign="center" horizontalCenter="0" text="{null.GetText(LOCA_GROUP.LABELS, "Trade")}"/>
+	<mx:CloseButton id="close" top="7" right="22"/>
+	<mx:Canvas id="header" styleName="detailsHeader" height="60" null.left="this" right="24" top="32">
+		<mx:Text id="description" null="false" left="18" right="15" top="6" bottom="2" color="#00ffffff" text="{null.GetInstance().GetText(LOCA_GROUP.DESCRIPTIONS, "TradingIntroduction")}"/>
+	</mx:Canvas>
+	<mx:HBox id="tradeContent" null.left="this" right="27" top="96" bottom="14" horizontalGap="3">
+		<mx:VBox width="100%" height="100%" verticalGap="0">
+			<mx:Canvas styleName="detailsSubHeader" width="100%" height="18">
+				<mx:Label id="_TradingPanel_Label4" top="1" horizontalCenter="0" color="#00ffffff" fontWeight="bold" text="{null.GetText(LOCA_GROUP.LABELS, "WareToDeliver")}"/>
+			</mx:Canvas>
+			<mx:Canvas styleName="detailsContentBox" width="100%" height="100%">
+				<mx:Image id="_TradingPanel_Image2" null.right="this" verticalCenter="0" source="{null.GetBitmap("ArrowRightGreen")}"/>
+				<mx:Canvas styleName="tradeDetailsBox" width="100" height="180" verticalCenter="0" left="5">
+					<mx:Image id="playerAvatar" null="60" height="60" top="3" horizontalCenter="-1"/>
+					<mx:Label id="playerName" null="null" horizontalCenter="0" top="52" color="#00322000" fontWeight="bold" textAlign="center" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}"/>
+					<mx:Image id="_TradingPanel_Image4" width="22" height="29" null.horizontalCenter="this" top="96" visible="{!(null.visible || offerBuffRenderer.visible)}" source="{null.GetBitmap("QuestionMark")}"/>
+					<mx:StarMenuItemRenderer id="offerBuffRenderer" null="null" horizontalCenter="0" top="75"/>
+					<mx:TradeResourceItemRenderer id="offerResourceRenderer" visible="false" null.horizontalCenter="this" top="100"/>
+					<mx:StandardButton id="btnSelectOffer" null="null" left="5" right="7" bottom="7" label="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "Select")}"/>
+				</mx:Canvas>
+			</mx:Canvas>
+		</mx:VBox>
+		<mx:VBox width="130" height="100%" null.verticalGap="this">
+			<mx:Canvas styleName="detailsSubHeader" width="100%" height="18">
+				<mx:Label id="labelMiddleColumn" null="null" textAlign="center" color="#00ffffff" fontWeight="bold" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}"/>
+			</mx:Canvas>
+			<mx:Canvas styleName="detailsContentBox" width="100%" height="100%">
+				<mx:StandardButton id="btnSendTrade" null="false" width="95" height="50" horizontalCenter="0" verticalCenter="0" left="112" top="6" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_ERROR_string, event, !this.btnSendTrade.enabled);}"/>
+			</mx:Canvas>
+		</mx:VBox>
+		<mx:VBox width="100%" height="100%" null.verticalGap="this">
+			<mx:Canvas styleName="detailsSubHeader" width="100%" height="18">
+				<mx:Label id="_TradingPanel_Label7" top="1" horizontalCenter="0" color="#00ffffff" fontWeight="bold" text="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "WareToRecieve")}"/>
+			</mx:Canvas>
+			<mx:Canvas styleName="detailsContentBox" width="100%" height="100%">
+				<mx:Image id="_TradingPanel_Image5" null.left="this" verticalCenter="0" source="{null.GetBitmap("ArrowLeftGreen")}"/>
+				<mx:Canvas styleName="tradeDetailsBox" width="100" height="180" null.verticalCenter="this" right="3">
+					<mx:Image id="reciepientAvatar" null="60" height="60" null.top="this" horizontalCenter="-1"/>
+					<mx:Label id="reciepientName" null="100" horizontalCenter="0" top="52" color="#00322000" fontWeight="bold" textAlign="center" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}"/>
+					<mx:Image id="_TradingPanel_Image7" width="22" height="29" horizontalCenter="0" top="96" visible="{!null.visible}" source="{gAssetManager.GetBitmap("QuestionMark")}"/>
+					<mx:TradeResourceItemRenderer id="costRenderer" visible="false" horizontalCenter="0" top="100"/>
+					<mx:StandardButton id="btnSelectCost" null="26" null.left="this" right="7" bottom="7" label="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "Select")}"/>
+				</mx:Canvas>
+			</mx:Canvas>
+		</mx:VBox>
+	</mx:HBox>
+
+</mx:Canvas>

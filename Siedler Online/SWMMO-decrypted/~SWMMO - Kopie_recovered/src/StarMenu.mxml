@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="426" height="359">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Image id="dragon" null="null" top="0" horizontalCenter="0"/>
+	<mx:Canvas id="background" null.backgroundSize="this" backgroundImage="_embed_mxml__171358266" left="18" right="18" top="104" bottom="0" showEffect="fadeIn" hideEffect="fadeOut">
+		<mx:CloseButton id="btnClose" null.top="this" right="1"/>
+		<mx:CustomTileList id="itemList" null="null._StarMenu_ClassFactory1_c()" itemRenderer="_StarMenu_ClassFactory2_c()" rowHeight="70" columnWidth="56" null.useRollOver="this" borderThickness="0" backgroundAlpha="0" paddingLeft="0" paddingRight="0" paddingTop="0" paddingBottom="0" left="11" right="24" top="13" bottom="32"/>
+		<mx:CustomToggleButtonBar id="buttonBar" width="380" buttonStyleName="tab" selectedButtonTextStyleName="tabSelected" bottom="0" left="5"/>
+	</mx:Canvas>
+
+</mx:Canvas>

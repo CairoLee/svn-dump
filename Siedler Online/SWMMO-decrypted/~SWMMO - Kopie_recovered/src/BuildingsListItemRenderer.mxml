@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="65" height="58" rollOver="" rollOut="" toolTipCreate="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Image id="_BuildingsListItemRenderer_Image1" null="_embed_mxml_____data_src_gfx_embedded_buildingmenu_bg_item_png_105768027" width="100%" height="100%" visible="{!null.highlighted}"/>
+	<mx:Image id="_BuildingsListItemRenderer_Image2" null="null" width="100%" height="100%" visible="{dataProxy.highlighted}"/>
+	<mx:Image id="_BuildingsListItemRenderer_Image3" null="59" height="51" source="{dataProxy.bitmap}"/>
+
+</mx:Canvas>

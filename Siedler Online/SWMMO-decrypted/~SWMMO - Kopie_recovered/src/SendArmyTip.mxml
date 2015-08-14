@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Label id="headline" null.top="this" left="5" right="5" fontWeight="bold" color="#00ffffff"/>
+	<mx:CustomText id="description" color="#00ffffff" left="5" right="5" top="26"/>
+	<mx:TileList id="armyList" null="3" columnWidth="70" rowHeight="40" width="210" height="120" itemRenderer="_SendArmyTip_ClassFactory1_c()" top="68" bottom="5" left="5" right="5" paddingTop="0" paddingBottom="0" paddingLeft="0" paddingRight="0" backgroundAlpha="0" borderThickness="0"/>
+
+</mx:Canvas>

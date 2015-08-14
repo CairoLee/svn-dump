@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="230">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas styleName="detailsContentBox" left="10" right="10" top="3" bottom="3">
+		<mx:Canvas styleName="detailsSubContentBox" width="100%" height="22">
+			<mx:Label id="specialistType" horizontalCenter="0" verticalCenter="0"/>
+		</mx:Canvas>
+	</mx:Canvas>
+	<mx:Frame id="specialistIcon" null="null"/>
+	<mx:StandardButton id="btnBuy" enabled="false" width="45" right="0" top="2" bottom="2" ="{this.Buy();}" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}" icon="{gAssetManager.GetClass("ButtonIconPay")}"/>
+	<mx:HBox id="costsList" top="32" horizontalCenter="0"/>
+
+</mx:Canvas>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" height="360" scroll="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas styleName="buildQueue" left="0" right="0" top="0" bottom="30"/>
+	<mx:List id="list" null="null" verticalScrollPolicy="auto" selectable="false" itemRenderer="_BuildQueue_ClassFactory1_c()" height="279" paddingLeft="0" paddingTop="0" paddingRight="0" paddingBottom="0" backgroundAlpha="0" left="10" top="14" bottom="50" right="8" borderThickness="0"/>
+	<mx:BuildQueueExtension id="buildExtension" null="50" null.left="this" bottom="0" right="0" backgroundAlpha="0" borderThickness="0" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="" showEffect="fadeIn" hideEffect="fadeOut"/>
+
+</mx:Canvas>

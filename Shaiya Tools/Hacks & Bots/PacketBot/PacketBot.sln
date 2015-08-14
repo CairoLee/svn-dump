@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PacketBotDll", "PacketBotDll\PacketBotDll.vcproj", "{659151C2-5FF2-4D6A-ABBA-D92EA70DCF4B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{473EE8A0-4F58-45E6-946F-4FD11DA610D9} = {473EE8A0-4F58-45E6-946F-4FD11DA610D9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Detours", "Detours\Detours.vcproj", "{473EE8A0-4F58-45E6-946F-4FD11DA610D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE9C4E47-6AC7-4671-A57E-B92C31B994B7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CE9C4E47-6AC7-4671-A57E-B92C31B994B7}.Debug|Win32.Build.0 = Debug|Win32
+		{CE9C4E47-6AC7-4671-A57E-B92C31B994B7}.Release|Win32.ActiveCfg = Release|Win32
+		{CE9C4E47-6AC7-4671-A57E-B92C31B994B7}.Release|Win32.Build.0 = Release|Win32
+		{659151C2-5FF2-4D6A-ABBA-D92EA70DCF4B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{659151C2-5FF2-4D6A-ABBA-D92EA70DCF4B}.Debug|Win32.Build.0 = Debug|Win32
+		{659151C2-5FF2-4D6A-ABBA-D92EA70DCF4B}.Release|Win32.ActiveCfg = Release|Win32
+		{659151C2-5FF2-4D6A-ABBA-D92EA70DCF4B}.Release|Win32.Build.0 = Release|Win32
+		{473EE8A0-4F58-45E6-946F-4FD11DA610D9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{473EE8A0-4F58-45E6-946F-4FD11DA610D9}.Debug|Win32.Build.0 = Debug|Win32
+		{473EE8A0-4F58-45E6-946F-4FD11DA610D9}.Release|Win32.ActiveCfg = Release|Win32
+		{473EE8A0-4F58-45E6-946F-4FD11DA610D9}.Release|Win32.Build.0 = Release|Win32
+		{29562170-FD30-4650-AAB3-620E4833BB64}.Debug|Win32.ActiveCfg = Debug|Win32
+		{29562170-FD30-4650-AAB3-620E4833BB64}.Debug|Win32.Build.0 = Debug|Win32
+		{29562170-FD30-4650-AAB3-620E4833BB64}.Release|Win32.ActiveCfg = Release|Win32
+		{29562170-FD30-4650-AAB3-620E4833BB64}.Release|Win32.Build.0 = Release|Win32
+		{3B3D1A82-61D3-4177-B649-A640CBEE4ADB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3B3D1A82-61D3-4177-B649-A640CBEE4ADB}.Debug|Win32.Build.0 = Debug|Win32
+		{3B3D1A82-61D3-4177-B649-A640CBEE4ADB}.Release|Win32.ActiveCfg = Release|Win32
+		{3B3D1A82-61D3-4177-B649-A640CBEE4ADB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

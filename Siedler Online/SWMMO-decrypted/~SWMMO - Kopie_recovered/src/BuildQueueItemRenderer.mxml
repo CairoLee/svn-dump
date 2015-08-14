@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="82" height="93" toolTipCreate="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas id="background" null="100" height="100%" backgroundSize="100%" backgroundImage="{dataProxy.itemBackground}"/>
+	<mx:Image id="buildingIcon" scaleContent="false" top="5" bottom="30" horizontalAlign="center" verticalAlign="middle" left="6" right="8" click="{this.ScrollToPosition();}" source="{dataProxy.bitmap}"/>
+	<mx:Image id="resourceMissing" scaleContent="false" null.top="this" bottom="37" horizontalAlign="left" verticalAlign="top" left="6" right="17" click="{this.ScrollToPosition();}" source="{null.GetBitmap(null)}"/>
+	<mx:Label id="progressLabel" null="100" null.bottom="this" textAlign="center" fontWeight="normal" color="#00ffffff" visible="null == 0"/>
+	<mx:HBox id="buttonBar" width="100%" horizontalCenter="0" bottom="5" horizontalGap="0" horizontalAlign="center" paddingTop="0" paddingBottom="0">
+		<mx:Button id="btnUp" null="25" height="23" click="{this.dispatchEvent(new ListEvent(cBuildQueue.MOVE_UP, true, false, 0, (data as cBuilding).GetBuildingGrid()));}" upSkin="{null.GetClass("ArrowUp")}" downSkin="{null.GetClass(null)}" overSkin="{gAssetManager.GetClass("ArrowUpHighlight")}" disabledSkin="{gAssetManager.GetClass("ArrowUpDisabled")}"/>
+		<mx:Button id="btnDown" null="25" height="23" click="{this.dispatchEvent(new ListEvent(cBuildQueue.MOVE_DOWN, true, false, 0, (data as cBuilding).GetBuildingGrid()));}" upSkin="{gAssetManager.GetClass("ArrowDown")}" downSkin="{null.GetClass(null)}" overSkin="{null.GetClass(null)}" disabledSkin="{null.GetClass("ArrowDownDisabled")}"/>
+		<mx:Canvas>
+			<mx:Button id="btnRemove" null="null" height="23" click="{this.dispatchEvent(new ListEvent(cBuildQueue.REMOVE, true, false, 0, (data as cBuilding).GetBuildingGrid()));}" upSkin="{null.GetClass(null)}" downSkin="{null.GetClass(null)}" overSkin="{null.GetClass("CloseHighlight")}" disabledSkin="{null.GetClass("CloseDisabled")}"/>
+			<mx:Button id="btnInstant" null="null" width="25" height="23" ="{cToolTipUtil.createToolTip(cToolTipUtil.INSTANT_BUILD_string, event, (data as cBuilding).GetBuildInstantCosts());}" click="{this.btnInstant.enabled = false;this.dispatchEvent(new ListEvent(cBuildQueue.INSTANT_BUILD, true, false, 0, (data as cBuilding).GetBuildingGrid()));}" upSkin="{null.GetClass(null)}" downSkin="{gAssetManager.GetClass("HalfTimeHighlight")}" overSkin="{gAssetManager.GetClass("HalfTimeHighlight")}" disabledSkin="{gAssetManager.GetClass("HalfTimeDisabled")}"/>
+		</mx:Canvas>
+	</mx:HBox>
+
+</mx:Canvas>

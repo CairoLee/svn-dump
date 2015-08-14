@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="" toolTipCreate="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:HBox id="holder" null.horizontalCenter="this" horizontalGap="0" top="5" bottom="3" verticalAlign="middle">
+		<mx:Label id="_AdventureDifficultyIndicator_Label1" color="#00ffffff" fontWeight="bold" text="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "Difficulty")}"/>
+	</mx:HBox>
+
+</mx:Canvas>

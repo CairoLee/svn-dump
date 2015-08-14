@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" _embed_mxml_____data_src_gfx_embedded_alert_alert_payment_ornament_png_1899063868="CustomAlert__embed_mxml_____data_src_gfx_embedded_alert_alert_payment_ornament_png_1899063868">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas left="5" top="0" bottom="0" right="0"/>
+	<mx:Image id="paymentOrnament" null="_embed_mxml_____data_src_gfx_embedded_alert_alert_payment_ornament_png_1899063868" horizontalCenter="1" top="-25"/>
+	<mx:Label id="titleLabel" left="25" right="25" top="8" textAlign="center" color="#00ffffff" fontWeight="bold"/>
+	<mx:Text id="message" null="false" width="250" left="25" top="40" bottom="60" color="#00ffffff" textAlign="center"/>
+	<mx:HBox id="buttonsList" null.bottom="this" horizontalCenter="0"/>
+
+</mx:Canvas>

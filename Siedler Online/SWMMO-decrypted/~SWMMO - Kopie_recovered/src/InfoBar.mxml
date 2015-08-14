@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:HBox height="42" styleName="infoBarLeft">
+		<mx:HBox id="population" toolTip="Population" verticalAlign="middle" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.POPULATION_OVERVIEW_string, event);}">
+			<mx:Image id="resourceIconPopulation"/>
+			<mx:Label id="resourceLabelPopulation" null.color="this" fontWeight="bold"/>
+		</mx:HBox>
+		<mx:HBox id="buildings" verticalAlign="middle" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.MULTILINE_string, event);}">
+			<mx:Image id="resourceIconBuildings"/>
+			<mx:Label id="resourceLabelBuildings" color="#00ffffff" fontWeight="bold"/>
+		</mx:HBox>
+	</mx:HBox>
+	<mx:HBox height="42" styleName="infoBarMiddle">
+		<mx:HBox id="resource1" horizontalGap="2" verticalAlign="middle" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}">
+			<mx:Image id="resourceIcon1"/>
+			<mx:Label id="resourceLabel1" null="null" null.color="this" fontWeight="bold"/>
+		</mx:HBox>
+		<mx:HBox id="resource2" horizontalGap="2" verticalAlign="middle" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}">
+			<mx:Image id="resourceIcon2"/>
+			<mx:Label id="resourceLabel2" null="null" color="#00ffffff" fontWeight="bold"/>
+		</mx:HBox>
+		<mx:HBox id="resource3" null.horizontalGap="this" verticalAlign="middle" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}">
+			<mx:Image id="resourceIcon3"/>
+			<mx:Label id="resourceLabel3" null="0" color="#00ffffff" fontWeight="bold"/>
+		</mx:HBox>
+		<mx:HBox id="resource4" horizontalGap="2" verticalAlign="middle" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}">
+			<mx:Image id="resourceIcon4"/>
+			<mx:Label id="resourceLabel4" null="0" color="#00ffffff" fontWeight="bold"/>
+		</mx:HBox>
+		<mx:HBox id="resource5" null.horizontalGap="this" verticalAlign="middle" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}">
+			<mx:Image id="resourceIcon5"/>
+			<mx:Label id="resourceLabel5" null="null" color="#00ffffff" fontWeight="bold"/>
+		</mx:HBox>
+		<mx:HBox id="resource6" horizontalGap="2" verticalAlign="middle" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}">
+			<mx:Image id="resourceIcon6"/>
+			<mx:Label id="resourceLabel6" null="0" null.color="this" fontWeight="bold"/>
+		</mx:HBox>
+	</mx:HBox>
+	<mx:HBox height="42" styleName="infoBarRight" paddingTop="6">
+		<mx:HBox id="hardCurrency" paddingTop="2" verticalAlign="middle" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}">
+			<mx:Image id="resourceIconHardCurrency"/>
+			<mx:Label id="resourceLabelHardCurrency" color="#00ffffff" fontWeight="bold"/>
+		</mx:HBox>
+		<mx:Button id="btnAddCash" null="56" height="31" icon="{null.GetClass("ButtonIconHardCurrency")}" upSkin="{null.GetClass(null)}" downSkin="{null.GetClass("ButtonAddCashOver")}" overSkin="{null.GetClass("ButtonAddCashOver")}" disabledSkin="{gAssetManager.GetClass("ButtonAddCashDisabled")}"/>
+	</mx:HBox>
+
+</mx:HBox>

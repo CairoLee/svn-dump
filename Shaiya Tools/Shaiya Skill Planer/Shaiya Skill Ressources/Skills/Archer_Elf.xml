@@ -1,0 +1,458 @@
+<?xml version="1.0"?>
+<SkillList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Skills>
+    <Skill IconName="icons.archer01.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Körpertraining" Mana="0" Range="0" RequiredLevel="5" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Grundverteidigung um 9.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Körpertraining" Mana="0" Range="0" RequiredLevel="28" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Grundverteidigung um 18.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Körpertraining" Mana="0" Range="0" RequiredLevel="49" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Grundverteidigung um 27.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer02.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Bogen-Aufwertung" Mana="0" Range="0" RequiredLevel="5" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 5, wenn ein Bogen ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Bogen-Aufwertung" Mana="0" Range="0" RequiredLevel="16" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 12, wenn ein Bogen ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Bogen-Aufwertung" Mana="0" Range="0" RequiredLevel="25" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 20, wenn ein Bogen ausgerüstet ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer03.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Projektil-Aufwertung" Mana="0" Range="0" RequiredLevel="5" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 5, wenn eine Armbrust oder eine Wurfwaffe ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Projektil-Aufwertung" Mana="0" Range="0" RequiredLevel="16" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 12, wenn eine Armbrust oder eine Wurfwaffe ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Projektil-Aufwertung" Mana="0" Range="0" RequiredLevel="25" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 20, wenn eine Armbrust oder eine Wurfwaffe ausgerüstet ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer04.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="6" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 4% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="15" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 6% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="26" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 8% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer05.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="12" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 3.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="26" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 4.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="46" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 5.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer06.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="13" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler , etwa  30% dessen zu verstehen was der Gegner sagt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="22" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler , etwa  60% dessen zu verstehen was der Gegner sagt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="51" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler alles zu verstehen was der Gegner sagt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer07.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Bogen-Beherrschung" Mana="0" Range="0" RequiredLevel="14" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffsgeschwindigkeit des Spielers um eine Stufe, wenn ein Bogen ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Bogen-Beherrschung" Mana="0" Range="0" RequiredLevel="35" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffsgeschwindigkeit des Spielers um eine Stufe, wenn ein Bogen ausgerüstet ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer08.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Projektil-Beherrschung" Mana="0" Range="0" RequiredLevel="14" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffsgeschwindigkeit des Spielers um eine Stufe, wenn eine Armbrust oder einer Wurfwaffe ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Projektil-Beherrschung" Mana="0" Range="0" RequiredLevel="35" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffsgeschwindigkeit des Spielers um eine Stufe, wenn eine Armbrust oder einer Wurfwaffe ausgerüstet ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer09.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Scharfschütze" Mana="60" Range="0" RequiredLevel="2" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht Fernkampfgenauigkeit um 5% für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Scharfschütze" Mana="144" Range="0" RequiredLevel="19" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht Fernkampfgenauigkeit um 12% für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Scharfschütze" Mana="400" Range="0" RequiredLevel="45" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht Fernkampfgenauigkeit um 21% für 5 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer10.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Verlangsamen" Mana="0" Range="24" RequiredLevel="3" SkillPunkte="2" Stamina="0" Status="langsam" Delay="60">
+          <Description>Schwächungszauber, bewirkt dass die Laufgeschwindigkeit und Angriffsgeschwindigkeit eines Gegners für 6 Sekunden mit einer Wahrscheinlichkeit von 70% reduziert wird.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Verlangsamen" Mana="0" Range="24" RequiredLevel="17" SkillPunkte="3" Stamina="0" Status="langsam" Delay="60">
+          <Description>Schwächungszauber, bewirkt dass die Laufgeschwindigkeit und Angriffsgeschwindigkeit eines Gegners für 9 Sekunden mit einer Wahrscheinlichkeit von 70% reduziert wird.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Verlangsamen" Mana="0" Range="24" RequiredLevel="30" SkillPunkte="3" Stamina="0" Status="langsam" Delay="60">
+          <Description>Schwächungszauber, bewirkt dass die Laufgeschwindigkeit und Angriffsgeschwindigkeit eines Gegners für 12 Sekunden mit einer Wahrscheinlichkeit von 70% reduziert wird.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer11.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Weite Entfernung" Mana="65" Range="0" RequiredLevel="4" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Angriffsreichweite um 3 Meter für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Weite Entfernung" Mana="140" Range="0" RequiredLevel="18" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Angriffsreichweite um 4 Meter für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Weite Entfernung" Mana="244" Range="0" RequiredLevel="31" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Angriffsreichweite um 5 Meter für 5 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer12.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Tatter-Schuß" Mana="5" Range="27" RequiredLevel="7" SkillPunkte="2" Stamina="0" Status="" Delay="30">
+          <Description>Schwächungszauber, bewirkt das des Gegners Fernkampf Verteidigungskraft um 25 Punkte sinkt für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Tatter-Schuß" Mana="25" Range="29" RequiredLevel="23" SkillPunkte="3" Stamina="0" Status="" Delay="30">
+          <Description>Schwächungszauber, bewirkt das des Gegners Fernkampf Verteidigungskraft um 50 Punkte sinkt für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Tatter-Schuß" Mana="30" Range="32" RequiredLevel="32" SkillPunkte="3" Stamina="0" Status="" Delay="30">
+          <Description>Schwächungszauber, bewirkt das die Fernkampf Verteidigungskraft von allen Gegner innerhalb 10 Metern des Ziels um 75 Punkte sinkt für 30 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer13.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Finte" Mana="35" Range="0" RequiredLevel="18" SkillPunkte="3" Stamina="0" Status="" Delay="600">
+          <Description>Verstärkungszauber, der dem Spieler hilft, erfolgreich einen Physischen oder Fernkampfangriff auszuführen ungeachtet der Ziels-GES für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Finte" Mana="50" Range="0" RequiredLevel="27" SkillPunkte="3" Stamina="0" Status="" Delay="600">
+          <Description>Verstärkungszauber, der dem Spieler hilft, erfolgreich einen Physischen oder Fernkampfangriff auszuführen ungeachtet der Ziels-GES für 40 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Finte" Mana="65" Range="0" RequiredLevel="37" SkillPunkte="4" Stamina="0" Status="" Delay="600">
+          <Description>Verstärkungszauber, der dem Spieler hilft, erfolgreich einen Physischen oder Fernkampfangriff auszuführen ungeachtet der Ziels-GES für 1 Minute.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer14.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Unglück" Mana="20" Range="24" RequiredLevel="19" SkillPunkte="3" Stamina="0" Status="Unglück" Delay="0">
+          <Description>Schwächungszauber, senkt gegnerisches  GLÜ um 15 Punkte für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Unglück" Mana="40" Range="24" RequiredLevel="38" SkillPunkte="4" Stamina="0" Status="Unglück" Delay="0">
+          <Description>Schwächungszauber, senkt gegnerisches  GLÜ um 35 Punkte für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Unglück" Mana="60" Range="24" RequiredLevel="57" SkillPunkte="4" Stamina="0" Status="Unglück" Delay="0">
+          <Description>Schwächungszauber, bewirkt das die GLÜ von all den Gegnern innerhalb 10 Metern des Ziels um 55 Punkte sinkt für 30 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer15.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Durchdringender Schuss" Mana="0" Range="24" RequiredLevel="1" SkillPunkte="3" Stamina="0" Status="" Delay="30">
+          <Description>Fernkampfangriff, der das Ziel verwundet für 58 Punkte Schaden Zusätzlich verursacht er einen Stopp-Effekt für 3 Sekunden, ungeachtet seiner Verteidigungskraft.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Durchdringender Schuss" Mana="0" Range="24" RequiredLevel="15" SkillPunkte="3" Stamina="0" Status="" Delay="30">
+          <Description>Fernkampfangriff, der das Ziel verwundet für 112 Punkte Schaden Zusätzlich verursacht er einen Stopp-Effekt für 3 Sekunden, ungeachtet seiner Verteidigungskraft.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Durchdringender Schuss" Mana="0" Range="24" RequiredLevel="30" SkillPunkte="3" Stamina="0" Status="" Delay="30">
+          <Description>Fernkampfangriff, der das Ziel verwundet für 239 Punkte Schaden Zusätzlich verursacht er einen Stopp-Effekt für 3 Sekunden, ungeachtet seiner Verteidigungskraft.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer16.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schnellschuss" Mana="0" Range="24" RequiredLevel="8" SkillPunkte="2" Stamina="0" Status="" Delay="20">
+          <Description>Fernkampfangriff, schießt schnell 2 Pfeile, jeder mit einer Stärke der normalen Fernkampfkraft.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schnellschuss" Mana="0" Range="24" RequiredLevel="24" SkillPunkte="3" Stamina="0" Status="" Delay="20">
+          <Description>Fernkampfangriff, schießt schnell  3 Pfeile, jeder mit einer Stärke der normalen Fernkampfkraft.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schnellschuss" Mana="0" Range="24" RequiredLevel="45" SkillPunkte="3" Stamina="0" Status="" Delay="20">
+          <Description>Fernkampfangriff, schießt schnell  3 Pfeile, jeder mit einer Stärke der normalen Fernkampfkraft. Bei Erfolg werden pro Schuss 15 Schadenspunkte auf jeden Schuss addiert.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer17.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rundumschuss" Mana="0" Range="24" RequiredLevel="10" SkillPunkte="4" Stamina="0" Status="" Delay="20">
+          <Description>Bogenangriff, schießt mehrere Pfeile simultan gegen Gegner im Umkreis von 6 Metern des Ziels . Er richtet  des Spielers Angriffspunkte Schaden an.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rundumschuss" Mana="0" Range="24" RequiredLevel="20" SkillPunkte="4" Stamina="0" Status="" Delay="20">
+          <Description>Bogenangriff, schießt mehrere Pfeile simultan gegen Gegner im Umkreis von 10 Metern des Ziels . Er richtet  des Spielers Angriffspunkte Schaden an.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rundumschuss" Mana="0" Range="24" RequiredLevel="40" SkillPunkte="4" Stamina="0" Status="" Delay="20">
+          <Description>Bogenangriff, schießt mehrere Pfeile simultan gegen Gegner im Umkreis von 14 Metern des Ziels . Er richtet  des Spielers Angriffspunkte Schaden an.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer18.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Ballistenschuss" Mana="0" Range="24" RequiredLevel="10" SkillPunkte="4" Stamina="0" Status="" Delay="20">
+          <Description>Projektiler Angriff, trifft mit des Spielers Angriffspunkte Schaden den Gegner innerhalb 6 Metern des Ziels. Funktioniert nur mit folgender Bewaffnung: Armbrust, Wurfwaffen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Ballistenschuss" Mana="0" Range="24" RequiredLevel="20" SkillPunkte="4" Stamina="0" Status="" Delay="20">
+          <Description>Projektiler Angriff, trifft mit des Spielers Angriffspunkte Schaden den Gegner innerhalb 10 Metern des Ziels. Funktioniert nur mit folgender Bewaffnung: Armbrust, Wurfwaffen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Ballistenschuss" Mana="0" Range="24" RequiredLevel="40" SkillPunkte="4" Stamina="0" Status="" Delay="20">
+          <Description>Projektiler Angriff, trifft mit des Spielers Angriffspunkte Schaden den Gegner innerhalb 14 Metern des Ziels. Funktioniert nur mit folgender Bewaffnung: Armbrust, Wurfwaffen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer19.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Leidenschuss" Mana="0" Range="24" RequiredLevel="11" SkillPunkte="5" Stamina="0" Status="sterbend" Delay="30">
+          <Description>Fernkampfangriff, der das Ziel verwundet für 2% von dessen aktueller LP konstant für 40 Sekunden. Nach 60 Sekunden verliert das Ziel  21% von dessen LP.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Leidenschuss" Mana="0" Range="24" RequiredLevel="29" SkillPunkte="6" Stamina="0" Status="sterbend" Delay="30">
+          <Description>Fernkampfangriff, der das Ziel verwundet für 3% von dessen aktueller LP konstant für 40 Sekunden. Nach 60 Sekunden verliert das Ziel  31% von dessen LP.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Leidenschuss" Mana="0" Range="24" RequiredLevel="39" SkillPunkte="7" Stamina="0" Status="sterbend" Delay="30">
+          <Description>Fernkampfangriff, der das Ziel verwundet für 3% von dessen aktueller LP konstant für 60 Sekunden. Nach 60 Sekunden verliert das Ziel  44% von dessen LP.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer20.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Festnagelnder Schuss" Mana="0" Range="24" RequiredLevel="12" SkillPunkte="3" Stamina="0" Status="" Delay="15">
+          <Description>Fernkampfangriff, der nutzen zieht von einem Bogen, einer Armbrust oder Wurfwaffen. Produziert 168 Punkte Schaden über die Dauer von 12 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Festnagelnder Schuss" Mana="0" Range="24" RequiredLevel="27" SkillPunkte="3" Stamina="0" Status="" Delay="15">
+          <Description>Fernkampfangriff, der nutzen zieht von einem Bogen, einer Armbrust oder Wurfwaffen. Produziert 384 Punkte Schaden über die Dauer von 12 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Festnagelnder Schuss" Mana="0" Range="24" RequiredLevel="41" SkillPunkte="4" Stamina="0" Status="" Delay="15">
+          <Description>Fernkampfangriff, der nutzen zieht von einem Bogen, einer Armbrust oder Wurfwaffen. Produziert 580 Punkte Schaden über die Dauer von 12 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer21.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mana-Schuss" Mana="15" Range="24" RequiredLevel="13" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Fernkampfangriff, der das Ziel verwundet für Grundschaden plus 194 MP von Punkte Schaden. Keine Wirkung auf Monster.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mana-Schuss" Mana="25" Range="24" RequiredLevel="23" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Fernkampfangriff, der das Ziel verwundet für Grundschaden plus 350 MP von Punkte Schaden. Keine Wirkung auf Monster.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mana-Schuss" Mana="35" Range="0" RequiredLevel="36" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Fernkampfangriff, der das Ziel verwundet für Grundschaden plus 631 MP von Punkte Schaden. Keine Wirkung auf Monster.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer22.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schwächender Schuss" Mana="53" Range="24" RequiredLevel="16" SkillPunkte="4" Stamina="0" Status="Schwerfällig" Delay="25">
+          <Description>Schwächungszauber, der Schaden in Höhe der Grundfernangriffskraft verursacht, zusätzlich sinken die Stärke um 18 und REC um 9 für 15 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schwächender Schuss" Mana="108" Range="24" RequiredLevel="37" SkillPunkte="5" Stamina="0" Status="Schwerfällig" Delay="25">
+          <Description>Schwächungszauber, der Schaden in höhe der Grundfernangriffskraft verursacht, zusätzlich sinken die Stärke um 30 und REC um 15, zusätzlich senkt er die Angriffgeschwindigkeit des Ziels um eine Stufe für 15 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schwächender Schuss" Mana="177" Range="24" RequiredLevel="57" SkillPunkte="6" Stamina="0" Status="Schwerfällig" Delay="25">
+          <Description>Schwächungszauber, der Schaden in Höhe der Grundfernangriffskraft verursacht, zusätzlich sinken die Stärke um 41 und REC um 21, zusätzlich senkt er die Angriffsgeschwindigkeit des Ziels um eine Stufe für 30 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer23.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Sprungschuss" Mana="0" Range="27" RequiredLevel="34" SkillPunkte="4" Stamina="0" Status="" Delay="30">
+          <Description>Fernkampfangriff. Der Benutzer springt und schießt aus einer Entfernung von 27 Metern. Es richtet 270 Punkte Schaden ungeachtet der Gegnerischen Verteidigungskraft an. Nur mit Bogen benutzbar.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Sprungschuss" Mana="0" Range="28" RequiredLevel="44" SkillPunkte="4" Stamina="0" Status="" Delay="30">
+          <Description>Fernkampfangriff. Der Benutzer springt und schießt aus einer Entfernung von 28 Metern. Es richtet 500 Punkte Schaden ungeachtet der Gegnerischen Verteidigungskraft an. Nur mit Bogen benutzbar.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Sprungschuss" Mana="0" Range="30" RequiredLevel="54" SkillPunkte="4" Stamina="0" Status="" Delay="30">
+          <Description>Fernkampfangriff. Der Benutzer springt und schießt aus einer Entfernung von 30 Metern. Es richtet 1270 Punkte Schaden ungeachtet der Gegnerischen Verteidigungskraft an. Nur mit Bogen benutzbar.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer24.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Bogensturm" Mana="165" Range="24" RequiredLevel="33" SkillPunkte="4" Stamina="0" Status="" Delay="600">
+          <Description>Fernkampfangriff, welcher Schaden an Gegnern innerhalb von  10 Metern des Ziels anrichtet mit der Angriffskraft des Spielers plus 306 Punkte Schaden. Nur benutzbar mit einem Bogen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Bogensturm" Mana="230" Range="24" RequiredLevel="42" SkillPunkte="4" Stamina="0" Status="" Delay="600">
+          <Description>Fernkampfangriff, welcher Schaden an Gegnern innerhalb von  10 Metern des Ziels anrichtet mit der Angriffskraft des Spielers plus 451 Punkte Schaden. Nur benutzbar mit einem Bogen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Bogensturm" Mana="320" Range="24" RequiredLevel="53" SkillPunkte="5" Stamina="0" Status="" Delay="600">
+          <Description>Fernkampfangriff, welcher Schaden an Gegnern innerhalb von  10 Metern des Ziels anrichtet mit der Angriffskraft des Spielers plus 671 Punkte Schaden. Nur benutzbar mit einem Bogen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer25.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Blutiger Niederschlag" Mana="165" Range="24" RequiredLevel="33" SkillPunkte="4" Stamina="0" Status="" Delay="600">
+          <Description>Fernkampfangriff, welcher Schaden an Gegnern innerhalb von  10 Metern des Ziels für die Angriffskraft des Spielers plus 306 Punkte Schaden. Nur benutzbar mit einer Armbrust oder Wurfwaffen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Blutiger Niederschlag" Mana="230" Range="24" RequiredLevel="42" SkillPunkte="4" Stamina="0" Status="" Delay="600">
+          <Description>Fernkampfangriff, welcher Schaden an Gegnern innerhalb von  10 Metern des Ziels für die Angriffskraft des Spielers plus 306 Punkte Schaden. Nur benutzbar mit einer Armbrust oder Wurfwaffen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Blutiger Niederschlag" Mana="320" Range="24" RequiredLevel="53" SkillPunkte="5" Stamina="0" Status="" Delay="600">
+          <Description>Fernkampfangriff, welcher Schaden an Gegnern innerhalb von  10 Metern des Ziels für die Angriffskraft des Spielers plus 306 Punkte Schaden. Nur benutzbar mit einer Armbrust oder Wurfwaffen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer26.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Magischer Trotz" Mana="75" Range="0" RequiredLevel="11" SkillPunkte="4" Stamina="0" Status="" Delay="300">
+          <Description>Angriff, der verhindert, dass die nächsten 2 Magischen den Spieler treffen, aber endet nach 5 Minuten. Einige Zaubersprüche sind nicht betroffen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Magischer Trotz" Mana="140" Range="0" RequiredLevel="32" SkillPunkte="5" Stamina="0" Status="" Delay="300">
+          <Description>Angriff, der verhindert, dass die nächsten 3 Magischen Angriffe den Spieler treffen, aber endet nach 5 Minuten. Einige Zaubersprüche sind nicht betroffen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Magischer Trotz" Mana="240" Range="0" RequiredLevel="52" SkillPunkte="5" Stamina="0" Status="" Delay="300">
+          <Description>Angriff, der verhindert, dass die nächsten 5 Magischen Angriffe den Spieler treffen, aber endet nach 5 Minuten. Einige Zaubersprüche sind nicht betroffen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer27.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Blitz-Attacke" Mana="100" Range="0" RequiredLevel="21" SkillPunkte="4" Stamina="0" Status="" Delay="600">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Angriffsgeschwindigkeit aller Waffen um eine Stufe für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Blitz-Attacke" Mana="145" Range="0" RequiredLevel="34" SkillPunkte="5" Stamina="0" Status="" Delay="600">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Angriffsgeschwindigkeit aller Waffen um eine Stufe für 45 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Blitz-Attacke" Mana="195" Range="0" RequiredLevel="43" SkillPunkte="5" Stamina="0" Status="" Delay="600">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Angriffsgeschwindigkeit aller Waffen um eine Stufe für 1 Minute.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer28.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Gesang des Scharfschützen" Mana="95" Range="0" RequiredLevel="7" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Gruppenzauber, erhöht Fernkampfangriffskraft und Verteidigungskraft von Gruppenmitgliedern innerhalb 100 Metern um den Spieler um 7 Punkte für 10 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Gesang des Scharfschützen" Mana="220" Range="0" RequiredLevel="24" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Gruppenzauber, erhöht Fernkampfangriffskraft und Verteidigungskraft von Gruppenmitgliedern innerhalb 100 Metern um den Spieler um 14 Punkte für 10 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Gesang des Scharfschützen" Mana="400" Range="0" RequiredLevel="39" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Gruppenzauber, erhöht Fernkampfangriffskraft und Verteidigungskraft von Gruppenmitgliedern innerhalb 100 Metern um den Spieler um 39 Punkte für 10 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer29.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Volltreffer" Mana="0" Range="24" RequiredLevel="9" SkillPunkte="6" Stamina="0" Status="" Delay="25">
+          <Description>Fernkampfangriff, trifft mit der Fernkampfangriffskraft des Spielers plus 10 Punkte von Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Volltreffer" Mana="0" Range="24" RequiredLevel="27" SkillPunkte="7" Stamina="0" Status="" Delay="20">
+          <Description>Fernkampfangriff, trifft mit der Fernkampfangriffskraft des Spielers plus 92 Punkte von Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Volltreffer" Mana="0" Range="24" RequiredLevel="47" SkillPunkte="8" Stamina="0" Status="" Delay="15">
+          <Description>Fernkampfangriff, trifft mit der Fernkampfangriffskraft des Spielers plus 208 Punkte von Punkte Schaden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer30.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Letztes Gefecht" Mana="0" Range="0" RequiredLevel="17" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Laufgeschwindigkeit des Spielers  um eine Stufe sowie die Häufigkeit der Kritischen Treffer  um 8% für 30 Sekunden. Wird automatisch ausgelöst bei einem LP bestand unter 8%; wieder verfügbar nach 3 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Letztes Gefecht" Mana="0" Range="0" RequiredLevel="29" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Laufgeschwindigkeit des Spielers  um eine Stufe sowie die Häufigkeit der Kritischen Treffer  um 15% für 30 Sekunden. Wird automatisch ausgelöst bei einem LP bestand unter 10%; wieder verfügbar nach 3 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Letztes Gefecht" Mana="0" Range="0" RequiredLevel="50" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Laufgeschwindigkeit des Spielers  um eine Stufe sowie die Häufigkeit der Kritischen Treffer  um 25% für 30 Sekunden. Wird automatisch ausgelöst bei einem LP bestand unter 12%; wieder verfügbar nach 3 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer31.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Gezielter Schuss" Mana="0" Range="24" RequiredLevel="22" SkillPunkte="7" Stamina="0" Status="sterbend" Delay="300">
+          <Description>Fernkampfangriff, der die gegnerischen LP um 10% senkt ungeachtet seiner Verteidigungskraft. Effekt ist auf einige Monster beschränkt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Gezielter Schuss" Mana="0" Range="24" RequiredLevel="37" SkillPunkte="8" Stamina="0" Status="sterbend" Delay="300">
+          <Description>Fernkampfangriff, der die gegnerischen LP um 15% senkt ungeachtet seiner Verteidigungskraft. Effekt ist auf einige Monster beschränkt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Gezielter Schuss" Mana="0" Range="24" RequiredLevel="55" SkillPunkte="9" Stamina="0" Status="sterbend" Delay="300">
+          <Description>Fernkampfangriff, der die gegnerischen LP um 20% senkt ungeachtet seiner Verteidigungskraft. Effekt ist auf einige Monster beschränkt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer32.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Fangnetz" Mana="60" Range="0" RequiredLevel="31" SkillPunkte="3" Stamina="0" Status="sterbend" Delay="180">
+          <Description>Angriff, Diese Fähigkeit erzeugt ein unsichtbares Fangnetz das innerhalb 2 Metern für 1000 Punkte Schaden an jedem Gegner anrichtet. Es können nicht mehr als 2 gleichzeitig errichtet werden. Verschwindet nach 3 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Fangnetz" Mana="80" Range="0" RequiredLevel="41" SkillPunkte="4" Stamina="0" Status="sterbend" Delay="180">
+          <Description>Angriff, Diese Fähigkeit erzeugt ein unsichtbares Fangnetz das innerhalb 2 Metern für 1500 Punkte Schaden an jedem Gegner anrichtet. Es können nicht mehr als 2 gleichzeitig errichtet werden. Verschwindet nach 3 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Fangnetz" Mana="120" Range="0" RequiredLevel="58" SkillPunkte="5" Stamina="0" Status="sterbend" Delay="180">
+          <Description>Angriff, Diese Fähigkeit erzeugt ein unsichtbares Fangnetz das innerhalb 2 Metern für 2000 Punkte Schaden an jedem Gegner anrichtet. Es können nicht mehr als 2 gleichzeitig errichtet werden. Verschwindet nach 3 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer33.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Manadämpfung" Mana="-1" Range="2" RequiredLevel="36" SkillPunkte="4" Stamina="0" Status="" Delay="600">
+          <Description>Angriff der dem Gegner 50% des Ziels Maximale MP auf kosten aller MP des Spielers wegpustet. Nur nutzbar mit Nahkampfwaffen. Keine Wirkung auf Monster.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Manadämpfung" Mana="-1" Range="2" RequiredLevel="46" SkillPunkte="5" Stamina="0" Status="" Delay="600">
+          <Description>Angriff der dem Gegner 70% des Ziels Maximale MP auf kosten aller MP des Spielers wegpustet. Nur benutzbar mit Nahkampfwaffen. Keine Wirkung auf Monster.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Manadämpfung" Mana="-1" Range="2" RequiredLevel="56" SkillPunkte="6" Stamina="0" Status="" Delay="600">
+          <Description>Angriff der dem Gegner 90% des Ziels Maximale MP auf kosten aller MP des Spielers wegpustet. Nur benutzbar mit Nahkampfwaffen. Keine Wirkung auf Monster.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer34.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="2" Element="None" Name="Vernichtender Schuss" Mana="570" Range="22" RequiredLevel="49" SkillPunkte="8" Stamina="0" Status="" Delay="900">
+          <Description>Mächtiger Fernkampfangriff, der mit der zweifachen Angriffskraft trifft und für 5 Sekunden betäubt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="15" Element="None" Name="Vernichtender Schuss" Mana="750" Range="22" RequiredLevel="59" SkillPunkte="9" Stamina="0" Status="" Delay="900">
+          <Description>Mächtiger Fernkampfangriff, der mit der dreifachen Angriffskraft trifft und für 5 Sekunden betäubt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer35.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schläfer Bann" Mana="72" Range="2" RequiredLevel="26" SkillPunkte="6" Stamina="0" Status="Schlafend" Delay="60">
+          <Description>Angriff, der alle Gegner eischläfert für 6 Sekunden mit einer Nahkampfangriff. Kann nur mit einem einhand Schwert oder zweihand Axt benutzt werden. Getroffene Ziele werden einschlafen, wachen aber auf wenn sie Schaden erleiden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schläfer Bann" Mana="117" Range="2" RequiredLevel="39" SkillPunkte="7" Stamina="0" Status="Schlafend" Delay="55">
+          <Description>Angriff, der alle Gegner eischläfert für 8 Sekunden mit einer Nahkampfangriff. Kann nur mit einem einhand Schwert oder zweihand Axt benutzt werden. Getroffene Ziele werden einschlafen, wachen aber auf wenn sie Schaden erleiden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schläfer Bann" Mana="154" Range="2" RequiredLevel="51" SkillPunkte="8" Stamina="0" Status="Schlafend" Delay="50">
+          <Description>Angriff, der alle Gegner eischläfert für 10 Sekunden mit einer Nahkampfangriff. Kann nur mit einem einhand Schwert oder zweihand Axt benutzt werden. Getroffene Ziele werden einschlafen, wachen aber auf wenn sie Schaden erleiden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.archer36.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="1" Element="None" Name="Panteras Vision" Mana="800" Range="30" RequiredLevel="60" SkillPunkte="9" Stamina="0" Status="Tot" Delay="600">
+          <Description>Fernkampfangriff, trifft mit 88% der Maximalen LP des Gegners.Der Effekt ist auf einige Monster limitiert.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+  </Skills>
+</SkillList>

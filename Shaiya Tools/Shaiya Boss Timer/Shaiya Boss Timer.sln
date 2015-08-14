@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shaiya Boss Timer", "Timer\Shaiya Boss Timer.csproj", "{DCD502A1-F316-4AE1-9BB6-2D11923D2010}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverlayLib", "OverlayLib\OverlayLib.csproj", "{1A762DAA-7B00-40ED-8610-9760867BD2EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCD502A1-F316-4AE1-9BB6-2D11923D2010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCD502A1-F316-4AE1-9BB6-2D11923D2010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCD502A1-F316-4AE1-9BB6-2D11923D2010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCD502A1-F316-4AE1-9BB6-2D11923D2010}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A762DAA-7B00-40ED-8610-9760867BD2EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A762DAA-7B00-40ED-8610-9760867BD2EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A762DAA-7B00-40ED-8610-9760867BD2EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A762DAA-7B00-40ED-8610-9760867BD2EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountScammer", "AccountScammer\AccountScammer.csproj", "{246FBC7F-D301-47FC-9732-1943D38A2413}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUtil", "WebUtil\WebUtil.csproj", "{9433428A-9122-4BE5-9C18-A2FF3706F4E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordlistGenerator", "PasswordlistGenerator\PasswordlistGenerator.csproj", "{8AA6DCD7-268E-494F-A5C8-7B5B8FF92C66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{246FBC7F-D301-47FC-9732-1943D38A2413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{246FBC7F-D301-47FC-9732-1943D38A2413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{246FBC7F-D301-47FC-9732-1943D38A2413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{246FBC7F-D301-47FC-9732-1943D38A2413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9433428A-9122-4BE5-9C18-A2FF3706F4E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9433428A-9122-4BE5-9C18-A2FF3706F4E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9433428A-9122-4BE5-9C18-A2FF3706F4E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9433428A-9122-4BE5-9C18-A2FF3706F4E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AA6DCD7-268E-494F-A5C8-7B5B8FF92C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AA6DCD7-268E-494F-A5C8-7B5B8FF92C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AA6DCD7-268E-494F-A5C8-7B5B8FF92C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AA6DCD7-268E-494F-A5C8-7B5B8FF92C66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

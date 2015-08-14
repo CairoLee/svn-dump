@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shaiya Signatur Generator", "Signatur\Shaiya Signatur Generator.csproj", "{6C0CFC91-4885-4033-9C48-ED3AB8B8113E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shaiya Userbar Generator", "Userbar\Shaiya Userbar Generator.csproj", "{2C2FC2AE-6AC6-45A5-84ED-B3A8C9374E3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageHelper", "Image.Helper\ImageHelper.csproj", "{17262039-CC2D-492F-9AC9-D4BDBD9C6C3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C0CFC91-4885-4033-9C48-ED3AB8B8113E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C0CFC91-4885-4033-9C48-ED3AB8B8113E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C0CFC91-4885-4033-9C48-ED3AB8B8113E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C0CFC91-4885-4033-9C48-ED3AB8B8113E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C2FC2AE-6AC6-45A5-84ED-B3A8C9374E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C2FC2AE-6AC6-45A5-84ED-B3A8C9374E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C2FC2AE-6AC6-45A5-84ED-B3A8C9374E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C2FC2AE-6AC6-45A5-84ED-B3A8C9374E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17262039-CC2D-492F-9AC9-D4BDBD9C6C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17262039-CC2D-492F-9AC9-D4BDBD9C6C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17262039-CC2D-492F-9AC9-D4BDBD9C6C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17262039-CC2D-492F-9AC9-D4BDBD9C6C3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

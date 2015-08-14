@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="300" height="150">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Label id="_LoadingZonePanel_Label1" null.horizontalCenter="this" verticalCenter="0" color="#00ffffff" fontWeight="bold" showEffect="fadeIn" hideEffect="fadeOut" text="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "LoadingZone")}"/>
+
+</mx:Canvas>

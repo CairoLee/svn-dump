@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" width="540" height="640" layout="absolute">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:TabNavigator id="tabNavigator" null.paddingTop="this" left="0" right="0" top="0" bottom="0">
+		<mx:Canvas id="settingsTab" label="Settings" width="100%" height="100%">
+			<mx:Button id="refreshHomeZone" null="10" y="10" label="Refresh Home Zone"/>
+			<mx:VBox y="40" x="10" height="502" width="203" label="level up">
+				<mx:Label text="Rendering" fontWeight="bold"/>
+				<mx:CheckBox id="showGrid" label="show iso grid"/>
+				<mx:CheckBox id="showBuildingDebugInfo" label="show Building info"/>
+				<mx:CheckBox id="showBlockingGrid" null="null"/>
+				<mx:CheckBox id="showWatchAreas" null="show watch areas"/>
+				<mx:CheckBox id="showSectorGrid" null="null"/>
+				<mx:CheckBox id="showLandingField" null="null"/>
+				<mx:CheckBox id="showDeposits" null="null"/>
+				<mx:CheckBox id="showFPS" null="show fps counter"/>
+				<mx:Label text="Debug Settings" fontWeight="bold"/>
+				<mx:CheckBox id="showIsoDebugGrid" null="null"/>
+				<mx:CheckBox id="showBackgroundGrid" null="null"/>
+				<mx:CheckBox id="showCursorDebugInfo" label="show Cursor Debug Info"/>
+				<mx:CheckBox id="showMemoryMonitor" null="null"/>
+				<mx:CheckBox id="disableFog" null="null"/>
+				<mx:CheckBox id="debugQuestGui" null="null"/>
+				<mx:Button id="SetFilterButton" width="121.5" label="Set Filter"/>
+				<mx:TextInput id="CHEATWINDOW_FILTER_TEXTINPUT" enabled="true" text="none"/>
+			</mx:VBox>
+			<mx:Label x="224" y="12" text="Resize browser window" null.fontWeight="this"/>
+			<mx:Button id="resizeToMin" null="null" y="36" label="SWMMO min" width="100"/>
+			<mx:Button id="resizeToFB" x="332" y="36" label="Facebook" width="100"/>
+			<mx:Label null="229" y="66" text="Game speed" null.fontWeight="this"/>
+			<mx:Button id="SetCityLevel" null="229" y="129" label="Set Player Level" width="121"/>
+			<mx:TextInput id="GAMESPEED_TEXTINPUT_ID" null="null" y="83" text="37.0"/>
+			<mx:TextInput id="SPOOLTIME_TEXTINPUT_ID" null="null" y="237" text="1"/>
+			<mx:Button id="SpoolTimeID" x="229" y="207" label="Spool Time" width="90"/>
+			<mx:Button id="SpoolTimeAddMinutesID" x="226.5" y="267" label="Add Minutes" width="121.5"/>
+			<mx:TextInput id="SPOOLTIME_TEXTINPUTADDMINUTES_ID" null="229" y="297" text="60"/>
+			<mx:TextInput id="SETCITYLEVEL_TEXTINPUT_ID0" null="229" y="159" text="1"/>
+			<mx:Button id="SetGodMode" null="null" y="348" label="Set Max Player Level  and Resources" width="244" height="30"/>
+		</mx:Canvas>
+		<mx:Canvas id="resourceTab" label="Resources" width="100%" height="100%">
+			<mx:TileList id="resourcesList" itemRenderer="_CheatWindow_ClassFactory1_c()" left="5" right="5" top="5" bottom="35" borderThickness="0"/>
+			<mx:Button id="BUTTON_RESOURCES_FILL_MAXIMUM" label="Fill Maximum" bottom="10" right="274"/>
+			<mx:Button id="applyResources" null="null" right="10" bottom="10"/>
+			<mx:Button id="BUTTON_RESOURCES_CLEAR_ALL" null="null" bottom="10" right="78"/>
+			<mx:Button id="BUTTON_RESOURCES_FILL_ALL" label="Fill 50 Percent" bottom="10" right="159"/>
+		</mx:Canvas>
+		<mx:Canvas id="consoleTab" label="Console" width="100%" height="100%">
+			<mx:TextArea id="console" editable="false" width="100%" height="100%" valueCommit="{this.console.verticalScrollPosition = this.console.maxVerticalScrollPosition;}"/>
+		</mx:Canvas>
+		<mx:Canvas id="SupportTab" label="Support" width="100%" height="100%">
+			<mx:Button id="GrabForeignZoneID" null="null" y="10" label="Grab Foreign Zone" width="150.5"/>
+			<mx:TextInput id="GRABFOREIGNZONE_TEXTINPUTADDMINUTES_ID" null="10" y="40" text="PlayerName"/>
+			<mx:TextInput id="LOCALSERVERDATE_TEXTINPUT_ID" null="10" y="194" height="25" text="-"/>
+			<mx:Button id="SetFakeServerDateID" null="null" y="139" label="Set Fake Server Date" width="150.5"/>
+			<mx:Label id="ORGINAL_SERVER_DATE_ID" null="null" y="257" text="-"/>
+			<mx:Button id="ResetFakeServerDateID" x="10" y="164" label="Reset Fake Server Date" width="174"/>
+			<mx:Label id="HOURS_TIL_NEXT_DAY_ID" null="null" y="277" text="-"/>
+			<mx:Label id="TIME_OFFSET_ID" x="10" y="297" text="-"/>
+			<mx:Button id="RefreshAllID0" null="null" y="227" label="Refresh All" width="112"/>
+			<mx:Button id="AddOneDayID" x="189" y="194" label="Add One Day" width="112" toolTip="Sets Fake Date and adds one day"/>
+			<mx:Button id="InsertZoneEventLogID" x="10" y="340" label="Insert log of zoneEvents" width="200" toolTip="Logs the zone event log into database!"/>
+		</mx:Canvas>
+		<mx:Canvas id="QuestTab" width="100%" height="100%" label="Quests">
+			<mx:DataGrid id="QUEST_LIST_ID" null="339" toolTip="abc" variableRowHeight="true" columns="{[_CheatWindow_DataGridColumn1_c(), _CheatWindow_DataGridColumn2_c(), _CheatWindow_DataGridColumn3_c(), _CheatWindow_DataGridColumn4_c()]}" null.left="this" right="10" top="10" borderStyle="none" color="#0007242a"/>
+			<mx:Button id="QUEST_SHOW_ID" null="null" label="Show" width="82" height="24" right="426"/>
+			<mx:Button id="QUEST_DROP_ID" null="null" label="Drop" width="82" height="24" right="336"/>
+			<mx:Button id="QUEST_REFRESH_ID" null="543" label="Refresh" width="82" height="24" right="246"/>
+			<mx:CheckBox id="SHOW_ALL_QUESTS_ID" y="545" width="82" label="Show all" selected="true" right="37"/>
+			<mx:Canvas id="CHEATWINDOW_TEXT_CANVAS" x="0" y="367" width="518" height="168" verticalScrollPolicy="auto">
+				<mx:Text id="QUEST_INFO_TEXT_ID" null="null" y="10" width="488" height="1000" text="-"/>
+			</mx:Canvas>
+			<mx:Button id="QUEST_FINISH_WITH_GEMS_ID" null="543" label="Finish with Gems" visible="false" width="101" height="24" null.right="this"/>
+		</mx:Canvas>
+	</mx:TabNavigator>
+
+</mx:TitleWindow>

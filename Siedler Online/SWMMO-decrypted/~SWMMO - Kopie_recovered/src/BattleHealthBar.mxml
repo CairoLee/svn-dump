@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="69" height="16" backgroundColor="#00000000">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas id="redBar" null="true" null.backgroundImage="this" backgroundSize="100%" top="0" bottom="0" left="0" right="0" mask="redBarMask"/>
+	<mx:Canvas id="greenBar" null="true" null.backgroundImage="this" backgroundSize="100%" top="0" bottom="0" left="0" right="0" mask="greenBarMask"/>
+	<mx:Canvas id="redBarMask" null="0" width="0" backgroundColor="#00ffffff" top="0" bottom="0" creationComplete="{this.updateBarMask(event);}"/>
+	<mx:Canvas id="greenBarMask" null="0" width="0" backgroundColor="#00ffffff" top="0" bottom="0" creationComplete="{this.updateBarMask(event);}"/>
+	<mx:Label id="hitpointsLabel" null="null" textAlign="center" horizontalCenter="0" color="#00ffffff" fontWeight="normal"/>
+
+</mx:Canvas>

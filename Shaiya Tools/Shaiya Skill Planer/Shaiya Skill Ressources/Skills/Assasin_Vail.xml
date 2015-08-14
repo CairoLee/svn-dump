@@ -1,0 +1,442 @@
+<?xml version="1.0"?>
+<SkillList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Skills>
+    <Skill IconName="icons.assassin01.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Muskeltraining" Mana="0" Range="0" RequiredLevel="1" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Grundangriffkraft des Spielers um 10.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Muskeltraining" Mana="0" Range="0" RequiredLevel="28" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Grundangriffkraft des Spielers um 20.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Muskeltraining" Mana="0" Range="0" RequiredLevel="48" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Grundangriffkraft des Spielers um 35.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin02.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dolch-Aufwertung" Mana="0" Range="0" RequiredLevel="5" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 5, wenn ein Dolch ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dolch-Aufwertung" Mana="0" Range="0" RequiredLevel="16" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 12, wenn ein Dolch ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dolch-Aufwertung" Mana="0" Range="0" RequiredLevel="25" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 20, wenn ein Dolch ausgerüstet ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin03.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schurken-Waffen-Aufwertung" Mana="0" Range="0" RequiredLevel="5" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 5, wenn eine Faustwaffe oder Reversivschwert ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schurken-Waffen-Aufwertung" Mana="0" Range="0" RequiredLevel="16" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 12, wenn eine Faustwaffe oder Reversivschwert ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schurken-Waffen-Aufwertung" Mana="0" Range="0" RequiredLevel="25" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 20, wenn eine Faustwaffe oder Reversivschwert ausgerüstet ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin04.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="6" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 4% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="15" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 6% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="26" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 8% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin05.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Ausweichen" Mana="0" Range="0" RequiredLevel="10" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Ausweichrate des Spielers gegen physische Attacken um 8%.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Ausweichen" Mana="0" Range="0" RequiredLevel="25" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Ausweichrate des Spielers gegen physische Attacken um 15%.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Ausweichen" Mana="0" Range="0" RequiredLevel="41" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Ausweichrate des Spielers gegen physische Attacken um 22%.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin06.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="12" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 3.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="26" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 4.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="46" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 5.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin07.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="13" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler , etwa  30% dessen zu verstehen was der Gegner sagt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="22" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler , etwa  60% dessen zu verstehen was der Gegner sagt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="51" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler , alles zu verstehen was der Gegner sagt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin08.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schurkenwaffen-Beherrschung" Mana="0" Range="0" RequiredLevel="12" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffsgeschwindigkeit des Spielers um eine Stufe, wenn eine Faustwaffe oder Reversivschwert ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schurkenwaffen-Beherrschung" Mana="0" Range="0" RequiredLevel="26" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffsgeschwindigkeit des Spielers um eine Stufe, wenn eine Faustwaffe oder Reversivschwert ausgerüstet ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin09.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Fataler Treffer" Mana="0" Range="0" RequiredLevel="1" SkillPunkte="3" Stamina="0" Status="" Delay="5">
+          <Description>Grundlegender Diebesangriff, der anderen Fähigkeiten vorrausgehen kann. Produziert Schaden gleich der Angriffskraft des Spielers plus 10 Punkte Schaden, zusätzlich wird er betäubt für 2 Sekunden. Es kann eine weitere Attacke folgen innerhalb der Nachladezeit von 3 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Fataler Treffer" Mana="0" Range="0" RequiredLevel="14" SkillPunkte="3" Stamina="0" Status="" Delay="8">
+          <Description>Grundlegender Diebesangriff, der anderen Fähigkeiten vorrausgehen kann. Produziert Schaden gleich der Angriffskraft des Spielers plus 10 Punkte Schaden, zusätzlich wird er betäubt für 2 Sekunden. Es kann eine weitere Attacke folgen innerhalb der Nachladezeit von 8 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Fataler Treffer" Mana="95" Range="0" RequiredLevel="30" SkillPunkte="3" Stamina="0" Status="" Delay="12">
+          <Description>Grundlegender Diebesangriff, der anderen Fähigkeiten vorrausgehen kann. Produziert Schaden gleich der Angriffskraft des Spielers plus 10 Punkte Schaden, zusätzlich wird er betäubt für 2 Sekunden. Es kann eine weitere Attacke folgen innerhalb der Nachladezeit von 12 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin10.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Beweglichkeit" Mana="50" Range="0" RequiredLevel="3" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Schurkischer Angriff, der die GES  des Spielers um 20 für 5 Minuten erhöht.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Beweglichkeit" Mana="70" Range="0" RequiredLevel="17" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Schurkischer Angriff, der die GES  des Spielers um 40 für 5 Minuten erhöht.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Beweglichkeit" Mana="110" Range="0" RequiredLevel="30" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Schurkischer Angriff, der die GES  des Spielers um 60 für 5 Minuten erhöht.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin11.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Sprinter" Mana="65" Range="0" RequiredLevel="9" SkillPunkte="4" Stamina="0" Status="" Delay="300">
+          <Description>Zauber, steigert die Laufgeschwindigkeit des Spielers  für 1 Minute. Kann nicht mit Tarnung, Verkleidung oder Transformation benutzt werden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Sprinter" Mana="100" Range="0" RequiredLevel="25" SkillPunkte="6" Stamina="0" Status="" Delay="300">
+          <Description>Zauber, steigert Laufgeschwindigkeit der Gruppenmitglieder des Spielers innerhalb 100 Metern für 1 Minute. Kann nicht mit Tarnung, Verkleidung oder Transformation benutzt werden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Sprinter" Mana="170" Range="0" RequiredLevel="41" SkillPunkte="6" Stamina="0" Status="" Delay="300">
+          <Description>Zauber, steigert Laufgeschwindigkeit der Gruppenmitglieder des Spielers innerhalb 100 meter für 2 Minuten. Kann nicht mit Tarnung, Verkleidung oder Transformation benutzt werden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin12.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Finte" Mana="35" Range="0" RequiredLevel="18" SkillPunkte="3" Stamina="0" Status="" Delay="600">
+          <Description>Verstärkungszauber, der dem Spieler hilft, erfolgreich einen Physischen oder Fernkampfangriff auszuführen ungeachtet der Ziels-GES für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Finte" Mana="50" Range="0" RequiredLevel="27" SkillPunkte="3" Stamina="0" Status="" Delay="600">
+          <Description>Verstärkungszauber, der dem Spieler hilft, erfolgreich einen Physischen oder Fernkampfangriff auszuführen ungeachtet der Ziels-GES für 40 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Finte" Mana="65" Range="0" RequiredLevel="37" SkillPunkte="4" Stamina="0" Status="" Delay="600">
+          <Description>Verstärkungszauber, der dem Spieler hilft, erfolgreich einen Physischen oder Fernkampfangriff auszuführen ungeachtet der Ziels-GES für 1 Minute.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin13.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Erschütternder Schlag" Mana="20" Range="0" RequiredLevel="19" SkillPunkte="3" Stamina="0" Status="Blödsinnig" Delay="0">
+          <Description>Schwächungszauber, senkt gegnerisches  GES um 15 Punkte für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Erschütternder Schlag" Mana="40" Range="0" RequiredLevel="38" SkillPunkte="4" Stamina="0" Status="Blödsinnig" Delay="0">
+          <Description>Schwächungszauber, senkt gegnerisches  GES um 30 Punkte für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Erschütternder Schlag" Mana="60" Range="0" RequiredLevel="34" SkillPunkte="3" Stamina="0" Status="Blödsinnig" Delay="0">
+          <Description>Schwächungszauber, bewirkt das die GES von all den Gegnern innerhalb 10 Metern des Ziels um 55 Punkte sinkt für 30 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin14.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Wundstarrkrampf" Mana="0" Range="2" RequiredLevel="2" SkillPunkte="2" Stamina="0" Status="dem Tode geweiht" Delay="3">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Fataler Treffer. verringert die gegnerische Physische Verteidigung um 9 Punkte für 30 Sekunden. Verschlimmerung kann direkt innerhalb der nächsten 3 Sekunden erfolgen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Wundstarrkrampf" Mana="0" Range="2" RequiredLevel="13" SkillPunkte="3" Stamina="0" Status="dem Tode geweiht" Delay="3">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Fataler Treffer. verringert die gegnerische Physische Verteidigung um 24 Punkte für 40 Sekunden. Verschlimmerung kann direkt innerhalb der nächsten 3 Sekunden erfolgen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Wundstarrkrampf" Mana="0" Range="2" RequiredLevel="29" SkillPunkte="3" Stamina="0" Status="dem Tode geweiht" Delay="3">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Fataler Treffer. verringert die gegnerische Physische Verteidigung um 49 Punkte für 1 Minute. Verschlimmerung kann direkt innerhalb der nächsten 3 Sekunden erfolgen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin15.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Halt Kick" Mana="0" Range="3" RequiredLevel="4" SkillPunkte="3" Stamina="0" Status="Stille" Delay="3">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Fatalem Treffer. Es richtet 54 Punkte von Punkte Schaden und verhindert die Benutzung von Zaubersprüchen für 7 Sekunden. Betäubender Schlag kann direkt innerhalb  der nächsten 3 Sekunden erfolgen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Halt Kick" Mana="0" Range="3" RequiredLevel="15" SkillPunkte="3" Stamina="0" Status="Stille" Delay="3">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Fatalem Treffer. Es richtet 104 Punkte von Punkte Schaden und verhindert die Benutzung von Zaubersprüchen für 9 Sekunden. Betäubender Schlag kann direkt innerhalb  der nächsten 3 Sekunden erfolgen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Halt Kick" Mana="0" Range="3" RequiredLevel="31" SkillPunkte="3" Stamina="0" Status="Stille" Delay="3">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Fatalem Treffer. Es richtet 212 Punkte von Punkte Schaden und verhindert die Benutzung von Zaubersprüchen für 12 Sekunden. Betäubender Schlag kann direkt innerhalb  der nächsten 3 Sekunden erfolgen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin16.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Runterziehen" Mana="0" Range="0" RequiredLevel="6" SkillPunkte="3" Stamina="0" Status="Krankheit" Delay="3">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Fataler Treffer. Verletzt für die Höhe des Grundschadens und verringert sowohl AP als auch MP des Ziels um 75% für 75 Sekunden. Giftstoß kann direkt innerhalb der nächsten 3 Sekunden erfolgen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Runterziehen" Mana="0" Range="0" RequiredLevel="19" SkillPunkte="3" Stamina="0" Status="Krankheit" Delay="3">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Fataler Treffer. Verletzt für die Höhe des Grundschadens und verringert sowohl AP als auch MP des Ziels um 100% für 75 Sekunden. Giftstoß kann direkt innerhalb der nächsten 3 Sekunden erfolgen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Runterziehen" Mana="0" Range="0" RequiredLevel="32" SkillPunkte="4" Stamina="0" Status="Krankheit" Delay="3">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Fataler Treffer. Verletzt für die Höhe des Grundschadens und verringert sowohl AP als auch MP des Ziels um 100% für 75 Sekunden. Giftstoß kann direkt innerhalb der nächsten 3 Sekunden erfolgen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin17.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Betäubender Schlag" Mana="0" Range="2" RequiredLevel="7" SkillPunkte="3" Stamina="0" Status="Betäubt" Delay="3">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Halt Kick. Es richtet 33 Punkte Schaden und schlägt das Ziel bewusstlos für 4 Sekunden. Getürkter Angriff kann direkt innerhalb der nächsten 3 Sekunden erfolgen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Betäubender Schlag" Mana="0" Range="2" RequiredLevel="19" SkillPunkte="3" Stamina="0" Status="Betäubt" Delay="5">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Halt Kick. Es richtet 130 Punkte Schaden und schlägt das Ziel bewusstlos für 4 Sekunden. Getürkter Angriff ist aktivierbar innerhalb der kommenden 5 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Betäubender Schlag" Mana="0" Range="2" RequiredLevel="32" SkillPunkte="4" Stamina="0" Status="Betäubt" Delay="7">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Halt Kick. Es richtet 277 Punkte Schaden und schlägt das Ziel bewusstlos für 4 Sekunden. Getürkter Angriff ist aktivierbar innerhalb der kommenden 7 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin18.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Verstohlenheit" Mana="40" Range="0" RequiredLevel="8" SkillPunkte="4" Stamina="0" Status="" Delay="180">
+          <Description>Heimlichkeits-Fähigkeit die eure Anwesenheit für eine Minute vor den Augen der Gegner verbirgt.  Wird automatisch beendet, sobald ein Kampf begonnen wird. Sprint ist in dieser Haltung nicht möglich.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Verstohlenheit" Mana="50" Range="0" RequiredLevel="21" SkillPunkte="5" Stamina="0" Status="" Delay="120">
+          <Description>Heimlichkeits-Fähigkeit die eure Anwesenheit für eine Minute vor den Augen der Gegner verbirgt.  Wird automatisch beendet, sobald ein Kampf begonnen wird. Sprint ist in dieser Haltung nicht möglich. Häufiger einsetzbar als Stufe 1.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Verstohlenheit" Mana="60" Range="0" RequiredLevel="33" SkillPunkte="4" Stamina="0" Status="" Delay="60">
+          <Description>Heimlichkeits-Fähigkeit die eure Anwesenheit für eine Minute vor den Augen der Gegner verbirgt.  Wird automatisch beendet, sobald ein Kampf begonnen wird. Sprint ist in dieser Haltung nicht möglich. Häufiger einsetzbar als Stufe 2.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin19.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Trap" Mana="10" Range="0" RequiredLevel="10" SkillPunkte="3" Stamina="0" Status="" Delay="180">
+          <Description>Angriff, der eine unsichtbare Falle legt welche einen Verletzungsradius hat von 4 Metern um sie für 250 Punkte Schaden. Es können niemals mehr als 2 auf einmal benutzt werden. Sie verschwinden nach 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Trap" Mana="20" Range="0" RequiredLevel="20" SkillPunkte="3" Stamina="0" Status="" Delay="180">
+          <Description>Angriff, der eine unsichtbare Falle legt welche einen Verletzungsradius hat von 6 Metern um sie für 450 Punkte Schaden. Es können niemals mehr als 2 auf einmal benutzt werden. sie verschwinden nach 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Trap" Mana="40" Range="0" RequiredLevel="40" SkillPunkte="4" Stamina="0" Status="" Delay="180">
+          <Description>Angriff, der eine unsichtbare Falle legt welche einen Verletzungsradius hat von 8 Metern um sie für 900 Punkte Schaden. Es können niemals mehr als 2 auf einmal benutzt werden. Sie verschwinden nach 30 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin20.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Magischer Trotz" Mana="75" Range="0" RequiredLevel="11" SkillPunkte="4" Stamina="0" Status="" Delay="300">
+          <Description>Angriff, der verhindert, dass die nächsten 2 Magischen den Spieler treffen, aber endet nach 5 Minuten. Einige Zaubersprüche sind nicht betroffen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Magischer Trotz" Mana="140" Range="0" RequiredLevel="32" SkillPunkte="5" Stamina="0" Status="" Delay="300">
+          <Description>Angriff, der verhindert, dass die nächsten 3 Magischen Angriffe den Spieler treffen, aber endet nach 5 Minuten. Einige Zaubersprüche sind nicht betroffen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Magischer Trotz" Mana="240" Range="0" RequiredLevel="52" SkillPunkte="5" Stamina="0" Status="" Delay="300">
+          <Description>Angriff, der verhindert, dass die nächsten 5 Magischen Angriffe den Spieler treffen, aber endet nach 5 Minuten. Einige Zaubersprüche sind nicht betroffen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin21.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Verschlimmerung" Mana="0" Range="2" RequiredLevel="13" SkillPunkte="3" Stamina="0" Status="" Delay="3">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Wundstarrkrampf. Es richtet Die Angriffskraft des Spielers plus 53 Punkte Schaden. Hieb kann direkt innerhalb der nächsten 3 Sekunden erfolgen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Verschlimmerung" Mana="0" Range="2" RequiredLevel="29" SkillPunkte="4" Stamina="0" Status="" Delay="3">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Wundstarrkrampf. Es richtet Die Angriffskraft des Spielers plus 133 Punkte Schaden. Hieb kann direkt innerhalb der nächsten 3 Sekunden erfolgen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Verschlimmerung" Mana="0" Range="2" RequiredLevel="44" SkillPunkte="4" Stamina="0" Status="" Delay="3">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Wundstarrkrampf. Es richtet Die Angriffskraft des Spielers plus 214 Punkte Schaden. Hieb kann direkt innerhalb der nächsten 3 Sekunden erfolgen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin22.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Giftstoß" Mana="0" Range="0" RequiredLevel="18" SkillPunkte="4" Stamina="0" Status="Gift" Delay="3">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Runterziehen. Da die Klinge mit Gift beschmiert ist, wird es die LP kontinuierlich um 10% für 15 Sekunden senken. Schauerlicher Stoß kann direkt innerhalb der nächsten 3 Sekunden erfolgen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Giftstoß" Mana="0" Range="0" RequiredLevel="28" SkillPunkte="4" Stamina="0" Status="Gift" Delay="3">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Runterziehen. Da die Klinge mit Gift beschmiert ist, wird es die LP kontinuierlich um 15% für 15 Sekunden. Schauerlicher Stoß kann direkt innerhalb der nächsten 3 Sekunden erfolgen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Giftstoß" Mana="0" Range="0" RequiredLevel="39" SkillPunkte="4" Stamina="0" Status="Gift" Delay="3">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Runterziehen. Da die Klinge mit Gift beschmiert ist, wird es die LP kontinuierlich um 20% für 15 Sekunden. Schauerlicher Stoß kann direkt innerhalb der nächsten 3 Sekunden erfolgen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin23.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rascher Schlag" Mana="100" Range="0" RequiredLevel="21" SkillPunkte="4" Stamina="0" Status="" Delay="600">
+          <Description>Verstärkungszauber erhöht die Angriffsgeschwindigkeit des Spielers um 2 Stufen für 20 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rascher Schlag" Mana="145" Range="0" RequiredLevel="34" SkillPunkte="5" Stamina="0" Status="" Delay="600">
+          <Description>Verstärkungszauber erhöht die Angriffsgeschwindigkeit des Spielers um 2 Stufen für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rascher Schlag" Mana="195" Range="0" RequiredLevel="43" SkillPunkte="5" Stamina="0" Status="" Delay="600">
+          <Description>Verstärkungszauber erhöht die Angriffsgeschwindigkeit des Spielers um 2 Stufen für 45 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin24.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Inkarnation" Mana="65" Range="0" RequiredLevel="7" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Gruppenzauber, erhöht GLÜ von Gruppenmitgliedern innerhalb 100 Metern um den Spieler um 18 Punkte für 10 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Inkarnation" Mana="100" Range="0" RequiredLevel="24" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Gruppenzauber, erhöht GLÜ von Gruppenmitgliedern innerhalb 100 Metern um den Spieler um 45 Punkte für 10 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Inkarnation" Mana="250" Range="0" RequiredLevel="53" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Gruppenzauber, erhöht GLÜ von Gruppenmitgliedern innerhalb 100 Metern um den Spieler um 90 Punkte für 10 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin25.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Behändigkeit" Mana="0" Range="0" RequiredLevel="17" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Genauigkeit von physischen Attacken und  Ausweichrate  des Spielers gegen physische und Fernkampfattacken um 8% für 30 Sekunden. Wird automatisch ausgelöst bei einem LP bestand unter 8%; wieder verfügbar nach 3 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Behändigkeit" Mana="0" Range="0" RequiredLevel="29" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Genauigkeit von physischen Attacken und  Ausweichrate  des Spielers gegen physische und Fernkampfattacken um 15% für 30 Sekunden. Wird automatisch ausgelöst bei einem LP bestand unter 15%; wieder verfügbar nach 3 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Behändigkeit" Mana="0" Range="0" RequiredLevel="50" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Genauigkeit von physischen Attacken und  Ausweichrate  des Spielers gegen physische und Fernkampfattacken um 25% für 30 Sekunden. Wird automatisch ausgelöst bei einem LP bestand unter 20%; wieder verfügbar nach 3 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin26.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="2" Element="None" Name="Transformation" Mana="80" Range="0" RequiredLevel="21" SkillPunkte="3" Stamina="0" Status="" Delay="600">
+          <Description>Zauber. Transformiert den Spieler in ein bestimmtes Tier für 3 Minuten. Wird automatisch bei einem Kampf beendet.</Description>
+        </Level>
+        <Level AoE="0" CastTime="2" Element="None" Name="Transformation" Mana="120" Range="0" RequiredLevel="31" SkillPunkte="4" Stamina="0" Status="" Delay="600">
+          <Description>Zauber. Transformiert den Spieler in ein bestimmtes Tier für 4 Minuten. Wird automatisch bei einem Kampf beendet.</Description>
+        </Level>
+        <Level AoE="0" CastTime="2" Element="None" Name="Transformation" Mana="180" Range="0" RequiredLevel="42" SkillPunkte="5" Stamina="0" Status="" Delay="600">
+          <Description>Zauber. Transformiert den Spieler in ein bestimmtes Tier für 5 Minuten. Wird automatisch bei einem Kampf beendet.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin27.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Hieb" Mana="20" Range="3" RequiredLevel="22" SkillPunkte="4" Stamina="0" Status="" Delay="45">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Verschlimmerung. Sie schneidet den Gegner  2 mal stärker als die normale Angriffskraft.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Hieb" Mana="30" Range="3" RequiredLevel="37" SkillPunkte="4" Stamina="0" Status="" Delay="45">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Verschlimmerung. Sie schneidet den Gegner  2 mal stärker als die normale Angriffskraft plus 80 Punkte Schaden pro Hieb.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Hieb" Mana="40" Range="3" RequiredLevel="54" SkillPunkte="6" Stamina="0" Status="" Delay="45">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Verschlimmerung. Sie schneidet den Gegner  3 mal stärker als die normale Angriffskraft plus 80 Punkte Schaden pro Hieb.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin28.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="2" Element="None" Name="Verschleiern" Mana="60" Range="0" RequiredLevel="23" SkillPunkte="4" Stamina="0" Status="" Delay="600">
+          <Description>Illusionsfähigkeit, die den Spieler als einen Gegner verkleidet. hält für 3 Minuten . Ein Kampf oder Angriff beendet die Scharade.</Description>
+        </Level>
+        <Level AoE="0" CastTime="2" Element="None" Name="Verschleiern" Mana="90" Range="0" RequiredLevel="34" SkillPunkte="4" Stamina="0" Status="" Delay="600">
+          <Description>Illusionsfähigkeit, die den Spieler als einen Gegner verkleidet hält für 5 Minuten . Ein Kampf oder Angriff beendet die Scharade.</Description>
+        </Level>
+        <Level AoE="0" CastTime="2" Element="None" Name="Verschleiern" Mana="150" Range="0" RequiredLevel="45" SkillPunkte="4" Stamina="0" Status="" Delay="600">
+          <Description>Illusionsfähigkeit, die den Spieler als einen Gegner verkleidet hält für 10 Minuten . Ein Kampf oder Angriff beendet die Scharade.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin29.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Perfekte Stellung" Mana="85" Range="0" RequiredLevel="33" SkillPunkte="6" Stamina="0" Status="" Delay="300">
+          <Description>Verstärkungszauber, der die Wahrscheinlichkeit für kritische physische Angriffe um 15% erhöht und steigt die Ausweichrate gegen jeden physischen und Fernkampfangriff um 7% für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Perfekte Stellung" Mana="110" Range="0" RequiredLevel="44" SkillPunkte="7" Stamina="0" Status="" Delay="300">
+          <Description>Verstärkungszauber, der die Wahrscheinlichkeit für kritische physische Angriffe um 27% erhöht und steigt die Ausweichrate gegen jeden physischen und Fernkampfangriff um 13% für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Perfekte Stellung" Mana="160" Range="0" RequiredLevel="55" SkillPunkte="8" Stamina="0" Status="" Delay="300">
+          <Description>Verstärkungszauber, der die Wahrscheinlichkeit für kritische physische Angriffe um 39% erhöht und steigt die Ausweichrate gegen jeden physischen und Fernkampfangriff um 20% für 30 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin30.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Getürkter Angriff" Mana="30" Range="2" RequiredLevel="36" SkillPunkte="4" Stamina="0" Status="Bewusstlosigkeit" Delay="120">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Betäubender Schlag. Es richtet Punkte Schaden an mit der Angriffskraft des Spielers zusätzlich wird er betäubt für 3 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Getürkter Angriff" Mana="40" Range="2" RequiredLevel="47" SkillPunkte="4" Stamina="0" Status="Bewusstlosigkeit" Delay="120">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Betäubender Schlag. Es richtet Punkte Schaden an mit der Angriffskraft des Spielers zusätzlich wird er betäubt für 5 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Getürkter Angriff" Mana="50" Range="2" RequiredLevel="57" SkillPunkte="6" Stamina="0" Status="Bewusstlosigkeit" Delay="120">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Betäubender Schlag. Es richtet Punkte Schaden an mit der Angriffskraft des Spielers zusätzlich wird er betäubt für 8 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin31.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Manadämpfung" Mana="0" Range="2" RequiredLevel="36" SkillPunkte="4" Stamina="0" Status="" Delay="600">
+          <Description>Angriff der dem Gegner 50% des Ziels Maximale MP auf kosten aller MP des Spielers wegpustet. Nur nutzbar mit Nahkampfwaffen. Keine Wirkung auf Monster.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Manadämpfung" Mana="0" Range="2" RequiredLevel="46" SkillPunkte="5" Stamina="0" Status="" Delay="600">
+          <Description>Angriff der dem Gegner 70% des Ziels Maximale MP auf kosten aller MP des Spielers wegpustet. Nur benutzbar mit Nahkampfwaffen. Keine Wirkung auf Monster.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Manadämpfung" Mana="0" Range="2" RequiredLevel="56" SkillPunkte="6" Stamina="0" Status="" Delay="600">
+          <Description>Angriff der dem Gegner 90% des Ziels Maximale MP auf kosten aller MP des Spielers wegpustet. Nur benutzbar mit Nahkampfwaffen. Keine Wirkung auf Monster.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin32.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schauerlicher Stoß" Mana="30" Range="2" RequiredLevel="38" SkillPunkte="4" Stamina="0" Status="tot" Delay="120">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Giftstoß. Es richtet Punkte Schaden gleichbedeutend mit 20% von der LP des Gegners ungeachtet seiner Verteidigungskraft. Betriff einige Monster nicht.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schauerlicher Stoß" Mana="40" Range="2" RequiredLevel="47" SkillPunkte="4" Stamina="0" Status="tot" Delay="110">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Giftstoß. Es richtet Punkte Schaden gleichbedeutend mit 25% von der LP des Gegners ungeachtet seiner Verteidigungskraft. Betriff einige Monster nicht.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schauerlicher Stoß" Mana="50" Range="2" RequiredLevel="58" SkillPunkte="5" Stamina="0" Status="tot" Delay="100">
+          <Description>Angriff, der nur erfolgen darf nach erfolgreicher Anwendung von Giftstoß. Es richtet Punkte Schaden gleichbedeutend mit 35% von der LP des Gegners ungeachtet seiner Verteidigungskraft. Betriff einige Monster nicht.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin33.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Blick fürs Wesentliche" Mana="40" Range="30" RequiredLevel="40" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt 3 Minuten den Gegner zu verstehen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin34.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Heilloser Angriff" Mana="230" Range="2" RequiredLevel="49" SkillPunkte="8" Stamina="0" Status="tot" Delay="900">
+          <Description>Aktive Fähigkeit, der die verbliebenen LP des Gegners um 35% herabsetzt. Der Effekt ist auf einige Monster limitiert.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Heilloser Angriff" Mana="295" Range="2" RequiredLevel="59" SkillPunkte="9" Stamina="0" Status="tot" Delay="900">
+          <Description>Aktive Fähigkeit, der die verbliebenen LP des Gegners um 48% herabsetzt. Der Effekt ist auf einige Monster limitiert.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.assassin35.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Syeerische Berührung" Mana="330" Range="1" RequiredLevel="60" SkillPunkte="9" Stamina="0" Status="tot" Delay="480">
+          <Description>Mächtiger Angriff, der 92% der Maximalen LP des Gegners Schaden macht. Der Effekt ist auf einige Monster limitiert.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+  </Skills>
+</SkillList>

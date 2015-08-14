@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="470" height="312">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas null="null" top="5" left="5" right="9" bottom="0"/>
+	<mx:Canvas null="null" height="82" null.left="this" right="0" top="0" showEffect="fadeIn" hideEffect="fadeOut"/>
+	<mx:Image id="_DailyLoginPanel_Image1" horizontalCenter="0" top="-35" source="{gAssetManager.GetBitmap("DailyLoginHeaderOrnamental")}"/>
+	<mx:Canvas styleName="questPanelFooter" height="60" null.left="this" right="10" bottom="0"/>
+	<mx:Label id="headline" left="46" top="10" fontWeight="bold" textAlign="center" right="46" color="#00000000" text="null"/>
+	<mx:Canvas id="content" top="35" bottom="1" left="17" right="19">
+		<mx:Canvas styleName="detailsHeader" height="66" horizontalScrollPolicy="off" verticalScrollPolicy="off" left="2" right="2">
+			<mx:Canvas horizontalScrollPolicy="off" verticalScrollPolicy="auto" null.left="this" right="15" top="9" bottom="5">
+				<mx:Text id="description" selectable="false" width="100%" color="#00ffffff" fontWeight="normal" textAlign="center"/>
+			</mx:Canvas>
+		</mx:Canvas>
+		<mx:Canvas styleName="detailsSubHeader" height="18" left="7" right="6" top="69">
+			<mx:Label id="_DailyLoginPanel_Label2" null.top="this" horizontalCenter="0" color="#00ffffff" fontWeight="bold" text="{null.GetText(LOCA_GROUP.LABELS, "Rewards")}"/>
+		</mx:Canvas>
+		<mx:Canvas styleName="detailsContentBox" height="90" left="8" right="7" top="87">
+			<mx:HBox id="rewardsList" null="[new UIComponentDescriptor({type:Frame, id:"day1", events:{toolTipCreate:"__day1_toolTipCreate"}}), new UIComponentDescriptor({type:Frame, id:"day2", events:{toolTipCreate:"__day2_toolTipCreate"}}), new UIComponentDescriptor({type:Frame, id:"day3", events:{toolTipCreate:"__day3_toolTipCreate"}}), new UIComponentDescriptor({type:Frame, id:"day4", events:{toolTipCreate:"__day4_toolTipCreate"}}), new UIComponentDescriptor({type:Frame, id:"day5", events:{toolTipCreate:"__day5_toolTipCreate"}}), new UIComponentDescriptor({type:Frame, id:"day6", events:{toolTipCreate:"__day6_toolTipCreate"}}), new UIComponentDescriptor({type:Frame, id:"day7", events:{toolTipCreate:"__day7_toolTipCreate"}})]" horizontalCenter="0" top="3" horizontalGap="2"/>
+			<mx:HBox horizontalCenter="-2" top="5" horizontalGap="4">
+				<mx:Image id="day1result" width="54" height="65" scaleContent="false" visible="false"/>
+				<mx:Image id="day2result" width="54" height="65" scaleContent="false" visible="false"/>
+				<mx:Image id="day3result" null="54" height="65" scaleContent="false" visible="false"/>
+				<mx:Image id="day4result" null="54" height="65" scaleContent="false" visible="false"/>
+				<mx:Image id="day5result" width="54" height="65" scaleContent="false" visible="false"/>
+				<mx:Image id="day6result" null="54" height="65" scaleContent="false" visible="false"/>
+				<mx:Image id="day7result" null="null" height="65" scaleContent="false" visible="false"/>
+			</mx:HBox>
+			<mx:HBox id="daysLabels" horizontalCenter="0" top="71" horizontalGap="2">
+				<mx:Label id="day1label" null="56" textAlign="center" color="#00ffffff" text="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "DailyLoginDay", ["1"])}"/>
+				<mx:Label id="day2label" null="56" textAlign="center" color="#00ffffff" text="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "DailyLoginDay", ["2"])}"/>
+				<mx:Label id="day3label" width="56" textAlign="center" color="#00ffffff" text="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "DailyLoginDay", ["3"])}"/>
+				<mx:Label id="day4label" null="null" null.textAlign="this" color="#00ffffff" text="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "DailyLoginDay", ["4"])}"/>
+				<mx:Label id="day5label" width="56" textAlign="center" color="#00ffffff" text="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "DailyLoginDay", ["5"])}"/>
+				<mx:Label id="day6label" null="null" textAlign="center" color="#00ffffff" text="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "DailyLoginDay", ["6"])}"/>
+				<mx:Label id="day7label" null="56" textAlign="center" color="#00ffffff" text="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "DailyLoginDay", ["7"])}"/>
+			</mx:HBox>
+		</mx:Canvas>
+		<mx:Canvas styleName="detailsSubHeader" height="42" null.left="this" right="6" top="180">
+			<mx:Canvas horizontalScrollPolicy="off" verticalScrollPolicy="auto" left="15" right="15" top="5" bottom="1">
+				<mx:Text id="daysRemaining" selectable="false" width="100%" color="#00ffffff" fontWeight="normal" textAlign="center"/>
+			</mx:Canvas>
+		</mx:Canvas>
+		<mx:StandardButton id="btnOK" null="null" width="70" height="26" horizontalCenter="0" bottom="10" label="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "OK")}"/>
+	</mx:Canvas>
+
+</mx:Canvas>

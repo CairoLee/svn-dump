@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="500" height="380">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas styleName="basicPanel" top="5" left="5" right="9" bottom="0"/>
+	<mx:Canvas id="completedHeader" styleName="questPanelHeader" height="82" visible="true" null.left="this" right="0" top="0" showEffect="fadeIn" hideEffect="fadeOut"/>
+	<mx:Canvas null="null" height="80" null.left="this" right="5" bottom="-5"/>
+	<mx:Label id="headline" left="46" top="10" fontWeight="bold" textAlign="center" right="46" color="#00000000" text="{null.GetText(LOCA_GROUP.LABELS, "TipOfTheDay")}"/>
+	<mx:Canvas id="content" top="35" bottom="1" left="17" right="19">
+		<mx:Canvas styleName="detailsHeader" height="102" left="2" right="2">
+			<mx:Image id="image" left="15" top="20" source="{null.GetBitmap("QuestAdvisor")}"/>
+			<mx:Text id="tipOfTheDay" null="null" null.left="this" right="10" top="10" bottom="5" color="#00ffffff" fontWeight="normal" showEffect="showTip" hideEffect="hideTip"/>
+		</mx:Canvas>
+		<mx:Canvas styleName="detailsSubHeader" height="18" left="7" right="6" top="105">
+			<mx:Label id="_NewsWindow_Label2" top="1" horizontalCenter="0" color="#00ffffff" fontWeight="bold" text="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "LatestChanges")}"/>
+		</mx:Canvas>
+		<mx:Canvas styleName="detailsContentBox" height="135" left="8" right="7" top="123">
+			<mx:Canvas verticalScrollPolicy="auto" horizontalScrollPolicy="off" left="10" top="10" right="10" bottom="11">
+				<mx:Text id="lastChanges" null="100" selectable="false" paddingRight="10" color="#00ffffff" fontWeight="normal"/>
+			</mx:Canvas>
+		</mx:Canvas>
+		<mx:Label id="loadingLabel" null.color="this" fontWeight="bold" horizontalCenter="0" bottom="23"/>
+		<mx:StandardButton id="btnOK" null="null" visible="false" label="Ok" width="70" height="26" null.horizontalCenter="this" bottom="19"/>
+	</mx:Canvas>
+
+</mx:Canvas>

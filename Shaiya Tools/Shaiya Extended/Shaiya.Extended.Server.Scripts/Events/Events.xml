@@ -1,0 +1,9 @@
+﻿<?xml version="1.0"?>
+<ScriptList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ScriptListEntry Type="Npc">
+    <Entrys>
+      <Entry Type="Path" Path="OnWorldLoaded.cs" />
+      <Entry Type="Path" Path="PrioTest.cs" />
+    </Entrys>
+  </ScriptListEntry>
+</ScriptList>

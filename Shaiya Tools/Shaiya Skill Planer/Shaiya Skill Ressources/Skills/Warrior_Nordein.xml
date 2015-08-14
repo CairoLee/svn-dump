@@ -1,0 +1,442 @@
+<?xml version="1.0"?>
+<SkillList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Skills>
+    <Skill IconName="icons.warrior01.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Muskeltraining" Mana="0" Range="0" RequiredLevel="1" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Grundangriffskraft um 10.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Muskeltraining" Mana="0" Range="0" RequiredLevel="28" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Grundangriffskraft um 20.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Muskeltraining" Mana="0" Range="0" RequiredLevel="48" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Grundangriffskraft um 35.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior02.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Zweihandwaffe-Aufwertung" Mana="0" Range="0" RequiredLevel="5" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht Die Angriffskraft des Spielers um 5, wenn eine Zweihändige Waffe wie Schwert oder Axt ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Zweihandwaffe-Aufwertung" Mana="0" Range="0" RequiredLevel="16" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht Die Angriffskraft des Spielers um 12, wenn eine Zweihändige Waffe wie Schwert oder Axt ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Zweihandwaffe-Aufwertung" Mana="0" Range="0" RequiredLevel="25" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht Die Angriffskraft des Spielers um 20, wenn eine Zweihändige Waffe wie Schwert oder Axt ausgerüstet ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior03.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Speer-Aufwertung" Mana="0" Range="0" RequiredLevel="5" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht Die Angriffskraft des Spielers um 5, wenn ein Speer ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Speer-Aufwertung" Mana="0" Range="0" RequiredLevel="16" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht Die Angriffskraft des Spielers um 12, wenn ein Speer ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Speer-Aufwertung" Mana="0" Range="0" RequiredLevel="25" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht Die Angriffskraft des Spielers um 20, wenn ein Speer ausgerüstet ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior04.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dual-Waffen-Aufwertung" Mana="0" Range="0" RequiredLevel="5" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht Die Angriffskraft des Spielers um 5, wenn Dualwaffen ausgerüstet sind.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dual-Waffen-Aufwertung" Mana="0" Range="0" RequiredLevel="16" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht Die Angriffskraft des Spielers um 12, wenn Dualwaffen ausgerüstet sind.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dual-Waffen-Aufwertung" Mana="0" Range="0" RequiredLevel="25" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht Die Angriffskraft des Spielers um 20, wenn Dualwaffen ausgerüstet sind.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior05.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="6" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 4% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="15" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 6% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="26" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 8% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior06.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="12" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 3.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="26" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 4.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="46" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 5.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior07.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="13" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler , etwa  30% dessen zu verstehen was der Gegner sagt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="22" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler , etwa  60% dessen zu verstehen was der Gegner sagt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="51" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler alles zu verstehen was der Gegner sagt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior08.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Zweihänder-Beherrschung" Mana="0" Range="0" RequiredLevel="14" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffsgeschwindigkeit des Spielers um eine Stufe wenn eine Zweihändige Waffe wie Schwert oder Axt ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Zweihänder-Beherrschung" Mana="0" Range="0" RequiredLevel="35" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffsgeschwindigkeit des Spielers um eine Stufe wenn eine Zweihändige Waffe wie Schwert oder Axt ausgerüstet ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior09.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Speer-Beherrschung" Mana="0" Range="0" RequiredLevel="14" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffsgeschwindigkeit des Spielers um eine Stufe, wenn ein Speer ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Speer-Beherrschung" Mana="0" Range="0" RequiredLevel="35" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffsgeschwindigkeit des Spielers um eine Stufe, wenn ein Speer ausgerüstet ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior10.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dual-Waffen-Beherrschung" Mana="0" Range="0" RequiredLevel="14" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffsgeschwindigkeit des Spielers um eine Stufe, wenn Dualwaffen ausgerüstet sind.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dual-Waffen-Beherrschung" Mana="0" Range="0" RequiredLevel="35" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffsgeschwindigkeit des Spielers um eine Stufe, wenn Dualwaffen ausgerüstet sind.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior11.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Abstecher" Mana="0" Range="19" RequiredLevel="1" SkillPunkte="2" Stamina="0" Status="" Delay="30">
+          <Description>Grundlegender Angriff von Kämpfern und Kriegern, Macht immer 15 Punkte Schaden Zusätzlich wird der Gegner Ohnmächtig für 2 Sekunden und er wird weggedrückt, bei der aktuellen Kraft etwa 19 Meter.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Abstecher" Mana="0" Range="20" RequiredLevel="12" SkillPunkte="2" Stamina="0" Status="" Delay="30">
+          <Description>Grundlegender Angriff von Kämpfern und Kriegern, Macht immer 30 Punkte Schaden Zusätzlich wird der Gegner Ohnmächtig für 2 Sekunden und er wird weggedrückt, bei der aktuellen Kraft etwa 20 Meter.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Abstecher" Mana="0" Range="22" RequiredLevel="29" SkillPunkte="3" Stamina="0" Status="" Delay="30">
+          <Description>Grundlegender Angriff von Kämpfern und Kriegern, Macht immer 50 Punkte Schaden Zusätzlich wird der Gegner Ohnmächtig für 2 Sekunden und er wird weggedrückt, bei der aktuellen Kraft etwa 22 Meter.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior12.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Konzentration" Mana="40" Range="0" RequiredLevel="3" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Häufigkeit der erfolgreichen Angriffe des Spielers um 7% für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Konzentration" Mana="70" Range="0" RequiredLevel="17" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Häufigkeit der erfolgreichen Angriffe des Spielers um 14% für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Konzentration" Mana="100" Range="0" RequiredLevel="30" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Häufigkeit der erfolgreichen Angriffe des Spielers um 21% für 5 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior13.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Doppelschaden" Mana="0" Range="2" RequiredLevel="3" SkillPunkte="3" Stamina="0" Status="" Delay="10">
+          <Description>Aktive Fähigkeit, der dem Gegner Grundschaden und zusätzlich noch 50 Punkte Schaden, wenn der Angriff erfolgreich ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Doppelschaden" Mana="0" Range="2" RequiredLevel="15" SkillPunkte="3" Stamina="0" Status="" Delay="10">
+          <Description>Aktive Fähigkeit, der dem Gegner Grundschaden und zusätzlich noch 166 Punkte Schaden, wenn der Angriff erfolgreich ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Doppelschaden" Mana="0" Range="2" RequiredLevel="27" SkillPunkte="3" Stamina="0" Status="" Delay="10">
+          <Description>Aktive Fähigkeit, der dem Gegner Grundschaden und zusätzlich noch 298 Punkte Schaden, wenn derAngriff erfolgreich ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior14.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schlag zu" Mana="40" Range="0" RequiredLevel="4" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Häufigkeit der Kritischen Angriffe 5% für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schlag zu" Mana="70" Range="0" RequiredLevel="18" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Häufigkeit der Kritischen Angriffe 10% für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schlag zu" Mana="100" Range="0" RequiredLevel="31" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht die Häufigkeit der Kritischen Angriffe 15% für 5 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior15.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schwere Klatsche" Mana="0" Range="2" RequiredLevel="9" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, der den Gegner anhaltend quetscht und Schaden verursacht für 200 Punkte Schaden. Hält insgesamt für 30 Sekunden. Ein Erfolgreicher Angriff wird den Gegner reizen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schwere Klatsche" Mana="0" Range="2" RequiredLevel="19" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, der den Gegner anhaltend quetscht und Schaden verursacht für 350 Punkte Schaden. Hält insgesamt für 30 Sekunden. Ein Erfolgreicher Angriff wird den Gegner reizen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schwere Klatsche" Mana="0" Range="2" RequiredLevel="28" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, der den Gegner anhaltend quetscht und Schaden verursacht für 650 Punkte Schaden. Hält insgesamt für 30 Sekunden. Ein Erfolgreicher Angriff wird den Gegner reizen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior16.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Stärke des Moments" Mana="25" Range="0" RequiredLevel="10" SkillPunkte="3" Stamina="0" Status="" Delay="600">
+          <Description>Verstärkungsauber erhöht die physische Angriffskraft um 50 Punkte für 30 Sekunden. </Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Stärke des Moments" Mana="40" Range="0" RequiredLevel="22" SkillPunkte="4" Stamina="0" Status="" Delay="600">
+          <Description>Verstärkungsauber erhöht die physische Angriffskraft um 100 Punkte für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Stärke des Moments" Mana="70" Range="0" RequiredLevel="39" SkillPunkte="4" Stamina="0" Status="" Delay="600">
+          <Description>Verstärkungsauber erhöht die physische Angriffskraft um 170 Punkte für 30 Sekunden. </Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior17.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Bresche Schlagen" Mana="0" Range="2" RequiredLevel="2" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit,  senkt die Abwehrkraft um 9 für 6 Sekunden und schadet dem Gegner in Höhe der Grundangriffskraft um den Gegner hinwegzufegen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Bresche Schlagen" Mana="0" Range="2" RequiredLevel="10" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit,  senkt die Abwehrkraft um 21 für 6 Sekunden und schadet dem Gegner in Höhe der Grundangriffskraft um den Gegner hinwegzufegen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Bresche Schlagen" Mana="0" Range="2" RequiredLevel="24" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit,  senkt die Abwehrkraft um 34 für 6 Sekunden und schadet dem Gegner in Höhe der Grundangriffskraft um den Gegner hinwegzufegen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior18.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="6" CastTime="0" Element="None" Name="Zermalmender Stoß" Mana="0" Range="0" RequiredLevel="4" SkillPunkte="3" Stamina="0" Status="" Delay="10">
+          <Description>Angriff, der bei jeden Gegner innerhalb von 6 Metern um den Spieler herum Schaden verursacht und deren Angriffsgeschwindigkeit um eine Stufe für 7 Sekunden reduziert. Funktioniert nur wenn eine einhändige Waffe, weine Zweihändige Waffe oder ein Speer ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="8" CastTime="0" Element="None" Name="Zermalmender Stoß" Mana="0" Range="0" RequiredLevel="19" SkillPunkte="3" Stamina="0" Status="" Delay="10">
+          <Description>Angriff, der Schaden verursacht bei jeden Gegner innerhalb von 8 Metern um den Spieler und reduziert deren Angriffsgeschwindigkeit um für 10 Sekunden. Funktioniert nur wenn eine einhändige Waffe, weine Zweihändige Waffe oder ein Speer ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="10" CastTime="0" Element="None" Name="Zermalmender Stoß" Mana="0" Range="0" RequiredLevel="38" SkillPunkte="4" Stamina="0" Status="" Delay="10">
+          <Description>Angriff, der Schaden verursacht bei jeden Gegner innerhalb von 10 Metern um den Spieler für die physische Angriffskraft und reduziert deren Angriffsgeschwindigkeit um 3 Stufen für 15 Sekunden. Ihr müsst folgendes ausgerüstet haben:  Einhandwaffe, Zweihandwaffe Speer.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior19.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="6" CastTime="0" Element="None" Name="Klingentanz" Mana="0" Range="2" RequiredLevel="8" SkillPunkte="3" Stamina="0" Status="" Delay="10">
+          <Description>Angriff, der Schaden verursacht bei jedem Gegner innerhalb von 6 Metern des Ziels für die physische Angriffskraft, wenn ein zweihändiges Schwert, eine zweihändige Axt oder eine Duale Waffe angelegt ist.</Description>
+        </Level>
+        <Level AoE="6" CastTime="0" Element="None" Name="Klingentanz" Mana="0" Range="2" RequiredLevel="18" SkillPunkte="3" Stamina="0" Status="" Delay="10">
+          <Description>Angriff, der Schaden verursacht bei jeden Gegner innerhalb von 6 Metern des Ziels zweifach der physischen Angriffskraft, wenn ein zweihändiges Schwert, eine zweihändige Axt oder eine Duale Waffe angelegt ist.</Description>
+        </Level>
+        <Level AoE="10" CastTime="0" Element="None" Name="Klingentanz" Mana="0" Range="2" RequiredLevel="34" SkillPunkte="4" Stamina="0" Status="" Delay="10">
+          <Description>Angriff, der Schaden verursacht bei jeden Gegner innerhalb von 10 Metern des Ziels zweifach der physischen Angriffskraft, wenn ein zweihändiges Schwert, eine zweihändige Axt oder eine Duale Waffe angelegt ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior20.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Kontrollierte Energie" Mana="70" Range="0" RequiredLevel="11" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Verstärkungszauber, erhöht die AP des Spieles auf ein Maximum von 500 und hält 30 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Kontrollierte Energie" Mana="100" Range="0" RequiredLevel="21" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Verstärkungszauber, erhöht die AP des Spieles auf ein Maximum von 600 und hält 30 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Kontrollierte Energie" Mana="110" Range="0" RequiredLevel="40" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Verstärkungszauber, erhöht die AP des Spieles auf ein Maximum von 800 und hält 30 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior21.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Tödlicher Streich" Mana="0" Range="2" RequiredLevel="13" SkillPunkte="3" Stamina="0" Status="" Delay="10">
+          <Description>Angriff, der  zweifach für die physische Angriffskraft Schaden zufügt. Wenn ein einhändiges Schwert, eine einhändige Axt,  eine Duale Waffe oder ein Speer angelegt ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Tödlicher Streich" Mana="0" Range="2" RequiredLevel="23" SkillPunkte="3" Stamina="0" Status="" Delay="10">
+          <Description>Angriff, der einem Ziel Schaden zufügt für die physische Angriffskraft. Wenn ein einhändiges Schwert, eine einhändige Axt,  eine Duale Waffe oder ein Speer angelegt ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Tödlicher Streich" Mana="0" Range="2" RequiredLevel="37" SkillPunkte="4" Stamina="0" Status="" Delay="10">
+          <Description>Angriff, der einem Ziel Schaden zufügt zweifach für die physische Angriffskraft plus 80. Wenn ein einhändiges Schwert, eine einhändige Axt,  eine Duale Waffe oder ein Speer angelegt ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior22.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dual-Waffen-Sturm" Mana="0" Range="2" RequiredLevel="32" SkillPunkte="4" Stamina="0" Status="" Delay="15">
+          <Description>Angriff, trifft mit der Angriffskraft des Spielers plus 164 Punkte Schaden.  Nur benutzbar mit Dualwaffen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dual-Waffen-Sturm" Mana="0" Range="2" RequiredLevel="42" SkillPunkte="4" Stamina="0" Status="" Delay="15">
+          <Description>Angriff, trifft mit der Angriffskraft des Spielers plus 237 Punkte Schaden.  Nur benutzbar mit Dualwaffen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dual-Waffen-Sturm" Mana="0" Range="2" RequiredLevel="55" SkillPunkte="4" Stamina="0" Status="" Delay="15">
+          <Description>Angriff, trifft mit der Angriffskraft des Spielers plus 381 Punkte Schaden.  Nur benutzbar mit Dualwaffen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior23.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Wilder Tanz" Mana="0" Range="2" RequiredLevel="32" SkillPunkte="4" Stamina="0" Status="" Delay="15">
+          <Description>Aktive Fähigkeit, trifft mit der Angriffskraft des Spielers plus 191 Punkte Schaden. Nur benutzbar mit einer Einhandwaffe oder einem Speer.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Wilder Tanz" Mana="0" Range="2" RequiredLevel="42" SkillPunkte="4" Stamina="0" Status="" Delay="15">
+          <Description>Aktive Fähigkeit, trifft mit der Angriffskraft des Spielers plus 278 Punkte Schaden. Nur benutzbar mit einer Einhandwaffe oder einem Speer.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Wilder Tanz" Mana="0" Range="2" RequiredLevel="52" SkillPunkte="4" Stamina="0" Status="" Delay="15">
+          <Description>Aktive Fähigkeit, trifft mit der Angriffskraft des Spielers plus 381 Punkte Schaden. Nur benutzbar mit einer Einhandwaffe oder einem Speer.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior24.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="6" CastTime="0" Element="None" Name="Verbesserte Pirouette" Mana="0" Range="0" RequiredLevel="33" SkillPunkte="4" Stamina="0" Status="" Delay="15">
+          <Description>Aktive Fähigkeit, der dessen Gegner innerhalb 6 Metern um den Spieler zwei mal trifft. Nur benutzbar wenn Zweihändige Waffen oder Dualwaffen ausgerüstet sind.</Description>
+        </Level>
+        <Level AoE="6" CastTime="0" Element="None" Name="Verbesserte Pirouette" Mana="0" Range="0" RequiredLevel="47" SkillPunkte="4" Stamina="0" Status="" Delay="15">
+          <Description>Aktive Fähigkeit, der dessen Gegner innerhalb 6 Metern um den Spieler zwei mal trifft mit  additiven 160. Nur benutzbar wenn Zweihändige Waffen oder Dualwaffen ausgerüstet sind.</Description>
+        </Level>
+        <Level AoE="10" CastTime="0" Element="None" Name="Verbesserte Pirouette" Mana="0" Range="0" RequiredLevel="57" SkillPunkte="5" Stamina="0" Status="" Delay="15">
+          <Description>Aktive Fähigkeit, der dessen Gegner innerhalb 6 Metern um den Spieler zwei mal trifft mit  additiven 190. Nur benutzbar wenn Zweihändige Waffen oder Dualwaffen ausgerüstet sind.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior25.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="4" CastTime="0" Element="None" Name="Verschmutzung" Mana="0" Range="0" RequiredLevel="33" SkillPunkte="4" Stamina="0" Status="" Delay="15">
+          <Description>Aktive Fähigkeit, trifft mit 328 Punkte Schaden innerhalb 4 Metern um den Spieler über die Dauer von 12 Sekunden. Nur benutzbar mit einer Einhandwaffe oder einem Speer.</Description>
+        </Level>
+        <Level AoE="6" CastTime="0" Element="None" Name="Verschmutzung" Mana="0" Range="0" RequiredLevel="43" SkillPunkte="4" Stamina="0" Status="" Delay="15">
+          <Description>Aktive Fähigkeit, trifft mit 428 Punkte Schaden innerhalb 6 Metern um den Spieler über die Dauer von 12 Sekunden. Nur benutzbar mit einer Einhandwaffe oder einem Speer.</Description>
+        </Level>
+        <Level AoE="8" CastTime="0" Element="None" Name="Verschmutzung" Mana="0" Range="0" RequiredLevel="53" SkillPunkte="5" Stamina="0" Status="" Delay="15">
+          <Description>Aktive Fähigkeit, trifft mit 528 Punkte Schaden innerhalb 8 Metern um den Spieler über die Dauer von 12 Sekunden. Nur benutzbar mit einer Einhandwaffe oder einem Speer.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior26.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="4" CastTime="0" Element="None" Name="Heftiger Tanz" Mana="0" Range="0" RequiredLevel="34" SkillPunkte="4" Stamina="0" Status="" Delay="15">
+          <Description>Aktive Fähigkeit, welcher schaden an Gegnern innerhalb von  4 Metern um den Spieler anrichtet für Grundschaden und verringert deren Verteidigungskraft um 34 Punkte für 10 Sekunden. Nur benutzbar mit angelegtem Zweihandschwert.</Description>
+        </Level>
+        <Level AoE="6" CastTime="0" Element="None" Name="Heftiger Tanz" Mana="0" Range="0" RequiredLevel="44" SkillPunkte="4" Stamina="0" Status="" Delay="15">
+          <Description>Aktive Fähigkeit, welcher schaden an Gegnern innerhalb von  6 Metern um den Spieler anrichtet für Grundschaden und verringert deren Verteidigungskraft um 44 Punkte für 10 Sekunden. Nur benutzbar mit angelegtem Zweihandschwert.</Description>
+        </Level>
+        <Level AoE="8" CastTime="0" Element="None" Name="Heftiger Tanz" Mana="0" Range="0" RequiredLevel="54" SkillPunkte="5" Stamina="0" Status="" Delay="15">
+          <Description>Aktive Fähigkeit, welcher schaden an Gegnern innerhalb von  8 Metern um den Spieler anrichtet für Grundschaden und verringert deren Verteidigungskraft um 57 Punkte für 10 Sekunden. Nur benutzbar mit angelegtem Zweihandschwert.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior28.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Führung" Mana="55" Range="0" RequiredLevel="7" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Dieser Spruch steigert die physische Angriffskraft Aller Gruppenmitglieder innerhalb 100 Metern um den Spieler um 13 Punkte für 10 Minuten</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Führung" Mana="95" Range="0" RequiredLevel="24" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Dieser Spruch steigert die physische Angriffskraft Aller Gruppenmitglieder innerhalb 100 Metern um den Spieler um 25 Punkte für 10 Minuten</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Führung" Mana="220" Range="0" RequiredLevel="51" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Dieser Spruch steigert die physische Angriffskraft Aller Gruppenmitglieder innerhalb 100 Metern um den Spieler um 41 Punkte für 10 Minuten</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior29.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Adlerauge" Mana="25" Range="0" RequiredLevel="9" SkillPunkte="3" Stamina="0" Status="" Delay="180">
+          <Description>Verstärkungszauber,  verhindert Fernkampfattacken mit einer 100% Erfolgschance für 9 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Adlerauge" Mana="35" Range="0" RequiredLevel="23" SkillPunkte="4" Stamina="0" Status="" Delay="180">
+          <Description>Verstärkungszauber,  verhindert Fernkampfattacken mit einer 100% Erfolgschance für 12 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Adlerauge" Mana="65" Range="0" RequiredLevel="41" SkillPunkte="5" Stamina="0" Status="" Delay="180">
+          <Description>Verstärkungszauber,  verhindert Fernkampfattacken mit einer 100% Erfolgschance für 15 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior30.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Leistungsvermögen" Mana="0" Range="0" RequiredLevel="17" SkillPunkte="1" Stamina="0" Status="" Delay="180">
+          <Description>Diese passive Fähigkeit erhöht die physische Angriffskraft um 30 und erhöht die Angriffsgeschwindigkeit  für 30 Sekunden. Wird automatisch ausgelöst bei einem LP bestand unter 10%; wieder verfügbar nach 3 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Leistungsvermögen" Mana="0" Range="0" RequiredLevel="29" SkillPunkte="2" Stamina="0" Status="" Delay="180">
+          <Description>Diese passive Fähigkeit erhöht die physische Angriffskraft um 75 und erhöht die Angriffsgeschwindigkeit  für 30 Sekunden. Wird automatisch ausgelöst bei einem LP bestand unter 15%; wieder verfügbar nach 3 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Leistungsvermögen" Mana="0" Range="0" RequiredLevel="50" SkillPunkte="3" Stamina="0" Status="" Delay="180">
+          <Description>Diese passive Fähigkeit erhöht die physische Angriffskraft um 120 und erhöht die Angriffsgeschwindigkeit  für 30 Sekunden. Wird automatisch ausgelöst bei einem LP bestand unter 20%; wieder verfügbar nach 3 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior31.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rasender Schlachter" Mana="20" Range="0" RequiredLevel="20" SkillPunkte="4" Stamina="0" Status="" Delay="300">
+          <Description>Fähigkeit, die Verteidigungskraft des Spielers reduziert sich um 50 dafür steigt aber die Angriffskraft  um 50 da der Spieler zu einem Berserker für 20 Sekunden wird.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rasender Schlachter" Mana="30" Range="0" RequiredLevel="31" SkillPunkte="5" Stamina="0" Status="" Delay="300">
+          <Description>Fähigkeit, die Verteidigungskraft des Spielers reduziert sich um 75 dafür steigt aber die Angriffskraft  um 100 da der Spieler zu einem Berserker für 20 Sekunden wird.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rasender Schlachter" Mana="40" Range="0" RequiredLevel="43" SkillPunkte="6" Stamina="0" Status="" Delay="300">
+          <Description>Fähigkeit, die Verteidigungskraft des Spielers reduziert sich um 100 dafür steigt aber die Angriffskraft  um 150 da der Spieler zu einem Berserker für 20 Sekunden wird.Fähigkeit, die Verteidigungskraft des Spielers reduziert sich um 100 dafür steigt aber die Angriffskraft  um 150 da der Spieler zu einem Berserker für 20 Sekunden wird.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior32.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Drachenschlächter" Mana="20" Range="0" RequiredLevel="20" SkillPunkte="6" Stamina="0" Status="" Delay="600">
+          <Description>Nahkampfattacke ,verringert die LP des Gegners um 3% ungeachtet seiner Verteidigungskraft.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Drachenschlächter" Mana="30" Range="0" RequiredLevel="30" SkillPunkte="7" Stamina="0" Status="" Delay="600">
+          <Description>Nahkampfattacke ,verringert die LP des Gegners um 5% ungeachtet seiner Verteidigungskraft.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Drachenschlächter" Mana="45" Range="0" RequiredLevel="44" SkillPunkte="8" Stamina="0" Status="" Delay="600">
+          <Description>Nahkampfattacke ,verringert die LP des Gegners um 7% ungeachtet seiner Verteidigungskraft.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior33.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dämonen Schlag" Mana="52" Range="5" RequiredLevel="36" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Angriff  mit physischer Angriffskraft plus 101 aus 5 Metern Entfernung.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dämonen Schlag" Mana="63" Range="5" RequiredLevel="46" SkillPunkte="6" Stamina="0" Status="" Delay="0">
+          <Description>Angriff  mit physischer Angriffskraft plus 168 aus 5 Metern Entfernung.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dämonen Schlag" Mana="71" Range="5" RequiredLevel="56" SkillPunkte="7" Stamina="0" Status="" Delay="0">
+          <Description>Angriff  mit physischer Angriffskraft plus 280 aus 5 Metern Entfernung.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior34.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Auslöschung" Mana="75" Range="3" RequiredLevel="37" SkillPunkte="7" Stamina="0" Status="" Delay="1200">
+          <Description>Spezialangriff. Opfert LP des Spielers um schaden anzurichten Punkte Schaden welcher der aktuellen LP des Spielers entsprechen. Trifft mit einer 65% Erfolgschance. Einige Monster werden davon nicht betroffen.</Description>
+        </Level>
+        <Level AoE="6" CastTime="0" Element="None" Name="Auslöschung" Mana="95" Range="3" RequiredLevel="45" SkillPunkte="8" Stamina="0" Status="" Delay="1200">
+          <Description>Spezialangriff. Opfert LP des Spielers um schaden an Monstern in 6 Metern Umkreis des Ziels welche der Aktuellen LP des Spielers entsprechen. Trifft mit 65% Erfolgschance. Einige Monster werden davon nicht betroffen.</Description>
+        </Level>
+        <Level AoE="6" CastTime="0" Element="None" Name="Auslöschung" Mana="130" Range="3" RequiredLevel="57" SkillPunkte="9" Stamina="0" Status="" Delay="1200">
+          <Description>Spezialangriff. Opfert LP des Spielers um schaden anzurichten Punkte Schaden gleichbedeutend mit zweifach der aktuellen Spieler-HP mit einer 65% Erfolgschance. Einige Monster werden davon nicht betroffen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior35.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="6" CastTime="0" Element="None" Name="Höllenfürst" Mana="210" Range="0" RequiredLevel="49" SkillPunkte="8" Stamina="0" Status="" Delay="600">
+          <Description>Mächtige Aktive Fähigkeit, welche Schaden an Gegnern innerhalb von  6 Metern des Ziels mit der dreifachen  Angriffskraft des Spielers anrichtet . Der Effekt ist auf einige Monster limitiert.</Description>
+        </Level>
+        <Level AoE="8" CastTime="0" Element="None" Name="Höllenfürst" Mana="270" Range="0" RequiredLevel="59" SkillPunkte="9" Stamina="0" Status="" Delay="600">
+          <Description>Mächtige Aktive Fähigkeit, welche Schaden an Gegnern innerhalb von  8 Metern des Ziels mit der dreifachen Angriffskraft des Spielers plus 386 anrichtet. Der Effekt ist auf einige Monster limitiert.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.warrior36.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="10" CastTime="0" Element="None" Name="Macht der Herrin" Mana="300" Range="0" RequiredLevel="60" SkillPunkte="9" Stamina="0" Status="" Delay="1200">
+          <Description>Mächtiger Angriff, verwundet Gegner innerhalb von 5 Metern um das  Ziel für 87% deren Maximale LP. Der Effekt ist auf einige Monster limitiert.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+  </Skills>
+</SkillList>

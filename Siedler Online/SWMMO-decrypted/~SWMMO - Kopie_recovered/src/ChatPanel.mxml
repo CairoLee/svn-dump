@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:HBox height="20" top="5" left="5" right="5" backgroundColor="#00cccccc" verticalAlign="middle">
+		<mx:Label id="status" null="null"/>
+	</mx:HBox>
+	<mx:Canvas left="5" right="5" top="25" bottom="35">
+		<mx:VBox id="vbox" width="100%" height="100%" verticalGap="6" horizontalGap="0">
+			<mx:HBox width="100%" height="100%">
+				<mx:ChatHistoryList id="messageHistory" editable="false" selectable="false" verticalScrollPolicy="off" variableRowHeight="true" height="100%" width="100%" itemRenderer="_ChatPanel_ClassFactory1_c()" null.backgroundAlpha="this" borderThickness="0" left="0" dataProvider='{{this.messages}}'/>
+				<mx:Canvas width="18" clipContent="true" height="100%">
+					<mx:Button id="_ChatPanel_Button1" null="null" height="22" top="0" horizontalCenter="0" mouseDown="{this.button2_clickHandler(event);}" enabled="{this.enabled}"/>
+					<mx:Button id="_ChatPanel_Button2" width="22" height="22" null.bottom="this" horizontalCenter="0" mouseDown="{this.button3_clickHandler(event);}" enabled="{this.enabled}"/>
+					<mx:CheckBox id="autoScrollBox" null.bottom="this" horizontalCenter="-1" click="{this.button1_clickHandler(event);}" selected="{messageHistory.autoscroll}"/>
+				</mx:Canvas>
+				<mx:CustomList id="whispersList" null="100" visible="false" labelField="name" itemRenderer="_ChatPanel_ClassFactory2_c()" null.top="this" right="0" width="" dataProvider='{new ArrayCollection()}'/>
+				<mx:ChatToggleButtonBar id="buttonBar" null="1" focusEnabled="false" height="100%" width="100" itemRenderer="_ChatPanel_ClassFactory3_c()" null.top="this" right="0" dataProvider='{new ArrayCollection()}'/>
+			</mx:HBox>
+		</mx:VBox>
+	</mx:Canvas>
+	<mx:CustomInput id="chatInput" null="500" styleName="chatInput" height="30" restrict="^\\&lt;" null.left="this" right="5" bottom="5"/>
+
+</mx:Canvas>

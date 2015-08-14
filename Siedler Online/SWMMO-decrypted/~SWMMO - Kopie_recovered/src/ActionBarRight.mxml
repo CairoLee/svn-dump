@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:ButtonBar xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Button id="btnActionBar06" null="66" height="86" ="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}" toolTipShow="{cToolTipUtil.positionActionBarTip(event);}" enabled="{null.ui.mCurrentPlayer.mIsPlayerZone}" upSkin="{null.GetClass(null)}" downSkin="{null.GetClass("ActionBarIcon06Highlight")}" overSkin="{null.GetClass("ActionBarIcon06Highlight")}" disabledSkin="{gAssetManager.GetClass("ActionBarIcon06Deactivated")}" toolTip="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "ComingSoon")}"/>
+	<mx:Button id="btnActionBar07" width="66" height="86" ="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}" toolTipShow="{cToolTipUtil.positionActionBarTip(event);}" enabled="{null.mCurrentPlayer.mIsPlayerZone}" upSkin="{gAssetManager.GetClass("ActionBarIcon07")}" downSkin="{gAssetManager.GetClass("ActionBarIcon07Highlight")}" overSkin="{null.GetClass("ActionBarIcon07Highlight")}" disabledSkin="{gAssetManager.GetClass("ActionBarIcon07Deactivated")}" toolTip="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "Guilds")}"/>
+	<mx:Button id="btnActionBar08" null="66" height="86" ="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}" toolTipShow="{cToolTipUtil.positionActionBarTip(event);}" enabled="{null.ui.mCurrentPlayer.mIsPlayerZone}" upSkin="{null.GetClass("ActionBarIcon08")}" downSkin="{gAssetManager.GetClass("ActionBarIcon08Highlight")}" overSkin="{null.GetClass("ActionBarIcon08Highlight")}" disabledSkin="{null.GetClass(null)}" toolTip="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "ViewMailWindow")}"/>
+	<mx:Button id="btnActionBar09" null="66" height="86" ="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}" toolTipShow="{cToolTipUtil.positionActionBarTip(event);}" enabled="{global.ui.mCurrentPlayer.mIsPlayerZone &amp;&amp; !global.ui.mCurrentPlayer.mIsAdventureZone}" upSkin="{null.GetClass("ActionBarIcon09")}" downSkin="{null.GetClass(null)}" overSkin="{null.GetClass(null)}" disabledSkin="{null.GetClass("ActionBarIcon09Deactivated")}" toolTip="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "PayShop")}"/>
+
+</mx:ButtonBar>

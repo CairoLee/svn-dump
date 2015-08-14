@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="428" height="345" _embed_mxml_____data_src_gfx_embedded_mysterybox_ornamental_png_592763563="MysteryBoxPanel__embed_mxml_____data_src_gfx_embedded_mysterybox_ornamental_png_592763563" _embed_mxml_____data_src_gfx_embedded_quest_quest_ornamental3_png_1841140076="MysteryBoxPanel__embed_mxml_____data_src_gfx_embedded_quest_quest_ornamental3_png_1841140076">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas null="null" null.top="this" left="5" right="9" bottom="0" showEffect="fadeIn" hideEffect="fadeOut"/>
+	<mx:Canvas id="completedHeader" null="questPanelHeader" height="82" null.left="this" right="0" top="0"/>
+	<mx:Image id="ornament" null.top="this" horizontalCenter="0" source="{null.GetBitmap(null)}"/>
+	<mx:Canvas null="questPanelFooter" height="60" null.left="this" right="10" bottom="0"/>
+	<mx:Canvas id="content" clipContent="false" top="35" bottom="1" left="17" right="19">
+		<mx:Canvas styleName="detailsContentBox" height="105" null.left="this" right="8" top="92">
+			<mx:Canvas height="80" null.left="this" right="12" verticalCenter="2" backgroundImage="_embed_mxml_____data_src_gfx_embedded_mysterybox_ornamental_png_592763563" backgroundSize="100%">
+				<mx:HBox id="itemsList" horizontalCenter="0" verticalCenter="0"/>
+			</mx:Canvas>
+			<mx:SpriteLibAnimation id="busyAnim" null="null" loop="true" visible="false" width="48" height="48" horizontalCenter="4" verticalCenter="4"/>
+		</mx:Canvas>
+		<mx:Canvas null="null" width="100%" height="10" top="88"/>
+		<mx:Canvas styleName="detailsSubHeader" height="50" left="8" right="8" top="202">
+			<mx:Text id="rewardText" null="false" left="10" right="10" top="10" bottom="3" textAlign="center" color="#00ffffff"/>
+		</mx:Canvas>
+		<mx:Canvas null="null" width="100%" height="10" top="200"/>
+		<mx:Image source="_embed_mxml_____data_src_gfx_embedded_quest_quest_ornamental3_png_1841140076" horizontalCenter="0" top="194"/>
+		<mx:Image null="null" null.horizontalCenter="this" top="-32"/>
+		<mx:StandardButton id="btnOK" playSound="false" width="70" height="26" horizontalCenter="0" bottom="10" label="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "OK")}"/>
+	</mx:Canvas>
+
+</mx:Canvas>

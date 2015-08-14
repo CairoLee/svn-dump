@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="56" height="70" toolTipCreate="" click="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Frame id="frame"/>
+	<mx:Image id="bufficon" null="null" height="100%" scaleContent="false" horizontalAlign="center" verticalAlign="middle" source="{dataProxy.icon}"/>
+	<mx:Image id="resourceIcon" null="null" height="100%" scaleContent="false" null.horizontalAlign="this" verticalAlign="middle" source="{dataProxy.resourceIcon}"/>
+	<mx:RemoveBuffButton id="removeIcon" top="5" right="5" click="{this.deleteIconClickHandler(event);}"/>
+	<mx:ProgressBar id="progress" left="8" right="8" bottom="10" value="{dataProxy.progress}"/>
+	<mx:Label id="amountLabel" null="null" null.horizontalCenter="this" textAlign="center" fontWeight="bold" color="#00ffffff" bottom="5" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}"/>
+
+</mx:Canvas>

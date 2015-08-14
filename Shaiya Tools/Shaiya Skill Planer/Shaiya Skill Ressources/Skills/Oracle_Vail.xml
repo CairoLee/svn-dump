@@ -1,0 +1,480 @@
+<?xml version="1.0"?>
+<SkillList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Skills>
+    <Skill IconName="icons.oracle01.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dolch-Aufwertung" Mana="0" Range="0" RequiredLevel="5" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 5, wenn ein Dolch ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dolch-Aufwertung" Mana="0" Range="0" RequiredLevel="16" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 12, wenn ein Dolch ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dolch-Aufwertung" Mana="0" Range="0" RequiredLevel="25" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 20, wenn ein Dolch ausgerüstet ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle02.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mana-Training" Mana="0" Range="0" RequiredLevel="5" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale MP des Spielers um 110.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mana-Training" Mana="0" Range="0" RequiredLevel="16" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale MP des Spielers um 255.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mana-Training" Mana="0" Range="0" RequiredLevel="25" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale MP des Spielers um 448.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle03.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="6" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 4% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="15" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 6% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="26" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 8% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle04.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="13" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler , etwa  30% dessen zu verstehen was der Gegner sagt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="22" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler , etwa  60% dessen zu verstehen was der Gegner sagt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="51" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler alles zu verstehen was der Gegner sagt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle05.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="12" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 3.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="26" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 4.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="46" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 5.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle06.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="1" Element="None" Name="Magieball" Mana="20" Range="0" RequiredLevel="1" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Spruch, der einen Nichtelementaren Magischen Pfeil abschießt, seine Kraft ergibt sich aus der magischen Angriffskraft des Spielers plus 29 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0.5" Element="None" Name="Magieball" Mana="45" Range="0" RequiredLevel="10" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Spruch, der einen Nichtelementaren Magischen Pfeil abschießt, seine Kraft ergibt sich aus der magischen Angriffskraft des Spielers plus 60 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Magieball" Mana="90" Range="0" RequiredLevel="20" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Spruch, der einen Nichtelementaren Magischen Pfeil abschießt, seine Kraft ergibt sich aus der magischen Angriffskraft des Spielers plus 118 Punkte Schaden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle07.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Körperschutz" Mana="60" Range="0" RequiredLevel="2" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht des Spielers physische Verteidigungskraft um 12 Punkte und die Ausweichrate gegen Physische Angriffe um 2% für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Körperschutz" Mana="250" Range="0" RequiredLevel="17" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht des Spielers physische Verteidigungskraft um 24 Punkte und die Ausweichrate gegen Physische Angriffe um 4% für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Körperschutz" Mana="460" Range="0" RequiredLevel="34" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht des Spielers physische Verteidigungskraft um 47 Punkte und die Ausweichrate gegen Physische Angriffe um 7% für 5 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle08.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Eisball" Mana="50" Range="0" RequiredLevel="3" SkillPunkte="2" Stamina="0" Status="" Delay="1.5">
+          <Description>Grundlegender Wasserzauber der Schaden verursacht in Höhe der magischen Angriffskraft des Spielers plus 34 Punkte Schaden Zuzüglich verlangsamt er für 3 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Eisball" Mana="100" Range="0" RequiredLevel="14" SkillPunkte="3" Stamina="0" Status="" Delay="1.5">
+          <Description>Grundlegender Wasserzauber der Gegnern Schaden zufügt in höhe der magischen Angriffskraft des Spielers plus 80 Punkte Schaden Zuzüglich verlangsamt er für 5 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Eisball" Mana="181" Range="0" RequiredLevel="27" SkillPunkte="3" Stamina="0" Status="" Delay="1.5">
+          <Description>Grundlegender Wasserzauber der Schaden verursacht in Höhe der magischen Angriffskraft des Spielers plus 175 Punkte Schaden Zuzüglich verlangsamt er für 7 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle09.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Aufmerksames Wesen" Mana="18" Range="0" RequiredLevel="8" SkillPunkte="2" Stamina="0" Status="" Delay="2">
+          <Description>Angriff, der einen Charakter entdeckt, der sich tarnt, in einem Radius von 10 Metern um den Spieler. Hält nur 30 Sekunden. Die Tarnung des Spielers wird automatisch aufgehoben.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Aufmerksames Wesen" Mana="46" Range="0" RequiredLevel="23" SkillPunkte="3" Stamina="0" Status="" Delay="2">
+          <Description>Angriff, der einen Charakter entdeckt, der sich tarnt, in einem Radius von 20 Metern um den Spieler. Hält nur 30 Sekunden. Die Tarnung des Spielers wird automatisch aufgehoben.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Aufmerksames Wesen" Mana="79" Range="0" RequiredLevel="36" SkillPunkte="3" Stamina="0" Status="" Delay="2">
+          <Description>Angriff, der einen Charakter entdeckt, der sich tarnt, in einem Radius von 30 Metern um den Spieler. Hält nur 30 Sekunden. Die Tarnung des Spielers wird automatisch aufgehoben.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle10.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Reinigung" Mana="40" Range="0" RequiredLevel="9" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Dieser Zauber hebt bei dem Ziel folgendes auf: Gift, Krankheit, Verzehrung, Angst, Todesurteil, Blind, und Pech.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Reinigung" Mana="90" Range="0" RequiredLevel="19" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Dieser Zauber hebt bei dem Ziel folgendes auf: Gift, Krankheit, Verzehrung, Angst, Todesurteil, Blindheit, Pech, Schlaf, Ohnmacht, Stille, Dunkelheit, Halt, und Langsam.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Reinigung" Mana="170" Range="0" RequiredLevel="34" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Dieser Zauber hebt bei dem Ziel folgendes auf: Seelenvernichtung, Zielverfolgung, Verwandlung, Todesurteil, und nichtelementare Zustände.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle12.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mal der Magie" Mana="130" Range="0" RequiredLevel="14" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Nichtelementarer Angriff, der sofort dem Ziel Schaden zufügt in Höhe der magischen Angriffskraft plus 130 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mal der Magie" Mana="230" Range="0" RequiredLevel="24" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Nichtelementarer Angriff, der sofort dem Ziel Schaden zufügt in Höhe der magischen Angriffskraft plus 217 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mal der Magie" Mana="350" Range="0" RequiredLevel="34" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Nichtelementarer Angriff, der sofort dem Ziel Schaden zufügt in Höhe der magischen Angriffskraft plus 343 Punkte Schaden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle11.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Ausdauer-Verlust" Mana="0" Range="0" RequiredLevel="16" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Schwächungszauber,  lässt die AP des Gegners sinken. Das Ziel verliert 470 SP über die Dauer von 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Ausdauer-Verlust" Mana="0" Range="0" RequiredLevel="28" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Schwächungszauber,  lässt die AP des Gegners sinken. Das Ziel veriert 730 SP über die Dauer von 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Ausdauer-Verlust" Mana="0" Range="0" RequiredLevel="40" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Schwächungszauber,  lässt die AP des Gegners sinken. Das Ziel verliert 1100 SP über die Dauer von 30 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle13.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Heilung" Mana="45" Range="0" RequiredLevel="2" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Grundlegender Heilzauber. Regeneriert LP in höhe der WEI des Spielers plus 60 HP.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Heilung" Mana="80" Range="0" RequiredLevel="11" SkillPunkte="3" Stamina="0" Status="" Delay="2">
+          <Description>Grundlegender Heilzauber. Regeneriert LP in höhe der WEI des Spielers plus 130 HP.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Heilung" Mana="170" Range="0" RequiredLevel="26" SkillPunkte="3" Stamina="0" Status="" Delay="2">
+          <Description>Grundlegender Heilzauber. Regeneriert LP in höhe der WEI des Spielers plus 300 HP.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle14.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Magie-Schutz" Mana="60" Range="0" RequiredLevel="4" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die 2 mal Magische Angriffe abschwächt. Der Effekt wird verschwinden, wenn nach der Aktivierung eine Minute kein magischer Schaden erfolgt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Magie-Schutz" Mana="80" Range="0" RequiredLevel="17" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die 3 mal Magische Angriffe abschwächt. Der Effekt wird verschwinden, wenn nach der Aktivierung eine Minute kein magischer Schaden erfolgt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Magie-Schutz" Mana="100" Range="0" RequiredLevel="30" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die 4 mal Magische Angriffe abschwächt. Der Effekt wird verschwinden, wenn nach der Aktivierung eine Minute kein magischer Schaden erfolgt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle15.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Selbstheilung" Mana="55" Range="0" RequiredLevel="4" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Heilzauber, der sofort die LP des Spielers erhöht, und zwar um 75 plus des Spielers WEI.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Selbstheilung" Mana="140" Range="0" RequiredLevel="21" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Heilzauber, der sofort die LP des Spielers erhöht, und zwar um 230 plus des Spielers WEI.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Selbstheilung" Mana="320" Range="0" RequiredLevel="44" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Heilzauber, der sofort die LP des Spielers erhöht, und zwar um 560 plus des Spielers WEI.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle16.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Sofortige Heilung" Mana="78" Range="0" RequiredLevel="6" SkillPunkte="3" Stamina="0" Status="" Delay="30">
+          <Description>Heilzauber, der die LP des Ziels regeneriert auf 71 plus des Spielers WEI.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Sofortige Heilung" Mana="226" Range="0" RequiredLevel="27" SkillPunkte="3" Stamina="0" Status="" Delay="30">
+          <Description>Heilzauber, der die LP des Ziels regeneriert auf 255 plus des Spielers WEI.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Sofortige Heilung" Mana="533" Range="0" RequiredLevel="54" SkillPunkte="3" Stamina="0" Status="" Delay="30">
+          <Description>Heilzauber, der die LP des Ziels regeneriert auf 712 plus des Spielers WEI.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle17.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Hagelsturm" Mana="90" Range="0" RequiredLevel="8" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Wassermagie, die einen Hagelsturm mit einem Radius von 14 Metern um das Ziel produziert, welcher dem Ziel Schaden zufügt in Höhe der magischen Grundangriffskraft plus 69 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Hagelsturm" Mana="230" Range="0" RequiredLevel="23" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Wassermagie, die einen Hagelsturm mit einem Radius von 14 Metern um das Ziel produziert, welcher dem Ziel Schaden zufügt in Höhe der magischen Grundangriffskraft plus 181 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Hagelsturm" Mana="355" Range="0" RequiredLevel="33" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Wassermagie, die einen Hagelsturm mit einem Radius von 14 Metern um das Ziel produziert, welcher dem Ziel Schaden zufügt in Höhe der magischen Grundangriffskraft plus 305 Punkte Schaden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle18.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mana-Schlag" Mana="40" Range="0" RequiredLevel="13" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, der 700 MP aus einer generischen Wunde absorbiert. Nur benutzbar mit Nahkampfwaffen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mana-Schlag" Mana="90" Range="0" RequiredLevel="29" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, der 1500 MP aus einer generischen Wunde absorbiert. Nur benutzbar mit Nahkampfwaffen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mana-Schlag" Mana="150" Range="0" RequiredLevel="44" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, der 2500 MP aus einer generischen Wunde absorbiert. Nur benutzbar mit Nahkampfwaffen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle19.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Heilungsregen" Mana="300" Range="0" RequiredLevel="18" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Heilzauber, regeneriert konstant HP der Gruppenmitglieder des Spielers innerhalb 15 Metern um den Spieler um 186 Punkte für 18 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Heilungsregen" Mana="500" Range="0" RequiredLevel="30" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Heilzauber, regeneriert konstant HP der Gruppenmitglieder des Spielers innerhalb 15 Metern um den Spieler um 360 Punkte für 18 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Heilungsregen" Mana="830" Range="0" RequiredLevel="45" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Heilzauber, regeneriert konstant HP der Gruppenmitglieder des Spielers innerhalb 15 Metern um den Spieler um 678 Punkte für 18 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle20.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Eissturm" Mana="280" Range="0" RequiredLevel="21" SkillPunkte="4" Stamina="0" Status="" Delay="2">
+          <Description>Dieser Wasserzauber kreiert einen Blizzard 10 Metern um das Ziel trifft für des Spielers magische Angriffskraft plus 187 Punkte Schaden und verringert dessen Laufgeschwindigkeit für 3 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Eissturm" Mana="435" Range="0" RequiredLevel="31" SkillPunkte="4" Stamina="0" Status="" Delay="2">
+          <Description>Dieser Wasserzauber kreiert einen Blizzard 12 Metern um das Ziel trifft für des Spielers magische Angriffskraft plus 301 Punkte Schaden und verringert dessen Laufgeschwindigkeit für 3 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Eissturm" Mana="625" Range="0" RequiredLevel="41" SkillPunkte="4" Stamina="0" Status="" Delay="2">
+          <Description>Dieser Wasserzauber kreiert einen Blizzard 14 Metern um das Ziel trifft für des Spielers magische Angriffskraft plus 455 Punkte Schaden und verringert dessen Laufgeschwindigkeit für 3 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle21.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Elementar-Schock" Mana="290" Range="0" RequiredLevel="28" SkillPunkte="4" Stamina="0" Status="" Delay="1.5">
+          <Description>Magieangriff, welcher Schaden an Gegnern innerhalb 10 Metern des Ziels für des Spielers magische Angriffskraft plus 262 Punkte Schaden..</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Elementar-Schock" Mana="440" Range="0" RequiredLevel="49" SkillPunkte="4" Stamina="0" Status="" Delay="1.5">
+          <Description>Magieangriff, welcher Schaden an Gegnern innerhalb 12 Metern des Ziels für des Spielers magische Angriffskraft plus 421 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Elementar-Schock" Mana="660" Range="0" RequiredLevel="52" SkillPunkte="4" Stamina="0" Status="" Delay="1.5">
+          <Description>Magieangriff, welcher Schaden an Gegnern innerhalb 14 Metern des Ziels für des Spielers magische Angriffskraft plus 690 Punkte Schaden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle22.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Gebet der Heilung" Mana="260" Range="0" RequiredLevel="37" SkillPunkte="4" Stamina="0" Status="" Delay="2.5">
+          <Description>Mächtiger Heilzauber, der die LP des Ziels regeneriert. Kraft:  494 plus des Spielers WEI.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Gebet der Heilung" Mana="350" Range="0" RequiredLevel="47" SkillPunkte="4" Stamina="0" Status="" Delay="2.5">
+          <Description>Mächtiger Heilzauber, der die LP des Ziels regeneriert. Kraft:  712 plus des Spielers WEI.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Gebet der Heilung" Mana="460" Range="0" RequiredLevel="57" SkillPunkte="5" Stamina="0" Status="" Delay="2.5">
+          <Description>Mächtiger Heilzauber, der die LP des Ziels regeneriert. Kraft:  972 plus des Spielers WEI.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle23.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Chor der Brandung" Mana="900" Range="0" RequiredLevel="38" SkillPunkte="4" Stamina="0" Status="" Delay="4">
+          <Description>Mächtiger Wasser-Kampfzauber, trifft mit der magischen Angriffskraft des Spielers plus 1101 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Chor der Brandung" Mana="1200" Range="0" RequiredLevel="48" SkillPunkte="5" Stamina="0" Status="" Delay="3.5">
+          <Description>Mächtiger Wasser-Kampfzauber, trifft mit der magischen Angriffskraft des Spielers plus 1564 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Chor der Brandung" Mana="1500" Range="0" RequiredLevel="58" SkillPunkte="5" Stamina="0" Status="" Delay="3">
+          <Description>Mächtiger Wasser-Kampfzauber, trifft mit der magischen Angriffskraft des Spielers plus 2108 Punkte Schaden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle19.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Blank (Kreislauf der Heilung)" Mana="1390" Range="0" RequiredLevel="47" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Heilzauber, regeneriert konstant HP der Gruppenmitglieder des Spielers innerhalb 15 Metern um den Spieler um 1080 Punkte für 18 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Blank (Kreislauf der Heilung)" Mana="2316" Range="0" RequiredLevel="53" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Heilzauber, regeneriert konstant HP der Gruppenmitglieder des Spielers innerhalb 15 Metern um den Spieler um 1440 Punkte für 18 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Blank (Kreislauf der Heilung)" Mana="3860" Range="0" RequiredLevel="59" SkillPunkte="6" Stamina="0" Status="" Delay="0">
+          <Description>Heilzauber, regeneriert konstant HP der Gruppenmitglieder des Spielers innerhalb 15 Metern um den Spieler um 2160 Punkte für 18 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle24.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Innerer Frieden" Mana="85" Range="0" RequiredLevel="7" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Dieser Spruch steigert die Maximale LP des Ziels für 200 für 30 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Innerer Frieden" Mana="250" Range="0" RequiredLevel="24" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Dieser Spruch steigert die Maximale LP des Ziels für 500 für 30 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Innerer Frieden" Mana="400" Range="0" RequiredLevel="35" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Dieser Spruch steigert die Maximale LP des Ziels für 850 für 30 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle25.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Wiederauferstehung" Mana="212" Range="0" RequiredLevel="10" SkillPunkte="3" Stamina="0" Status="" Delay="10">
+          <Description>Dieser Zauberspruch bringt einen Charakter wieder ins Leben zurück.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Wiederauferstehung" Mana="657" Range="0" RequiredLevel="31" SkillPunkte="4" Stamina="0" Status="" Delay="8">
+          <Description>Dieser Zauberspruch bringt einen Charakter wieder ins Leben zurück.. Hat eine kürzere Aufladezeit als Stufe 1, Wirkt auch auf Ultimative Charaktere.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Wiederauferstehung" Mana="1400" Range="0" RequiredLevel="56" SkillPunkte="5" Stamina="0" Status="" Delay="6">
+          <Description>Dieser Zauberspruch bringt einen Charakter wieder ins Leben zurück. Hat eine kürzere Aufladezeit als Stufe 2, Wirkt auch auf Ultimative Charaktere.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle26.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Gebet" Mana="165" Range="0" RequiredLevel="12" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Dieser Spruch steigert STR, REC, und WEI von Gruppenmitgliedern innerhalb 100 Metern um den Spieler um 8 Punkte jeweils für 10 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Gebet" Mana="235" Range="0" RequiredLevel="25" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Dieser Spruch steigert STR, REC, und WEI von Gruppenmitgliedern innerhalb 100 Metern um den Spieler um 20 Punkte jeweils für 10 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Gebet" Mana="600" Range="0" RequiredLevel="40" SkillPunkte="6" Stamina="0" Status="" Delay="0">
+          <Description>Dieser Spruch steigert STR, REC, und WEI von Gruppenmitgliedern innerhalb 100 Metern um den Spieler um 40 Punkte jeweils für 10 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle27.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Evolution" Mana="300" Range="0" RequiredLevel="15" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Zauberspruch der ein Ziel in eine Monster verwandelt. Das Ziel wird die Fähigkeiten des Monsters haben für 1 Minute.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Evolution" Mana="750" Range="0" RequiredLevel="35" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Zauberspruch der ein Ziel in eine Monster verwandelt. Das Ziel wird die Fähigkeiten des Monsters haben für 1 Minute.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Evolution" Mana="1400" Range="0" RequiredLevel="55" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Zauberspruch der ein Ziel in eine Monster verwandelt. Das Ziel wird die Fähigkeiten des Monsters haben für 1 Minute.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle29.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Letzte Reserve" Mana="0" Range="0" RequiredLevel="17" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit füllt einen Zauberspruch auf der weniger als 500 Sekunden wiederaufladerate hat, Wenn die LP niedriger sind als 10%. Startet automatisch alle 3 Minuten für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Letzte Reserve" Mana="0" Range="0" RequiredLevel="29" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit füllt einen Zauberspruch auf der weniger als 500 Sekunden wiederaufladerate hat, Wenn die LP niedriger sind als 17%. Startet automatisch alle 3 Minuten für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Letzte Reserve" Mana="0" Range="0" RequiredLevel="50" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit füllt einen Zauberspruch auf der weniger als 500 Sekunden wiederaufladerate hat, Wenn die LP niedriger sind als 25%. Startet automatisch alle 3 Minuten für 30 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle28.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Hypnose" Mana="160" Range="0" RequiredLevel="16" SkillPunkte="4" Stamina="0" Status="" Delay="1.25">
+          <Description>Angriff, der  den Gegner schlafen lässt, aber nur für 8 Sekunden und das mit einer Erfolgschance von an 80%, Er wird aber geweckt, wenn er Angegriffen wird.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Hypnose" Mana="300" Range="0" RequiredLevel="32" SkillPunkte="5" Stamina="0" Status="" Delay="1.25">
+          <Description>Angriff, der  den Gegner schlafen lässt, aber nur für 15 Sekunden und das mit einer Erfolgschance von an 80%, Er wird aber geweckt, wenn er Angegriffen wird.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Hypnose" Mana="600" Range="0" RequiredLevel="50" SkillPunkte="6" Stamina="0" Status="" Delay="1.25">
+          <Description>Angriff, der  den Gegner schlafen lässt, aber nur für 30 Sekunden und das mit einer Erfolgschance von an 80%, Er wird aber geweckt, wenn er Angegriffen wird.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle30.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Umwandlung" Mana="0" Range="0" RequiredLevel="18" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, der die AP des Spieles aufteilt und um 715 MP Auffrischt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Umwandlung" Mana="0" Range="0" RequiredLevel="29" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, der die AP des Spieles aufteilt und um 1619 MP Auffrischt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Umwandlung" Mana="0" Range="0" RequiredLevel="47" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, der die AP des Spieles aufteilt und um 2582 MP Auffrischt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle31.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Überlebenswille" Mana="30" Range="0" RequiredLevel="18" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese Fähigkeit sorgt dafür, dass zuerst die AP und dann die LP für 1 Minute bei erlittenen Schaden abgezogen wird.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Überlebenswille" Mana="70" Range="0" RequiredLevel="29" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Diese Fähigkeit sorgt dafür, dass zuerst die MP und dann die LP für 1 Minute bei erlittenen Schaden abgezogen wird.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Überlebenswille" Mana="120" Range="0" RequiredLevel="47" SkillPunkte="6" Stamina="0" Status="" Delay="0">
+          <Description>Diese Fähigkeit sorgt dafür, dass zuerst die AP, dann die  MP und dann die LP für 1 Minute bei erlittenen Schaden abgezogen wird.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle32.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Degeneration" Mana="225" Range="0" RequiredLevel="20" SkillPunkte="2" Stamina="0" Status="" Delay="2">
+          <Description>Zauberspruch der den Gegner in ein Monster verwandelt, die Wahrscheinlichkeit liebt bei 80% Erfolgschance. Es hält 15 Sekunden und betrifft keine Monster.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Degeneration" Mana="475" Range="0" RequiredLevel="33" SkillPunkte="3" Stamina="0" Status="" Delay="2">
+          <Description>Zauberspruch der den Gegner in ein Monster verwandelt, die Wahrscheinlichkeit liebt bei 80% Erfolgschance. Es hält 25 Sekunden und betrifft keine Monster.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Degeneration" Mana="625" Range="0" RequiredLevel="46" SkillPunkte="4" Stamina="0" Status="" Delay="2">
+          <Description>Zauberspruch der den Gegner in ein Monster verwandelt, die Wahrscheinlichkeit liebt bei 80% Erfolgschance. Es hält 35 Sekunden und betrifft keine Monster.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle33.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Zauberspiegel" Mana="165" Range="0" RequiredLevel="22" SkillPunkte="7" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, reflektiert Magischen Schaden der erhalten wurde für 8 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Zauberspiegel" Mana="515" Range="0" RequiredLevel="32" SkillPunkte="8" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, reflektiert Magischen Schaden der erhalten wurde für 10 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Zauberspiegel" Mana="730" Range="0" RequiredLevel="43" SkillPunkte="9" Stamina="0" Status="" Delay="0">
+          <Description>Angriff, reflektiert Magischen Schaden der erhalten wurde für 15 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle34.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Eisfrost" Mana="590" Range="0" RequiredLevel="30" SkillPunkte="6" Stamina="0" Status="" Delay="3">
+          <Description>Wasserzauber. Verletzt Gegner innerhalb 10 Metern um den Spieler. Es richtet des Spielers magische Grundangriffskraft plus 426 Punkte von Punkte Schaden, und das getroffene Ziel wird eingefroren für 3 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Eisfrost" Mana="863" Range="0" RequiredLevel="42" SkillPunkte="7" Stamina="0" Status="" Delay="3">
+          <Description>Wasserzauber. Verletzt Gegner innerhalb 12 Metern um den Spieler. Es richtet des Spielers magische Grundangriffskraft plus 700 Punkte von Punkte Schaden, und das getroffene Ziel wird eingefroren für 3 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Eisfrost" Mana="140" Range="0" RequiredLevel="52" SkillPunkte="8" Stamina="0" Status="" Delay="3">
+          <Description>Wasserzauber. Verletzt Gegner innerhalb 14 Metern um den Spieler. Es richtet des Spielers magische Grundangriffskraft plus 987 Punkte von Punkte Schaden, und das getroffene Ziel wird eingefroren für 3 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle35.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Genesung" Mana="130" Range="0" RequiredLevel="31" SkillPunkte="4" Stamina="0" Status="" Delay="1.5">
+          <Description>Mächtiger Heilzauber, der die LP des Ziels regeneriert. Kraft:  1631 plus des Spielers WEI.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Genesung" Mana="175" Range="0" RequiredLevel="41" SkillPunkte="5" Stamina="0" Status="" Delay="1.5">
+          <Description>Mächtiger Heilzauber, der die LP des Ziels regeneriert. Kraft: 2338 plus des Spielers WEI.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Genesung" Mana="230" Range="0" RequiredLevel="51" SkillPunkte="6" Stamina="0" Status="" Delay="1.5">
+          <Description>Mächtiger Heilzauber, der die LP des Ziels regeneriert. Kraft: 3164 plus des Spielers WEI.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.oracle36.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Etains Segnung" Mana="-1" Range="0" RequiredLevel="60" SkillPunkte="9" Stamina="0" Status="" Delay="2.5">
+          <Description>Angriff, dadurch steigen Angriffsgeschwindigkeit, kritische Angriffe, und Maximale MP aller Gruppenmitglieder innerhalb 15 Metern um den Spieler. Kostet alle SP und MP.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+  </Skills>
+</SkillList>

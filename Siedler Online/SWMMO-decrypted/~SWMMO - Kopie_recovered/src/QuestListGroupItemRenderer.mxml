@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="159">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:StandardButton id="btnTitle" labelPlacement="left" width="159" paddingLeft="5" paddingRight="5" left="0" click="{this.expandCollapse();}" label="null" icon=""/>
+	<mx:CustomText id="empty" selectable="false" left="5" right="5" top="32" fontWeight="normal" textAlign="center" color="#00ffffff" text="null"/>
+	<mx:VBox id="list" null.left="this" right="5" top="32" bottom="0" verticalGap="1"/>
+
+</mx:Canvas>

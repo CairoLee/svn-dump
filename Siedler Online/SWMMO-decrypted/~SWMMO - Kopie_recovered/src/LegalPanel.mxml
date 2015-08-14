@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="428" height="310" _embed_mxml_____data_src_gfx_embedded_quest_quest_ornamental3_png_1841140076="LegalPanel__embed_mxml_____data_src_gfx_embedded_quest_quest_ornamental3_png_1841140076">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas styleName="basicPanel" top="5" left="5" right="9" bottom="0"/>
+	<mx:Canvas id="completedHeader" styleName="questPanelHeader" height="82" left="0" right="0" top="0"/>
+	<mx:Image id="ornament" null.top="this" horizontalCenter="0" showEffect="fadeIn" hideEffect="fadeOut" source="{null.GetBitmap("InfoOrnamentalTop1")}"/>
+	<mx:Canvas styleName="questPanelFooter" height="60" null.left="this" right="10" bottom="0"/>
+	<mx:Canvas id="content" clipContent="false" top="35" bottom="1" left="17" right="19">
+		<mx:Label id="headline" horizontalCenter="0" top="-20" fontWeight="bold" textAlign="center" text="{null + cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "LegalTerms")}"/>
+		<mx:Canvas styleName="detailsHeader" left="5" right="5" top="2">
+			<mx:Image id="questAdvisorMedium" null.top="this" left="8" source="{null.GetBitmap("QuestAdvisorMedium")}"/>
+			<mx:Text id="InfoText" width="100%" height="100%" selectable="false" left="60" top="10" color="#00ffffff" text="{null.GetInstance().GetText(LOCA_GROUP.DESCRIPTIONS, "LegalInfo")}"/>
+		</mx:Canvas>
+		<mx:Canvas styleName="detailsContentBox" height="140" null.left="this" right="8" top="75">
+			<mx:Canvas styleName="detailsSubHeader" left="5" right="5" top="5" bottom="5">
+				<mx:Text id="legalterms" null="null" height="100%" selectable="false" left="5" top="5" color="#00ffffff" text="{"LEGALTERM" + cLocaManager.GetInstance().GetText(LOCA_GROUP.DESCRIPTIONS, "LegalInfo")}"/>
+			</mx:Canvas>
+		</mx:Canvas>
+		<mx:Canvas null="null" width="100%" height="10" top="70"/>
+		<mx:Image null="null" null.horizontalCenter="this" top="60"/>
+		<mx:Canvas null="null" width="100%" height="10" bottom="55"/>
+		<mx:HBox null.horizontalGap="this" horizontalCenter="0" bottom="10">
+			<mx:StandardButton id="btnYES" playSound="false" width="150" height="26" null.horizontalCenter="this" bottom="10" label="{null.GetText(LOCA_GROUP.LABELS, "IAgree")}"/>
+			<mx:StandardButton id="btnNO" playSound="false" width="150" height="26" horizontalCenter="0" bottom="10" label="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "IDisagree")}"/>
+		</mx:HBox>
+	</mx:Canvas>
+
+</mx:Canvas>

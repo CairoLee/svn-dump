@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="406" height="148">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:DataGrid id="QUEST_LIST_ID" columns="{[_QuestNewQuestSystemList_DataGridColumn1_c(), _QuestNewQuestSystemList_DataGridColumn2_c()]}" null.right="this" left="10" bottom="10" top="10" borderStyle="none" color="#0007242a"/>
+	<mx:Button id="QUEST_SHOW_ID" null="null" label="Show" width="82" height="24" right="10"/>
+	<mx:Button id="QUEST_DROP_ID" null="null" label="Drop" width="82" height="24" null.right="this"/>
+
+</mx:Canvas>

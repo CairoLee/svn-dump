@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Healbot", "Healbot\Healbot.csproj", "{2790D29D-CCB8-4B91-B9F8-EBD49827387C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Healbot.Library", "Library\Healbot.Library.csproj", "{8EFB8B7D-C0FD-43E8-AA32-2949F77998FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2790D29D-CCB8-4B91-B9F8-EBD49827387C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2790D29D-CCB8-4B91-B9F8-EBD49827387C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2790D29D-CCB8-4B91-B9F8-EBD49827387C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2790D29D-CCB8-4B91-B9F8-EBD49827387C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EFB8B7D-C0FD-43E8-AA32-2949F77998FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EFB8B7D-C0FD-43E8-AA32-2949F77998FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EFB8B7D-C0FD-43E8-AA32-2949F77998FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EFB8B7D-C0FD-43E8-AA32-2949F77998FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

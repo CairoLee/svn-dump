@@ -1,0 +1,463 @@
+<?xml version="1.0"?>
+<SkillList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Skills>
+    <Skill IconName="icons.mage01.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dolch-Aufwertung" Mana="0" Range="0" RequiredLevel="5" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 5, wenn ein Dolch ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dolch-Aufwertung" Mana="0" Range="0" RequiredLevel="16" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 12, wenn ein Dolch ausgerüstet ist.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Dolch-Aufwertung" Mana="0" Range="0" RequiredLevel="25" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die Angriffskraft des Spielers um 20, wenn ein Dolch ausgerüstet ist.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage02.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mana Training" Mana="0" Range="0" RequiredLevel="5" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale MP des Spielers um 110.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mana Training" Mana="0" Range="0" RequiredLevel="16" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale MP des Spielers um 255.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mana Training" Mana="0" Range="0" RequiredLevel="25" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale MP des Spielers um 448.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage03.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="6" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 4% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="15" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 6% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Entspannung" Mana="0" Range="0" RequiredLevel="26" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Fähigkeit, die eine passive Regeneration der LP, MP und AP um 8% für 3 Sekunden in Kampfpausen erwirkt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage04.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="12" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 3.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="26" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 4.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Rucksack-Erweiterung" Mana="0" Range="0" RequiredLevel="46" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit erhöht die maximale Anzahl der Taschen auf 5.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage05.png" Mode="0" Type="Passive">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="13" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler , etwa  30% dessen zu verstehen was der Gegner sagt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="22" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler , etwa  60% dessen zu verstehen was der Gegner sagt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Interpretation" Mana="0" Range="0" RequiredLevel="51" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Erlaubt den Spieler alles zu verstehen was der Gegner sagt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage06.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="1" Element="None" Name="Magieball" Mana="20" Range="24" RequiredLevel="2" SkillPunkte="2" Stamina="0" Status="" Delay="1">
+          <Description>Spruch, der einen Nichtelementaren Magischen Pfeil abschießt, seine Kraft ergibt sich aus der magischen Angriffskraft des Spielers plus 29 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="5" Element="None" Name="Magischer Pfeil" Mana="45" Range="24" RequiredLevel="10" SkillPunkte="2" Stamina="0" Status="" Delay="1">
+          <Description>Spruch, der einen Nichtelementaren Magischen Pfeil abschießt, seine Kraft ergibt sich aus der magischen Angriffskraft des Spielers plus 60 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Magisches Geschoss" Mana="90" Range="24" RequiredLevel="20" SkillPunkte="3" Stamina="0" Status="" Delay="1">
+          <Description>Spruch, der einen Nichtelementaren Magischen Pfeil abschießt, seine Kraft ergibt sich aus der magischen Angriffskraft des Spielers plus 118 Punkte Schaden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage07.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Körperschutz" Mana="60" Range="0" RequiredLevel="2" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht des Spielers physische Verteidigungskraft um 12 Punkte und die Ausweichrate gegen Physische Angriffe um 2% für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Körperschutz" Mana="250" Range="0" RequiredLevel="17" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht des Spielers physische Verteidigungskraft um 24 Punkte und die Ausweichrate gegen Physische Angriffe um 4% für 5 Minuten.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Körperschutz" Mana="460" Range="0" RequiredLevel="34" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Erhöhender Verstärkungszauber, erhöht des Spielers physische Verteidigungskraft um 47 Punkte und die Ausweichrate gegen Physische Angriffe um 7% für 5 Minuten.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage08.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="15" Element="None" Name="Feuerball" Mana="38" Range="24" RequiredLevel="3" SkillPunkte="2" Stamina="0" Status="" Delay="1">
+          <Description>Grundlegender Feuerzauber der Schaden verursacht in Höhe der magischen Angriffskraft des Spielers plus 51 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="15" Element="None" Name="Feuerpfeil" Mana="72" Range="25" RequiredLevel="14" SkillPunkte="3" Stamina="0" Status="" Delay="1">
+          <Description>Grundlegender Feuerzauber der Schaden verursacht in Höhe der magischen Angriffskraft des Spielers plus 103 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="15" Element="None" Name="Feuerlanze" Mana="116" Range="26" RequiredLevel="27" SkillPunkte="3" Stamina="0" Status="" Delay="1">
+          <Description>Grundlegender Feuerzauber der Schaden verursacht in Höhe der magischen Angriffskraft des Spielers plus 226 Punkte Schaden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage09.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="125" Element="None" Name="Magie-Ranken" Mana="80" Range="24" RequiredLevel="3" SkillPunkte="2" Stamina="0" Status="Pause" Delay="30">
+          <Description>Grundlegender Erdzauber der Schaden verursacht in Höhe der magischen Angriffskraft des Spielers plus 34 Punkte Schaden Der Gegner ist Angewurzelt für 3 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="125" Element="None" Name="Schlag-Ranken" Mana="110" Range="24" RequiredLevel="14" SkillPunkte="3" Stamina="0" Status="Pause" Delay="25">
+          <Description>Grundlegender Erdzauber der Schaden verursacht in Höhe der magischen Angriffskraft des Spielers plus 80 Punkte Schaden Der Gegner ist Angewurzelt für 5 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="125" Element="None" Name="Stoß-Ranken" Mana="181" Range="24" RequiredLevel="27" SkillPunkte="3" Stamina="0" Status="Pause" Delay="20">
+          <Description>Grundlegender Erdzauber der Schaden verursacht in Höhe der magischen Angriffskraft des Spielers plus 175 Punkte Schaden Der Gegner ist Angewurzelt für 7 Sekunden .</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage10.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schallbolzen" Mana="80" Range="24" RequiredLevel="3" SkillPunkte="2" Stamina="0" Status="" Delay="30">
+          <Description>Grundlegender Windzauber, der Schaden verursacht in Höhe der magischen Angriffskraft des Spielers plus 34 Punkte Schaden. Die Zauberwirkdauer entfällt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schall-Lanze" Mana="110" Range="24" RequiredLevel="14" SkillPunkte="3" Stamina="0" Status="" Delay="30">
+          <Description>Grundlegender Windzauber, der Gegnern Schaden zufügt in höhe der magischen Angriffskraft des Spielers plus 80 Punkte Schaden Die Zauberwirkdauer entfällt</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Schall-Schäler" Mana="181" Range="24" RequiredLevel="27" SkillPunkte="3" Stamina="0" Status="" Delay="30">
+          <Description>Grundlegender Windzauber, der Gegnern Schaden zufügt in höhe der magischen Angriffskraft des Spielers plus 175 Punkte Schaden. Die Zauberwirkdauer entfällt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage11.png" Mode="0" Type="Basic">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mana-Verlust" Mana="90" Range="24" RequiredLevel="16" SkillPunkte="3" Stamina="0" Status="Einbildung" Delay="0">
+          <Description>Schwächungszauber,  lässt die MP des Gegners sinken. Das Ziel verliert 380 MP über die Dauer von 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mana-Verlust" Mana="130" Range="24" RequiredLevel="28" SkillPunkte="3" Stamina="0" Status="Einbildung" Delay="0">
+          <Description>Schwächungszauber,  lässt die MP des Gegners sinken. Das Ziel verliert 630 MP über die Dauer von 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Mana-Verlust" Mana="275" Range="24" RequiredLevel="40" SkillPunkte="3" Stamina="0" Status="Einbildung" Delay="0">
+          <Description>Schwächungszauber, lässt die MP des Gegners sinken. Das Ziel verliert 1430 MP über die Dauer von 30 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage12.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="4" CastTime="0" Element="None" Name="Feuerdorn" Mana="30" Range="0" RequiredLevel="4" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Verstärkungszauber, der den Spieler mit Dornen aus Feuer 5 Minuten lang beschützt und jeden sich innerhalb von 4 Metern nähernden Gegner einen Schaden von 8 Punkte Schaden pro Treffer anrichtet. Seid gewahr, Monster werden davon nur noch Aggressiver.</Description>
+        </Level>
+        <Level AoE="4" CastTime="0" Element="None" Name="Feuerdorn" Mana="110" Range="0" RequiredLevel="24" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Verstärkungszauber, der den Spieler mit Dornen aus Feuer 5 Minuten lang beschützt und jeden sich innerhalb von 4 Metern nähernden Gegner einen Schaden von 25 Punkte Schaden pro Treffer anrichtet. Seid gewahr, Monster werden davon nur noch Aggressiver.</Description>
+        </Level>
+        <Level AoE="4" CastTime="0" Element="None" Name="Feuerdorn" Mana="250" Range="0" RequiredLevel="44" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Verstärkungszauber, der den Spieler mit Dornen aus Feuer 5 Minuten lang beschützt und jeden sich innerhalb von 4 Metern nähernden Gegner einen Schaden von 65 Punkte Schaden pro Treffer anrichtet. Seid gewahr, Monster werden davon nur noch Aggressiver.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage13.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="6" CastTime="1" Element="None" Name="Feuerbusch" Mana="60" Range="0" RequiredLevel="8" SkillPunkte="3" Stamina="0" Status="" Delay="30">
+          <Description>Feuermagie die Feuerbüscher in einem Radius von 6 Metern um den Spieler für 12 Sekunden errichtet. Gegner die getroffen werden erleiden 12 Sekunden lang 32 Punkte Schaden pro Treffer.</Description>
+        </Level>
+        <Level AoE="8" CastTime="1" Element="None" Name="Feuervorhang" Mana="150" Range="0" RequiredLevel="23" SkillPunkte="3" Stamina="0" Status="" Delay="30">
+          <Description>Feuermagie die ein Feuer Vorhang in 8 Metern um den Spieler für 12 Sekunden errichtet. Gegner, die getroffen werden erleiden 12 Sekunden lang 50 Punkte Schaden pro Treffer.</Description>
+        </Level>
+        <Level AoE="10" CastTime="1" Element="None" Name="Feuerwand" Mana="175" Range="0" RequiredLevel="33" SkillPunkte="4" Stamina="0" Status="" Delay="30">
+          <Description>Feuermagie die eine Feuerwund in 10 Metern Umkreis um den Spieler für 12 Sekunden errichtet. Spieler, die getroffen werden erleiden 12 Sekunden lang 80 Punkte Schaden pro Treffer.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage14.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="14" CastTime="2.5" Element="None" Name="Steinschlag" Mana="90" Range="24" RequiredLevel="8" SkillPunkte="3" Stamina="0" Status="Pause" Delay="0">
+          <Description>Erdmagie der im Radius von 14 Metern um das Ziel eine Lawine fallen lässt. Verursacht Schaden in höhe der magischen Grundangriffskraft plus 69 Punkte Schaden. Zusätzlich verursacht er einen Stopp-Effekt für 1 sekunde.</Description>
+        </Level>
+        <Level AoE="14" CastTime="2.5" Element="None" Name="Geröll-Lawine" Mana="225" Range="24" RequiredLevel="23" SkillPunkte="3" Stamina="0" Status="Pause" Delay="0">
+          <Description>Erdmagie der im Radius von 14 Metern um das Ziel eine Lawine fallen lässt. Verursacht Schaden in höhe der magischen Grundangriffskraft plus 181 Punkte Schaden. Zusätzlich verursacht er einen Stopp-Effekt für 2 Sekunden.</Description>
+        </Level>
+        <Level AoE="14" CastTime="2.5" Element="None" Name="Bergrutsch" Mana="350" Range="24" RequiredLevel="33" SkillPunkte="4" Stamina="0" Status="Pause" Delay="0">
+          <Description>Erdmagie der im Radius von 14 Metern um das Ziel eine Lawine fallen lässt. Verursacht Schaden in höhe der magischen Grundangriffskraft plus 305 Punkte Schaden. Zusätzlich verursacht er einen Stopp-Effekt für 3 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage15.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="1" Element="None" Name="Windhauch" Mana="120" Range="24" RequiredLevel="8" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Luftzauber, der einen Sturm mit einem Radius von 14 Metern um das Ziel produziert, welcher dem Ziel Schaden zufügt in Höhe der magischen Grundangriffskraft plus 69 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="1" Element="None" Name="Steife Brise" Mana="300" Range="24" RequiredLevel="23" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Luftzauber, der einen Sturm mit einem Radius von 14 Metern um das Ziel produziert, welcher dem Ziel Schaden zufügt in Höhe der magischen Grundangriffskraft plus 181 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="1" Element="None" Name="Sturm" Mana="460" Range="24" RequiredLevel="33" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Luftzauber, der einen Sturm mit einem Radius von 14 Metern um das Ziel produziert, welcher dem Ziel Schaden zufügt in Höhe der magischen Grundangriffskraft plus 305 Punkte Schaden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage16.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Blutegel" Mana="100" Range="2" RequiredLevel="13" SkillPunkte="3" Stamina="0" Status="" Delay="45">
+          <Description>Aktive Fähigkeit, sie stiehlt 474 AP von einem Gegner mit einer 75% Erfolgschance. Nur benutzbar mit Nahkampfwaffen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Blutegel" Mana="200" Range="2" RequiredLevel="29" SkillPunkte="4" Stamina="0" Status="" Delay="45">
+          <Description>Aktive Fähigkeit, sie stiehlt 785 AP von einem Gegner mit einer 75% Erfolgschance. Nur benutzbar mit Nahkampfwaffen.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Blutegel" Mana="400" Range="2" RequiredLevel="44" SkillPunkte="4" Stamina="0" Status="" Delay="45">
+          <Description>Aktive Fähigkeit, sie stiehlt 1100 AP von einem Gegner mit einer 75% Erfolgschance. Nur benutzbar mit Nahkampfwaffen.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage17.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Todesurteil" Mana="315" Range="17" RequiredLevel="19" SkillPunkte="3" Stamina="0" Status="Sterbend" Delay="0">
+          <Description>Mächtiger Magieangriff , produziert Schaden, er  das Ziel verwundet für 728 Punkte Schaden über die Dauer von 18 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Todesurteil" Mana="645" Range="17" RequiredLevel="35" SkillPunkte="3" Stamina="0" Status="Sterbend" Delay="0">
+          <Description>Mächtiger Magieangriff , produziert Schaden, er  das Ziel verwundet für 1080 Punkte Schaden über die Dauer von 18 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Todesurteil" Mana="2100" Range="17" RequiredLevel="53" SkillPunkte="3" Stamina="0" Status="Sterbend" Delay="0">
+          <Description>Mächtiger Magieangriff , produziert Schaden, er  das Ziel verwundet für 2100 Punkte Schaden über die Dauer von 18 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage18.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="10" CastTime="15" Element="None" Name="Sternschnuppe" Mana="270" Range="24" RequiredLevel="21" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Feuermagie die in 10 Metern um das Ziel Meteore einschlagen lässt. Es richtet des Spielers magische Angriffskraft plus 124 Punkte Schaden und insgesamt Punkte Schaden von 60 Punkte über die Dauer von 12 Sekunden.</Description>
+        </Level>
+        <Level AoE="12" CastTime="15" Element="None" Name="Meteor" Mana="430" Range="24" RequiredLevel="31" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Feuermagie die in 12 Metern um das Ziel Meteore einschlagen lässt. Es richtet des Spielers magische Angriffskraft plus 200 Punkte Schaden und insgesamt Punkte Schaden von 100 Punkte über die Dauer von 12 Sekunden.</Description>
+        </Level>
+        <Level AoE="14" CastTime="15" Element="None" Name="Astroid" Mana="625" Range="24" RequiredLevel="41" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Feuermagie die in 14 Metern um das Ziel Meteore einschlagen lässt. Es richtet des Spielers magische Angriffskraft plus 302 Punkte Schaden und insgesamt Punkte Schaden von 152 Punkte über die Dauer von 12 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage19.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="10" CastTime="3" Element="None" Name="Erderschütterung" Mana="270" Range="24" RequiredLevel="21" SkillPunkte="4" Stamina="0" Status="Pause" Delay="0">
+          <Description>Erdmagie welche ein Erdbeben entstehen lässt . Es richtet  des Spielers magische Angriffskraft plus 187 Punkte Schaden. Richtet 10 Metern um das Ziel und betäubt für 3 Sekunden.</Description>
+        </Level>
+        <Level AoE="12" CastTime="3" Element="None" Name="Erdstoß" Mana="430" Range="24" RequiredLevel="31" SkillPunkte="4" Stamina="0" Status="Pause" Delay="0">
+          <Description>Erdmagie welche ein Erdbeben entstehen lässt . Es richtet  des Spielers magische Angriffskraft plus 301 Punkte Schaden. Richtet 12 Metern um das Ziel und betäubt für 3 Sekunden.</Description>
+        </Level>
+        <Level AoE="14" CastTime="3" Element="None" Name="Erdbeben" Mana="625" Range="24" RequiredLevel="41" SkillPunkte="4" Stamina="0" Status="Pause" Delay="0">
+          <Description>Erdmagie welche ein Erdbeben entstehen lässt . Es richtet  des Spielers magische Angriffskraft plus 455 Punkte Schaden. Richtet 14 Metern um das Ziel und betäubt für 3 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage20.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="10" CastTime="0" Element="None" Name="Blitz" Mana="297" Range="24" RequiredLevel="21" SkillPunkte="4" Stamina="0" Status="" Delay="30">
+          <Description>Luftzauber der einen Blitz schießt . Schaden: des Spielers magische Angriffskraft plus 161 Punkte Schaden. Reichweite: 10 Metern um das Ziel Die Zauberwirkdauer entfällt.</Description>
+        </Level>
+        <Level AoE="12" CastTime="0" Element="None" Name="Blitzschauer" Mana="473" Range="24" RequiredLevel="31" SkillPunkte="5" Stamina="0" Status="" Delay="30">
+          <Description>Luftzauber der einen Blitz abschießt . Schaden:  des Spielers magische Angriffskraft plus 277 Punkte Schaden. Reichweite: 12 Metern um das Ziel Die Zauberwirkdauer entfällt.</Description>
+        </Level>
+        <Level AoE="14" CastTime="0" Element="None" Name="Kettenblitz" Mana="687" Range="24" RequiredLevel="41" SkillPunkte="5" Stamina="0" Status="" Delay="30">
+          <Description>Luftzauber der einen Blitz abschießt . Schaden:  des Spielers magische Angriffskraft plus 432 Punkte Schaden. Reichweite: 14 Metern um das Ziel Die Zauberwirkdauer entfällt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage21.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="4" Element="None" Name="Chor der Flammen" Mana="900" Range="24" RequiredLevel="38" SkillPunkte="4" Stamina="0" Status="" Delay="300">
+          <Description>Mächtiger Feuer-Kampfzauber, trifft mit der magischen Angriffskraft des Spielers plus 1101 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="4" Element="None" Name="Chor der Flammen" Mana="1200" Range="24" RequiredLevel="48" SkillPunkte="5" Stamina="0" Status="" Delay="300">
+          <Description>Mächtiger Feuer-Kampfzauber, trifft mit der magischen Angriffskraft des Spielers plus 1564 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="4" Element="None" Name="Chor der Flammen" Mana="1500" Range="24" RequiredLevel="58" SkillPunkte="5" Stamina="0" Status="" Delay="300">
+          <Description>Mächtiger Feuer-Kampfzauber, trifft mit der magischen Angriffskraft des Spielers plus 2108 Punkte Schaden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage22.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="4" Element="None" Name="Chor der Erde" Mana="900" Range="24" RequiredLevel="38" SkillPunkte="4" Stamina="0" Status="" Delay="300">
+          <Description>Mächtiger Erd-Kampfzauber, trifft mit der magischen Angriffskraft des Spielers plus 1101 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="4" Element="None" Name="Chor der Erde" Mana="1200" Range="24" RequiredLevel="48" SkillPunkte="5" Stamina="0" Status="" Delay="300">
+          <Description>Mächtiger Erd-Kampfzauber, trifft mit der magischen Angriffskraft des Spielers plus 1564 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="4" Element="None" Name="Chor der Erde" Mana="1500" Range="24" RequiredLevel="58" SkillPunkte="5" Stamina="0" Status="" Delay="300">
+          <Description>Mächtiger Erd-Kampfzauber, trifft mit der magischen Angriffskraft des Spielers plus 2108 Punkte Schaden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage23.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="4" Element="None" Name="Chor des Sturms" Mana="900" Range="24" RequiredLevel="38" SkillPunkte="4" Stamina="0" Status="" Delay="300">
+          <Description>Mächtiger Wind-Kampfzauber, trifft mit der magischen Angriffskraft des Spielers plus 1101 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="4" Element="None" Name="Chor des Sturms" Mana="1200" Range="24" RequiredLevel="48" SkillPunkte="5" Stamina="0" Status="" Delay="300">
+          <Description>Mächtiger Wind-Kampfzauber, trifft mit der magischen Angriffskraft des Spielers plus 1564 Punkte Schaden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="4" Element="None" Name="Chor des Sturms" Mana="1500" Range="24" RequiredLevel="58" SkillPunkte="5" Stamina="0" Status="" Delay="300">
+          <Description>Mächtiger Wind-Kampfzauber, trifft mit der magischen Angriffskraft des Spielers plus 2108 Punkte Schaden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+	<!-- until Normal/Hard/UM implemention finished
+    <Skill IconName="icons.mage24.png" Mode="0" Type="Combat">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Nemesis" Mana="75" Range="24" RequiredLevel="11" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Angriffszauber, trifft für 277 Punkte Schaden 85% Erfolgschance.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Nemesis" Mana="300" Range="24" RequiredLevel="32" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Angriffszauber, trifft für 866 Punkte Schaden 85% Erfolgschance.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Nemesis" Mana="430" Range="24" RequiredLevel="55" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Angriffszauber, trifft für 1936 Punkte Schaden 85% Erfolgschance.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+	-->
+    <Skill IconName="icons.mage25.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Unterstützung" Mana="110" Range="0" RequiredLevel="7" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Gruppenzauber, erhöht physische Angriffskraft von Gruppenmitgliedern innerhalb 100 Metern um den Spieler um 15 Punkte. 1% der maximalen MP werden wiederaufgeladen alle 3 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Unterstützung" Mana="580" Range="0" RequiredLevel="39" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Gruppenzauber, erhöht physische Angriffskraft von Gruppenmitgliedern innerhalb 100 Metern um den Spieler um 40 Punkte. 2% der maximalen MP werden wiederaufgeladen alle 3 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Unterstützung" Mana="760" Range="0" RequiredLevel="54" SkillPunkte="4" Stamina="0" Status="" Delay="0">
+          <Description>Gruppenzauber, erhöht physische Angriffskraft von Gruppenmitgliedern innerhalb 100 Metern um den Spieler um 80 Punkte. 3% der maximalen MP werden wiederaufgeladen alle 3 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage26.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Beeinträchtigung" Mana="50" Range="24" RequiredLevel="9" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese Fähigkeit entfernt die Elementarverteidigung eines Gegners mit einer 60% Erfolgschance.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Beeinträchtigung" Mana="280" Range="24" RequiredLevel="43" SkillPunkte="5" Stamina="0" Status="" Delay="0">
+          <Description>Diese Fähigkeit entfernt die Elementarverteidigung von Gegnern in einem Umkreis von  10 Metern um das Ziel für 1 Minute mit einer 80% Erfolgschance.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage27.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Letzte Reserve" Mana="0" Range="0" RequiredLevel="17" SkillPunkte="1" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit füllt einen Zauberspruch auf der weniger als 500 Sekunden wiederaufladerate hat, Wenn die LP niedriger sind als 10%. Startet automatisch alle 3 Minuten für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Letzte Reserve" Mana="0" Range="0" RequiredLevel="29" SkillPunkte="2" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit füllt einen Zauberspruch auf der weniger als 500 Sekunden wiederaufladerate hat, Wenn die LP niedriger sind als 17%. Startet automatisch alle 3 Minuten für 30 Sekunden.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Letzte Reserve" Mana="0" Range="0" RequiredLevel="50" SkillPunkte="3" Stamina="0" Status="" Delay="0">
+          <Description>Diese passive Fähigkeit füllt einen Zauberspruch auf der weniger als 500 Sekunden wiederaufladerate hat, Wenn die LP niedriger sind als 25%. Startet automatisch alle 3 Minuten für 30 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage28.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Umwandlung" Mana="0" Range="0" RequiredLevel="18" SkillPunkte="3" Stamina="0" Status="" Delay="600">
+          <Description>Angriff, der Die AP jedes Spieles aufteilt und um 715 MP Auffrischt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Umwandlung" Mana="0" Range="0" RequiredLevel="37" SkillPunkte="4" Stamina="0" Status="" Delay="600">
+          <Description>Angriff, der Die AP jedes Spieles aufteilt und um 1619 MP Auffrischt.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Umwandlung" Mana="0" Range="0" RequiredLevel="57" SkillPunkte="5" Stamina="0" Status="" Delay="600">
+          <Description>Angriff, der Die AP jedes Spieles aufteilt und um 2582 MP Auffrischt.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage29.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="0" Element="None" Name="Überlebenswille" Mana="30" Range="0" RequiredLevel="18" SkillPunkte="4" Stamina="0" Status="" Delay="300">
+          <Description>Diese Fähigkeit sorgt dafür, dass zuerst die AP und dann die LP für 1 Minute bei erlittenen Schaden abgezogen wird.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Überlebenswille" Mana="70" Range="0" RequiredLevel="29" SkillPunkte="7" Stamina="0" Status="" Delay="300">
+          <Description>Diese Fähigkeit sorgt dafür, dass zuerst die MP und dann die LP für 1 Minute bei erlittenen Schaden abgezogen wird.</Description>
+        </Level>
+        <Level AoE="0" CastTime="0" Element="None" Name="Überlebenswille" Mana="120" Range="0" RequiredLevel="47" SkillPunkte="8" Stamina="0" Status="" Delay="300">
+          <Description>Diese Fähigkeit sorgt dafür, dass zuerst die AP, dann die  MP und dann die LP für 1 Minute bei erlittenen Schaden abgezogen wird.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage30.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="10" CastTime="3" Element="None" Name="Erdstachel" Mana="585" Range="24" RequiredLevel="30" SkillPunkte="6" Stamina="0" Status="Ohnmacht" Delay="0">
+          <Description>Erdmagie der Dornen aus der Erde sprießen lässt der Effekt geht bis zu  10 Metern um das Ziel. Es richtet des Spielers magische Grundangriffskraft plus 352 Punkte von Punkte Schaden. Getroffene Ziele werden Ohnmächtig für 3 Sekunden</Description>
+        </Level>
+        <Level AoE="12" CastTime="3" Element="None" Name="Erdstachel" Mana="854" Range="24" RequiredLevel="42" SkillPunkte="7" Stamina="0" Status="Ohnmacht" Delay="0">
+          <Description>Erdmagie der Dornen aus der Erde sprießen lässt der Effekt geht bis zu  12 Metern um das Ziel. Es richtet des Spielers magische Grundangriffskraft plus 472 Punkte von Punkte Schaden. Getroffene Ziele werden Ohnmächtig für 3 Sekunden</Description>
+        </Level>
+        <Level AoE="14" CastTime="3" Element="None" Name="Erdstachel" Mana="1173" Range="24" RequiredLevel="52" SkillPunkte="8" Stamina="0" Status="Ohnmacht" Delay="0">
+          <Description>Erdmagie der Dornen aus der Erde sprießen lässt der Effekt geht bis zu  14 Metern um das Ziel. Es richtet des Spielers magische Grundangriffskraft plus 669 Punkte von Punkte Schaden. Getroffene Ziele werden Ohnmächtig für 3 Sekunden</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage31.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="10" CastTime="0" Element="None" Name="Turbulenz" Mana="643" Range="24" RequiredLevel="30" SkillPunkte="6" Stamina="0" Status="" Delay="30">
+          <Description>Luftzauber . Kreiert Luftturbulenzen in 10 Metern um das Ziel. Richtet sofort des Spielers magische Grundangriffskraft plus 426 Punkte von Punkte Schaden an.</Description>
+        </Level>
+        <Level AoE="12" CastTime="0" Element="None" Name="Turbulenz" Mana="939" Range="24" RequiredLevel="42" SkillPunkte="7" Stamina="0" Status="" Delay="30">
+          <Description>Luftzauber . Kreiert Luftturbulenzen in 12 Metern um das Ziel. Richtet sofort des Spielers magische Grundangriffskraft plus 700 Punkte von Punkte Schaden an.</Description>
+        </Level>
+        <Level AoE="14" CastTime="0" Element="None" Name="Turbulenz" Mana="1380" Range="24" RequiredLevel="52" SkillPunkte="8" Stamina="0" Status="" Delay="30">
+          <Description>Luftzauber . Kreiert Luftturbulenzen in 14 Metern um das Ziel. Richtet sofort des Spielers magische Grundangriffskraft plus 987 Punkte von Punkte Schaden an.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage32.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="10" CastTime="3" Element="None" Name="Konfusion" Mana="675" Range="0" RequiredLevel="32" SkillPunkte="7" Stamina="0" Status="" Delay="300">
+          <Description>Nichtelementarer Angriff, der  setzt eine Gegend in 10 Metern um den Spieler in Konfusion und Angriffe withmit magische Grundangriffskraft plus 315 Punkten Schaden. ERH, GES, WEI von Getroffenen Zielen wird verringert um 150 Punkte für 12 Sekunden.</Description>
+        </Level>
+        <Level AoE="14" CastTime="3" Element="None" Name="Chaos" Mana="0" Range="0" RequiredLevel="46" SkillPunkte="8" Stamina="0" Status="" Delay="300">
+          <Description>Nichtelementarer Angriff, der  setzt eine Gegend in 14 Metern um den Spieler in Konfusion und Angriffe wird mmit magische Grundangriffskraft plus 546 Punkten Schaden. ERH, GES, WEI von Getroffenen Zielen wird verringert um 200 Punkte für 12 Sekunden.</Description>
+        </Level>
+        <Level AoE="18" CastTime="3" Element="None" Name="Armageddon" Mana="0" Range="0" RequiredLevel="55" SkillPunkte="9" Stamina="0" Status="" Delay="300">
+          <Description>Nichtelementarer Angriff, der  setzt eine Gegend in 18 Metern um den Spieler in Konfusion und Angriffe wird mmit magische Grundangriffskraft plus 735 Punkten Schaden. ERH, GES, WEI von Getroffene Zielen wird verringert um 250 Punkte für 12 Sekunden.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage33.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="3" Element="None" Name="Höllenfeuer" Mana="585" Range="24" RequiredLevel="34" SkillPunkte="6" Stamina="0" Status="" Delay="0">
+          <Description>Feuermagie. Greift den Gegner an mit des Spielers magische Angriffskraft plus 530 Punkte Schaden, . Es richtet  weitere Punkte Schaden von 264 über die Dauer von 18 Sekunden an.</Description>
+        </Level>
+        <Level AoE="0" CastTime="2.5" Element="None" Name="Höllenfeuer" Mana="854" Range="24" RequiredLevel="45" SkillPunkte="7" Stamina="0" Status="" Delay="0">
+          <Description>Feuermagie. Greift den Gegner an mit des Spielers magische Angriffskraft plus 850 Punkte Schaden, . Es richtet  weitere Punkte Schaden von 426 über die Dauer von 18 Sekunden an.</Description>
+        </Level>
+        <Level AoE="0" CastTime="2" Element="None" Name="Höllenfeuer" Mana="1123" Range="24" RequiredLevel="45" SkillPunkte="8" Stamina="0" Status="" Delay="0">
+          <Description>Feuermagie. Greift den Gegner an mit des Spielers magische Angriffskraft plus 1178 Punkte Schaden, . Es richtet  weitere Punkte Schaden von 594 über die Dauer von 18 Sekunden an.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage34.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="3" Element="None" Name="Problematischer Vorfall" Mana="630" Range="24" RequiredLevel="36" SkillPunkte="5" Stamina="0" Status="Tod" Delay="1800">
+          <Description>Dieser magische Angriff tötet den Gegner nach 5 Minuten</Description>
+        </Level>
+        <Level AoE="0" CastTime="3" Element="None" Name="Wahre Krise" Mana="900" Range="24" RequiredLevel="47" SkillPunkte="6" Stamina="0" Status="Tod" Delay="1800">
+          <Description>Dieser magische Angriff tötet den Gegner nach 3 Minuten</Description>
+        </Level>
+        <Level AoE="0" CastTime="3" Element="None" Name="Oh, Schicksal" Mana="1170" Range="24" RequiredLevel="57" SkillPunkte="7" Stamina="0" Status="Tod" Delay="1800">
+          <Description>Dieser magische Angriff tötet den Gegner nach 1 Minute</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage35.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="3.5" Element="None" Name="Säen und Ernten" Mana="-1" Range="24" RequiredLevel="49" SkillPunkte="8" Stamina="0" Status="" Delay="900">
+          <Description>Mächtiger magischer Angriff der das ziel mit dem dreifache der magischen Grundangriffskraft verletzt. Kostet alle MP . Der Effekt ist auf einige Monster limitiert.</Description>
+        </Level>
+        <Level AoE="0" CastTime="3.5" Element="None" Name="Säen und Ernten" Mana="-1" Range="24" RequiredLevel="56" SkillPunkte="9" Stamina="0" Status="" Delay="900">
+          <Description>Mächtiger magischer Angriff der das ziel mit dem vierfache der magischen Grundangriffskraft verletzt. Kostet alle MP . Der Effekt ist auf einige Monster limitiert.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+    <Skill IconName="icons.mage36.png" Mode="0" Type="Special">
+      <LevelList>
+        <Level AoE="0" CastTime="2" Element="None" Name="Kaimans Atem" Mana="0" Range="24" RequiredLevel="60" SkillPunkte="9" Stamina="0" Status="" Delay="600">
+          <Description>Dieser Spruch verringert die Maximale LP von Gegnern innerhalb 15 Metern des Ziels um 87%.  Der Effekt ist auf einige Monster limitiert.</Description>
+        </Level>
+      </LevelList>
+    </Skill>
+  </Skills>
+</SkillList>

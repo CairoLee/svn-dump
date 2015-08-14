@@ -1,0 +1,28 @@
+<div id="container1">
+<div align="center"><font size="6"><b><u>The War Guide</u></b></font><b><br />
+by TheMachine</b><br />
+(Version 1.0.2)</div><br />
+
+<p>Diese Erklärung ist eine empirische Beschreibung des Kampfsystem und kann noch Fehler enthalten!
+</p><p><br />
+</p><p>Im wesentlichen ist es ein rundenbasierendes System, welches auf den Hitpoints (HP) und dem Schaden einer Einheit aufbaut. Sobald eine Einheit 0 HP hat, ist diese (wie ihr euch schon denken könnt) tot.<br />
+Welche Einheit zuerst angreift, hängt von ihrer Initiative ab. Dabei unterscheidet man die folgenden Initiativen: niedrig, mittel und hoch. Die Einheiten mit der höchsten Initiative greifen zuerst an. Nach einem Durchlauf einer Intiative werden Einheiten mit 0 HP (oder weniger) für tot erklärt. Einheiten der gleichen Initiative greifen in der Reihenfolge an wie sie in der Tabelle stehen. Die einzelnen Einheitentypen werden ebenfalls in der Reihenfolge angegriffen, wie sie oben in der Tabelle der Spieler bzw. der gegnerischen Einheiten stehen. Zu beachten ist die Sonderstellung der Reiterei bzw. der Wachhunde, welche sich nicht an der Tabellenreihenfolge sondern an den Hitpoints der Einheiten orientiert.<br />
+Ein Angriff läuft nun so ab, dass solange die Einheiten einer Seite auf eine gegnerische Einheit einschlagen, bis die HP dieser Einheit 0 oder weniger erreichen. Danach wird die nächste Einheit angegriffen.<br />
+
+Bei einem Angriff hängt es vom Zufall ab, ob eine Einheit einen direkten Treffen landet oder nur einen geringen Schaden verursacht. Die Trefferwahrscheinlichkeit jeder Einheit für den direkten Treffer (bzw. <b>Max. Schaden</b>) lässt sich aus der Tabelle entnehmen. Der General hat eine besondere Rolle: Er trifft IMMER und verursacht somit 120 Schaden bei einer gegnerischen Einheiten. Außerdem hat er "unendlich" HP. Sollte er allerdings mind. einmal attackiert werden, muss er sich nach dem Kampf für 4 Stunden erholen.<br />
+Sollte sich ein Boss in dem angegriffenen Camp befinden, ist es entscheidend ob dieser Boss "mutig" ist. Im Falle eines mutigen Bosses stellt sich dieser VOR die restlichen Einheiten im Camp. Der Boss muss somit zuerst vernichtet werden, bevor weitere Einheiten im Camp getötet werden können. Andernfalls werden zuerst die normalen Einheiten angegriffen und zum Schluss der Boss. Desweiteren verteilt ein Boss seinen Schaden auf alle angreifenden Einheiten.<br />
+Sollten nach einem Durchlauf der Initiativen von hoch nach niedrig noch Einheiten auf beiden Seiten vorhanden sein, beginnt ein neuer Durchlauf. Jeder Durchlauf ist somit eine Kampfrunde.
+</p><p><br />
+</p><p><b>Zum Beispiel</b> haben wir eine eigene Armee mit den Einheiten A B C und der Gegner die Einheiten 1 2 3 4. Alle Einheiten haben als Initiative "mittel". Nun greift die Einheit A die Einheit 1 an, welche dabei nur verwundet wird. Danach greift die Einheit B die Einheit 1 an, welche dadurch weniger als 0 HP erreicht. Einheit C schlägt auf Einheit 2 ein ohne das diese mit ihren HP unter 0 sinkt. Zuletzt greift noch der General die Einheit 2 an. Auch danach hat Einheit 2 noch mehr als 0 HP. Jetzt ist der Gegner am Zug und darf seinerseits mit ALLEN (!) Einheiten angreifen, da der Durchlauf einer Initiative erst beendet ist, wenn beide Seiten angegriffen haben. Somit leben noch alle Einheiten auf der Seite der Gegner. Einheit 1 greift also Einheit A an, welche sofort weniger als 0 HP hat. Einheit 2 greift Einheit B an, welche ebenfalls unter 0 HP sinkt. Auch Einheit 3 verursacht einen Schaden bei Einheit C, so dass weniger als 0 HP vorhanden sind. Einheit 4 verwundet nun den General. Die Initiativenrunde ist somit beendet und die Einheiten A B C, als auch Einheit 1 werden für tot erklärt. Einheit 2 ist verwundet. Der General muss sich durch einen Angriff von Einheit 4 nach diesem Kampf erholen.
+</p><p><br />
+</p><p>Wenn mehrere Generäle auf ein Banditencamp geschickt werden, greift der General, welcher zuerst am Camp ist, auch zuerst an. Weitere Generäle warten dann auf einen Sieg oder eine Niederlage dieses Generals. Der nächste General greift dann im Anschluss an.<br />
+Sobald ein General verliert, werden die HP der übrigen Einheiten im Camp NICHT zurückgesetzt! Ein Boss kann also verwundet werden und muss nicht innerhalb eines Angriffs eines Generals sterben.
+</p><p><br />
+</p><p>Eine Einheit kann auch in einem Turm stehen. Das hat zur Folge, dass der Schaden der Einheit, die diese Einheit angreift, auf 50% reduziert wird.
+
+</p>
+
+			
+
+
+</div>

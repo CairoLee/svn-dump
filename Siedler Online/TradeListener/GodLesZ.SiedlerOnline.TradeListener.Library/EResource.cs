@@ -1,0 +1,57 @@
+﻿
+namespace GodLesZ.SiedlerOnline.TradeListener.Library {
+
+	public enum EResource {
+		None = 0,
+
+		Beer,
+		Bow,
+		Bread,
+		Bronze,
+		BronzeOre,
+		BronzeSword,
+		Cannon,
+		Carriage,
+		Coal,
+		Coin,
+		Corn,
+		Crossbow,
+		Deer,
+		ExoticPlank,
+		ExoticWood,
+		Fish,
+		Flour,
+		Gold,
+		GoldOre,
+		Granite,
+		GunPowder,
+		Horse,
+		Iron,
+		IronOre,
+		IronSword,
+		Longbow,
+		MapPart,
+		Marble,
+		Meat,
+		Plank,
+		RealPlank,
+		RealWood,
+		Salpeter,
+		Sausage,
+		Steel,
+		SteelSword,
+		Stone,
+		Titanium,
+		TitaniumOre,
+		TitaniumSword,
+		Tool,
+		Water,
+		Wheel,
+		Wood,
+
+		HaloweenResource,
+		ChristmasResource,
+		EventResource
+	}
+
+}

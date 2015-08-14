@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="54" height="9">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas id="greenBar" backgroundImage="_embed_mxml__590486979" backgroundSize="100%" top="2" bottom="2" left="2" right="2" mask="barMask"/>
+	<mx:Canvas id="barMask" null="null" width="0" backgroundColor="#00ffffff" top="2" bottom="2" creationComplete="{this.updateBarMask();}"/>
+
+</mx:Canvas>

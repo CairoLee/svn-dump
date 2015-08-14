@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="80" height="40" creationComplete="" rollOver="" rollOut="" toolTipCreate="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas id="capacity" width="8" height="33" x="2" y="2" borderStyle="solid" borderThickness="1" borderColor="9535066" backgroundColor="#00443826">
+		<mx:Canvas id="capacityBar" width="6" backgroundColor="#0087823b"/>
+	</mx:Canvas>
+	<mx:Image id="resourceIcon"/>
+	<mx:Label id="amountLabel" color="#00ffffff" fontWeight="bold" left="15" right="6" verticalCenter="-1" textAlign="right"/>
+
+</mx:Canvas>

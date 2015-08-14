@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0178A483-0497-44C1-81A6-EE721EF33598}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ssc</RootNamespace>
+    <AssemblyName>Shaiya Status Calculator</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <StartupObject>Ssc.Program</StartupObject>
+    <ApplicationIcon>Resources\Shaiya Status Calculator.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enumerations.cs" />
+    <Compile Include="FlatComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmItemBonus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemBonus.Designer.cs">
+      <DependentUpon>frmItemBonus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmItemBonusWeapon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemBonusWeapon.Designer.cs">
+      <DependentUpon>frmItemBonusWeapon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmItemBonus.resx">
+      <DependentUpon>frmItemBonus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SItem.cs" />
+    <Compile Include="SItemBonus.cs" />
+    <Compile Include="SPlayerStatus.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory2.png" />
+    <None Include="Resources\main_form.png" />
+    <None Include="Resources\btnCloseHover.png" />
+    <None Include="Resources\btnCloseDown.png" />
+    <None Include="Resources\btnClose.png" />
+    <None Include="Resources\btnMinus.png" />
+    <None Include="Resources\btnPlus.png" />
+    <EmbeddedResource Include="frmItemBonusWeapon.resx">
+      <DependentUpon>frmItemBonusWeapon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\EQ_Mantel.png" />
+    <EmbeddedResource Include="Resources\EQ_Amulett.png" />
+    <EmbeddedResource Include="Resources\EQ_Helm.png" />
+    <EmbeddedResource Include="Resources\EQ_Ring1.png" />
+    <EmbeddedResource Include="Resources\EQ_Rüstung.png" />
+    <EmbeddedResource Include="Resources\EQ_Hose.png" />
+    <EmbeddedResource Include="Resources\EQ_Handschuh.png" />
+    <EmbeddedResource Include="Resources\EQ_Schuhe.png" />
+    <EmbeddedResource Include="Resources\EQ_Armreif1.png" />
+    <EmbeddedResource Include="Resources\EQ_Armreif2.png" />
+    <EmbeddedResource Include="Resources\EQ_Ring2.png" />
+    <EmbeddedResource Include="Resources\EQ_Reittier.png" />
+    <Content Include="Resources\Shaiya Status Calculator.ico" />
+    <EmbeddedResource Include="Resources\EQ_Schild.png" />
+    <EmbeddedResource Include="Resources\EQ_Waffe.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

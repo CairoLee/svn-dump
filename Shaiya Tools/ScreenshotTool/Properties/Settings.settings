@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BlubbGamingScreenshotTool.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FontSize1" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">46</Value>
+    </Setting>
+    <Setting Name="FontSize2" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="Text1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Obscura</Value>
+    </Setting>
+    <Setting Name="Text2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Guild Ranking XX.XX.2009</Value>
+    </Setting>
+    <Setting Name="Addition1" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">-50, -50</Value>
+    </Setting>
+    <Setting Name="Addition2" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">-20, -20</Value>
+    </Setting>
+    <Setting Name="Border" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="BorderFading" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

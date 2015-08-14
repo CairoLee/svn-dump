@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="600" height="483" _embed_mxml_____data_src_gfx_embedded_quest_quest_ornamental_top1_png_136131836="QuestBook__embed_mxml_____data_src_gfx_embedded_quest_quest_ornamental_top1_png_136131836" _embed_mxml_____data_src_gfx_embedded_quest_quest_ornamental_win1_png_645673198="QuestBook__embed_mxml_____data_src_gfx_embedded_quest_quest_ornamental_win1_png_645673198" _embed_mxml_____data_src_gfx_embedded_quest_quest_ornamental_win2_png_643330800="QuestBook__embed_mxml_____data_src_gfx_embedded_quest_quest_ornamental_win2_png_643330800">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas id="background" null="basicPanel" top="5" left="5" right="9" bottom="0"/>
+	<mx:Image null="null" null.horizontalCenter="this" top="-42" showEffect="fadeIn" hideEffect="fadeOut"/>
+	<mx:Label id="headline" null.left="this" top="15" fontWeight="bold" textAlign="center" right="46" color="#00ffffff" text="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "QuestBook")}"/>
+	<mx:CloseButton id="btnClose" top="10" right="24"/>
+	<mx:Canvas styleName="detailsHeader" horizontalScrollPolicy="off" verticalScrollPolicy="off" left="14" right="16" top="33" bottom="52">
+		<mx:HBox left="13" right="15" top="8" bottom="3" horizontalGap="2">
+			<mx:Canvas width="176" height="100%" horizontalScrollPolicy="off" verticalScrollPolicy="on" clipContent="false">
+				<mx:GroupedQuestList id="list" left="0" right="0" top="5"/>
+			</mx:Canvas>
+			<mx:Canvas null="vr" width="3" height="100%"/>
+			<mx:Canvas width="100%" height="100%">
+				<mx:Canvas styleName="detailsSubHeader" width="100%" height="45">
+					<mx:CustomText id="detailsHeadline" null="null" color="#00ffffff" fontWeight="bold" textAlign="center" verticalCenter="0" left="10" right="10"/>
+				</mx:Canvas>
+				<mx:Image id="rewardOrnamentalLeft" visible="false" source="_embed_mxml_____data_src_gfx_embedded_quest_quest_ornamental_win1_png_645673198" left="0"/>
+				<mx:Image id="rewardOrnamentalRight" visible="false" source="_embed_mxml_____data_src_gfx_embedded_quest_quest_ornamental_win2_png_643330800" right="0"/>
+				<mx:Canvas id="upperContent" styleName="detailsContentBox" left="1" right="1" top="45" bottom="103">
+					<mx:Canvas height="98" null.backgroundColor="this" left="17" right="17" top="7"/>
+					<mx:Canvas height="92" horizontalScrollPolicy="off" left="20" right="1" top="10">
+						<mx:Text id="description" null="false" width="100%" null.color="this" paddingRight="19"/>
+					</mx:Canvas>
+					<mx:Canvas null="null" height="10" left="5" right="5" top="110"/>
+				</mx:Canvas>
+				<mx:Canvas null="null" width="100%" height="10" top="40"/>
+				<mx:Image id="selectedIcon" null.left="this" top="-4"/>
+				<mx:List id="triggers" null="null" itemRenderer="_QuestBook_ClassFactory1_c()" left="18" top="166" bottom="105" backgroundAlpha="0" borderThickness="0" paddingBottom="2" paddingTop="2" paddingLeft="0" paddingRight="0" useRollOver="false" right=""/>
+				<mx:Canvas id="adventureTodo" horizontalScrollPolicy="off" left="20" right="2" bottom="112" top="172">
+					<mx:Text id="todoText" null="false" width="100%" color="#00ffffff" paddingRight="19"/>
+				</mx:Canvas>
+				<mx:Canvas styleName="detailsSubHeader" width="100%" height="18" bottom="83">
+					<mx:Label id="rewardsTitle" top="1" horizontalCenter="0" color="#00ffffff" fontWeight="bold" text="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "Rewards")}"/>
+				</mx:Canvas>
+				<mx:Canvas styleName="detailsContentBox" height="83" left="1" right="1" bottom="0">
+					<mx:QuestRewardList id="rewardsList" null="false" width="100%"/>
+					<mx:Canvas id="adventureOptions" visible="false" horizontalCenter="0" verticalCenter="0">
+						<mx:StandardButton id="btnVisit" null="null" null.horizontalCenter="this" verticalCenter="-17" label="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "Visit")}"/>
+						<mx:StandardButton id="btnSendArmy" null="120" null.horizontalCenter="this" verticalCenter="17" label="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "SendArmy")}"/>
+						<mx:StandardButton id="btnShowDetails" width="120" null.horizontalCenter="this" verticalCenter="-17" label="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "ShowAdventureDetails")}"/>
+						<mx:StandardButton id="btnInvite" null="120" null.horizontalCenter="this" verticalCenter="17" label="{null.GetText(LOCA_GROUP.LABELS, "AdventureInvitePlayer")}"/>
+					</mx:Canvas>
+				</mx:Canvas>
+			</mx:Canvas>
+		</mx:HBox>
+	</mx:Canvas>
+	<mx:Canvas id="backgroundFooter" null="null" height="60" left="10" right="10" bottom="0"/>
+	<mx:HBox id="footerButtons" null.bottom="this" horizontalCenter="90">
+		<mx:StandardButton id="btnInstantFinish" toolTip="InstantFinishQuest" enabled="false" height="32" icon="{null.GetClass("ButtonIconInstant")}"/>
+		<mx:StandardButton id="btnFinishQuest" enabled="false" height="32" label="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "QuestFinish")}"/>
+		<mx:StandardButton id="btnCancelQuest" null="false" height="32" label="{null.GetText(LOCA_GROUP.LABELS, "Cancel")}"/>
+		<mx:StandardButton id="btnOK" null="false" height="32" width="70" label="{null.GetText(LOCA_GROUP.LABELS, "OK")}"/>
+		<mx:StandardButton id="btnCancelAdventure" null="false" height="32" label="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "CancelAdventure")}"/>
+	</mx:HBox>
+	<mx:BatchedSpriteLibAnimation id="sparkleAnim" null="null" height="483" mouseChildren="false" mouseEnabled="false" animationName="guianim_sparkle" numInstances="20" offsetFrames="2" visible="false"/>
+
+</mx:Canvas>

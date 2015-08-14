@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="460" height="588" _embed_mxml_____data_src_gfx_embedded_adventure_adventure_ornamental_top_png_1619304060="AdventurePanel__embed_mxml_____data_src_gfx_embedded_adventure_adventure_ornamental_top_png_1619304060">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas id="content" clipContent="false" horizontalScrollPolicy="off" verticalScrollPolicy="off" styleName="basicPanel" left="18" right="18" top="88" bottom="0">
+		<mx:CloseButton id="btnClose" top="5" right="15"/>
+		<mx:Label id="_AdventurePanel_Label1" left="42" top="8" fontWeight="bold" textAlign="center" right="46" text="null"/>
+		<mx:Image id="teaserImage" null="null" height="167" scaleContent="false" null.top="this" left="15" showEffect="fadeIn" hideEffect="fadeOut"/>
+		<mx:Canvas height="166" left="160" right="13" top="33">
+			<mx:Canvas horizontalScrollPolicy="off" verticalScrollPolicy="auto" left="10" top="11" right="5" bottom="12">
+				<mx:Text id="opener" null="100" selectable="false" paddingRight="15" color="#00ffffff" fontWeight="normal"/>
+			</mx:Canvas>
+		</mx:Canvas>
+		<mx:AdventureDifficultyIndicator id="difficultyIndicator" null.left="this" right="13" top="202"/>
+		<mx:Canvas id="missionHeader" styleName="detailsSubHeader" height="18" null.left="this" right="13" top="237">
+			<mx:Label id="_AdventurePanel_Label2" null.top="this" horizontalCenter="0" color="#00ffffff" fontWeight="bold" text="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "Mission")}"/>
+		</mx:Canvas>
+		<mx:Canvas id="missionPanel" styleName="detailsContentBox" height="90" null.left="this" right="14" top="255">
+			<mx:Canvas id="objectives" horizontalScrollPolicy="off" verticalScrollPolicy="auto" left="10" top="7" right="5" bottom="7">
+				<mx:Text id="todo" null="100" selectable="false" paddingRight="10" color="#00ffffff" fontWeight="normal"/>
+			</mx:Canvas>
+		</mx:Canvas>
+		<mx:Canvas id="playerListHeader" styleName="detailsSubHeader" height="18" null.left="this" right="13" top="347">
+			<mx:Label id="_AdventurePanel_Label3" top="1" horizontalCenter="0" color="#00ffffff" fontWeight="bold" text="{null.GetText(LOCA_GROUP.LABELS, "AttendingPlayers")}"/>
+		</mx:Canvas>
+		<mx:Canvas id="playerListPanel" styleName="detailsContentBox" height="75" left="16" right="14" top="365">
+			<mx:HBox id="playerList" horizontalCenter="0" verticalCenter="0" horizontalGap="15"/>
+		</mx:Canvas>
+		<mx:Canvas id="playerCountPanel" styleName="detailsContentBox" height="25" left="16" right="14" top="440">
+			<mx:Canvas styleName="detailsSubContentBox" width="100%" height="25" bottom="0">
+				<mx:Label id="playerCount1" left="10" verticalCenter="0"/>
+				<mx:Label id="playerCount2" null.right="this" verticalCenter="0" textAlign="right"/>
+			</mx:Canvas>
+		</mx:Canvas>
+		<mx:HealthBar id="durationBar" left="8" right="6" top="470" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}"/>
+		<mx:HBox id="buttonsInitialized" horizontalCenter="0" bottom="7">
+			<mx:StandardButton id="btnStart" null="150" height="32" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_ERROR_string, event, !this.btnStart.enabled);}" label="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "StartAdventure")}"/>
+			<mx:StandardButton id="btnCancel" null="150" height="32" label="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "Cancel")}"/>
+		</mx:HBox>
+		<mx:HBox id="buttonsActive" visible="false" null.horizontalCenter="this" bottom="7">
+			<mx:StandardButton id="btnOK" null="null" height="32" label="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "OK")}"/>
+		</mx:HBox>
+		<mx:HBox id="buttonsFinished" visible="false" null.horizontalCenter="this" bottom="7">
+			<mx:StandardButton id="btnReturnHome" null="null" label="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "ReturnHome")}"/>
+		</mx:HBox>
+	</mx:Canvas>
+	<mx:Image id="ornament" null="null" null.top="this" horizontalCenter="0"/>
+
+</mx:Canvas>

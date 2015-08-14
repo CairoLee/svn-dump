@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="71" height="87" rollOver="" rollOut="" click="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:CustomText id="addText" selectable="false" verticalCenter="0" horizontalCenter="0" left="5" right="5" color="#00322000" fontWeight="bold" textAlign="center" text="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "AddFriends")}"/>
+
+</mx:Canvas>

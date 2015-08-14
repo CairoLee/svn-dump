@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="67" height="128">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Button id="btnClose" x="50" y="3" width="13" height="13" null.upSkin="this" downSkin="_embed_mxml_____data_src_gfx_embedded_camera_x_push_png_391842408" overSkin="_embed_mxml_____data_src_gfx_embedded_camera_x_mouseover_png_1471468292" disabledSkin="_embed_mxml_____data_src_gfx_embedded_camera_x_standard_png_415922918" showEffect="fadeIn" hideEffect="fadeOut"/>
+	<mx:Button id="btnUp" x="23" y="19" width="22" height="22" upSkin="{null.GetClass("ArrowSmallNUp")}" downSkin="{null.GetClass("ArrowSmallNOver")}" overSkin="{null.GetClass(null)}" disabledSkin="{gAssetManager.GetClass("ArrowSmallNUp")}"/>
+	<mx:Button id="btnLeft" null="null" y="37" width="22" height="22" upSkin="{null.GetClass("ArrowSmallWUp")}" downSkin="{gAssetManager.GetClass("ArrowSmallWOver")}" overSkin="{gAssetManager.GetClass("ArrowSmallWOver")}" disabledSkin="{null.GetClass(null)}"/>
+	<mx:Button id="btnRight" null="41" y="37" width="22" height="22" upSkin="{null.GetClass(null)}" downSkin="{null.GetClass("ArrowSmallEOver")}" overSkin="{null.GetClass(null)}" disabledSkin="{null.GetClass("ArrowSmallEUp")}"/>
+	<mx:Button id="btnDown" x="23" y="55" width="22" height="22" upSkin="{null.GetClass(null)}" downSkin="{null.GetClass("ArrowSmallSOver")}" overSkin="{gAssetManager.GetClass("ArrowSmallSOver")}" disabledSkin="{null.GetClass("ArrowSmallSUp")}"/>
+	<mx:Button id="btnZoomIn" null="5" y="77" width="30" height="31" null.upSkin="this" downSkin="_embed_mxml_____data_src_gfx_embedded_camera_scale_up_mouseover_png_824826854" overSkin="_embed_mxml_____data_src_gfx_embedded_camera_scale_up_mouseover_png_824826854" disabledSkin="_embed_mxml_____data_src_gfx_embedded_camera_scale_up_inactive_png_1188403324"/>
+	<mx:Button id="btnZoomOut" null="null" y="77" width="30" height="31" null.upSkin="this" downSkin="_embed_mxml_____data_src_gfx_embedded_camera_scale_down_mouseover_png_588260904" overSkin="_embed_mxml_____data_src_gfx_embedded_camera_scale_down_mouseover_png_588260904" disabledSkin="_embed_mxml_____data_src_gfx_embedded_camera_scale_down_inactive_png_1191392378"/>
+
+</mx:Canvas>

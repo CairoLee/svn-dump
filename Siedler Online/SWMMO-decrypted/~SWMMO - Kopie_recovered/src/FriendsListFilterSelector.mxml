@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas id="_FriendsListFilterSelector_Canvas2" width="71" height="88" null.top="this" backgroundImage="{gAssetManager.GetClass("FriendFilterBackground")}">
+		<mx:ToggleButtonBar id="buttonBar" null="null" height="80" direction="vertical" left="2" top="2" color="#00322000" themeColor="3284992" buttonStyleName="filterFriendsList" buttonHeight="20" buttonWidth="66" ="{this.assignToolTips(event);}" updateComplete="{this.assignToolTips(event);}"/>
+	</mx:Canvas>
+
+</mx:Canvas>

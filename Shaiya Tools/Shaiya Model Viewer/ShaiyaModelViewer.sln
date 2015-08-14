@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shaiya Model Viewer.Library", "ShaiyaModelViewer\ShaiyaModelViewer.Library.csproj", "{3715E218-D474-44E2-8189-953CA0876F79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shaiya Model Viewer.Test", "ShaiyaModelViewer.Test\ShaiyaModelViewer.Test.csproj", "{B1721AA4-6A98-4552-A7CD-1C34A18569C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3715E218-D474-44E2-8189-953CA0876F79}.Debug|x86.ActiveCfg = Debug|x86
+		{3715E218-D474-44E2-8189-953CA0876F79}.Debug|x86.Build.0 = Debug|x86
+		{3715E218-D474-44E2-8189-953CA0876F79}.Release|x86.ActiveCfg = Release|x86
+		{3715E218-D474-44E2-8189-953CA0876F79}.Release|x86.Build.0 = Release|x86
+		{DC823CBA-EAF9-42FA-9118-248810E59FAA}.Debug|x86.ActiveCfg = Debug|x86
+		{DC823CBA-EAF9-42FA-9118-248810E59FAA}.Release|x86.ActiveCfg = Release|x86
+		{B1721AA4-6A98-4552-A7CD-1C34A18569C9}.Debug|x86.ActiveCfg = Debug|x86
+		{B1721AA4-6A98-4552-A7CD-1C34A18569C9}.Debug|x86.Build.0 = Debug|x86
+		{B1721AA4-6A98-4552-A7CD-1C34A18569C9}.Release|x86.ActiveCfg = Release|x86
+		{B1721AA4-6A98-4552-A7CD-1C34A18569C9}.Release|x86.Build.0 = Release|x86
+		{05FA094B-E47C-45FA-8F2B-DF633986C142}.Debug|x86.ActiveCfg = Debug|x86
+		{05FA094B-E47C-45FA-8F2B-DF633986C142}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

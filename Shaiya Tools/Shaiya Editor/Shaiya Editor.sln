@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Editor.Gui", "Editor.Gui\Editor.Gui.csproj", "{25E0A7B0-8E08-454B-8AA5-5834555D4C7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Editor.Lib", "Editor.Lib\Editor.Lib.csproj", "{4A565F04-DDD1-4FC0-A685-10A372533FD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassExtractor", "MassExtractor\MassExtractor.csproj", "{BFA43815-113D-48B8-9B3D-210D67F0AEC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25E0A7B0-8E08-454B-8AA5-5834555D4C7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25E0A7B0-8E08-454B-8AA5-5834555D4C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25E0A7B0-8E08-454B-8AA5-5834555D4C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25E0A7B0-8E08-454B-8AA5-5834555D4C7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A565F04-DDD1-4FC0-A685-10A372533FD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A565F04-DDD1-4FC0-A685-10A372533FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A565F04-DDD1-4FC0-A685-10A372533FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A565F04-DDD1-4FC0-A685-10A372533FD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFA43815-113D-48B8-9B3D-210D67F0AEC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA43815-113D-48B8-9B3D-210D67F0AEC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA43815-113D-48B8-9B3D-210D67F0AEC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA43815-113D-48B8-9B3D-210D67F0AEC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

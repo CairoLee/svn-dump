@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="84">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:SpriteLibAnimation id="animStar" null="0.5" visible="false" width="98" height="98" loop="true" animationName="guianim_star" horizontalCenter="2" top="-17"/>
+	<mx:Button id="btnActionBar05" null="null" height="95" null.horizontalCenter="this" ="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}" toolTipShow="{cToolTipUtil.positionActionBarTip(event);}" upSkin="{null.GetClass("ActionBarIcon05")}" downSkin="{null.GetClass(null)}" overSkin="{null.GetClass(null)}" disabledSkin="{gAssetManager.GetClass("ActionBarIcon05Deactivated")}" toolTip="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "StarMenu")}"/>
+	<mx:Button id="toggleFrindsList" width="25" height="23" horizontalCenter="0" bottom="3" click="{this.Toggle();}" upSkin="{null.GetClass("ArrowDown")}" downSkin="{gAssetManager.GetClass("ArrowDownHighlight")}" overSkin="{null.GetClass(null)}"/>
+
+</mx:Canvas>

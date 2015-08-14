@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Image id="_CheatWindow_inlineComponent1_Image1" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}" source="{null.GetResourceIcon(data.name_string)}" toolTip="null"/>
+	<mx:NumericStepper id="_CheatWindow_inlineComponent1_NumericStepper1" null="1" minimum="-99999" maximum="99999" change="{data.amount = event.currentTarget.value;}" value="{data.amount}"/>
+
+</mx:HBox>

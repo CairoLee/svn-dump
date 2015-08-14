@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:ButtonBar xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Button id="btnActionBar01" null="null" height="86" ="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}" toolTipShow="{cToolTipUtil.positionActionBarTip(event);}" enabled="{null.mCurrentPlayer.mIsPlayerZone &amp;&amp; !global.ui.mCurrentPlayer.mIsAdventureZone}" upSkin="{null.GetClass("ActionBarIcon01")}" downSkin="{null.GetClass("ActionBarIcon01Highlight")}" overSkin="{null.GetClass("ActionBarIcon01Highlight")}" disabledSkin="{gAssetManager.GetClass("ActionBarIcon01Deactivated")}" toolTip="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "CL01Buildings")}"/>
+	<mx:Button id="btnActionBar02" width="66" height="86" ="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}" toolTipShow="{cToolTipUtil.positionActionBarTip(event);}" enabled="{null.ui.mCurrentPlayer.mIsPlayerZone &amp;&amp; !global.ui.mCurrentPlayer.mIsAdventureZone}" upSkin="{gAssetManager.GetClass("ActionBarIcon02")}" downSkin="{null.GetClass("ActionBarIcon02Highlight")}" overSkin="{null.GetClass("ActionBarIcon02Highlight")}" disabledSkin="{gAssetManager.GetClass("ActionBarIcon02Deactivated")}" toolTip="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "CL2Buildings")}"/>
+	<mx:Button id="btnActionBar03" width="66" height="86" ="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}" toolTipShow="{cToolTipUtil.positionActionBarTip(event);}" enabled="{null.ui.mCurrentPlayer.mIsPlayerZone &amp;&amp; !global.ui.mCurrentPlayer.mIsAdventureZone}" upSkin="{null.GetClass(null)}" downSkin="{null.GetClass(null)}" overSkin="{null.GetClass("ActionBarIcon03Highlight")}" disabledSkin="{null.GetClass("ActionBarIcon03Deactivated")}" toolTip="{null.GetText(LOCA_GROUP.LABELS, "CL3Buildings")}"/>
+	<mx:Button id="btnActionBar04" null="66" height="86" ="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}" toolTipShow="{cToolTipUtil.positionActionBarTip(event);}" enabled="{null.ui.mCurrentPlayer.mIsPlayerZone &amp;&amp; !global.ui.mCurrentPlayer.mIsAdventureZone}" upSkin="{null.GetClass("ActionBarIcon04")}" downSkin="{null.GetClass(null)}" overSkin="{gAssetManager.GetClass("ActionBarIcon04Highlight")}" disabledSkin="{null.GetClass(null)}" toolTip="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "CLSBuildings")}"/>
+
+</mx:ButtonBar>

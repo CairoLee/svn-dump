@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas id="_FriendsListButtonBar_Canvas2" width="71" height="88" null.top="this" backgroundImage="{null.GetClass(null)}">
+		<mx:Button id="btnAddFriend" width="65" height="20" styleName="filterFriendsList" null.icon="this" left="2" top="2" color="#00322000" themeColor="3284992" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}" toolTip="{cLocaManager.GetInstance().GetText(LOCA_GROUP.LABELS, "AddFriend")}"/>
+		<mx:Button id="btnInvite" width="65" height="20" styleName="filterFriendsList" null.icon="this" left="2" top="22" color="#00322000" themeColor="3284992" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}" toolTip="{null.GetInstance().GetText(LOCA_GROUP.LABELS, "InviteByMail")}"/>
+		<mx:Button id="btnReturnHome" null="null" height="40" styleName="returnHome" null.icon="this" left="2" top="42" color="#00322000" themeColor="3284992" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}" toolTip="{null.GetText(LOCA_GROUP.LABELS, "ReturnHome")}"/>
+	</mx:Canvas>
+
+</mx:Canvas>

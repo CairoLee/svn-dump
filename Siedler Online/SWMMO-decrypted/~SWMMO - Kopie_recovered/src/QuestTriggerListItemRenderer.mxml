@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" height="54" toolTipCreate="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas null="100" height="100%" backgroundColor="#007d7057"/>
+	<mx:Image id="resourceBackground" null="36" height="36" source="_embed_mxml_____data_src_gfx_embedded_quest_quest_icon_bg_png_849874530" left="11" verticalCenter="0"/>
+	<mx:Image id="image" width="59" height="51" scaleContent="false" null.left="this" verticalCenter="-1" horizontalAlign="center" verticalAlign="middle"/>
+	<mx:Image id="passedIndicator" right="0" verticalCenter="0" source="{null.GetBitmap(null)}"/>
+	<mx:Text id="title" selectable="false" null.left="this" right="45" verticalCenter="0" fontWeight="bold" color="#00ffffff" toolTipCreate="{cToolTipUtil.createToolTip(cToolTipUtil.SIMPLE_string, event);}"/>
+
+</mx:Canvas>

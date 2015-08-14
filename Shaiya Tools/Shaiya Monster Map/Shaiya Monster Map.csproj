@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A0AEDE2D-DCBE-4E9E-9A53-12E29A27EB12}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShaiyaMonsterMap</RootNamespace>
+    <AssemblyName>Shaiya Monster Map</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>ShaiyaMonsterMap.Program</StartupObject>
+    <ApplicationIcon>Shaiya Icon - Light trans.ico</ApplicationIcon>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationManifest>Shaiya Monster Map.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ColumnSorter.cs" />
+    <Compile Include="Components\ColorToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\MapControlSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\MapControlSelector.Designer.cs">
+      <DependentUpon>MapControlSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MapControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\MapControl.Designer.cs">
+      <DependentUpon>MapControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MobMapImage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\MapImage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\MobToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Factories\FactoryMain.cs" />
+    <Compile Include="Factories\FactoryMobPoint.cs" />
+    <Compile Include="Forms\frmOverlaySetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOverlaySetting.designer.cs">
+      <DependentUpon>frmOverlaySetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAbout.designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ElementComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Forms\frmMobPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMobPoint.Designer.cs">
+      <DependentUpon>frmMobPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSplash.designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperMsg.cs" />
+    <Compile Include="Enumerations\EMap.cs" />
+    <Compile Include="Enumerations\EMobElement.cs" />
+    <Compile Include="Structs\GifHandler.cs" />
+    <Compile Include="Structs\IPoint.cs" />
+    <Compile Include="Structs\IPointList.cs" />
+    <Compile Include="Structs\SMobPoint.cs" />
+    <Compile Include="Structs\SMobMapRule.cs" />
+    <Compile Include="Native.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frmMobPoint.resx">
+      <DependentUpon>frmMobPoint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Structs\SMobPointEx.cs" />
+    <Compile Include="Structs\SMobPoints.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Shaiya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Components\MapControlSelector.resx">
+      <DependentUpon>MapControlSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\MapControl.resx">
+      <DependentUpon>MapControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOverlaySetting.resx">
+      <DependentUpon>frmOverlaySetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\Mob2.png" />
+    <None Include="Resources\Mob4.png" />
+    <None Include="Resources\Mob3.png" />
+    <None Include="Resources\MobMarked.png" />
+    <None Include="Resources\Mob1.png" />
+    <None Include="Resources\MobBoss.png" />
+    <None Include="Resources\MobMarkedAni.gif" />
+    <None Include="Shaiya Monster Map.manifest" />
+    <EmbeddedResource Include="Resources\maps\45.png" />
+    <EmbeddedResource Include="Resources\maps\46.png" />
+    <EmbeddedResource Include="Resources\maps\47.png" />
+    <EmbeddedResource Include="Resources\maps\Adellia.png" />
+    <EmbeddedResource Include="Resources\maps\Adeurian.png" />
+    <EmbeddedResource Include="Resources\maps\Aidion_Neckria_1.png" />
+    <EmbeddedResource Include="Resources\maps\Aidion_Neckria_2.png" />
+    <EmbeddedResource Include="Resources\maps\Argilla.png" />
+    <EmbeddedResource Include="Resources\maps\Astenes.png" />
+    <EmbeddedResource Include="Resources\maps\Erina.png" />
+    <EmbeddedResource Include="Resources\maps\Kalamus_Anwesen.png" />
+    <EmbeddedResource Include="Resources\maps\Keuraijen.png" />
+    <EmbeddedResource Include="Resources\maps\PvP_1.png" />
+    <EmbeddedResource Include="Resources\maps\PvP_2.png" />
+    <EmbeddedResource Include="Resources\maps\PvP_3.png" />
+    <EmbeddedResource Include="Resources\maps\Reikeuseu.png" />
+    <EmbeddedResource Include="Resources\maps\Skulleron.png" />
+    <EmbeddedResource Include="Resources\maps\Willieoseu.png" />
+    <EmbeddedResource Include="Resources\maps\Aurizen.png" />
+    <EmbeddedResource Include="Resources\maps\Colorons_1.png" />
+    <EmbeddedResource Include="Resources\maps\Colorons_2.png" />
+    <EmbeddedResource Include="Resources\maps\Colorons_3.png" />
+    <EmbeddedResource Include="Resources\maps\Cornwell.png" />
+    <EmbeddedResource Include="Resources\maps\ElementHöhle.png" />
+    <EmbeddedResource Include="Resources\maps\Fantasmas_1.png" />
+    <EmbeddedResource Include="Resources\maps\Fantasmas_2.png" />
+    <EmbeddedResource Include="Resources\maps\Fantasmas_3.png" />
+    <EmbeddedResource Include="Resources\maps\Maitrevan_1.png" />
+    <EmbeddedResource Include="Resources\maps\Maitrevan_2.png" />
+    <EmbeddedResource Include="Resources\maps\noimage.png" />
+    <EmbeddedResource Include="Resources\maps\RuberChaos.png" />
+    <EmbeddedResource Include="Resources\maps\Senechios.png" />
+    <EmbeddedResource Include="Resources\maps\Sigmas.png" />
+    <None Include="Resources\faction_light.png" />
+    <None Include="Resources\faction_dark.png" />
+    <Content Include="Resources\Splash.png" />
+    <Content Include="Shaiya Icon - Light trans.ico" />
+    <None Include="Resources\mon_wind.png" />
+    <None Include="Resources\mon_water.png" />
+    <None Include="Resources\mon_not.png" />
+    <None Include="Resources\mon_ground.png" />
+    <None Include="Resources\mon_fire.png" />
+    <None Include="Resources\godlesz_r0xy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AutoUpdater\Updater.Library\Updater.Library.csproj">
+      <Project>{DB4C5C13-4F6B-4FA8-A9D5-88DC736E0EEF}</Project>
+      <Name>Updater.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SQL Library\MySQL\MySQL.csproj">
+      <Project>{B7BEF904-68C6-4FB4-ABDD-EF13F426D856}</Project>
+      <Name>MySQL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

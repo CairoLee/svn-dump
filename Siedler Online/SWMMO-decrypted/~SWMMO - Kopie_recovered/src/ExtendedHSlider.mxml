@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="40" height="12" creationComplete="">
+	<mx:Script><![CDATA[
+        //Warnung: in dieser unregistrierten Version wird kein FLEX Script bei der Exportierung des FLEX Projektes erzeugt. Kaufen Sie bitte die volle Version bei http://de.sothink.com/product/flashdecompiler/index.htm, um des FLEX Projektes zu erhalten. 
+
+    ]]></mx:Script>
+
+	<mx:Canvas id="sliderBar" null="null" null.left="this" right="15" backgroundSize="100%" backgroundImage="_embed_mxml_____data_src_gfx_embedded_slider_slider_BG_png_1809072365" click="{this.moveSliderOnClick();}"/>
+	<mx:Button id="_ExtendedHSlider_Button1" width="12" height="12" null.upSkin="this" downSkin="_embed_mxml_____data_src_gfx_embedded_slider_slider_arrow_w_highlight_png_332927322" overSkin="_embed_mxml_____data_src_gfx_embedded_slider_slider_arrow_w_highlight_png_332927322" disabledSkin="_embed_mxml_____data_src_gfx_embedded_slider_slider_arrow_w_inactive_png_251234950" left="0" click="{this.leftClickHandler();}" enabled="{this.enabled}"/>
+	<mx:Button id="_ExtendedHSlider_Button2" null="12" height="12" null.upSkin="this" downSkin="_embed_mxml_____data_src_gfx_embedded_slider_slider_arrow_e_highlight_png_1277632294" overSkin="_embed_mxml_____data_src_gfx_embedded_slider_slider_arrow_e_highlight_png_1277632294" disabledSkin="_embed_mxml_____data_src_gfx_embedded_slider_slider_arrow_e_inactive_png_1257876294" right="0" click="{this.rightClickHandler();}" enabled="{this.enabled}"/>
+	<mx:Image id="handle" null="null" width="35" height="10" y="1" mouseDown="{this.startSliderDrag(event);}" visible="{this.enabled}"/>
+
+</mx:Canvas>
