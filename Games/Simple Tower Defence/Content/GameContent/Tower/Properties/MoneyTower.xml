@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tower Name="Geldgenerator" Key="MoneyTower">
+  <Base>
+    <Price Value="400" />
+    <Damage Value="0" />
+    <Interval Value="0" />
+    <Texture Value="psycho" />
+    <Size Value="2" />
+    <Range Value="2" />
+    <Description Value="Dieser Turm generiert laufend neues Geld" />
+    <Thumbnail Value="psycho" />
+    <MoneyAmount Value="10" />
+    <MoneyTime Value="5000" />
+  </Base><Labels><ShowDamage Value="False" /><ShowRange Value="False" /><ShowInterval Value="False" /></Labels><Upgrades><Upgrade Name="Geld-Intervall 1" Key="moneytime1" Type="moneytime" Price="150" Value="4500" Requirements="" Description="" /><Upgrade Name="Geld-Intervall 2" Key="moneytime2" Type="moneytime" Price="300" Value="3500" Requirements="moneytime1" Description="" /><Upgrade Name="Geld-Intervall 3" Key="moneytime3" Type="moneytime" Price="500" Value="2500" Requirements="moneytime2" Description="" /><Upgrade Name="Geld-Intervall 4" Key="moneytime4" Type="moneytime" Price="2000" Value="1000" Requirements="moneytime3" Description="" /><Upgrade Name="Geld-Intervall 5" Key="moneytime5" Type="moneytime" Price="5000" Value="500" Requirements="moneytime4" Description="" /><Upgrade Name="Geld-Bonus 1" Key="moneyamount1" Type="moneyamount" Price="300" Value="15" Requirements="" Description="" /><Upgrade Name="Geld-Bonus 2" Key="moneyamount2" Type="moneyamount" Price="500" Value="20" Requirements="moneyamount1" Description="" /><Upgrade Name="Geld-Bonus 3" Key="moneyamount3" Type="moneyamount" Price="1000" Value="30" Requirements="moneyamount2" Description="" /><Upgrade Name="Geld-Bonus 4" Key="moneyamount4" Type="moneyamount" Price="5000" Value="50" Requirements="moneyamount3" Description="" /></Upgrades></Tower>

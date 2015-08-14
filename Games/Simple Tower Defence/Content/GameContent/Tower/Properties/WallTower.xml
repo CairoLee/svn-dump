@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tower Name="Blockade" Key="WallTower">
+  <Base>
+    <Price Value="5" />
+    <Damage Value="0" />
+    <Interval Value="0" />
+    <Texture Value="wall" />
+    <Range Value="1" />
+    <Size Value="1" />
+    <Description Value="Schadet keinem Gegner, stellt einfach nur eine Blockade dar" />
+    <Thumbnail Value="wall" />
+  </Base>
+  <Labels>
+    <ShowDamage Value="False" />
+    <ShowRange Value="False" />
+    <ShowInterval Value="False" />
+  </Labels>
+  <Upgrades />
+</Tower>

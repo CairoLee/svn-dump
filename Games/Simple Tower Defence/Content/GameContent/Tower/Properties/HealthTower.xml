@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tower Name="Gesundheitsturm" Key="HealthTower">
+  <Base>
+    <Price Value="200" />
+    <Damage Value="0" />
+    <Interval Value="0" />
+    <Texture Value="triangle" />
+    <Range Value="2" />
+    <Size Value="2" />
+    <Description Value="Dieser Turm generiert neue Gesundheit" />
+    <Thumbnail Value="triangle" />
+    <HealthAmount Value="5" />
+    <HealthTime Value="5000" />
+  </Base><Labels><ShowDamage Value="False" /><ShowRange Value="False" /><ShowInterval Value="False" /></Labels><Upgrades><Upgrade Name="Heilungsstufe 1" Key="healthamount1" Type="healthamount" Price="100" Value="10" Requirements="" Description="" /><Upgrade Name="Heilungsstufe 2" Key="healthamount2" Type="healthamount" Price="150" Value="20" Requirements="healthamount1" Description="" /><Upgrade Name="Heilungsstufe 3" Key="healthamount3" Type="healthamount" Price="500" Value="50" Requirements="healthamount2" Description="" /><Upgrade Name="Heilzeit 1" Key="healthtime1" Type="healthtime" Price="100" Value="4500" Requirements="" Description="" /><Upgrade Name="Heilzeit 2" Key="healthtime2" Type="healthtime" Price="200" Value="3500" Requirements="healthtime1" Description="" /><Upgrade Name="Heilzeit 3" Key="healthtime3" Type="healthtime" Price="400" Value="1500" Requirements="healthtime2" Description="" /><Upgrade Name="Heilzeit 4" Key="healthtime4" Type="healthtime" Price="1500" Value="500" Requirements="healthtime3" Description="" /></Upgrades></Tower>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PathDefence>
+<Level Texture="tiles" Health="1000">False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-True-True-True-True-True-True-True-True-True-True-True-True-True-True-True-False-False-True-True-True-True-True-True-True-True-True-True-True-True-True-True-True-False-False-False-False-False-False-False-False-False-True-True-True-True-True-True-False-False-True-True-True-True-True-True-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-True-True-True-True-True-True-False-False-True-True-True-True-True-True-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-True-False-False-False-False-False-False-False-False-False-False-False-False-True-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-True-False-False-False-False-False-False-False-False-False-False-False-False-True-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-True-False-False-True-True-True-True-True-True-True-True-False-False-True-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-True-True-True-True-False-False-True-False-False-False-False-False-False-True-False-False-True-True-True-True-False-False-False-False-False-False-False-False-False-False-False-False-True-False-False-False-False-False-True-False-False-False-False-False-False-True-False-False-False-False-False-True-False-False-False-False-False-False-False-False-False-False-False-False-True-False-False-False-False-False-True-False-False-False-False-False-False-True-False-False-False-False-False-True-False-False-False-False-False-False-False-False-False-False-False-False-True-False-False-True-True-True-True-False-False-False-False-False-False-True-True-True-True-False-False-True-False-False-False-False-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-False-False-False-False-True-False-False-True-True-True-True-True-True-True-True-True-True-True-True-True-True-False-False-True-False-False-False-False-False-False-False-False-False-False-False-False-True-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-True-False-False-False-False-False-False-True-True-True-True-True-True-True-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-True-True-True-True-True-True-True-False-False-True-False-False-False-False-False-False-True-True-True-True-True-True-False-False-True-True-True-True-True-True-False-False-False-False-False-False-True-False-False-False-False-True-False-False-False-False-False-False-True-False-False-False-False-True-False-False-True-False-False-False-False-True-False-False-False-False-False-False-True-False-False-False-False-True-False-False-True-True-True-True-True-False-False-False-False-True-False-False-True-False-False-False-False-True-True-True-True-True-False-False-True-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-False-False-False-False-False-False-True-False-False-True-False-False-True-True-True-False-False-True-True-True-True-True-True-True-True-True-True-False-False-True-True-True-True-True-True-True-True-True-True-False-False-True-True-True-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-False-
+</Level>
+<Waves>
+<Wave0 WaitTime="20000">
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="sly" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+<Creep Texture="dro" Health="1" Speed="5" />
+</Wave0>
+<Wave1 WaitTime="10000">
+<Creep Texture="sly" Health="10" Speed="4" />
+<Creep Texture="sly" Health="10" Speed="4" />
+<Creep Texture="sly" Health="10" Speed="4" />
+</Wave1>
+<Wave2 WaitTime="5000">
+<Creep Texture="ape" Health="3" Speed="6" />
+<Creep Texture="ape" Health="3" Speed="6" />
+<Creep Texture="ape" Health="3" Speed="6" />
+<Creep Texture="ape" Health="3" Speed="6" />
+<Creep Texture="ape" Health="3" Speed="6" />
+<Creep Texture="ape" Health="3" Speed="6" />
+<Creep Texture="ape" Health="3" Speed="6" />
+<Creep Texture="ape" Health="3" Speed="6" />
+<Creep Texture="ape" Health="3" Speed="6" />
+<Creep Texture="ape" Health="3" Speed="6" />
+</Wave2>
+<Wave3 WaitTime="5000">
+<Creep Texture="ape" Health="5" Speed="6" />
+<Creep Texture="ape" Health="5" Speed="6" />
+<Creep Texture="dro" Health="5" Speed="6" />
+<Creep Texture="dro" Health="5" Speed="6" />
+<Creep Texture="sly" Health="4" Speed="8" />
+<Creep Texture="sly" Health="4" Speed="8" />
+<Creep Texture="paw" Health="15" Speed="3" />
+<Creep Texture="paw" Health="15" Speed="3" />
+<Creep Texture="paw" Health="15" Speed="3" />
+<Creep Texture="paw" Health="15" Speed="3" />
+</Wave3>
+</Waves>
+</PathDefence>
