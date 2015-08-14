@@ -1,0 +1,163 @@
+gonryun,151,112,5	script	PvP Warper::PvP Warper	767,{
+	set @npcname$, "[^ff0000Pvp Guard^000000]";
+
+	setArray(.@MAPS$[0], "pvp_y_1-2", "guild_vs3", "guild_vs1"); //, "pvp_y_1-2");
+	setArray(.@NAMES$[0], "Normal PvP", "No Buff PvP", "No Pots PvP", "Hardcore PvP");
+	setArray(.@MAX[0], 50, 25, 25, 20);
+
+	set .@menu$, "";
+	for(set .@i, 0; .@i < getArraySize(.@MAPS$); set .@i, .@i + 1) {
+		set .@userInRoom, GetMapUsers(.@MAPS$[.@i]);
+		set .@color$, (.@userInRoom == .@MAX[.@i] ? "^FF0000" : "^008800");
+		set .@menu$, (.@menu$ != "" ? .@menu$ + ":" : "" ) + .@NAMES$[.@i] + " [" + .@color$ + .@userInRoom + "^000000 / ^FF0000" + .@MAX[.@i] + "^000000]";
+	}
+
+	mes .@npcname$;
+	mes "Hi ^ff8000"+strcharinfo(0)+"^000000.";
+	mes "Which arena would you like to enter?";
+	
+	set .@choice, Select(.@menu$) - 1;
+
+	// no Buff
+	if (.@choice == 1) {
+		sc_end 20; //Provoke
+		sc_end 21; //Endure
+		sc_end 22; //Twohandquicken
+		sc_end 23; //Concentrate
+		sc_end 27; //Poisonreact
+		sc_end 29; //Angelus
+		sc_end 30; //Blessing
+		sc_end 32; //Increaseagi
+		sc_end 34; //Slowpoison
+		sc_end 35; //Impositio Manus
+		sc_end 36; //Suffragium
+		sc_end 39; //Kyrie
+		sc_end 40; //Magnificat
+		sc_end 41; //Gloria
+		sc_end 43; //Adrenaline
+		sc_end 44; //Weaponperfection
+		sc_end 46; //Maximizepower
+		sc_end 48; //Loud
+		sc_end 72; //CP Weapon
+		sc_end 73; //CP Shield
+		sc_end 74; //CP Armor
+		sc_end 75; //CP Helm
+		sc_end 59; //Speedup0
+		sc_end 60; //Speedup1
+		sc_end 61; //ATKPotion
+		sc_end 62; //MATKPotion
+		sc_end 72; //CP Weapon
+		sc_end 73; //CP Shield
+		sc_end 74; //CP Armor
+		sc_end 75; //CP Helm
+		sc_end 76; //Autoguard
+		sc_end 77; //Reflectshield
+		sc_end 86; //Spearquicken
+		sc_end 110; //Concentration
+		sc_end 115; //Assumptio
+		sc_end 118; //Magicpower
+		sc_end 119; //Enchant Deadly Poison
+		sc_end 120; //Truesight
+		sc_end 121; //Windwalk
+		sc_end 122; //Meltdown
+		sc_end 123; //Cartboost
+		sc_end 125; //Rejectsword
+		sc_end 145; //Adrenaline2
+		sc_end 148; //Kaahi
+		sc_end 151; //Preserve
+		sc_end 156; //Maxoverthrust
+		sc_end 187; //Increase All Status
+		sc_end 188; //Increase STR
+		sc_end 189; //Increase Agi
+		sc_end 190; //Increase Vit
+		sc_end 191; //Increase Int
+		sc_end 192; //Increase Dex
+		sc_end 193; //Increase Luk
+		sc_end 194; //Increase Hit
+		sc_end 195; //Increase Hitrate
+		sc_end 196; //Increase Flee
+		sc_end 197; //Increase Fleerate
+		sc_end 198; //Increase MHP Rate
+		sc_end 199; //Increase MSP Rate
+		sc_end 200; //Increase ATK Rate
+		sc_end 201; //Increase MATK Rate
+		sc_end 202; //Increase DEF Rate
+		sc_end 270; //Soul Link
+		sc_end 445; //Soul Link
+		sc_end 447; //Soul Link
+		sc_end 448; //Soul Link
+		sc_end 449; //Soul Link
+		sc_end 450; //Soul Link
+		sc_end 451; //Soul Link
+		sc_end 452; //Soul Link
+		sc_end 453; //Soul Link
+		sc_end 454; //Soul Link
+		sc_end 455; //Soul Link
+		sc_end 456; //Soul Link
+		sc_end 457; //Soul Link
+		sc_end 458; //Soul Link
+		sc_end 459; //Soul Link
+		sc_end 460; //Soul Link
+		sc_end 461; //Soul Link
+		sc_end 471; //Soul Link
+		sc_end 472; //Soul Link
+	}
+
+	// Hardcore aka "Nightmare" mode
+	else if (.@choice == 3) {
+		mes "";
+		mes "^FF0000ATTENTION^000000";
+		mes "If you join this room you are able to loose your Equiptment by a high chance!!";
+		mes "Do you realy want join this room?";
+		if (Select("Yes, please", "No, thank you") == 2) {
+			close;
+		}
+	}
+
+	if (GetMapUsers(.@MAPS$[.@choice]) >= .@MAX[.@choice]) {
+		mes "^FF0000Error: the room is full^000000.";
+		mes "Please try another one.";
+		close;
+	}
+
+	close2;
+	Warp(.@MAPS$[.@choice], 0, 0);
+	end;
+}	
+
+alberta,104,73,2	duplicate(PvP Warper)	PvP Warper#5-1	862
+aldebaran,133,118,6	duplicate(PvP Warper)	PvP Warper#7-1	48
+ayothaya,154,115,3	duplicate(PvP Warper)	PvP Warper#12-1	708
+comodo,219,138,3	duplicate(PvP Warper)	PvP Warper#8-1	125
+einbech,164,134,4	duplicate(PvP Warper)	PvP Warper#14-1	852
+einbroch,250,184,2	duplicate(PvP Warper)	PvP Warper#15-1	852
+hugel,77,151,5	duplicate(PvP Warper)	PvP Warper#16-1	70
+izlude,133,120,4	duplicate(PvP Warper)	PvP Warper#6-1	809
+lighthalzen,150,89,7	duplicate(PvP Warper)	PvP Warper#13-1	906
+louyang,199,100,5	duplicate(PvP Warper)	PvP Warper#11-1	825
+morocc,149,84,7	duplicate(PvP Warper)	PvP Warper#3-1	884
+moscovia,228,198,4	duplicate(PvP Warper)	PvP Warper#19-1	405
+niflheim,185,197,5	duplicate(PvP Warper)	PvP Warper#10-1	795
+payon,165,230,5	duplicate(PvP Warper)	PvP Warper#4-1	732
+payon,180,110,2	duplicate(PvP Warper)	PvP Warper#4-2	732
+prontera,152,211,5	duplicate(PvP Warper)	PvP Warper#2-1	733
+rachel,109,146,5	duplicate(PvP Warper)	PvP Warper#17-1	920
+veins,222,138,3	duplicate(PvP Warper)	PvP Warper#18-1	953
+yuno,173,185,4	duplicate(PvP Warper)	PvP Warper#9-1	420
+
+
+
+
+
+
+// Normal PvP
+pvp_y_1-2	mapflag	pvp
+// No Buffs
+guild_vs3	mapflag	pvp
+guild_vs3	mapflag	noskill
+// No Pots [=> 256]
+guild_vs1	mapflag	pvp
+guild_vs1	mapflag	restricted	7
+// Nightmare/"Hardcore"
+//pvp_y_1-2	mapflag	pvp
+

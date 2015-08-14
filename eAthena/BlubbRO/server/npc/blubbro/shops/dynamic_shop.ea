@@ -1,0 +1,70 @@
+prontera,159,177,4	script	Horst von Schlampe	57,{
+	.@npcname$ = "[^FF0000Name^000000]";
+
+	if (GetGmLevel() < .DYNS_GM && .DYNS_BLOCK) {
+		mes .@npcname$;
+		mes "Shop is locked.";
+		close;
+	}
+
+	mes .@npcname$;
+	mes "Item to pay with: ^999999" + GetItemName(.DYNS_ItemID) + "^000000";
+	mes "^FF0000Amount of Zeny is the amount of this item.^000000";
+	close2;
+
+	CallShop(.DYNS_ShopName$, 1);
+	NpcShopAttach(.DYNS_ShopName$);
+	end;
+
+
+
+
+OnBuyItem:
+	set .@quantity, 0;
+	for (.@i = 0; .@i < getarraysize(@bought_nameid); .@i += 1) {
+		.@quantity += (@bought_quantity[.@i] * .DYNS_ItemCount);
+	}
+
+	mes "[^999999Bill^000000]";
+	for (.@i = 0; .@i < getarraysize(@bought_nameid); .@i += 1) {
+		mes "^FF0000" + getitemname(@bought_nameid[.@i]) + ": " + @bought_quantity[.@i] + "^000000";
+	}
+
+	mes "----------------------------------------";
+	mes "These Items will cost ^999999" + .@quantity + " " + GetItemName(.DYNS_ItemID) + "^000000.";
+	mes "Du you realy want to buy them now?";
+	next;
+	if (Select("- No..:- Yes, please!") == 1) {
+		mes .@npcname$; 
+		mes "The purchase was stopped."; 
+		close; 
+	}
+	if (CountItem(.DYNS_ItemID) < .@quantity) {
+		mes .@npcname$;
+		mes "Sorry, but you don't have enough ^999999" + getitemname(.DYNS_ItemID) + "^000000...";
+		close;
+	}
+
+	DelItem(.DYNS_ItemID, .@quantity);
+	for (.@i = 0; .@i < getarraysize(@bought_nameid); .@i += 1 ) {
+		GetItem(@bought_nameid[.@i], @bought_quantity[.@i]);
+	}
+
+	mes .@npcname$;
+	mes "Vielen Dank für Deinen Kauf!";
+	close;
+}
+
+OnInit:
+	// Settings \\
+	.DYNS_GM = 99; // min GM Level
+	.DYNS_BLOCK = 0; // Shop sperren?
+	.DYNS_ItemID = 512; // Welche ItemID zum bezahlen?
+	.DYNS_ItemCount = 1; // Wieviel von der ItemID pro gekauftem Item?
+
+	.DYNS_ShopName$ = "Dynamic_Shop"; // Name des Shops
+	end;
+
+}
+
+- shop Dynamic_Shop -1,512:512

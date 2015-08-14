@@ -1,0 +1,2 @@
+- wenn ich commandline args abfragen kann, kann cih dei Checksums mit C# bestimmen & einfach an den client übergeben
+- => fehlt der param -> start ohne Patcher

@@ -1,0 +1,189 @@
+
+abyss_01	mapflag	dungeon	1
+abyss_02	mapflag	dungeon	1
+abyss_03	mapflag	dungeon	1
+
+ama_dun01	mapflag	dungeon	2
+ama_dun02	mapflag	dungeon	2
+ama_dun03	mapflag	dungeon	2
+
+anthell01	mapflag	dungeon	3
+anthell02	mapflag	dungeon	3
+
+ayo_dun01	mapflag	dungeon	4
+ayo_dun02	mapflag	dungeon	4
+que_god01	mapflag	dungeon	4
+que_god02	mapflag	dungeon	4
+
+beach_dun	mapflag	dungeon	5
+beach_dun2	mapflag	dungeon	5
+beach_dun3	mapflag	dungeon	5
+
+lou_dun03	mapflag	dungeon	6
+lou_dun02	mapflag	dungeon	6
+lou_dun01	mapflag	dungeon	6
+
+alde_dun01	mapflag	dungeon	7
+alde_dun02	mapflag	dungeon	7
+alde_dun03	mapflag	dungeon	7
+alde_dun04	mapflag	dungeon	7
+c_tower1	mapflag	dungeon	7
+c_tower2	mapflag	dungeon	7
+c_tower3	mapflag	dungeon	7
+c_tower4	mapflag	dungeon	7
+
+mjo_dun01	mapflag	dungeon	8
+mjo_dun02	mapflag	dungeon	8
+mjo_dun03	mapflag	dungeon	8
+
+prt_sewb1	mapflag	dungeon	9
+prt_sewb2	mapflag	dungeon	9
+prt_sewb3	mapflag	dungeon	9
+prt_sewb4	mapflag	dungeon	9
+
+abbey01	mapflag	dungeon	10
+abbey02	mapflag	dungeon	10
+abbey03	mapflag	dungeon	10
+
+ein_dun01	mapflag	dungeon	11
+ein_dun02	mapflag	dungeon	11
+
+ra_san01	mapflag	dungeon	12
+ra_san02	mapflag	dungeon	12
+ra_san03	mapflag	dungeon	12
+ra_san04	mapflag	dungeon	12
+ra_san05	mapflag	dungeon	12
+
+gefenia01	mapflag	dungeon	13
+gefenia02	mapflag	dungeon	13
+gefenia03	mapflag	dungeon	13
+gefenia04	mapflag	dungeon	13
+
+gef_dun00	mapflag	dungeon	14
+gef_dun01	mapflag	dungeon	14
+gef_dun02	mapflag	dungeon	14
+gef_dun03	mapflag	dungeon	14
+
+gl_cas01	mapflag	dungeon	15
+gl_cas02	mapflag	dungeon	15
+gl_church	mapflag	dungeon	15
+gl_chyard	mapflag	dungeon	15
+gl_dun01	mapflag	dungeon	15
+gl_dun02	mapflag	dungeon	15
+gl_in01	mapflag	dungeon	15
+gl_knt01	mapflag	dungeon	15
+gl_knt02	mapflag	dungeon	15
+gl_prison	mapflag	dungeon	15
+gl_prison1	mapflag	dungeon	15
+gl_sew01	mapflag	dungeon	15
+gl_sew02	mapflag	dungeon	15
+gl_sew03	mapflag	dungeon	15
+gl_sew04	mapflag	dungeon	15
+gl_step	mapflag	dungeon	15
+glast_01	mapflag	dungeon	15
+
+gon_dun01	mapflag	dungeon	16
+gon_dun02	mapflag	dungeon	16
+gon_dun03	mapflag	dungeon	16
+
+ice_dun01	mapflag	dungeon	17
+ice_dun02	mapflag	dungeon	17
+ice_dun03	mapflag	dungeon	17
+ice_dun04	mapflag	dungeon	17
+
+juperos_01	mapflag	dungeon	18
+juperos_02	mapflag	dungeon	18
+jupe_area1	mapflag	dungeon	18
+jupe_area2	mapflag	dungeon	18
+jupe_core	mapflag	dungeon	18
+jupe_ele	mapflag	dungeon	18
+jupe_ele_r	mapflag	dungeon	18
+jupe_gate	mapflag	dungeon	18
+jupe_cave	mapflag	dungeon	18
+
+prt_maze01	mapflag	dungeon	19
+prt_maze02	mapflag	dungeon	19
+prt_maze03	mapflag	dungeon	19
+
+lhz_dun01	mapflag	dungeon	20
+lhz_dun02	mapflag	dungeon	20
+lhz_dun03	mapflag	dungeon	20
+
+mag_dun01	mapflag	dungeon	21
+mag_dun02	mapflag	dungeon	21
+
+mosk_dun01	mapflag	dungeon	22
+mosk_dun02	mapflag	dungeon	22
+mosk_dun03	mapflag	dungeon	22
+
+odin_tem01	mapflag	dungeon	23
+odin_tem02	mapflag	dungeon	23
+odin_tem03	mapflag	dungeon	23
+
+orcsdun01	mapflag	dungeon	24
+orcsdun02	mapflag	dungeon	24
+
+pay_dun00	mapflag	dungeon	25
+pay_dun01	mapflag	dungeon	25
+pay_dun02	mapflag	dungeon	25
+pay_dun03	mapflag	dungeon	25
+pay_dun04	mapflag	dungeon	25
+
+moc_pryd01	mapflag	dungeon	26
+moc_pryd02	mapflag	dungeon	26
+moc_pryd03	mapflag	dungeon	26
+moc_pryd04	mapflag	dungeon	26
+moc_pryd05	mapflag	dungeon	26
+moc_pryd06	mapflag	dungeon	26
+
+kh_dun02	mapflag	dungeon	27
+kh_dun01	mapflag	dungeon	27
+
+in_sphinx1	mapflag	dungeon	28
+in_sphinx2	mapflag	dungeon	28
+in_sphinx3	mapflag	dungeon	28
+in_sphinx4	mapflag	dungeon	28
+in_sphinx5	mapflag	dungeon	28
+
+treasure01	mapflag	dungeon	29
+treasure02	mapflag	dungeon	29
+
+thana_step	mapflag	dungeon	30
+thana_boss	mapflag	dungeon	30
+tha_scene01	mapflag	dungeon	30
+tha_t01	mapflag	dungeon	30
+tha_t02	mapflag	dungeon	30
+tha_t03	mapflag	dungeon	30
+tha_t04	mapflag	dungeon	30
+tha_t07	mapflag	dungeon	30
+tha_t05	mapflag	dungeon	30
+tha_t06	mapflag	dungeon	30
+tha_t08	mapflag	dungeon	30
+tha_t09	mapflag	dungeon	30
+tha_t10	mapflag	dungeon	30
+tha_t11	mapflag	dungeon	30
+tha_t12	mapflag	dungeon	30
+
+thor_v01	mapflag	dungeon	31
+thor_v02	mapflag	dungeon	31
+thor_v03	mapflag	dungeon	31
+
+xmas_dun01	mapflag	dungeon	32
+xmas_dun02	mapflag	dungeon	32
+
+tur_dun01	mapflag	dungeon	33
+tur_dun02	mapflag	dungeon	33
+tur_dun03	mapflag	dungeon	33
+tur_dun04	mapflag	dungeon	33
+tur_dun05	mapflag	dungeon	33
+tur_dun06	mapflag	dungeon	33
+
+um_dun01	mapflag	dungeon	34
+um_dun02	mapflag	dungeon	34
+yggdrasil01	mapflag	dungeon	34
+
+iz_dun00	mapflag	dungeon	35
+iz_dun01	mapflag	dungeon	35
+iz_dun02	mapflag	dungeon	35
+iz_dun03	mapflag	dungeon	35
+iz_dun04	mapflag	dungeon	35

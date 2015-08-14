@@ -1,0 +1,2 @@
+
+DWORD GetProcessByName(PCWSTR name);

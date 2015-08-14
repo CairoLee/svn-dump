@@ -1,0 +1,5 @@
+<SyntaxModes version="1.0">				
+	<Mode file			 = "eAthena-Mode.xshd"
+				name			 = "eAthena"
+				extensions = ".conf;.ea;.txt"/>
+</SyntaxModes>

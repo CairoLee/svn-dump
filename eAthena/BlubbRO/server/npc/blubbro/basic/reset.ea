@@ -1,0 +1,46 @@
+
+prontera,150,211,5	script	Reset Girl	124,{
+	//						 status , skill  , both
+	//setArray(.@resetCost[1], 50000, 50000, 75000);
+	setArray(.@resetCost[1], 0, 0, 0);
+	set .@resetCost[1], (.@resetCost[1] * (CharResetStatus + 1));
+	set .@resetCost[2], (.@resetCost[2] * (CharResetSkill + 1));
+	set .@resetCost[3], (.@resetCost[1] * .@resetCost[2]);
+	if (.@resetCost[3] > 0) {
+		set .@resetCost[3], (.@resetCost[3] - (.@resetCost[3] / 4));
+	}
+
+	mes "[^FF0000Reset Girl^000000]";
+	mes "^FF0000Reset Stats^000000: ^008800" + (.@resetCost[1] == 0 ? "Free" : CallFunc("F_FormatNumber", .@resetCost[1]) + "z") + "^000000";
+	mes "^FF0000Reset Skills^000000: ^008800" + (.@resetCost[2] == 0 ? "Free" : CallFunc("F_FormatNumber", .@resetCost[2]) + "z") + "^000000";
+	mes "^FF0000Reset Both^000000: ^008800" + (.@resetCost[3] == 0 ? "Free" : CallFunc("F_FormatNumber", .@resetCost[3]) + "z") + "^000000";
+	if (Select("^FF3355Reset Skills:Reset Stats:Reset Both^000000:Quit") == 4) {
+		close;
+	}
+
+	set .@cost, .@resetCost[@menu];
+	if (.@cost > 0 && Zeny < .@cost) {
+		mes "^FF0000Sorry, you haven't enough Zeny.";
+		close;
+	}
+	
+	set Zeny, Zeny - .@cost;
+	
+	mes "Alright, now here we go!";
+	mes " ";
+	mes "^0000FFBut remember, some changes may won't take effect until you log back on^000000.";
+
+	// Reset status
+	if (@menu == 1 || @menu == 3) {
+		set CharResetSkill, CharResetSkill + 1;
+		ResetSkill();
+	} 
+	
+	// Reset skill
+	if (@menu == 2 || @menu == 3) {
+		set CharResetStatus, CharResetStatus + 1;
+		ResetStatus();
+	}
+
+	close;
+}

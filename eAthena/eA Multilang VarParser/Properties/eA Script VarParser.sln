@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eA Script VarParser", "eA Script VarParser.csproj", "{49F9AEB5-D677-433F-ACA9-7F1D067A7803}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySQL", "SQL Library\MySQL\MySQL.csproj", "{B7BEF904-68C6-4FB4-ABDD-EF13F426D856}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49F9AEB5-D677-433F-ACA9-7F1D067A7803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49F9AEB5-D677-433F-ACA9-7F1D067A7803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49F9AEB5-D677-433F-ACA9-7F1D067A7803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49F9AEB5-D677-433F-ACA9-7F1D067A7803}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7BEF904-68C6-4FB4-ABDD-EF13F426D856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7BEF904-68C6-4FB4-ABDD-EF13F426D856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7BEF904-68C6-4FB4-ABDD-EF13F426D856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7BEF904-68C6-4FB4-ABDD-EF13F426D856}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

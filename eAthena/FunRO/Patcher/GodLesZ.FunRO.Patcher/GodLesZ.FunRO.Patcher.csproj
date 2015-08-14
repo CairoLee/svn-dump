@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4D7F4C08-2A91-4A06-A4B2-8F713A1EC4EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GodLesZ.FunRO.Patcher</RootNamespace>
+    <AssemblyName>Patcher</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>GodLesZ.FunRO.Patcher.Program</StartupObject>
+    <ApplicationIcon>Ragnarok.ico</ApplicationIcon>
+    <ApplicationManifest>Patcher.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\LongExtensions.cs" />
+    <Compile Include="frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\DataHelper.cs" />
+    <Compile Include="Layout\ELayout.cs" />
+    <Compile Include="Layout\LayoutManager.cs" />
+    <Compile Include="Layout\Resources\Default.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Default.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Patches\ClientPatch.cs" />
+    <Compile Include="Patches\ClientPatchList.cs" />
+    <Compile Include="Patches\EPatchAction.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\GrfHelper.cs" />
+    <Compile Include="Helper\ServerStatus.cs" />
+    <Compile Include="Controls\ImageButon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\Resources\Default.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Default.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Helper\RegHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ragnarok.ico" />
+    <None Include="Resources\btn_start_clicked.png" />
+    <None Include="Resources\btn_close_hover.png" />
+    <None Include="Resources\woe_inactive.png" />
+    <None Include="Resources\woe_active.png" />
+    <None Include="Resources\server_online.png" />
+    <None Include="Resources\server_offline.png" />
+    <None Include="Resources\btn_vote_hover.png" />
+    <None Include="Resources\btn_vote_clicked.png" />
+    <None Include="Resources\btn_vote.png" />
+    <None Include="Resources\btn_setup_hover.png" />
+    <None Include="Resources\btn_setup_clicked.png" />
+    <None Include="Resources\btn_setup.png" />
+    <None Include="Resources\btn_options_hover.png" />
+    <None Include="Resources\btn_options_clicked.png" />
+    <None Include="Resources\btn_options.png" />
+    <None Include="Resources\btn_forum_hover.png" />
+    <None Include="Resources\btn_forum_clicked.png" />
+    <None Include="Resources\btn_forum.png" />
+    <None Include="Resources\btn_start_hover.png" />
+    <None Include="Resources\btn_start.png" />
+    <None Include="Resources\btn_close.png" />
+    <None Include="Resources\progressbar.png" />
+    <None Include="Resources\background_full.png" />
+    <None Include="Patcher.manifest" />
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\GodLesZ\GodLesZ.Library.AutoUpdater.Library\GodLesZ.Library.AutoUpdater.Library.csproj">
+      <Project>{BCC23F67-1B7D-4266-B5BC-27FB2E1880D1}</Project>
+      <Name>GodLesZ.Library.AutoUpdater.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\GodLesZ\GodLesZ.Library.AutoUpdater\GodLesZ.Library.AutoUpdater.csproj">
+      <Project>{2F55463A-1DC2-49CB-89CE-49DE8C500B96}</Project>
+      <Name>GodLesZ.Library.AutoUpdater</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\GodLesZ\GodLesZ.Library.BlubbZip\GodLesZ.Library.BlubbZip.csproj">
+      <Project>{929E3880-1CE1-415E-9BA9-B9E45C5002F0}</Project>
+      <Name>GodLesZ.Library.BlubbZip</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\GodLesZ\GodLesZ.Library.Ragnarok\GodLesZ.Library.Ragnarok.csproj">
+      <Project>{CE3F016E-67A4-4F08-8E0E-5493D8E305AC}</Project>
+      <Name>GodLesZ.Library.Ragnarok</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\GodLesZ\GodLesZ.Library\GodLesZ.Library.csproj">
+      <Project>{22086451-A9A2-414C-8A81-5BE02FC5C8EE}</Project>
+      <Name>GodLesZ.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

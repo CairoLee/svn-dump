@@ -1,0 +1,17 @@
+
+
+prontera,154,187,3	script	Kafra Employee::kaf_prontera7	117,{
+	cutin "kafra_01",2;
+	callfunc "F_KafSetPront";
+	mes "[Kafra Employee]";
+	mes "Welcome to the";
+	mes "Kafra Corporation.";
+	mes "The Kafra services";
+	mes "are always on your side.";
+	mes "How may I assist you?";
+	callfunc "F_Kafra",5,0,0,40,800;
+
+M_Save:
+	savepoint "prontera",156,191;
+	callfunc "F_KafEnd",0,1,"in the city of Prontera";
+}

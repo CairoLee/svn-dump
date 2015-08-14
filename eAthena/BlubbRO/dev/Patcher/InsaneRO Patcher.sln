@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodLesZ.BlubbRO.Patcher", "Patcher\GodLesZ.BlubbRO.Patcher.csproj", "{4D7F4C08-2A91-4A06-A4B2-8F713A1EC4EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolAdler32", "ToolAdler32\ToolAdler32.csproj", "{BA1FE1C1-47FE-4911-8B3A-51D4C84AF197}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D7F4C08-2A91-4A06-A4B2-8F713A1EC4EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D7F4C08-2A91-4A06-A4B2-8F713A1EC4EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D7F4C08-2A91-4A06-A4B2-8F713A1EC4EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D7F4C08-2A91-4A06-A4B2-8F713A1EC4EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA1FE1C1-47FE-4911-8B3A-51D4C84AF197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA1FE1C1-47FE-4911-8B3A-51D4C84AF197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA1FE1C1-47FE-4911-8B3A-51D4C84AF197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA1FE1C1-47FE-4911-8B3A-51D4C84AF197}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

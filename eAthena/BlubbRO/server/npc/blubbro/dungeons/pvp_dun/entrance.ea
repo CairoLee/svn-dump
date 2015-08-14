@@ -1,0 +1,19 @@
+
+// [GodLesZ] .. ;S
+/*
+prontera,165,173,3	script	Pvp Dungeon	459,{
+	set .@npcname$, "[Pvp Dungeon Guard]";
+	mes .@npcname$;
+	mes "You would like to enter the Pvp Dungeon?!";
+	next;	
+	if (Select("Yes","No") == 2) {
+		mes .@npcname$;
+		mes "Okay, bye!";
+		close;
+	}
+	close2;
+
+	warp "pvp_dun01",155,192; 
+	end;
+}
+*/

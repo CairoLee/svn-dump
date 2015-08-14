@@ -1,0 +1,148 @@
+
+-	script	EOnNPCKill	-1,{
+OnInit:
+	setArray($@MINIBOSS[0], 
+		1096, // angeling
+		1388, // arc angeling
+		1641, // Assssin Cross Eremes
+		1830, // Bow Master
+		1839, // Byorgue
+		1307, // Cat o' Nine Tails
+		1283, // Chimera
+		1302, // Dark Illusion
+		1582, // Deviling
+		1091, // Dragon Fly
+		1093, // Eclispe
+		1957, // Entweihen crothen
+		1205, // Executioner
+		1783, // Galion
+		1681, // Gemini-S58
+		1120, // Ghostring
+		1259, // Gryphon
+		1990, // Hardrock Mammoth
+		1626, // Dark Priest
+		1643, // High Priest Magaleta
+		1645, // high wizard Katrin
+		1720, // Hydrolancer
+		1920, // Incamation of Morroc
+		1918, // Incamation of Morroc
+		1921, // Incamation of Morroc
+		1919, // Incamation of Morroc
+		1833, // Kasa
+		1640, // Lord Knight Seyeren
+		1090, // Mastering
+		1289, // Maya Purple
+		1262, // Mutant Dragon
+		1203, // Mysteltainn
+		1956, // Naght Sieger
+		1870, // Necromancer
+		1700, // Obervaltion
+		1295, // Owl Baron
+		1320, // Owl duke
+		1702, // Retribltion
+		1831, // Salamander
+		1701, // Shelter
+		1754, // Skeggiold
+		1755, // Skeggiold
+		1644, // Sniper Shecil
+		1703, // Solace
+		1829, // Sword Master
+		1991, // Tendrilion
+		1705, // Thanatos Despero
+		1710, // Thanatos Despero
+		1707, // Thanatos Dolor
+		1712, // Thanatos Dolor
+		1711, // Thantos Mearo
+		1706, // Thanatos Mearo
+		1704, // Thanatos odium
+		1709, // Thanatos odium
+		1960, // Thorn of Magic
+		1961, // Thorn of Purification
+		1959, // Thorn of recovery
+		1958, // Thorny Skelton
+		1204, // Tirfing
+		1089, // Toad
+		1092, // Vagabomd
+		1765, // Valkyrie
+		1642  // Whitesmith Hardword
+	);
+	end;
+
+OnNPCKillEvent:
+	end;
+	// Announce MvP and Miniboss kills
+	// also count the kill, if not in Party
+	if (killedrid == 0) {
+		end;
+	}
+	
+	set .@mode, GetMonsterInfo(killedrid, MOB_MODE);
+	if ((.@mode & (MD_MVP | MD_MINIBOSS)) == 0) {
+		end;
+	}
+
+	set .@mobName$, StrMobInfo(2, killedrid);
+	if (.@mode & MD_MVP) {
+		if (GMLevel == 0) {
+			Announce( "[MvP] " + StrCharInfo( 0 ) + " [" + BaseLevel + " / " + JobLevel + "]" + (@KillPartyID != 0 ? " from Party " + @KillPartyName$ : "") + " killed " + .@mobName$ + "!", bc_blue );
+		} else {
+			DispBottom( "[GM Debug] MvP " + killedrid + " counted" + (@KillPartyID != 0 ? " - party kill" : "") );
+		}
+
+		// not in party? count kill
+		if (@KillPartyID == 0) {
+			set .@killCount, GetD( "MVPKILL_" + killedrid );
+			SetD( "MVPKILL_" + killedrid, .@killCount + 1 );
+			if (.@killCount == 0) { // was the first kill of this one!
+				AchieveAdd( TACHIEVE_KILL_MOB, -2 ); // advance MvP Achieves by 1
+			}
+		}
+	} else if(.@mode & MD_MINIBOSS) {
+		set .@i, CallFunc("F_ArraySearch", killedrid, "$@MINIBOSS");
+		if (.@i != -1) {
+			if (GMLevel == 0) {
+				Announce( "[Miniboss] " + StrCharInfo( 0 ) + " [" + BaseLevel + " / " + JobLevel + "]" + (@KillPartyID != 0 ? " from Party " + @KillPartyName$ : "") + " killed " + .@mobName$ + "!", bc_blue );
+			} else {
+				DispBottom( "[GM Debug] Miniboss " + killedrid + " counted" + (@KillPartyID != 0 ? " - party kill" : "") );
+			}
+
+			// not in party? count kill
+			if (@KillPartyID == 0) {
+				SetD( "MINIKILL_" + killedrid, GetD( "MINIKILL_" + killedrid ) + 1 );
+			}
+		}
+	}
+
+	end;
+
+	
+OnNPCPartyKillEvent:
+	// Counting MvP and Miniboss kills
+	// trigger for each party member [TODO: heavy load up on many players & party kills..]
+	if (killedrid == 0) {
+		end;
+	}
+	
+	set .@mode, GetMonsterInfo(killedrid, MOB_MODE);
+	if ((.@mode & (MD_MVP | MD_MINIBOSS)) == 0) {
+		end;
+	}
+
+	if (.@mode & MD_MVP) {
+		set .@killCount, GetD( "MVPKILL_" + killedrid );
+		SetD( "MVPKILL_" + killedrid, .@killCount + 1 );
+		if (.@killCount == 0) { // was the first kill of this one!
+			AchieveAdd( TACHIEVE_KILL_MOB, -2 ); // advance MvP Achieves by 1
+		}
+	} else if(.@mode & MD_MINIBOSS) {
+		set .@i, CallFunc("F_ArraySearch", killedrid, "$@MINIBOSS");
+		if (.@i != -1) {
+			SetD( "MINIKILL_" + killedrid, GetD( "MINIKILL_" + killedrid ) + 1 );
+		}
+	}
+
+	end;
+}
+
+
+

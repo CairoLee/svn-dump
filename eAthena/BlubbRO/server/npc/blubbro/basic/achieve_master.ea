@@ -1,0 +1,282 @@
+
+prontera,146,170,5	script	Achieve Master	64,{
+	.@npcname$ = "[^FF0000Achieve Master^000000]";
+	.@maxPerMenu = 50;
+	setArray( .@Element$[ 0 ], "Neutral", "Water", "Earth", "Fire", "Wind", "Poison", "Holy", "Dark", "Ghost", "Undead" );
+	set .@queryAdd$, "";
+	if (GMLevel != 99) {
+		set .@queryAdd$, " AND Finished = 1";
+	}
+	
+	Query_SQL( "SELECT COUNT(*) FROM char_achievements WHERE CharID = " + GetCharID( 0 ) + .@queryAdd$, .@tmpCount );
+	if( .@tmpCount == 0 ) {
+		mes .@npcname$;
+		mes "I'll show you all your gained Achievements!";
+		mes "But you haven't finished even one yet. So come back once that is done.";
+		close;
+	}
+
+
+	// loop max <.@maxPerMenu> ea Page
+	.@pages = cap_value( .@tmpCount / .@maxPerMenu, 1, .@maxPerMenu );
+	.@p = 0;
+	while( .@p < .@pages ) {
+		// not the first Loop? then we need a Window CleanUp
+		if( .@p > 0 )
+			next;
+
+		// Query it..
+		set .@len, Query_SQL( 
+			"SELECT " + 
+				"ca.Finished, " + 
+				"adb.ID, adb.AchieveType, adb.Name, adb.NameCutin, adb.Description, " + 
+				"adbr.Count AS RequireCount, adbr.Param1 AS RequireParam " + 
+			"FROM " + 
+				"char_achievements AS ca " + 
+			"LEFT JOIN " + 
+				"achieve_db AS adb " + 
+			"ON " + 
+				"adb.ID = ca.AchieveID " + 
+			"LEFT JOIN " + 
+				"achieve_require_db AS adbr " + 
+			"ON " + 
+				"adbr.AchieveID = adb.ID " + 
+			"WHERE " + 
+				"ca.CharID = " + GetCharID( 0 ) + " AND ca.Finished = 1 " + 
+			"ORDER BY " + 
+				"adb.ID " + 
+			"LIMIT "
+				+ ( .@maxPerMenu * .@p ) + "," + .@maxPerMenu
+			, .@AchieveFinished, .@AchieveID, .@AchieveType, .@AchieveName$, .@AchieveNameCutin$, .@AchieveDesc$
+			, .@AchieveRequireCount, .@AchieveRequireParam$
+		);
+
+		
+		// NPC Header
+		// [Erfolge: 1 - 50]
+		mes "[^FF0000Achievement: " + ( ( .@p * .@maxPerMenu ) + 1 ) + " - " + ( .@pages == 1 ? .@tmpCount : ( ( .@p * .@maxPerMenu ) + .@tmpCount ) ) + " ^000000]";
+
+		// build Menu
+		DeleteArray( .@MenuArray$[ 0 ], 127 );
+		.@menu$ = "";
+		if( .@p > 0 )
+			set .@MenuArray$[ 0 ], "<< Back"; // Page back
+		if( ( .@p + 1 ) < .@pages )
+			set .@MenuArray$[ GetArraySize( .@MenuArray$ ) ], ">> Next " + ( .@p + 2 ); // Page foward
+		set .@MenuArray$[ GetArraySize( .@MenuArray$ ) ], "X Cancel"; // Cancle
+
+		// add to String
+		.@menu$ = .@MenuArray$[ 0 ];
+		.@menuBaseLen = GetArraySize( .@MenuArray$ );
+		.@i = 1;
+		while( .@i < .@menuBaseLen ) {
+			set .@menu$, .@menu$ + ":" + .@MenuArray$[ .@i ];
+			set .@i, .@i + 1;
+		}
+
+		// dynamic Achievements
+		.@i = 0;
+		while( .@i < .@len ) {
+			if( .@AchieveID[ .@i ] < 10 )
+				.@strID$ = "00" + .@AchieveID[ .@i ];
+			else if( .@AchieveID[ .@i ] < 100 )
+				.@strID$ = "0" + .@AchieveID[ .@i ];
+			else
+				.@strID$ = .@AchieveID[ .@i ];
+
+			set .@menu$, .@menu$ + ":[" + .@strID$ + "] " + .@AchieveName$[ .@i ];
+			set .@MenuArray$[ .@menuBaseLen + .@i ], .@AchieveID[ .@i ]; // to refer it later on
+			set .@i, .@i + 1;
+		}
+
+		// finish... display
+		set @menu, Select( .@menu$ ) - 1; // we have a zero-bases Array, @menu start with 1...
+
+		if( compare( .@MenuArray$[ @menu ], "Cancel" ) == 1 ){
+			close;
+		} else if( compare( .@MenuArray$[ @menu ], "Back" ) == 1 ){
+			set .@p, .@p - 1;
+			if( .@p == -1 )
+				next; // -1 means its the first Page, so .@p will be 0 and no next; get called... so do it here
+		} else if( compare( .@MenuArray$[ @menu ], "Next" ) == 0 ){
+			// NOT next Page = Achievement Info...
+			.@aID = Atoi( .@MenuArray$[ @menu ] );
+			if( .@AchieveID[ @menu - .@menuBaseLen ] != .@aID ) {
+				// i've done a mistake in the Script...
+				mes "Scipt Error!";
+				mes "- @menu: " + @menu;
+				mes "- @MenuArrayEntry$: " + .@MenuArray$[ @menu ];
+				mes "- @aID: " + .@aID;
+				mes "- @AchieveID " + .@AchieveID[ @menu - .@menuBaseLen ];
+				mes "- Achieve ArraySize: " + GetArraySize( .@AchieveID );
+
+				Cutin( "", 255 );
+				close;
+			}
+			.@aID = @menu - .@menuBaseLen;
+
+			if (.@AchieveNameCutin$[ .@aID ] != "") {
+				Cutin( .@AchieveNameCutin$[ .@aID ], 4 );
+			}
+
+			mes "^FF0000Name^000000: " + .@AchieveName$[ .@aID ];
+			mes "^FF0000Description^000000: " + .@AchieveDesc$[ .@aID ];
+			mes "^FF0000Requirements^000000:";
+
+			DeleteArray( .@requireArray$[ 0 ], 127 );
+			Explode( .@requireArray$, .@AchieveRequireParam$[ .@aID ], "," );
+			set .@reqLen, GetArraySize( .@requireArray$ );
+
+			// ugly Part... switch() the Types & display Requires for each Type ...
+			// may be found in src/map/achievement/AchievementCheck.c
+			switch( .@AchieveType[ .@aID ] ) {
+				case TACHIEVE_START:
+				case TACHIEVE_MAX:
+					mes " - nothing or special";
+					break;
+				case TACHIEVE_KILL_MOB:
+				case TACHIEVE_KILL_MOB_RACE:
+					if( .@reqLen == 0 ){
+						mes " - nothing or special";
+						break;
+					}
+					for( set .@r, 0; .@r < .@reqLen; set .@r, .@r + 1 ) {
+						set .@_rID, Atoi( .@requireArray$[ .@r ] );
+						if( .@_rID == 0 )
+							break; // end of Data
+						mes " - kill ^0000FF" + .@AchieveRequireCount[ .@aID ] + "^000000x ^008800" + StrMobInfo( 1, .@_rID ) + "^000000";
+					}
+					break;
+				case TACHIEVE_KILL_PLAYER:
+					mes " - kill ^0000FF" + .@AchieveRequireCount[ .@aID ] + "^000000x ^008800Player^000000";
+					break;
+				case TACHIEVE_KILL_HOMUN:
+					mes " - kill ^0000FF" + .@AchieveRequireCount[ .@aID ] + "^000000x ^008800Homunculus^000000";
+					break;
+				case TACHIEVE_KILL_MERC:
+					mes " - kill ^0000FF" + .@AchieveRequireCount[ .@aID ] + "^000000x ^008800Mercenaries^000000";
+					break;
+				case TACHIEVE_LEVEL_BASE:
+					if( .@reqLen == 0 ){
+						mes " - nothing or special";
+						break;
+					}
+					for( set .@r, 0; .@r < .@reqLen; set .@r, .@r + 1 ) {
+						set .@_rID, Atoi( .@requireArray$[ .@r ] );
+						if( .@_rID == 0 )
+							break; // end of Data
+						mes " - reach ^008800Baselevel^000000 ^0000FF" + .@_rID + "^000000";
+					}
+					break;
+				case TACHIEVE_LEVEL_JOB:
+					if( .@reqLen == 0 ){
+						mes " - nothing or special";
+						break;
+					}
+					for( set .@r, 0; .@r < .@reqLen; set .@r, .@r + 1 ) {
+						set .@_rID, Atoi( .@requireArray$[ .@r ] );
+						if( .@_rID == 0 )
+							break; // end of Data
+						mes " - reach ^008800Joblevel^000000 ^0000FF" + .@_rID + "^000000";
+					}
+					break;
+				case TACHIEVE_EXPLORE_REGION:
+					mes " - explore ^0000FF" + .@AchieveRequireCount[ .@aID ] + "^000000x ^008800Regions^000000";
+					break;
+				case TACHIEVE_EXPLORE_DUNGEON:
+					mes " - explore ^0000FF" + .@AchieveRequireCount[ .@aID ] + "^000000x ^008800Dungeon^000000";
+					break;
+				case TACHIEVE_JOBCHANGE:
+					if( .@reqLen == 0 ){
+						mes " - nothing or special";
+						break;
+					}
+					mes " - reach ^008800one^000000 of this Jobs:";
+					for( set .@r, 0; .@r < .@reqLen; set .@r, .@r + 1 ) {
+						set .@_rID, Atoi( .@requireArray$[ .@r ] );
+						if( .@_rID == 0 )
+							break; // end of Data
+						mes "   - ^0000FF" + JobName( .@_rID ) + "^000000";
+					}
+					break;
+				case TACHIEVE_STATUS_ACTIVE:
+					mes " - hold ^0000FF" + ( .@AchieveRequireCount[ .@aID ] / 1000 ) + "^000000sec the Status ^008800<name>^000000";
+					mes "<name> is Script Todo...";
+					break;
+				case TACHIEVE_DIE:
+					mes " - Die ^0000FF" + .@AchieveRequireCount[ .@aID ] + "^000000 times";
+					break;
+				case TACHIEVE_RESURECT:
+					mes " - get ressurected ^0000FF" + .@AchieveRequireCount[ .@aID ] + "^000000 times";
+					break;
+				case TACHIEVE_ITEM_USE:
+					if( .@reqLen == 0 ){
+						mes " - nothing or special";
+						break;
+					}
+					for( set .@r, 0; .@r < .@reqLen; set .@r, .@r + 1 ) {
+						set .@_rID, Atoi( .@requireArray$[ .@r ] );
+						if( .@_rID == 0 )
+							break; // end of Data
+						mes " - use ^008800" + .@AchieveRequireCount[ .@aID ] + "^000000x ^0000FF" + GetItemName( .@_rID ) + "^000000";
+					}
+					break;
+				case TACHIEVE_ITEM_GET:
+					if( .@reqLen == 0 ){
+						mes " - nothing or special";
+						break;
+					}
+					for( set .@r, 0; .@r < .@reqLen; set .@r, .@r + 1 ) {
+						set .@_rID, Atoi( .@requireArray$[ .@r ] );
+						if( .@_rID == 0 )
+							break; // end of Data
+						mes " - optain ^008800" + .@AchieveRequireCount[ .@aID ] + "^000000x ^0000FF" + GetItemName( .@_rID ) + "^000000";
+					}
+					break;
+				case TACHIEVE_QUEST_FINISH:
+					mes " - finish a Quest ^0000FF" + .@AchieveRequireCount[ .@aID ] + "^000000 times";
+					break;
+				case TACHIEVE_USE_NPC_KAFRA:
+					mes " - use a Kafra Service ^0000FF" + .@AchieveRequireCount[ .@aID ] + "^000000 times";
+					break;
+				case TACHIEVE_USESKILL_ID:
+					if( .@reqLen == 0 ){
+						mes " - nothing or special";
+						break;
+					}
+					for( set .@r, 0; .@r < .@reqLen; set .@r, .@r + 1 ) {
+						set .@_rID, Atoi( .@requireArray$[ .@r ] );
+						if( .@_rID == 0 )
+							break; // end of Data
+						mes " - use ^008800" + .@AchieveRequireCount[ .@aID ] + "^000000x SkillID ^0000FF" + .@_rID + "^000000";
+					}
+					break;
+				case TACHIEVE_KILL_PLAYER_CASTLE_OP:
+					mes " - kill ^0000FF" + .@AchieveRequireCount[ .@aID ] + "^000000 Player in his castle";
+					break;
+				case TACHIEVE_KILL_PLAYER_CASTLE_MY:
+					mes " - kill ^0000FF" + .@AchieveRequireCount[ .@aID ] + "^000000 Player in your castle";
+					break;
+				case TACHIEVE_EVENT_SPECIAL:
+					mes " - nothing or special";
+					break;
+			}
+			
+			// show same Page again
+			set .@p, .@p - 1;
+			if( .@p == -1 )
+				next; // -1 means its the first Page, so .@p will be 0 and no next; get called... so do it here
+
+			Cutin( "", 255 );
+
+			set .@i, .@i + 1;
+		}
+		// else [next Page]
+
+		set .@p, .@p + 1;
+	}
+
+	Cutin( "", 255 );
+	close;
+
+}

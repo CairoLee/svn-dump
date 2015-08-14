@@ -1,0 +1,215 @@
+//=========================================================================================================\\
+//= Pvp Dungeon Level 1-4
+//===== By: ===============================================================================================\\
+//= oOShinjiOo  aka  Chris
+//===== Current Version: ==================================================================================\\
+//= 1.5
+//===== Description: ======================================================================================\\
+//= English
+//= Level 1  ( Ranodm warps find the way to lvl 2)
+//= Level 2  ( A small quest for lvl 3 find 5 switchs and let the cross shine
+//= Level 3  ( Another small quest : find a key to open the hatch to come to lvl 4 )
+//= Level 4  ( 1. you get blindet second u go in the midle of the room and the god will be spawned )
+//= Every Level have custom mobs ! + Skills    Everywhere is gvg on with party support :D ! + mini quests
+//==========================================================================================================\\
+//= Deutsch
+//= Level 1 ( Zufällige warps :D finde den weg in lvl 2 )
+//= Level 2 ( Ein kleines quest mit 5 schalten und 2 Kreuzen aktiviere alles um in lvl 3 zu kommen !)
+//= Level 3 ( Noch ein kleines quest : finde den schlüssel um die luke im empraum zu öffnen ! )
+//= Level 4 ( Zuerst wirst du geblendet danach läufst du in die mitte des raumes und der "Gott" spawnt
+//= Jedes level hat somit seine custom mobs ! skills und überall ist gvg an mit party support + mini quests
+//==========================================================================================================\\
+
+
+//============================================================
+//= Pvp Dungeon Level 2
+//===== Current Version: =====================================
+//= 1.3
+//===== Description: =========================================
+//= The switchs and the warp for level 3
+//= Die schalter und das warp für level 3 ^^
+//============================================================
+
+pvp_dun02,35,165,5	script	Switch#1	111,{
+set @schalter,1;
+callfunc "switch";
+close;
+}		
+pvp_dun02,112,33,5	script	Switch#2	111,{
+set @schalter,2;
+callfunc "switch";
+close;
+}
+pvp_dun02,207,287,5	script	Switch#3	111,{
+set @schalter,3;
+callfunc "switch";
+close;
+}
+pvp_dun02,34,219,5	script	Switch#4	111,{
+set @schalter,4;
+callfunc "switch";
+close;
+}
+pvp_dun02,80,286,5	script	Switch#5	111,{
+set @schalter,5;
+callfunc "switch";
+close;
+}
+pvp_dun02,286,29,5	script	Cross#2	111,{
+set @cross,2;
+callfunc "cross";
+close;
+}
+pvp_dun02,286,36,5	script	Cross#1	111,{
+set @cross,1;
+callfunc "cross";
+close;
+}
+
+pvp_dun02,284,32,5	script	Statue	111,{
+
+if(#schalter1&&#schalter2&&#schalter3&&#schalter4&&#schalter5&&#cross1&&#cross2) { 
+	mes $m$[7]; 
+	mes $m$[8]; 
+	warpportal 279,32,"pvp_dun03",19,237; 
+	close;
+} else if(#schalter1&&#schalter2&&#schalter3&&#schalter4&&#schalter5) { 
+	mes $m$[9];
+	next; 
+	mes $m$[7]; 
+	mes $m$[10]; 
+	set #statue,1; 
+	close; 
+																		} 
+	mes $m$[11];
+	close;
+}
+
+// funct's for the crosses and the switchs !
+// funktionen mit welchen die kreuze und die schalter aufgerufen werden ^^
+function	script	cross	{
+if( getd("#cross"+@cross) ) { mes $m$[5]; return; } else { mes $m$[6]; setd "#cross"+@cross,1; return; }
+}
+
+function	script	switch	{
+if(getd("#schalter"+@schalter))	{ mes $m$[0]; return; }
+			mes $m$[1];
+			next;
+			if(select($m$[2])-1) { mes $m$[3]; return; } else { setd "#schalter"+@schalter,1; mes $m$[4]; return; } 
+}
+
+
+//============================================================
+//= Pvp Dungeon Level 3
+//===== Current Version: =====================================
+//= 1.1
+//===== Description: =========================================
+//= Key to open the hatch for lvl 4
+//= Schlüssel + luke um ins lvl 4 zu kommen
+//============================================================
+
+
+pvp_dun03,275,94,0	script	????#1	111,{
+if(gotkey) { mes $m$[12]; close;} else {  mes $m$[13]; set gotkey,1; close; }
+}
+
+pvp_dun03,265,266,0	script	highdunlvl50	45,1,1,{
+if(!gotkey) { mes $m$[14]; close; } 
+for(set @i,15; @i < 18; set @i,@i+1) {
+	mes $m$[@i];
+	next;
+}
+	warp "pvp_dun04",92,50; end;
+}
+
+
+//============================================================
+//= Pvp Dungeon Level 4
+//===== Current Version: =====================================
+//= 1.5a
+//===== Description: =========================================
+//= MVP for lvl 4 + mapflags 
+//= MVP für lvl 4
+//============================================================
+
+
+pvp_dun04,50,49,5	script	PVP#Dungeon#Mvp	139,3,3,{
+for(set @i,0; @i < 12; set @i,@i+1) {
+	specialeffect 669;
+}
+	specialeffect 668;
+	specialeffect 666;
+	monster "pvp_dun04",50,49,"Vamos",3070,1,"Soul::OnSoul";
+	disablenpc "PVP#Dungeon#Mvp";
+
+end;
+}
+
+
+
+
+-	script	Soul	-1,{
+end;
+
+OnTimer300000:
+	    stopnpctimer;
+	    setnpctimer 0;
+	    enablenpc "PVP#Dungeon#Mvp";
+	    end;
+// unter diesem punkt bitte nichts ändern auser ihr wisst was ihr wollt :D !
+// dont change anything under this point if u dont know what u want :D !
+OnInit:
+for(set .i,1; .i < 5; set .i,.i+1) {
+	setmapflag "pvp_dun0"+.i,0; // no memo
+	setmapflag "pvp_dun0"+.i,1; // no teleport
+	setmapflag "pvp_dun0"+.i,2; // no save
+	setmapflag "pvp_dun0"+.i,3; // no branch 
+	setmapflag "pvp_dun0"+.i,4; // no penalty 
+	setmapflag "pvp_dun0"+.i,5; // no zeny penalty
+	setmapflag "pvp_dun0"+.i,13; // no warp
+	setmapflag "pvp_dun0"+.i,15; // no ice wall
+	setmapflag "pvp_dun0"+.i,22; // nogo
+	setmapflag "pvp_dun0"+.i,34; // no warp to
+	setmapflag "pvp_dun0"+.i,41; // no vending
+}
+
+setarray $m$[0],"You Already pushed the button !",
+				"You see a button . Do you like to push it ?",
+				"Yes:No",
+				"You didn't push the button",
+				"Click! You pushed the button ",
+				"The cross already shines !",
+				"You pushed the cross and it starts to shine !",
+				"[ Statue ]",
+				"Welcome to hell!",
+				"the statue says something",
+				"You pushed all buttons to let the crosses shine !",
+				"...",
+				"You already have the key !",
+				"Oh you found a KEY !",
+				"on the ground is a hatch but it is locked! ( maybe you should search a key?)",
+				"You use the key to the underground !",
+				"click",
+				"the hatch opens and you go inside",
+				"You feel the darkness";
+				end;
+
+	enablenpc "PVP#Dungeon#MVP";
+	end;
+
+OnSoul:
+initnpctimer;
+	mapannounce "pvp_dun01","Vamos was killed by "+strcharinfo(0),bc_map;
+	mapannounce "pvp_dun02","Vamos was killed by "+strcharinfo(0),bc_map;
+	mapannounce "pvp_dun03","Vamos was killed by "+strcharinfo(0),bc_map;
+	mapannounce "pvp_dun04","Vamos was killed by "+strcharinfo(0),bc_map;
+	end;
+}
+
+
+pvp_dun04,92,50,5	script	PVP#Dungeon#Darkness	139,1,3,{
+if(@darknessomfg) { end; } else { mes $m$[18]; specialeffect2 475; set @darknessomfg,1; close; }
+}
+
+//= Script end =\\
+//= Script Ende =\\

@@ -1,0 +1,158 @@
+
+3mal per day
+20er level-bereich split
+2man Party => warp 
+
+nach 15 sec: {
+	- mob spawn (5er groups) [alle 5sec] [3mal pro step]
+	- level: bereich-start bis +20
+}
+
+
+
+-	script	Couple Dungeon	-1,{
+	.@npcname$ = "[^FF0000Horst^000000]";
+
+	mes .@npcname$;
+	if (CoupleDungeonDay == GetTime(T_DOY) && CoupleDungeonCount >= 3) {
+		mes "You joined the Couple Dungeon already " + CoupleDungeonCount + " times today.";
+		mes "Please wait until tomorrow.";
+		close;
+	}
+
+	mes "Welcome to the Couple Dungeon!";
+	
+	.@onlineCount = 0;
+	GetPartyMember(GetCharID(1), 2);
+	for (.@i = 0; .@i < $@partymembercount; .@i += 1) {
+		.@online = IsLoggedIn($@partymemberaid[.@i]);
+		DispBottom("[" + .@i + "] " + $@partymemberaid[.@i] + " online: " + .@online);
+		if (.@online != 0) {
+			continue;
+		}
+
+		set .@friendCoupleDay, GetPD($@partymemberaid[.@i], CoupleDungeonDay);
+		set .@friendCoupleCount, GetPD($@partymemberaid[.@i], CoupleDungeonCount);
+		if (.@friendCoupleDay == GetTime(T_DOY) && .@friendCoupleCount >= 3) {
+			mes "Your friend already entered the Couple Dungeon " + .@friendCoupleCount + " today.";
+			close;
+		}
+
+		.@onlineCount += 1;
+	}
+
+	if ($@partymembercount != 2 || .@onlineCount != 2) {
+		mes "You will need a Party with only 2 member, you and a friend of yours.";
+		close;
+	}
+
+	mes "Want to go inside together with your friend?";
+	next;
+	if (Select("Yes, for sure!", "No, thank you") == 2) {
+		close;
+	}
+
+	mes .@npcname$;
+	mes "Be patient, the party will start right now!";
+	close2;
+
+	set .@instance_id, Instance_Create("Couple Dungeon", GetCharID(1));
+	if (.@instance_id < 0) {
+		mes "Failed to create Couple Dungeon."; 
+		mes "^FF0000Couple Dungeon instance reached its limit.^000000"; 
+		mes "Please report this error in our forum!"; 
+		close;
+	}
+
+	// replace with Map
+	Instance_Attachmap("prontera", .@instance_id);
+	Instance_Set_Timeout(900, 0, .@instance_id); // 15min timer, 0sec idle timeout (instance break if no user on the map)
+	Instance_Init(.@instance_id);
+	Instance_Attach(.@instance_id);
+	set 'CD_Step, 1;
+	set 'CD_StepPhase, 1;
+	DoNPCEvent(Instance_Npcname("CD_Instance") + "::OnRoundInit");
+	end;
+
+}
+
+
+-	script	CD_Instance	-1,{
+
+OnRoundInit:
+	// safty check
+	if (StrNpcInfo(3) == "CD_Instance") {
+		end;
+	}
+	
+	// replace with Map
+	CallFunc("F_CD_Spawns", 'CD_Step, 'CD_StepPhase, "prontera", Instance_ID());
+	end;
+
+OnMobDead:
+	set .@id, Instance_ID(0);
+	set 'CD_Mobs, 'CD_Mobs - 1;
+	if ('CD_Mobs > 0) {
+		Instance_Announce(.@id, "Monsters remaining in phase " + 'CD_StepPhase + ": " + 'CD_Mobs, bc_map, 0x00FF00);
+		end;
+	}
+
+	Instance_Announce(.@i, "All monsters in phase " + 'CD_StepPhase + "/5 from round " + 'CD_Step' + " have been defeated.", bc_map);
+	set 'CD_StepPhase, 'CD_StepPhase + 1;
+	if (CD_StepPhase < 6) {
+		DoNPCEvent(Instance_Npcname("CD_Instance") + "::OnRoundInit");
+		end;
+	}
+
+	set 'CD_Step, 'CD_Step + 1;	
+	if ('CD_Step <= $@COUPLEDUN_STEPS) {
+		set 'CD_StepPhase, 1;
+		Instance_Announce(.@i, "You reached round " + 'CD_Step + ".", bc_map);
+		DoNPCEvent(Instance_Npcname("CD_Instance") + "::OnRoundInit");
+		end;
+	}
+
+	// instance finished
+	// enable some warp NPC..
+	//EnableNpc(Instance_Npcname("CD_Finish"));
+	end;
+
+OnInit:
+	// Setting mob arrays
+	SetArray($@COUPLEDUN_1[0], 1002, 1);
+	SetArray($@COUPLEDUN_2[0], 1002, 2);
+	SetArray($@COUPLEDUN_3[0], 1002, 3);
+	SetArray($@COUPLEDUN_4[0], 1002, 4);
+	SetArray($@COUPLEDUN_5[0], 1002, 5);
+	SetArray($@COUPLEDUN_6[0], 1002, 6);
+	SetArray($@COUPLEDUN_7[0], 1002, 7);
+	SetArray($@COUPLEDUN_8[0], 1002, 8);
+	SetArray($@COUPLEDUN_9[0], 1002, 9);
+	SetArray($@COUPLEDUN_10[0], 1002, 10);
+	set $@COUPLEDUN_STEPS, 10;
+
+	end;
+}
+
+
+function	script	F_CD_Spawns	 {
+	.@step = GetArg(0);
+	.@phase = GetArg(1);
+	.@map$ = GetArg(2);
+	.@id = GetArg(3);
+
+	.@x1 = 0;
+	.@x2 = 0;
+	.@y1 = 0;
+	.@y2 = 0;
+	
+	for(set .@i, 0; .@i < GetArraySize(GetD("$@COUPLEDUN_0" + .@step)); set .@i, .@i + 2) {
+		set .@mobID, GetD("$@COUPLEDUN_0" + .@step + "[" + .@i + "]");
+		set .@mobCount, GetD("$@COUPLEDUN_0" + .@step + "[" + (.@i + 1) + "]");
+		
+		AreaMonster(.@map$, .@x1, .@y1, .@x2, .@y2, "--ja--", @mobID, .@mobCount, Instance_Npcname("CD_Instance", .@id)+"::OnMobDead");
+	}
+
+	set 'CD_Mobs, .@i;
+	return .@i;
+}

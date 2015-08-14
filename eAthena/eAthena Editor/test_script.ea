@@ -1,0 +1,17 @@
+﻿// test
+/* test 2 */
+/* test 3
+   bla
+   */
+
+
+if (moep || bla || false || true) { bla }
+else if (((lol) & 1 || (true) && (false))) {
+	// laeuft
+}
+
+// meep
+
+function	script	name	{
+	// function matched
+}

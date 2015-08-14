@@ -1,0 +1,97 @@
+-	script	EAchieveEvent	-1,{
+OnWhisperGlobal:
+
+	// testing
+	set .@id, atoi( @whispervar0$ );
+	set .@type, atoi( @whispervar1$ );
+	ClearArray( .@Achieve$[ 0 ], 0, ACHIEVE_RECEIVEID );
+	DispBottom( "search Achieve: ID[" + @whispervar0$ + "] Type[" + @whispervar1$ + "]" );
+	GetAchieveInArray( .@Achieve$, .@id, .@type );
+	if( atoi( .@Achieve$[ ACHIEVE_ID ] ) == 0 ) {
+		DispBottom( "AchieveID from Array is Empty?" );
+		end;
+	}
+
+	// test func also
+	set .@AchieveName$, GetAchieveName( .@id, .@type );
+	set .@AchieveCutin$, GetAchieveCutin( .@id, .@type );
+
+	DispBottom( "------ Achievement Debug ------" );
+	DispBottom( "ID: " + .@Achieve$[ ACHIEVE_ID ] );
+	DispBottom( "Type: " + .@Achieve$[ ACHIEVE_TYPE ] );
+	DispBottom( "Name (Array): " + .@Achieve$[ ACHIEVE_NAME ] );
+	DispBottom( "Name (Func): " + .@AchieveName$ );
+	DispBottom( "Name Cutin (Array): " + .@Achieve$[ ACHIEVE_NAMECUTIN ] );
+	DispBottom( "Name Cutin (Func): " + .@AchieveCutin$ );
+	DispBottom( "Description: " + .@Achieve$[ ACHIEVE_DESCRIPTION ] );
+	DispBottom( "RequireID: " + .@Achieve$[ ACHIEVE_REQUIREID ] );
+	DispBottom( "ReceiveID: " + .@Achieve$[ ACHIEVE_RECEIVEID ] );
+	DispBottom( "------------------------------------" );
+
+	if(.@AchieveCutin$ != ""){
+		Cutin( .@AchieveCutin$, 4 );
+	}
+
+	SpecialEffect2( 8 );
+	SpecialEffect2( 6 ); 
+
+	end;
+
+
+
+// triggers on finishing an Achieve
+// @AchieveID		contains the IDe of the Achieve
+// @AchieveType		contains the Type of the Achieve
+OnFinish:
+	set .@AchieveName$, GetAchieveName( @AchieveID, @AchieveType );
+	set .@AchieveCutin$, GetAchieveCutin( @AchieveID, @AchieveType );
+	if( .@AchieveName$ == "NULL" ) {
+		DebugMes( "AchieveEvent::OnFinish: AchieveName is NULL? ID[" + @AchieveID + "] Type[" + @AchieveType + "]" );
+		end;
+	}
+	if( .@AchieveCutin$ == "NULL" ) {
+		DebugMes( "AchieveEvent::OnFinish: AchieveCutin is NULL? ID[" + @AchieveID + "] Type[" + @AchieveType + "]" );
+		end;
+	}
+
+	if (GMLevel == 99) {
+		Announce("[Achievement] " + StrCharInfo( 0 ) + " finished \"" + .@AchieveName$ + "\"!", BC_SELF, "0x0086BFD9", 400, 15);
+	} else {
+		Announce("[Achievement] " + StrCharInfo( 0 ) + " finished \"" + .@AchieveName$ + "\"!", bc_all, "0x0086BFD9", 400, 15);
+	}
+
+	SpecialEffect2( 8 );
+	SpecialEffect2( 6 ); 
+
+	if(.@AchieveCutin$ != ""){
+		Cutin( .@AchieveCutin$, 4 );
+
+		sleep2( 10000 ); // quick, dirty but should work
+		Cutin( "", 255 );
+	}
+
+	end;
+
+
+// DEVELOPEMENT ONLY (?)
+// triggers on updating an Achieve [disabled now]
+// @AchieveID		contains the IDe of the Achieve
+// @AchieveType		contains the Type of the Achieve
+// @AchieveCount	contains the Count of Updates
+// @AchieveNow		contains the needed Count
+OnUpdate:
+	set .@AchieveName$, GetAchieveName( @AchieveID, @AchieveType );
+	set .@AchieveCutin$, GetAchieveCutin( @AchieveID, @AchieveType );
+	if( .@AchieveName$ == "NULL" ) {
+		DebugMes( "AchieveEvent::OnUpdate: AchieveName is NULL? ID[" + @AchieveID + "] Type[" + @AchieveType + "]" );
+		end;
+	}
+	if( .@AchieveCutin$ == "NULL" ) {
+		DebugMes( "AchieveEvent::OnUpdate: AchieveCutin is NULL? ID[" + @AchieveID + "] Type[" + @AchieveType + "]" );
+		end;
+	}
+
+	DispBottom( "Achievement Update [" + .@AchieveName$ + "] by " + @AchieveCount + " [" + @AchieveNow + "]" );
+	end;
+}
+

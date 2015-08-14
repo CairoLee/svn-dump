@@ -1,0 +1,71 @@
+	
+-	script	ELoginEvent	-1,{
+OnWhisperGlobal:
+	if (GMlevel != 99) {
+		end;
+	}
+
+	DispBottom("OnlineTime: " + OnlineTime);
+	DispBottom("Online now: " + (GetTimeTick(2) - LoginTimeToday));
+	end;
+
+OnPCLogoutEvent:	
+	Query_SQL("UPDATE `char` SET `online` = 0 WHERE char_id = " + GetCharID(0));
+	if (LoginTimeToday > 0) {
+		set OnlineTime, OnlineTime + (GetTimeTick(2) - LoginTimeToday);
+	}
+	end;
+
+OnPCLoginEvent:
+	Query_SQL("UPDATE `char` SET `online` = 1 WHERE char_id = " + GetCharID(0));
+
+	set .@doubleIPFound, Query_SQL("SELECT l.`account_id`, c.`name` FROM `login` AS l, `char` AS c WHERE c.`account_id` = l.`account_id` AND c.`online` = 1 AND l.`double_login_allowed` = 0 AND l.`account_id` != '" + GetCharID(3) + "' AND l.`last_ip` = '" + GetIP() + "'", .@account_id, .@name$);
+	if (.@doubleIPFound > 0) {
+		mes "[^ff0000BlubbRO^000000]";
+		mes "Der Charakter '" + .@name$[0] + "' ist mit der selben IP online wie Du!";
+		mes "Bitte beantrage im Forum";
+		mes "eine 'Doppel-IP Login'-Erlaubnis,";
+		mes "um in einem Netzwerk mit mehreren Benutzern spielen zu können.";
+		close2;
+		AtCommand("@kick " + .@name$[0]);
+		AtCommand("@kick " + StrCharInfo(0));
+		end;
+	}
+
+	set LoginTimeToday, GetTimeTick(2);
+
+	if (!#First_login && GMLevel == 0) {
+		Announce("BlubbRO Info: Let's welcome our new player "+StrCharInfo(0)+"!", bc_blue|bc_all);
+
+		SpecialEffectMvP(); // display MvP effect :D
+		set #First_login, 1;
+		GetItem(601, 50);
+		GetItem(602, 10);
+		GetItem(569, 1000);
+		set Zeny, Zeny + 25000;
+		mes "[^ff0000BlubbRO^000000]";
+		mes "Welcome to BlubbRO!";
+		mes "You got a few presents to make your start on BlubbRO easier.";
+		mes "^00aa00The BlubbRO team wishes you lots of fun!^000000";
+		close2;
+	}
+		
+	if (#First_login == 0) {
+		set #First_login, 1;
+	}
+	
+	//AchieveAddID(1337); // get special achieve: Logon on BlubbRO
+	
+
+	// auto commands
+	if (GMLevel == 99) {
+		AtCommand("@main on");
+		AtCommand("@battleignore");
+		AtCommand("@speed 10");
+	} else {
+		AtCommand("@main on");
+		AtCommand("@autoloot 100");
+	}
+
+	end;
+}

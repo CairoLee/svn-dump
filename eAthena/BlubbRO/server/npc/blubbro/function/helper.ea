@@ -1,0 +1,249 @@
+
+// [GodLesZ] global helper functions
+
+
+/// F_ArraySearch( <needle>, <"@ArrayToSearch">, <StartIndex>, <MaxSearch> );
+function	script	F_ArraySearch	{
+	set .@Needle, getArg(0, 0);
+	set .@ArrayName$, GetArg(1, "");
+	set .@ArrayPointer$, GetD(.@ArrayName$);
+	set .@len, GetArg(3, -1);
+	if (.@len == -1) {
+		set .@len, GetArraySize(.@ArrayPointer$);
+	}
+
+	for (set .@i, GetArg(2, 0); .@i < .@len; set .@i, .@i + 1) {
+		if (GetD(.@ArrayName$ + "[" + .@i + "]" ) == .@Needle) {
+			return .@i;
+		}
+	}
+	return -1;
+}
+/// F_ArraySearchS(<needle>, <"@ArrayToSearch$">, <StartIndex>, <MaxSearch>);
+function	script	F_ArraySearchS	{
+	set .@Needle$, getArg(0, "");
+	set .@ArrayName$, GetArg(1, "");
+	set .@ArrayPointer$, GetD(.@ArrayName$);
+	set .@len, GetArg(3, -1);
+	if (.@len == -1) {
+		set .@len, GetArraySize(.@ArrayPointer$);
+	}
+
+	for (set .@i, GetArg(2, 0); .@i < .@len; set .@i, .@i + 1) {
+		if (GetD(.@ArrayName$ + "[" + .@i + "]" ) == .@Needle$) {
+			return .@i;
+		}
+	}
+	return -1;
+}
+
+
+/// F_FloatNumber(<integer value>, <decimals>[, <"seperator">]);
+/// Displays a number in a float-style
+///
+/// F_FloatNumber(10000, 2, "."); // will return: 100.00
+function	script	F_FloatNumber	{
+	set .@number, GetArg(0, 0);
+	set .@number$, .@number;
+	set .@decimals, GetArg(1, 0);
+	set .@seperator$, GetArg(2, ",");
+	if (.@decimals == 0) {
+		return .@number$;
+	}
+
+	set .@numLen, CallFunc("_F_NumberLength", .@number);
+	if (.@numLen <= .@decimals) {
+		if (.@number == 0) {
+			return "0" + .@seperator$ + CallFunc( "F_StringRepeat", "0", .@decimals );
+		} else if (.@numLen < .@decimals) {
+			return "0" + .@seperator$ + CallFunc( "F_StringRepeat", "0", .@decimals - .@numLen ) + .@number$;
+		}
+
+		set .@return$, "0" + .@seperator$ + .@number$;
+		if ((.@decimals - .@numLen) > 0) {
+			set .@return$, .@return$ + CallFunc( "F_StringRepeat", "0", .@decimals - .@numLen );
+		}
+		return .@return$;
+	}
+
+	set .@divisor, Pow(10, .@decimals); // 2 decimals = 100
+	set .@prefix$, .@number / .@divisor; // 500 & 2 => 5
+	
+	return .@prefix$ + .@seperator$ + SubStr(.@number$, GetStrLen(.@prefix$), .@numLen - 1) + CallFunc("F_StringRepeat", "0", .@decimals - .@numLen);
+}
+
+
+
+/// F_StringRepeat(<"string to repeat">, <repeat_time>);
+/// Repeats the string <repeat_time> time's.
+function	script	F_StringRepeat	{
+	set .@str$, GetArg(0, "");
+	set .@len, GetArg(1, 0);
+	if (.@len == 0 || .@str$ == "") {
+		return "";
+	}
+
+	set .@return$, "";
+	for (set .@i, 0; .@i < .@len; set .@i, .@i + 1 ) {
+		set .@return$, .@return$ + .@str$;
+	}
+	
+	return .@return$;
+}
+
+
+/// F_FormatNumber(<integer value>);
+/// Formats the given number with thousand sepeators
+/// 
+/// F_FormatNumber(100000000); // will return: 100.000.000
+function	script	F_FormatNumber	{
+	set .@number, GetArg(0, 0);
+	if (.@number == 0) {
+		return 0;
+	}
+	
+	set .@numberLength, CallFunc("_F_NumberLength", .@number);
+	if (.@numberLength < 4) {
+		return .@number;
+	}
+
+	// 1.000 - 100.000
+	if (.@numberLength > 3 && .@numberLength < 7) {
+		set .@part_1, .@number / 1000;
+		set .@part_2, .@number - ( .@part_1 * 1000 );
+		if (.@part_2 == 0) {
+			set .@number$, .@part_1 + ".000";
+		} else {
+			set .@number$, .@part_1 + "." + .@part_2;
+		}
+		return .@number$;
+	} 
+	
+	// 1.000.000 - 100.000.000
+	if (.@numberLength > 6 && .@numberLength < 10) {
+		set .@part_1,.@number / 1000000;
+		set .@part_2, (.@number - (.@part_1 * 1000000)) / 1000;
+		set .@part_3,.@number - (.@part_2 * 1000) - (.@part_1 * 1000000);
+		set .@part_1$, .@part_1;
+		set .@subLength2, CallFunc("_F_NumberLength", .@part_2);
+		set .@subLength3, CallFunc("_F_NumberLength", .@part_3);
+
+		if (.@part_2 == 0) {
+			set .@part_2$, "000"; 
+		} else if (.@subLength2 < 3) {
+			if (.@subLength2 == 2) {
+				set .@part_2$, "0" + .@part_2;
+			} else {
+				set .@part_2$, "00" + .@part_2;
+			}
+		} else {
+			set .@part_2$, .@part_2; 
+		}
+
+		if (.@part_3 == 0) {
+			set .@part_3$, "000"; 
+		} else if (.@subLength3 < 3) {
+			if (.@subLength3 == 2) {
+				set .@part_3$, "0" + .@part_3;
+			} else {
+				set .@part_3$, "00" + .@part_3;
+			}
+		} else {
+			set .@part_3$, .@part_3;
+		}
+
+		return .@part_1$ + "." + .@part_2$ + "." + .@part_3$;
+	}
+	
+	// 1.000.000.000+
+	set .@part_1, .@number / 1000000000;
+	set .@part_2, (.@number - (.@part_1 * 1000000000)) / 1000000;
+	set .@part_3, (.@number - (.@part_2 * 1000000) - (.@part_1 * 1000000000)) / 1000;
+	set .@part_4, .@number - (.@part_3 * 1000) - (.@part_2 * 1000000) - (.@part_1 * 1000000000);
+	set .@part_1$, .@part_1;
+	set .@subLength2, CallFunc("_F_NumberLength", .@part_2);
+	set .@subLength3, CallFunc("_F_NumberLength", .@part_3);
+	set .@subLength4, CallFunc("_F_NumberLength", .@part_4);
+
+	if (.@part_2 == 0) {
+		set .@part_2$, "000"; 
+	} else if (.@subLength2 < 3) {
+		if ( .@subLength2 == 2) {
+			set .@part_2$, "0" + .@part_2;
+		} else {
+			set .@part_2$, "00" + .@part_2;
+		}
+	} else {
+		set .@part_2$, .@part_2; 
+	}
+
+	if (.@part_3 == 0) {
+		set .@part_3$, "000"; 
+	} else if (.@subLength3 < 3) {
+		if(.@subLength3 == 2) {
+			set .@part_3$, "0" + .@part_3;
+		} else {
+			set .@part_3$, "00" + .@part_3;
+		}
+	} else {
+		set .@part_3$, .@part_3;
+	}
+
+	if (.@part_4 == 0) {
+		set .@part_4$, "000"; 
+	} else if (.@subLength4 < 3) {
+		if(.@subLength4 == 2) {
+			set .@part_4$, "0" + .@part_4;
+		} else {
+			set .@part_4$, "00" + .@part_4;
+		}
+	} else {
+		set .@part_4$, .@part_4;
+	}
+
+	return .@part_1$ + "." + .@part_2$ + "." + .@part_3$ + "." + .@part_4$;
+}
+
+/// _F_NumberLength(<integer value>);
+/// Smply returns the length of the number
+/// 
+/// _F_NumberLength(1000); // will return: 4
+function	script	_F_NumberLength	{
+	set .@Number, GetArg(0, 0);
+	if (.@Number == 0) {
+		return 0;
+	}
+	// avoid overflow warning..
+	if(.@Number >= 1000000000) {
+		return 10;
+	}
+
+	set .@NumSize, 0;
+	for (set .@i, 1; .@i < 1000000000; set .@i, .@i * 10) {
+		if ((.@Number / .@i) < 1) {
+			break;
+		}
+		set .@NumSize, .@NumSize + 1;
+	}
+	return .@NumSize;
+}
+
+
+
+
+/// F_SearchStorage(512); // return -1 if not found, else the amount
+function	script	F_SearchStorage	{
+	set .@ItemID, GetArg(0, 0);
+	set .@start, 0;
+	do {
+		set .@StorageCount, GetStorage(GetCharID(0), .@start);
+		for (set .@i, 0; .@i < .@StorageCount; set .@i, .@i + 1) {
+			if (@StorageItemID[.@i] == .@ItemID) {
+				return .@StorageItemAmount[.@i];
+			}
+		}
+		set .@start, .@start + .@StorageCount;
+	} while(.@StorageCount > 0);
+
+	return -1;
+}

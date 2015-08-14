@@ -1,0 +1,216 @@
+// Do attachrid to all players.
+// callfunc "attach_all", "<npc::OnEvent"> or <function>.
+// Return the online players amount.
+function	script	attach_all	{
+
+	while ( ( .@a + 2000000 ) < 2010000 ) {
+		if ( attachrid ( .@a + 2000000 ) ) {
+			set .@b, .@b + 1;
+			if ( compare ( getarg ( 1 ), "On" ) )
+				doevent getarg ( 1 ) ;
+			else
+				callfunc getarg ( 1 ) ;
+		}
+		set .@a, .@a + 1;
+		if ( playerattached ( ) ) sleep2 ( ! ( .@a % 200 ) ) ;
+		else sleep ( ! ( .@a % 200 ) ) ;
+	}
+	return .@b ;
+}
+
+// callfunc "change_pos", <array>, <1= raise 2= lower>, <position to raise/lower>;
+// i.e:
+// array .X = 5,9,11;
+// callfunc "change_pos", .X, 1, 2 ; -> .X = 5,11,9.
+// return -1 if there was any error (lower latest, raise first...).
+function	script	change_pos	{
+
+	if ( ( getarg ( 1 ) == 0 && getarg ( 2 ) == 1 ) || ( getarg ( 1 ) == ( getarraysize ( getarg ( 0 ) ) - 1 ) && getarg ( 2 ) == 2 ) ) return -1;
+	set .@a, getelementofarray ( getarg ( 0 ), getarg ( 1 ) );
+	set .@b, getelementofarray ( getarg ( 0 ), getarg ( 1 ) + ( ( getarg ( 2 ) == 1 ) ? -1 : 1 ) );
+	set getelementofarray ( getarg ( 0 ), getarg ( 1 ) + ( ( getarg ( 2 ) == 1 ) ? -1 : 1 ) ), .@a;
+	set getelementofarray ( getarg ( 0 ), getarg ( 1 ) ), .@b;
+	return ;
+}
+
+// callfunc "dyamic_menu", {<"{option or array}"[...]>}, {<gm level[...]>};
+// returns the menu choosen.
+
+function	script	dynamic_menu	{
+
+	if ( getd ( getarg ( 0 ) +"[0]" ) ) {
+		set .@c, callfunc ( "is_int", getd ( getarg ( 0 ) +"[0]" ) );
+		set .@b, 1;
+	}
+	for ( ; ( ( .@b ) ? getelementofarray ( getarg ( 0 ), .@a ) : getarg ( .@a, ( ( .@c ) ? "" : 0 ) ) ) ; set .@a, .@a + 1 )
+		if ( getgmlevel ( ) >= getarg ( .@a + 1 ) &&  ! .@c )
+			set .@menu$, .@menu$ + ( ( .@b ) ? getelementofarray ( getarg ( 0 ), .@a ) : getarg ( .@a, "" ) ) +":";
+	return select ( .@menu$ ) ;
+}
+
+// callfunc "get_bitvar", "variable", <value>.
+// returns 1 if the var has a value.
+function	script	get_bitvar	{
+
+	if ( getd ( getarg ( 0 ) +""+ ( getarg ( 1, 0 ) / 31 ) ) & ( 1 << ( getarg ( 1 ) % 31 ) ) )
+		set .@a, 1;
+	return .@a ;
+}
+
+// callfunc "get_decimal", dividend, divisor, decimales to get.
+// returns the final result and decimals.
+function	script	get_decimal	{
+
+	setarray .@a[0], getarg ( 0 ), getarg ( 1 );
+	set .@a, .@a[0] / .@a[1];
+	set .@b, .@a[0] % .@a[1];
+	while ( .@d < getarg ( 2, 1 ) ) {
+		set .@d, .@d + 1;
+		if ( .@d > 1 ) set .@b, .@b % .@a[1];
+		if ( .@b ) {
+			while ( .@b < .@a[1] )
+				set .@b, .@b * 10;
+			set .@c, .@b / .@a[1];
+			set .@a$, .@a +","+ .@c;
+		}
+		else break ;
+	}
+	if ( .@a$ == "" ) set .@a$, .@a;
+	return .@a$;
+}
+
+// callfunc "is_int", <var>;
+// returns 1 if the value is int.
+function	script	is_int	{
+
+	return ( getarg ( 0 ) == ( getarg ( 0 ) + 00 ) ) ;
+}
+
+// callfunc "is_map", "<map>";
+// returns 1 if the map is a real map.
+function	script	is_map	{
+
+	return ( getmapmobs ( getarg ( 0 ) ) >= 0 ) ;
+
+}
+
+// callfunc "is_sql";
+// returns 1 if the server is sql.
+// (Extracted from PollSystem).
+function	script	is_sql	{
+
+	return ( query_sql ( "select 1", .@a ) > 0 ) ;
+}
+
+// callfunc "rand_color";
+// returns a hex rand color code.
+function	script	rand_color	{
+
+	setarray .@base$[0], "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F";
+	while ( getstrlen ( .@a$ ) < 6 )
+		set .@a$, .@a$ + .@base$[rand ( getarraysize ( .@base$ ) )];
+	return .@a$ ;
+}
+
+// callfunc "remove_mapflags","<map>", <mapflag>{...}
+function	script	remove_mapflags	{
+
+	for ( set .@a, 1; getarg ( .@a, 999 ) != 999 ; set .@a, .@a + 1 )
+		if ( getd ( "$@mapflag"+ getarg ( .@a ) +"_"+ getarg ( 0 ) ) )
+			removemapflag getarg ( 0 ), getarg ( .@a );
+	return ;
+}
+
+// callfunc "set_bitvar", "variable", <value>.
+function	script	set_bitvar	{
+
+	if ( getd ( getarg ( 0 ) +""+ ( getarg ( 1, 0 ) / 31 ) ) &~ ( 1 << ( getarg ( 1 ) % 31 ) ) )
+		setd getarg ( 0 ) +""+ ( getarg ( 1, 0 ) / 31 ), getd ( getarg ( 0 ) +""+ ( getarg ( 1, 0 ) / 31 ) ) + ( 1 << ( getarg ( 1 ) % 31 ) );
+	return ;
+}
+
+// callfunc "random_array", <array>.
+function	script	random_array	{
+
+	for ( ; .@a < getarraysize ( getarg ( 0 ) ) ; set .@a, .@a + 1 )
+		set .@b[.@a], getelementofarray ( getarg ( 0 ), .@a );
+	for ( set .@a, 0; .@a < getarraysize ( getarg ( 0 ) ) ; set .@a, .@a + 1 ) {
+		set .@c, rand ( getarraysize ( .@b ) );
+		set getelementofarray ( getarg ( 0 ), .@a ), .@b[.@c];
+		deletearray .@b[.@c], 1 ;
+		if ( playerattached ( ) ) sleep2 ( ! ( .@a % 100 ) ) ;
+		else sleep ( ! ( .@a % 100 ) ) ;
+	}
+	return ;
+}
+
+// callfunc "search_array", "<array>", <place to start>, <value to search>.
+// returns the position that has the value.
+// returns -1 if the array hasn't the value.
+function	script	search_array	{
+
+	for ( set .@a, getarg ( 1, 0 ) ; .@a < getarraysize ( getd ( getarg ( 0 ) ) ) ; set .@a, .@a + 1 )
+		if ( getd ( getarg ( 0 ) +"["+ .@a +"]" ) == getarg ( 2 ) ) return .@a;
+	return -1 ;
+}
+
+// callfunc "set_mapflags","<map>", {<mapflag>[...]};
+function	script	set_mapflags	{
+
+	for ( set .@a, 1; getarg ( .@a, 999 ) != 999 ; set .@a, .@a + 1 )
+		if ( ! getmapflag ( getarg ( 0 ), getarg ( .@a ) ) ) {
+			setmapflag getarg ( 0 ), getarg ( .@a ) ;
+			setd "$@mapflag"+ getarg ( .@a ) +"_"+ getarg ( 0 ), 1;
+		}
+	return ;
+}
+
+// callfunc "show_hat", <id>.
+function	script	show_hat	{
+
+	set .@equip, getiteminfo ( getarg ( 0 ), 5 );
+	set .@view, getiteminfo ( getarg ( 0 ), 11 );
+	setarray .@a[1], 9, 8;
+	setarray @a[1], getlook ( 3 ), getlook ( 4 ), getlook ( 5 );
+	if ( .@equip >= 0 && .@view > 0 )
+		for ( set .@b, 1; .@b < 3 ; set .@b, .@b + 1 )
+			if ( .@equip & ( 1 << .@a[.@b] ) )
+				changelook 2 + .@b, .@view;
+	addtimer 5000, "show_hat_2::OnRemove" ;
+	return ;
+}
+
+-	script	show_hat_2	-1,{
+
+OnRemove:
+
+	for ( set .@a, 1; .@a <= 3 ; set .@a, .@a + 1 )
+		changelook 2 + .@a, @a[.@a];
+
+}
+
+// callfunc "sort_array", <array>, <0 = DESC 1 = ASC>;
+// ASC = 1, 2, 3. DESC = 3,2,1.
+
+function	script	sort_array	{
+
+	set .@a, getarg ( 1, -1 );
+	for ( set .@b, 0; .@b < getarraysize ( getarg ( 0 ) ) ; set .@b, .@b + 1 ) {
+		for ( set .@c, 0; .@c < getarraysize ( getarg ( 0 ) ) ; set .@c, .@c + 1 )
+			if ( ( getelementofarray ( getarg ( 0 ), .@b ) * .@a ) < ( getelementofarray ( getarg ( 0 ), .@c ) * .@a ) )
+				callfunc "swap_var", getelementofarray ( getarg ( 0 ), .@b ), getelementofarray ( getarg ( 0 ), .@c  );
+		if ( playerattached ( ) ) sleep2 ( ! ( .@b % 100 ) ) ;
+		else sleep ( ! ( .@b % 100 ) ) ;
+	}
+	return ;
+}
+
+// callfunc "swap_var", <variable 1>, <variable 2>;
+// I dunno if this works with strings :P
+function	script	swap_var	{
+
+	set getarg ( 0 ), getarg ( 0 ) + getarg ( 1 );
+	set getarg ( 1 ), getarg ( 0 ) - getarg ( 1 );
+	set getarg ( 0 ), getarg ( 0 ) - getarg ( 1 );
+	return ;
+}

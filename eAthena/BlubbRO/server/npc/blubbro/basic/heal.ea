@@ -1,0 +1,90 @@
+gonryun,154,117,5	script	Healer#h1-1::Healer	742,{
+	set .@npcname$, "[^FF0000Healer^000000]";
+
+	if (Baselevel >= 80) {
+		mes .@npcname$;
+		mes "Du bist schon level " + Baselevel + " & bekommst keinen Heal mehr.";
+		close;
+	}
+
+	if (GetTime(8) != SPHealDOY) {
+		set SPHealDOY, GetTime(8);
+		set SPHealCount, 0;
+	}
+
+	sc_end sc_stone;		// Stone Curse
+	sc_end sc_freeze;		// Freeze
+	sc_end sc_sleep;		// Sleep
+	sc_end sc_curse;		// Curse
+	sc_end sc_silence;		// Silence
+	sc_end sc_confusion;	// Confusion
+	sc_end sc_blind;		// Blind
+	sc_end sc_bleeding;		// External Bleeding
+	sc_end sc_stop;			// Stop
+	sc_end sc_hallucination;// Hallucination
+	sc_end sc_poison;		// Poisoned (not EDP or Enchant Poison)
+	sc_end sc_slowdown;		// Slow (Cursed Abbey Slow status)
+	sc_end sc_decreaseagi;	// Decrease Agility
+	sc_end sc_orcish;		// Orc Face
+
+	mes .@npcname$;
+	mes "Heilung bis Level: 80";
+	mes "Heilung ^FF0000HP^000000 / Tag: unbegrenzt";
+	mes "Heilung ^0000FFSP^000000 / Tag: " + SPHealCount + " / 5";
+	mes "";
+	if (SPHealCount >= 5) {
+		mes "^FF0000Deine HP wurden geheilt^000000!";
+		mes "SP-Heilung ist erst Morgen wieder verfügbar.";
+		set @menu, 1;
+	} else {
+		mes "Was für einen Heal möchtest Du?";
+		Select("nur ^FF0000HP^000000", "nur ^0000FFSP (noch " + (5 - SPHealCount) + " mal)^000000", "^FF0000HP^000000 und ^0000FFSP (noch " + (5 - SPHealCount) + " mal)^000000");
+	}
+
+	if (@menu == 1) {
+		// HP
+		percentheal 100, 0;
+	} else if (@menu == 2) {
+		// SP
+		set SPHealCount, SPHealCount + 1;
+		percentheal 0, 100;
+	} else if (@menu == 3) {
+		// HP + SP
+		set SPHealCount, SPHealCount + 1;
+		percentheal 100, 100;
+	}
+
+	close2;
+
+	sc_start SC_BLESSING, 600000, 10;
+	sc_start SC_INCREASEAGI, 600000, 10;
+	end;
+	
+}
+
+//gonryun,222,134,5	duplicate(Healer)	Healer#h1-13	742
+alberta,113,53,5	duplicate(Healer)	Healer#h1-7	742
+aldebaran,135,122,5	duplicate(Healer)	Healer#h1-8	742
+amatsu,208,94,3	duplicate(Healer)	Healer#h1-12	742
+ayothaya,154,120,4	duplicate(Healer)	Healer#h1-3	742
+bat_room,160,147,6	duplicate(Healer)	Healer#hl-25	742
+comodo,192,156,4	duplicate(Healer)	Healer#h1-11	742
+einbech,192,142,3	duplicate(Healer)	Healer#h1-20	742
+einbroch,248,210,3	duplicate(Healer)	Healer#h1-18	742
+einbroch,54,199,6	duplicate(Healer)	Healer#h1-18-1	742
+geffen,111,66,5	duplicate(Healer)	Healer#h1-4	742
+hugel,102,151,2	duplicate(Healer)	Healer#h1-21	742
+izlude,125,118,5	duplicate(Healer)	Healer#h1-9	742
+lighthalzen,154,100,7	duplicate(Healer)	Healer#h1-19	742
+louyang,225,103,5	duplicate(Healer)	Healer#h1-16	742
+morocc,161,97,5	duplicate(Healer)	Healer#h1-2	742
+moscovia,213,193,5	duplicate(Healer)	Healer#h1-24	742
+niflheim,188,180,5	duplicate(Healer)	Healer#h1-15	742
+payon,168,230,3	duplicate(Healer)	Healer#h1-6-2	742
+payon,180,105,5	duplicate(Healer)	Healer#h1-6	742
+prontera,153,200,5	duplicate(Healer)	Healer#h1-17	742
+rachel,105,134,5	duplicate(Healer)	Healer#h1-22	742
+umbala,94,162,5	duplicate(Healer)	Healer#h1-5	742
+veins,212,140,5	duplicate(Healer)	Healer#h1-23	742
+xmas,149,136,5	duplicate(Healer)	Healer#h1-10	742
+yuno,154,186,5	duplicate(Healer)	Healer#h1-14	742

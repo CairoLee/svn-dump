@@ -1,0 +1,98 @@
+
+
+-	script	test	-1,{
+
+OnWhisperGlobal:
+	// Dmglog test
+	set .@dmgCount, GetDmgLog();
+	if (.@dmgCount == 0) {
+		DispBottom("No dmg in the log yet");
+		end;
+	}
+	DispBottom("Types: Player[" + 0x001 + "], Mob[" + 0x002 + "], Pet[" + 0x004 + "], Homu[" + 0x008 + "], Merc[" + 0x010 + "]");
+
+	for (set .@i, 0; .@i < .@dmgCount; set .@i, .@i + 1) {
+		DispBottom("[" + .@i + "] ID: " + @dmglog_id[.@i]);
+		DispBottom("[" + .@i + "] Src type: " + @dmglog_type[.@i]);
+		DispBottom("[" + .@i + "] Dmg: " + @dmglog_dmg[.@i]);
+		DispBottom("--------------------------------------------------------");
+	}
+
+	end;
+
+/*
+	// Script mod test..
+	.@i = 1337;
+	mes ".@i: " + .@i;
+	.@i += 1;
+	mes ".@i += 1: " + .@i;
+	.@i -= 2;
+	mes ".@i -= 2: " + .@i;
+	.@i *= 3;
+	mes ".@i *= 3: " + .@i;
+	.@i /= 1;
+	mes ".@i /= 2: " + .@i;
+	mes "loop test..";
+
+	set .@old, 0;
+	for(.@i = 0; .@i < 10; .@i += 10) {
+		mes "Step #" + .@old + " - .@i: " + .@i;
+		set .@old, .@old + 1;
+	}
+	
+	mes "after loop - .@i: " + .@i;
+	close;
+
+
+	// ViewID test
+	/*
+	.@npcname$ = "[^FF0000ViewID fake test^000000]";
+
+	mes .@npcname$;
+	mes "TopID: " + GetLook(LOOK_HEAD_TOP);
+	input(.@id);
+	SetLook(LOOK_HEAD_TOP, .@id);
+	mes "MidID: " + GetLook(LOOK_HEAD_MID);
+	input(.@id);
+	SetLook(LOOK_HEAD_MID, .@id);
+	mes "LowID: " + GetLook(LOOK_HEAD_BOTTOM);
+	input(.@id);
+	SetLook(LOOK_HEAD_BOTTOM, .@id);
+	close,
+	*/
+
+
+	// GetStorage() test
+	/*
+	.@start = 0;
+	do {
+		.@StorageCount = GetStorage(GetCharID(0), .@start);
+		mes "Found: " + .@StorageCount;
+		for (.@i = 0; .@i < .@StorageCount; set .@i, .@i + 1) {
+			mes "ItemID["+.@i+"]: " + @StorageItemID[.@i];
+		}
+		set .@start, .@start + .@StorageCount;
+	} while(.@StorageCount > 0);
+	*/
+
+	// SetP test
+	/*
+	mes "[^FF0000SetP Test^000000]";
+	mes "Dein SETPTEST: " + SETPTEST;
+	mes "Spielername zum testen:";
+	input(.@name$);
+	.@cid = GetCharID(0, .@name$);
+	if (.@cid == 0) {
+		mes "^FF0000Spieler '" + .@name$ + "' nicht gefunden?^000000";
+		close;
+	}
+	mes "setze Wert auf:";
+	input(.@test);
+
+	SetP(.@cid, SETPTEST, .@test);
+	mes .@name$ + "'s SETPTEST: " + GetP(.@cid, SETPTEST);
+
+	close;
+	*/
+}
+

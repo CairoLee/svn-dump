@@ -1,0 +1,54 @@
+//==================================================
+// pvp_dun01 - Ebene 1
+//==================================================
+pvp_dun01,0,0,0,0	monster	Fallen Novice	3026,8,0,0,0
+pvp_dun01,0,0,0,0	monster	Fallen Baby Knight	3027,4,0,0,0
+pvp_dun01,0,0,0,0	monster	Fallen Baby Priest	3028,5,0,0,0
+pvp_dun01,0,0,0,0	monster	Fallen Baby Wizard	3029,4,0,0,0
+pvp_dun01,0,0,0,0	monster	Fallen Baby Blacksmith	3030,5,0,0,0
+pvp_dun01,0,0,0,0	monster	Fallen Baby Hunter	3031,4,0,0,0
+pvp_dun01,0,0,0,0	monster	Fallen Baby Assassin	3032,5,0,0,0
+pvp_dun01,0,0,0,0	monster	Fallen Baby Crusader	3033,4,0,0,0
+pvp_dun01,0,0,0,0	monster	Fallen Baby Monk	3034,5,0,0,0
+pvp_dun01,0,0,0,0	monster	Fallen Baby Sage	3035,4,0,0,0
+pvp_dun01,0,0,0,0	monster	Fallen Baby Rogue	3036,5,0,0,0
+pvp_dun01,0,0,0,0	monster	Fallen Baby Alchemist	3037,4,0,0,0
+pvp_dun01,0,0,0,0	monster	Fallen Baby Barde	3038,5,0,0,0
+pvp_dun01,0,0,0,0	monster	Fallen Baby Dancer	3039,4,0,0,0
+pvp_dun01,0,0,0,0	monster	Fallen Super Baby	3040,1,5,10,0
+
+//==================================================
+// pvp_dun02 - Ebene 2
+//==================================================
+pvp_dun02,0,0,0,0	monster	Fallen Knight	2615,4,0,0,0
+pvp_dun02,0,0,0,0	monster	Fallen Priest	2616,4,0,0,0
+pvp_dun02,0,0,0,0	monster	Fallen Wizard	2617,4,0,0,0
+pvp_dun02,0,0,0,0	monster	Fallen Blacksmith	2618,5,0,0,0
+pvp_dun02,0,0,0,0	monster	Fallen Hunter	2619,4,0,0,0
+pvp_dun02,0,0,0,0	monster	Fallen Assassin	2620,4,0,0,0
+pvp_dun02,0,0,0,0	monster	Fallen Crusader	2621,4,0,0,0
+pvp_dun02,0,0,0,0	monster	Fallen Monk	2622,4,0,0,0
+pvp_dun02,0,0,0,0	monster	Fallen Sage	2623,4,0,0,0
+pvp_dun02,0,0,0,0	monster	Fallen Rogue	2624,4,0,0,0
+pvp_dun02,0,0,0,0	monster	Fallen Alchemist	2625,4,0,0,0
+pvp_dun02,0,0,0,0	monster	Fallen Barde	2626,4,0,0,0
+pvp_dun02,0,0,0,0	monster	Fallen Dancer	2627,4,0,0,0
+pvp_dun02,0,0,0,0	monster	Fallen Star Gladiator	2642,1,4,10,0
+
+//==================================================
+// pvp_dun03 - Ebene 3
+//==================================================
+pvp_dun03,0,0,0,0	monster	Fallen Lord Knight	2628,8,0,0,0
+pvp_dun03,0,0,0,0	monster	Fallen High Priest	2629,8,0,0,0
+pvp_dun03,0,0,0,0	monster	Fallen High Wizard	2630,8,0,0,0
+pvp_dun03,0,0,0,0	monster	Fallen Whitesmith	2631,8,0,0,0
+pvp_dun03,0,0,0,0	monster	Fallen Sniper	2632,8,0,0,0
+pvp_dun03,0,0,0,0	monster	Fallen Assassin Cross	2633,8,0,0,0
+pvp_dun03,0,0,0,0	monster	Fallen Paladin	2634,8,0,0,0
+pvp_dun03,0,0,0,0	monster	Fallen Champion	2635,8,0,0,0
+pvp_dun03,0,0,0,0	monster	Fallen Professor	2636,8,0,0,0
+pvp_dun03,0,0,0,0	monster	Fallen Stalker	2637,8,0,0,0
+pvp_dun03,0,0,0,0	monster	Fallen Creator	2638,8,0,0,0
+pvp_dun03,0,0,0,0	monster	Fallen Clown	2639,8,0,0,0
+pvp_dun03,0,0,0,0	monster	Fallen Gipsy	2640,8,0,0,0
+pvp_dun03,0,0,0,0	monster	Fallen Gunslinger	2641,1,0,0,0

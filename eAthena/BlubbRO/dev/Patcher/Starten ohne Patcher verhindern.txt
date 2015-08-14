@@ -1,0 +1,5 @@
+- Exe fertig erstellen & patchen
+- an definierten Positionen Bytes entfernen
+- im Patcher den Source der Exe laden, bytes wieder adden & Process starten
+- Datei natürlkich nicht speichern
+- => wer die Änderungen nicht kennt, muss Patcher benutzen

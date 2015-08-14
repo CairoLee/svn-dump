@@ -1,0 +1,63 @@
+SERVER:
+- main-conf(conf/battle/*) editor
+- mapcache explorer (server+client)
+- server-status-anzeige & start/stop funktion
+- step by step server-setup // [GodLesZ] würd ich als einzelnes Tool machen
+
+
+
+CLIENT:
+- grf explorer
+
+
+
+NPC:
+- neuen sprite adden (server+client)
+- shop editor/creator
+- script editor/creator (gabs client seitig quest scheiss?) [die txt's für den Questlog, sonst nichts]
+
+
+
+ITEM:
+- edit (server+client)
+- create (server+client)
+- delete (server+client)
+
+
+
+BOX-ITEM:
+- edit (server+client)
+- create (server+client)
+
+
+
+MOB/PET/HOM:
+- edit (server+client)
+- create (server+client)
+- replace sprite (nicht PET ->is halt n mob<-)
+
+
+
+SKILL:
+- db-edit (server+client)
+- tree-edit (server+client)
+
+
+
+REZEPTE:
+- edit
+- create
+
+
+
+PLAYER(JOB):
+- job boni (/db/job_db.txt)
+- exp table
+- statpoint table
+- element table (/db/attr_fix.txt)
+
+
+
+SPR/ACT/BMP:
+- edit
+- create

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\char_sql\char.c">
+      <Filter>char_sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\char_sql\int_auction.c">
+      <Filter>char_sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\char_sql\int_storage.c">
+      <Filter>char_sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\char_sql\int_quest.c">
+      <Filter>char_sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\char_sql\int_pet.c">
+      <Filter>char_sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\char_sql\int_party.c">
+      <Filter>char_sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\char_sql\int_mercenary.c">
+      <Filter>char_sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\char_sql\int_mail.c">
+      <Filter>char_sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\char_sql\int_homun.c">
+      <Filter>char_sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\char_sql\int_guild.c">
+      <Filter>char_sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\char_sql\inter.c">
+      <Filter>char_sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\core.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\db.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\ers.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\lock.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\malloc.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\mapindex.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\nullpo.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\plugins.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\showmsg.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\socket.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\sql.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\strlib.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\timer.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\utils.c">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\char_sql\char.h">
+      <Filter>char_sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\char_sql\int_storage.h">
+      <Filter>char_sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\char_sql\int_quest.h">
+      <Filter>char_sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\char_sql\int_pet.h">
+      <Filter>char_sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\char_sql\int_party.h">
+      <Filter>char_sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\char_sql\int_mercenary.h">
+      <Filter>char_sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\char_sql\int_mail.h">
+      <Filter>char_sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\char_sql\int_homun.h">
+      <Filter>char_sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\char_sql\int_guild.h">
+      <Filter>char_sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\char_sql\int_auction.h">
+      <Filter>char_sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\char_sql\inter.h">
+      <Filter>char_sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\cbasetypes.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\version.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\core.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\db.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\ers.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\lock.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\malloc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\mapindex.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\mmo.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\nullpo.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\plugin.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\plugins.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\showmsg.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\socket.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\sql.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\strlib.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\timer.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\utils.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{6b095150-c488-48c7-a5a2-3518ec1a2538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="char_sql">
+      <UniqueIdentifier>{7ecaab08-3a46-4cc5-822f-7096e8b1d487}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

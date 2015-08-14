@@ -1,0 +1,28 @@
+-	script	EOnPCKill	-1,{
+
+OnPCKillEvent:
+	end;
+	if (AgitCheck() == 0) {
+		end;
+	}
+	
+	GetMapXY(.@map$, .@x, .@y, 0);
+	set .@guildID, GetCastleData(.@map$, 1);
+	if( .@guildID == 0 )
+		end;
+
+	if (.@guildID == GetCharID(2)) { // my Castle
+		if (IsLoggedIn( killedrid ) && AttachRID( killedrid ) ) {
+			AchieveAdd( TACHIEVE_KILL_PLAYER_CASTLE_OP ); // Killer killed Player in Players Castle [now attached to the Script!]
+		}
+		end;
+	}
+
+	// maybe killers Castle?
+	set .@killerGuildID, GetCharID( 2, killedrid );
+	if( .@killerGuildID == .@guildID ) {
+		AchieveAdd( TACHIEVE_KILL_PLAYER_CASTLE_MY ); // Killer killed Player in Killers Castle
+	}
+	end;
+
+}

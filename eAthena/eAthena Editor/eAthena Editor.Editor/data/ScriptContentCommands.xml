@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ScriptCommandList>
+
+  <!-- Statements -->
+  <ScriptCommand Name="next" NameOptional="">
+    <Description>Display a next button in the npc dialog to clear all messages</Description>
+    <ArgumentList />
+  </ScriptCommand>
+
+  <ScriptCommand Name="close" NameOptional="">
+    <Description>Display a close button in the npc dialog to close it</Description>
+    <ArgumentList />
+  </ScriptCommand>
+
+  <ScriptCommand Name="close2" NameOptional="">
+    <Description>Display a close button in the npc dialog to close it.\nInstead of close command, the script wont be closed and has to be closed by the script command end.</Description>
+    <ArgumentList />
+  </ScriptCommand>
+
+  <ScriptCommand Name="end" NameOptional="">
+    <Description>Ends the script execution of the current npc. An npc dialog, if present wont be closed.</Description>
+    <ArgumentList />
+  </ScriptCommand>
+
+
+  <!-- Commands -->
+  <ScriptCommand Name="mes" NameOptional="">
+    <Description>Prints the message in an npc window</Description>
+    <ArgumentList>
+      <ScriptCommandArgument Name="Message" Type="String" Optional="false">
+        <Description>The message to display</Description>
+      </ScriptCommandArgument>
+    </ArgumentList>
+  </ScriptCommand>
+
+  <ScriptCommand Name="select" NameOptional="">
+    <Description>Prints a menu based on the given arguments and returned the index of the selected option, start by 1.</Description>
+    <ArgumentList>
+      <ScriptCommandArgument Name="Menu option 1" Type="String" Optional="false">
+        <Description>The 1st option in the menu</Description>
+      </ScriptCommandArgument>
+      <ScriptCommandArgument Name="Menu option 2" Type="String" Optional="true">
+        <Description>The 2nd option in the menu</Description>
+      </ScriptCommandArgument>
+    </ArgumentList>
+  </ScriptCommand>
+
+  <ScriptCommand Name="menu" NameOptional="">
+    <Description>Prints a menu based on the given arguments and jumps to the given label, if present</Description>
+    <ArgumentList>
+      <ScriptCommandArgument Name="Menu option 1" Type="String" Optional="false">
+        <Description>The 1st option in the menu</Description>
+      </ScriptCommandArgument>
+      <ScriptCommandArgument Name="Menu label 1" Type="Plain" Optional="false">
+        <Description>The 1st label in the menu, activated after selecting Option 1</Description>
+      </ScriptCommandArgument>
+      <ScriptCommandArgument Name="Menu option 2" Type="String" Optional="true">
+        <Description>The 2nd option in the menu</Description>
+      </ScriptCommandArgument>
+      <ScriptCommandArgument Name="Menu label 2" Type="Plain" Optional="true">
+        <Description>The 2nd label in the menu, activated after selecting Option 2</Description>
+      </ScriptCommandArgument>
+    </ArgumentList>
+  </ScriptCommand>
+
+  <ScriptCommand Name="goto" NameOptional="">
+    <Description>Jumps to the given label</Description>
+    <ArgumentList>
+      <ScriptCommandArgument Name="Label" Type="Plain" Optional="false">
+        <Description>The label to be activated</Description>
+      </ScriptCommandArgument>
+    </ArgumentList>
+  </ScriptCommand>
+
+  <ScriptCommand Name="callfunc" NameOptional="">
+    <Description>Runs the script function</Description>
+    <ArgumentList>
+      <ScriptCommandArgument Name="function name" Type="String" Optional="false">
+        <Description>The script function name to be called</Description>
+      </ScriptCommandArgument>
+      <ScriptCommandArgument Name="Function parameter 1" Type="Mixed" Optional="true">
+        <Description>The first parameter passed to the called function</Description>
+      </ScriptCommandArgument>
+      <ScriptCommandArgument Name="Function parameter 2" Type="Mixed" Optional="true">
+        <Description>The second parameter passed to the called function</Description>
+      </ScriptCommandArgument>
+    </ArgumentList>
+  </ScriptCommand>
+
+  <ScriptCommand Name="callsub" NameOptional="">
+    <Description>Works like goto and jumps to the given label in the current npc. Unlink goto, the Script continues after a "return" after this callsub.</Description>
+    <ArgumentList>
+      <ScriptCommandArgument Name="label name" Type="Plain" Optional="false">
+        <Description>The label to be triggered</Description>
+      </ScriptCommandArgument>
+      <ScriptCommandArgument Name="Function parameter 1" Type="Mixed" Optional="true">
+        <Description>The first parameter passed to the triggered label</Description>
+      </ScriptCommandArgument>
+      <ScriptCommandArgument Name="Function parameter 2" Type="Mixed" Optional="true">
+        <Description>The second parameter passed to the triggered label</Description>
+      </ScriptCommandArgument>
+    </ArgumentList>
+  </ScriptCommand>
+
+  <ScriptCommand Name="return" NameOptional="">
+    <Description>Returns from a (sub-)function</Description>
+    <ArgumentList>
+      <ScriptCommandArgument Name="returned value" Type="Mixed" Optional="true">
+        <Description>The value to be returned</Description>
+      </ScriptCommandArgument>
+    </ArgumentList>
+  </ScriptCommand>
+
+</ScriptCommandList>

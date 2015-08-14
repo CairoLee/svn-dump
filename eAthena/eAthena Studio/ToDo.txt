@@ -1,0 +1,23 @@
+
+als Name: eAthena Studio? o.o
+
+Main/Lib {
+	- common Icons in eignes Projekt auslagern
+	^- erstmal auf eis
+}
+
+Sprite Editor {
+	- speed optimieren =|
+	- Frames play/stop
+	- Error handling
+	- color prieview beim palette edit
+	- strg+z/y
+	- fully docking implementation
+	- using a Palette index cache & Tooltip
+		- maybe some sort of static output about used colors?
+	- Image edit mode: 1 document per frame [possible to high memory or cpu load?]
+	- accept parameters to instant open a sprite
+		- zB eATool.exe "Sprite Editor:morocc.spr"
+	- Action edit
+}
+

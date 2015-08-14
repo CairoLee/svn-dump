@@ -1,0 +1,478 @@
+
+//	- Variable: $BANK_ZINS, definiert die wöchentlichen Zinsen
+
+
+-	script	BlubbRO Bank::IRO_Banker	57,{
+
+	function F_Bank_checkPW;
+	function F_Bank_setPW;
+
+
+	set .@npcname$, "[^ff0000BlubbRO Banker^000000]";
+
+	if (#BANK && GetStrLen(#BANK_PW$) < 4) {
+		F_Bank_setPW();
+		close2;
+		emotion e_thx;
+		end;
+	}
+
+
+	mes .@npcname$;
+	mes "Welcome! This is the offical ^FF0000BlubbRO Bank^000000!";
+	mes "How may I help you?";
+	if (select("My bank:Bank information:Close") == 3) {
+		close;
+	}
+	next;
+	if (@menu == 2) {
+		mes .@npcname$;
+		mes "[~] You will get an account number and have to set a password";
+		mes "[~] You will be able to deposite or withdraw your money";
+		if ($BANK_ZINS > 0) {
+			mes "[~] You will receive a weekly interest of ^FF0000"+$BANK_ZINS+"^000000% zeny";
+			mes "[~] After being away for more than 14 days, your interests were droped";
+		}
+		next;
+		mes .@npcname$;
+		mes "If you got an account, you will be able to transfer money to other accounts, even if the other one is not online!";
+		next;
+		mes .@npcname$;
+		mes "Thanks for your interest on the BlubbRO Bank.";
+		mes "Hope to see you soon!";
+		close;
+	}
+
+// ===== KONTOAKTIONEN =====
+
+	if( #BANK == 0 ) {
+		// ===== KEIN KONTO =====
+
+		mes .@npcname$;
+		mes "I'm sorry but you dont have a bank account yet!";
+		mes "So, want to enjoy preferences of a bank account?";
+		if( select( "Yes, for sure!", "No, tanks." ) == 2 ) {
+			close;
+		}
+		next;
+		set #BANK, GetCharID( 3 );
+		set #BANK_DAY, GetTime( T_DOY );
+		set #BANK_YEAR, GetTime( T_YEAR );
+		set #BANK_MONEY, 0;
+
+		mes .@npcname$;
+		mes "Alright, thats it!";
+		mes "Now you have to set your password.";
+		next;
+		F_Bank_setPW();
+		next;
+
+		mes .@npcname$;
+		mes "Congratulations!";
+		mes "Your bank account has been activated and is ready for usage.";
+		close;
+	}
+
+
+
+	// ===== PW EINGABE =====
+
+	if( !@BANK_PW ) { // re-enter only after Map Change/relog ect
+		F_Bank_checkPW();
+	}
+	set @BANK_PW, 1;
+
+	set .@moneyTrans, 0;
+	set .@moneyZins, 0;
+	// ===== ZINSEN PRO WOCHE =====
+
+	if ($BANK_ZINS > 0) {
+		set @caltage, cap_value( GetTime( T_DOY ) - #BANK_DAY, 0, 365 );
+		if( @caltage >= 14 ) { // Zinsen verfallen
+			set #BANK_DAY, GetTime( T_DOY );
+			set #BANK_YEAR, GetTime( T_YEAR );
+
+			mes .@npcname$;
+			mes "^FF0000You interests got lost because of "+@caltage+" days being away!";
+			next;
+			
+			set @caltage, 0;
+		} else if( @caltage >= 7 ) {
+			set #BANK_DAY, #BANK_DAY + 7;
+			set .@moneyZins, ( ( #BANK_MONEY / 100 ) * $BANK_ZINS );
+			set #BANK_MONEY, #BANK_MONEY + ( ( #BANK_MONEY / 100 ) * $BANK_ZINS );
+
+			set @caltage, GetTime( T_DOY ) - #BANK_DAY;
+
+			mes .@npcname$;
+			mes "^00AA00Income trough interest:";
+			mes CallFunc( "F_FormatNumber", .@moneyZins ) + "z ";
+			next;
+		}
+	}
+
+
+	// ===== ÜBERWEISUNG =====
+
+	set .@size, Query_SQL("SELECT `Amount`, `SendName` FROM `bank_transfer` WHERE `Deleted` = 0 AND `ReceiveID` = " + GetCharID( 3 ), .@amount, .@name$);
+	if(.@size > 0) {
+		mes .@npcname$;
+		mes "^FF0000" + .@size + "^000000 incoming transfer..";
+		mes " ";
+		for( set .@i, 0; .@i < .@size; set .@i, .@i + 1 ) {
+			set #BANK_MONEY, #BANK_MONEY + .@amount[ .@i ];
+			set .@moneyTrans, .@moneyTrans + .@amount[ .@i ];
+			
+			mes "^0000FF" + (.@i + 1) + "^000000: ^00AA00" + CallFunc("F_FormatNumber", .@amount[ .@i ]) + "^000000z from ^FF0000" + .@name$[ .@i ] + "^000000";
+		}
+
+		// clear
+		Query_SQL( "UPDATE `bank_transfer` SET `Deleted` = 1 WHERE `ReceiveID` = " + GetCharID( 3 ) );
+
+		next;
+	}
+
+	// ===== KONTOÜBERSICHT =====
+
+	while( 1 ) {
+		set .@zins_day, ( 7 - @caltage );
+		mes .@npcname$;
+		mes "Account number: ^FF0000" + #BANK + "^000000";
+		mes "Money: ^FF0000" + CallFunc( "F_FormatNumber", #BANK_MONEY ) + "^000000z";
+		if( .@moneyZins > 0 )
+			mes "Income from interest: ^FF0000" + CallFunc( "F_FormatNumber", .@moneyZins ) + "^000000z";
+		mes "Next interest: " + ( .@zins_day > 1 ? "in ^FF0000" + .@zins_day + "^000000 days" : "^FF0000tomorrow^000000" );
+		if( .@moneyTrans > 0 )
+			mes "Todays transferals: ^FF0000" + CallFunc( "F_FormatNumber", .@moneyTrans ) + "^000000z";
+	
+		next;
+		switch(Select("=>  Deposit", "<=  Withdraw", "<=> Transfer", "~~ Password change", "[X] Close")) {
+
+			case 1: 
+				// ===== GELD EINZAHLEN =====
+				do {
+					mes .@npcname$;
+					mes "How mutch do you want to deposit?";
+					mes "Allowed: ^FF0000100^000000z - ^FF00001.000.000.000^000000z";
+					input .@input;
+					if( .@input < 100 || .@input > 1000000000 ) {
+						mes "^FF0000Input error!^000000";
+						mes "Allowed: ^FF0000100^000000z - ^FF00001.000.000.000^000000z";
+						if( select( "Insert again", "Cancel" ) == 2 )
+							close;
+					} else if( Zeny < .@input ) {
+						mes "^FF0000Input error!^000000";
+						mes "You dont have enough Zeny!";
+						if( select( "Insert again", "Cancel" ) == 2 )
+							close;
+					}
+					next;
+				} while( .@input < 100 || .@input > 1000000000 || Zeny < .@input );
+
+				set Zeny, Zeny - .@input;
+				set #BANK_MONEY, #BANK_MONEY + .@input;
+				mes .@npcname$;
+				mes "^00AA00The action was successfull!^000000";
+				mes "^FF0000" + CallFunc( "F_FormatNumber", .@input ) + "^000000 Zeny has been deposit in your account.";
+				next;
+				break;
+
+			case 2: 
+
+				// ===== GELD ABHEBEN =====
+				do {
+					mes .@npcname$;
+					mes "How much do you want to withdraw?";
+					mes "Allowed: ^FF00001^000000z - ^FF00001.000.000.000^000000z";
+					input .@input;
+					if( .@input < 1 || .@input > 1000000000 ) {
+						mes "^FF0000Input error!^000000";
+						mes "Allowed: ^FF0000100^000000z - ^FF00001.000.000.000^000000z";
+						if( select( "Insert again", "Cancel" ) == 2 )
+							close;
+					} else if( #BANK_MONEY < .@input ) {
+						mes "^FF0000Input error!^000000";
+						mes "You dont have enough Zeny in your account.";
+						if( select( "Insert again", "Cancel" ) == 2 )
+							close;
+					}
+					next;
+				} while( .@input < 100 || .@input > 1000000000 || #BANK_MONEY < .@input );
+				next;
+
+				set Zeny, Zeny + .@input;
+				set #BANK_MONEY, #BANK_MONEY - .@input;
+
+				mes .@npcname$;
+				mes "^00AA00The action was successfull!^000000";
+				mes "You withdraw ^FF0000" + CallFunc( "F_FormatNumber", .@input ) + "^000000 Zeny from your account.";
+				next;
+				break;
+
+			case 3:
+				// ===== ÜBERWEISUNG =====
+				do {
+					mes .@npcname$;
+					mes "You want to transfer Zeny from your account to another?";
+					mes "Please enter the account number from the recipient.";
+					input .@konto;
+					if( .@konto < 2000001|| .@konto > 2999999 ) {
+						mes "^FF0000Input error!^000000";
+						mes "This account number is not valid.";
+						if( select( "Insert again", "Cancel" ) == 2 )
+							close;
+					} else {
+						// search a Char from the Account
+						Query_SQL( "SELECT `char_id` FROM `char` WHERE `account_id` = " + .@konto + " LIMIT 1", .@char_id );
+						if( GetArraySize( .@char_id ) == 0 ) {
+							mes "^FF0000Error!^000000";
+							mes "No character found for the account number!";
+							if( select( "Insert again", "Cancel" ) == 2 )
+								close;
+						} else
+							break; // no Error
+					}
+					next;
+				} while( 1 );
+				next;
+
+
+				do {
+					mes .@npcname$;
+					mes "How mutch Zeny do you want to transfer?";
+					mes "Allowed: ^FF0000100^000000z - ^FF00001.000.000.000^000000z";
+					input .@input;
+					if( .@input < 1 || .@input > 100000000 ) {
+						mes "^FF0000Input error!^000000";
+						mes "Allowed: ^FF0000100^000000z - ^FF00001.000.000.000^000000z";
+						if( select( "Insert again", "Cancel" ) == 2 )
+							close;
+					} else if( #BANK_MONEY < .@input ) {
+						mes "^FF0000Error!^000000";
+						mes "You dont have enough Zeny on your account.";
+						if( select( "Insert again", "Cancel" ) == 2 )
+							close;
+					} else
+						break; // no Error
+					next;
+				} while( 1 );
+				next;
+
+				Query_SQL( "INSERT INTO `bank_transfer` (`Amount`, `ReceiveID`, `SendName`)VALUES('" + .@input + "', '" + .@konto + "', '" + StrCharInfo( 0 ) + "')" );
+				set #BANK_MONEY, #BANK_MONEY - .@input;
+
+				mes .@npcname$;
+				mes "^00AA00The action was successfull!^000000";
+				mes "You transfered ^FF0000" + CallFunc( "F_FormatNumber", .@input ) + "^000000 Zeny to the account ^FF0000"+.@konto+"^000000.";
+				next;
+				break;
+
+			case 4: // Passwort resetten
+				
+				F_Bank_checkPW(); // aktuelles PW eingeben
+				F_Bank_setPW(); // neues PW eingeben
+				close;
+			
+			case 5: // Close
+				close;
+
+		} // end switch()
+	} // end while()
+
+	close;
+
+
+
+OnInit:
+	set $BANK_ZINS, 3;
+	end;
+
+
+
+
+
+
+
+
+	/********************************************
+	 * Bank Passwort set-Schleife
+	 ********************************************/
+	function	F_Bank_setPW	{
+		do {
+			mes .@npcname$;
+			mes "You have to choose your bank account password.";
+			mes "Allowed: ^0000FF4 - 55 signs^000000";
+			input .@code$;
+			set .@len, GetStrLen( .@code$ );
+			if( .@len < 4 || .@len > 55 ) {
+				mes "^FF0000Input error!^000000";
+				mes "Allowed: ^0000FF4 - 55 signs^000000";
+			}
+			next;
+		} while( .@len < 4 || .@len > 55 );
+
+		set #BANK_PW$, .@code$;
+		mes .@npcname$;
+		mes "^00AA00Your bank account password has been changed^000000.";
+		mes "New password: ^FF0000"+.@code$+"^000000";
+
+		return;
+	}
+
+
+	/********************************************
+	 * Bank Passwort check-Schleife
+	 ********************************************/
+	function	F_Bank_checkPW	{
+		do {
+			mes .@npcname$;
+			mes "Please enter your bank account password.";
+			input .@_code$;
+			if( .@_code$ != #BANK_PW$ ) {
+				mes "^FF0000Input error!^000000";
+				mes "The password is wrong.";
+				emotion e_oh;
+				if( select( "Insert again", "Cancel" ) == 2 )
+					close;
+			}
+			next;
+		} while( .@_code$ != #BANK_PW$ );
+
+		return;
+}
+
+}
+
+
+
+/********************************************
+ * Geld von der Bank abziehn
+ *
+ * @arg
+ *			0	Geld Menge
+ *			1	Geld abziehn [0 = nur checken, 1 = abziehn]
+ * @return
+ *			-2	nich genug Geld auf der bank
+ *			-1	kein Konto
+ *			0	Geld Arg(0) < 1
+ *			1	Success
+ ********************************************/
+function	script	F_Bank_Pay	{
+	set .@geld, getArg( 0, 0 );
+	if( .@geld < 1 )
+		return 0;
+	else if( !#BANK )
+		return -1;
+	else if( #BANK_MONEY < .@geld )
+		return -2;
+
+	if( getArg( 1, 0 ) == 1 ) 
+		set #BANK_MONEY, #BANK_MONEY - .@geld;
+
+	return 1;
+}
+
+
+/********************************************
+ * Returned die Menge des Geldes aufer bank
+ *
+ * @return	<Geld menge>
+ ********************************************/
+function	script	F_Get_Bank	{
+	return #BANK_MONEY;
+}
+
+
+
+/****************************************************
+ * Entscheidung ob man vom Char oder Bank bezahlt
+ *
+ * @arg		0	Geld Menge
+ * @return	1	Success
+ ****************************************************/
+
+function	script	F_Global_Bank	{
+	set .@cost, getArg( 0, 0 );
+	set .@cost$, CallFunc( "F_FormatNumber", .@cost );
+	switch( select( "pay from character", "pay from bank account" ) ) {
+		case 1:
+			if( Zeny < .@cost ) {
+				mes "^FF0000You dont have ^0000FF" + .@cost$ + "^FF0000 Zeny on this character^000000!";
+				if( select( "Cancel", "pay from bank account" ) == 1 )
+					close;
+				switch( callFunc( "F_Bank_Pay", .@cost, 1 ) ) {
+					case 0:
+						mes "^FF0000FScript error...^000000";
+						close;
+					case -1:
+						mes "^FF0000You dont have a bank account yet^000000!";
+						close;
+					case -2:
+						mes "^FF0000You dont have enough Zeny on your bank account^000000!";
+						close;
+				}
+				break;
+			}
+			set Zeny, Zeny - .@cost;
+			break;
+		case 2:
+			switch( callFunc( "F_Bank_Pay", .@cost, 1 ) ) {
+				case 0:
+					mes "^FF0000Script error..^000000";
+					close;
+				case -1:
+					mes "^FF0000You dont have a bank account yet^000000!";
+					if( select( "Cancel", "pay from character" ) == 1 )
+						close;
+					if( Zeny < .@cost ) {
+						mes "^FF0000You dont have ^0000FF" + .@cost$ + "^FF0000 Zeny on this character^000000!";
+						close;
+					}
+					set Zeny, Zeny - .@cost;
+					break;
+				case -2:
+					mes "^FF0000You dont have enough Zeny on your bank account^000000!";
+					if( select( "Cancel", "pay from character" ) == 1 )
+						close;
+					if( Zeny < .@cost ) {
+						mes "^FF0000You dont have ^0000FF" + .@cost$ + "^FF0000 Zeny on this character^000000!";
+						close;
+					}
+					set Zeny, Zeny - .@cost;
+					break;
+			}
+			break;
+	}
+
+	return 1;
+}
+
+
+
+
+
+
+
+
+alberta,26,240,5,0	duplicate(IRO_Banker)	BlubbRO Bank#alberta	57
+aldebaran,133,121,5,0	duplicate(IRO_Banker)	BlubbRO Bank#aldebaran	57
+amatsu,102,152,3,0	duplicate(IRO_Banker)	BlubbRO Bank#amatsu	57
+ayothaya,210,169,5,0	duplicate(IRO_Banker)	BlubbRO Bank#ayothaya	57
+comodo,198,149,3,0	duplicate(IRO_Banker)	BlubbRO Bank#comodo	57
+einbroch,56,203,5,0	duplicate(IRO_Banker)	BlubbRO Bank#einbroch	57
+geffen,124,68,2,0	duplicate(IRO_Banker)	BlubbRO Bank#geffen	57
+gonryun,155,121,5,0	duplicate(IRO_Banker)	BlubbRO Bank#gonryun	57
+hugel,93,154,3,0	duplicate(IRO_Banker)	BlubbRO Bank#hugel	57
+izlude,135,91,3,0	duplicate(IRO_Banker)	BlubbRO Bank#izlude	57
+lighthalzen,153,185,3,0	duplicate(IRO_Banker)	BlubbRO Bank#lhz	57
+louyang,231,100,3,0	duplicate(IRO_Banker)	BlubbRO Bank#louyang	57
+morocc,169,106,3,0	duplicate(IRO_Banker)	BlubbRO Bank#morocc	57
+moscovia,217,198,5,0	duplicate(IRO_Banker)	BlubbRO Bank#moscovia	57
+niflheim,201,186,3,0	duplicate(IRO_Banker)	BlubbRO Bank#niflheim	57
+payon,164,101,5,0	duplicate(IRO_Banker)	BlubbRO Bank#payon	57
+prontera,161,196,2	duplicate(IRO_Banker)	BlubbRO Bank#prontera	109
+rachel,106,133,5,0	duplicate(IRO_Banker)	BlubbRO Bank#rachel	57
+umbala,126,136,3,0	duplicate(IRO_Banker)	BlubbRO Bank#umbala	57
+veins,213,122,5,0	duplicate(IRO_Banker)	BlubbRO Bank#veins	57
+yuno,145,186,5,0	duplicate(IRO_Banker)	BlubbRO Bank#yuno	57
+xmas,138,141,3,0	duplicate(IRO_Banker)	BlubbRO Bank#xmas	57

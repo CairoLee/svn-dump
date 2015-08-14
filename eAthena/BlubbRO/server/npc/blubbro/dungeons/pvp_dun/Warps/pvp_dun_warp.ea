@@ -1,0 +1,91 @@
+//===== eAthena Script =======================================
+//= Pvp Dungeon Warps
+//===== By: ==================================================
+//= oOShinjiOo  aka  Chris
+//===== Current Version: =====================================
+//= 1.1
+//===== Description: =========================================
+//= Warps needed to use my dungeon ^^
+//= Warps die man für den dungeon brauch ^^
+//============================================================
+//jupe_ele,42,48,0	warp	pvpinwarp0	1,1,pvp_dun01,100,14  // der warp in den dungeon bitte position verändern da er sonst in jupe_ele ist
+//--Warps für lvl 1 pvp dungeon--\\
+pvp_dun04,9,50,0	warp	pvpoutwarp	1,1,prontera,156,191   // das gleiche wie darunter
+pvp_dun01,100,10,0	warp	pvp#0	1,1,prontera,156,191    // hier bitte den ort angeben wo ihr rauskommen möchtet wenn ihr den dungeon verlasst
+pvp_dun01,100,186,0	warp	pvp#50	1,1,pvp_dun02,19,92
+pvp_dun01,180,50,0	warp	pvp#51	1,1,pvp_dun01,180,25
+pvp_dun01,180,29,0	warp	pvp#52	1,1,pvp_dun01,180,54
+pvp_dun01,130,20,0	warp	pvp#53	1,1,pvp_dun01,106,20
+pvp_dun01,109,59,0	warp	pvp#54	1,1,pvp_dun01,132,59
+pvp_dun01,170,60,0	warp	pvp#55	1,1,pvp_dun01,147,60
+pvp_dun01,140,50,0	warp	pvp#56	1,1,pvp_dun01,140,26
+pvp_dun01,90,60,0	warp	pvp#57	1,1,pvp_dun01,65,60
+pvp_dun01,69,60,0	warp	pvp#58	1,1,pvp_dun01,94,60
+pvp_dun01,20,50,0	warp	pvp#59	1,1,pvp_dun01,20,25
+pvp_dun01,20,29,0	warp	pvp#60	1,1,pvp_dun01,20,54
+pvp_dun01,60,69,0	warp	pvp#61	1,1,pvp_dun01,60,94
+pvp_dun01,60,90,0	warp	pvp#62	1,1,pvp_dun01,60,65
+pvp_dun01,109,100,0	warp	pvp#63	1,1,pvp_dun01,134,100
+pvp_dun01,130,100,0	warp	pvp#64	1,1,pvp_dun01,105,100
+pvp_dun01,60,109,0	warp	pvp#65	1,1,pvp_dun01,60,132
+pvp_dun01,60,128,0	warp	pvp#66	1,1,pvp_dun01,60,105
+pvp_dun01,69,137,0	warp	pvp#67	1,1,pvp_dun01,94,137
+pvp_dun01,90,137,0	warp	pvp#68	1,1,pvp_dun01,65,137
+pvp_dun01,100,147,0	warp	pvp#69	1,1,pvp_dun01,100,168
+pvp_dun01,100,164,0	warp	pvp#70	1,1,pvp_dun01,100,143
+pvp_dun01,130,137,0	warp	pvp#71	1,1,pvp_dun01,105,137
+pvp_dun01,109,137,0	warp	pvp#72	1,1,pvp_dun01,134,137
+pvp_dun01,100,128,0	warp	pvp#73	1,1,pvp_dun01,100,106
+pvp_dun01,180,128,0	warp	pvp#74	1,1,pvp_dun01,180,105
+pvp_dun01,180,109,0	warp	pvp#75	1,1,pvp_dun01,180,132
+pvp_dun01,170,100,0	warp	pvp#76	1,1,pvp_dun01,147,100
+pvp_dun01,180,90,0	warp	pvp#77	1,1,pvp_dun01,180,67
+pvp_dun01,140,109,0	warp	pvp#79	1,1,pvp_dun01,140,130
+//--Warps für lvl 2 pvp dungeon --\\
+pvp_dun02,35,99,0	warp	pvp#15	1,1,pvp_dun02,27,146
+pvp_dun02,27,142,0	warp	pvp#16	1,1,pvp_dun02,35,95
+pvp_dun02,35,86,0	warp	pvp#17	1,1,pvp_dun02,27,39
+pvp_dun02,27,43,0	warp	pvp#18	1,1,pvp_dun02,35,90
+pvp_dun02,63,86,0	warp	pvp#19	1,1,pvp_dun02,99,39
+pvp_dun02,99,43,0	warp	pvp#20	1,1,pvp_dun02,63,90
+pvp_dun02,90,86,0	warp	pvp#21	1,1,pvp_dun02,168,31
+pvp_dun02,168,35,0	warp	pvp#22	1,1,pvp_dun02,90,90
+pvp_dun02,43,26,0	warp	pvp#23	1,1,pvp_dun02,90,25
+pvp_dun02,86,25,0	warp	pvp#24	1,1,pvp_dun02,37,26
+pvp_dun02,91,101,0	warp	pvp#25	1,1,pvp_dun02,282,65
+pvp_dun02,282,60,0	warp	pvp#26	1,1,pvp_dun02,91,95
+pvp_dun02,222,24,0	warp	pvp#27	1,1,pvp_dun02,22,219
+pvp_dun02,22,223,0	warp	pvp#28	1,1,pvp_dun02,222,28
+pvp_dun02,248,24,0	warp	pvp#29	1,1,pvp_dun02,88,219
+pvp_dun02,88,223,0	warp	pvp#30	1,1,pvp_dun02,248,28
+pvp_dun02,258,46,0	warp	pvp#31	1,1,pvp_dun02,225,235
+pvp_dun02,222,69,0	warp	pvp#32	1,1,pvp_dun02,22,276
+pvp_dun02,22,272,0	warp	pvp#33	1,1,pvp_dun02,222,65
+pvp_dun02,248,69,0	warp	pvp#34	1,1,pvp_dun02,88,276
+pvp_dun02,88,272,0	warp	pvp#35	1,1,pvp_dun02,248,65
+pvp_dun02,229,235,0	warp	pvp#36	1,1,pvp_dun02,263,46
+pvp_dun02,188,239,0	warp	pvp#37	1,1,pvp_dun02,148,281
+pvp_dun02,148,278,0	warp	pvp#38	1,1,pvp_dun02,188,235
+pvp_dun02,204,239,0	warp	pvp#39	1,1,pvp_dun02,204,281
+pvp_dun02,204,278,0	warp	pvp#40	1,1,pvp_dun02,204,235
+pvp_dun02,220,239,0	warp	pvp#41	1,1,pvp_dun02,260,281
+pvp_dun02,260,278,0	warp	pvp#42	1,1,pvp_dun02,220,235
+pvp_dun02,188,230,0	warp	pvp#43	1,1,pvp_dun02,148,187
+pvp_dun02,148,191,0	warp	pvp#44	1,1,pvp_dun02,188,234
+pvp_dun02,204,230,0	warp	pvp#45	1,1,pvp_dun02,204,187
+pvp_dun02,204,191,0	warp	pvp#46	1,1,pvp_dun02,204,234
+pvp_dun02,220,230,0	warp	pvp#47	1,1,pvp_dun02,260,187
+pvp_dun02,260,191,0	warp	pvp#48	1,1,pvp_dun02,220,234
+//--Warps für lvl 3 pvp dungeon--\\
+pvp_dun03,195,13,0	warp	pvp#2	1,1,pvp_dun03,55,248
+pvp_dun03,228,96,0	warp	pvp#3	1,1,pvp_dun03,26,7
+pvp_dun03,244,3,0	warp	pvp#4	1,1,pvp_dun03,35,247
+pvp_dun03,253,294,0	warp	pvp#5	1,1,pvp_dun03,58,11
+pvp_dun03,26,3,0	warp	pvp#6	1,1,pvp_dun03,228,92
+pvp_dun03,260,96,0	warp	pvp#7	1,1,pvp_dun03,66,229
+pvp_dun03,292,13,0	warp	pvp#8	1,1,pvp_dun03,76,246
+pvp_dun03,38,250,0	warp	pvp#9	1,1,pvp_dun03,244,7
+pvp_dun03,53,246,0	warp	pvp#10	1,1,pvp_dun03,199,13
+pvp_dun03,58,7,0	warp	pvp#11	1,1,pvp_dun03,253,290
+pvp_dun03,66,225,0	warp	pvp#12	1,1,pvp_dun03,260,92
+pvp_dun03,76,242,0	warp	pvp#13	1,1,pvp_dun03,288,13

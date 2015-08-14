@@ -1,0 +1,54 @@
+
+
+
+-	script	EFriendReward	-1,{
+
+
+OnPCBaseLvUpEvent:
+	end;
+	if (BaseLevel != 70) {
+		if (BaseLevel != 99 || Upper != 1) {
+			end;
+		} else {
+			set .@rebirth, 1;
+		}
+	}
+
+	set .@friendsName$, StrCharInfo(0);
+	set .@c, Query_SQl("SELECT `account_id` FROM `friends_invite` WHERE `friend_account_id` = '" + getCharID(3) + "' AND `date_registered` != 'NULL'", .@fID);
+	if (.@c == 0) {
+		end;
+	}
+
+	if (IsLoggedIn(.@fID[0]) == 0 || AttachRID(.@fID[0]) == 0) {
+		// not online or attach failed
+		if (.@rebirth == 0) {
+			// Level 70 reward
+			Query_SQL("SELECT `value` FROM `global_reg_value` WHERE `str` = '#VOTEPOINTS' AND `account_id` = '" + .@fID[0] + "'", .@vPoints$);
+			set .@p, atoi(.@vPoints$[0]) + 1;
+			Query_SQL("UPDATE `global_reg_value` SET `value` = '" + .@p + "' WHERE `str` = '#VOTEPOINTS' AND `account_id` = '" + .@fID[0] + "'");
+		} else {
+			// Rebirth reward
+			switch(Class) {
+				default: break;
+			}
+		}
+	} else {
+		// online and attached
+		if (.@rebirth == 0) {
+			// Level 70 reward
+			set #VOTEPOINTS, #VOTEPOINTS + 5;
+		} else {
+			// Rebirth reward
+			switch(Class) {
+				default: break;
+			}
+		}
+
+		Announce("[Invite a Friend] You received a bonus because of your friend " + .@friendsName$ + " reached Level " + (.@rebirth == 0 ? "70" : "99 rebirth") + "!", BC_SELF);
+	}
+
+	end;
+
+}
+

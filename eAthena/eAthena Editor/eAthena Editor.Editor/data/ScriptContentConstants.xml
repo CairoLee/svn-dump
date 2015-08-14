@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ScriptConstantList>
+  <ScriptConstant Name="Class" IsCharPropertie="true">
+    <Description>Returns the class of the current attached character</Description>
+  </ScriptConstant>
+</ScriptConstantList>
