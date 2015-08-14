@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{406A4B88-FC32-4240-9F06-0C0FEC8FF4A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GodLesZ.EdenEternal.DataViewer.Library</RootNamespace>
+    <AssemblyName>GodLesZ.EdenEternal.DataViewer.Library</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formats\DdsImage.cs" />
+    <Compile Include="Formats\EPipeTrailedFileType.cs" />
+    <Compile Include="Formats\Monster\MonsterDataFile.cs" />
+    <Compile Include="Formats\Monster\MonsterTranslationDataFile.cs" />
+    <Compile Include="Formats\PipeTrailedFile.cs" />
+    <Compile Include="Formats\Scene\ESceneFileArea.cs" />
+    <Compile Include="Formats\Scene\SceneFile.cs" />
+    <Compile Include="Formats\Scene\SceneFileMobPatrolEntry.cs" />
+    <Compile Include="Formats\Scene\SceneFileMobPatrolRoute.cs" />
+    <Compile Include="Formats\Scene\SceneFileMobPatrolRouteList.cs" />
+    <Compile Include="Formats\Scene\SceneFileMobSpawnEntry.cs" />
+    <Compile Include="Formats\TranslatedPipeTrailedFile.cs" />
+    <Compile Include="Formats\Item\ItemDataFile.cs" />
+    <Compile Include="Formats\Item\ItemTranslationDataFile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\GodLesZ\GodLesZ.Library\GodLesZ.Library.csproj">
+      <Project>{22086451-A9A2-414C-8A81-5BE02FC5C8EE}</Project>
+      <Name>GodLesZ.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
