@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacMan", "PacMan.csproj", "{50B41810-4062-4FBF-AEB3-28C23453675E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pac Man Content", "Content\Pac Man Content.contentproj", "{38EA2B21-F5C9-4451-B1A8-A77D5AA01290}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacMan.Editor", "..\PacMan.Editor\PacMan.Editor.csproj", "{7EDE8F9B-26A1-4FC3-80C7-C62343B15438}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50B41810-4062-4FBF-AEB3-28C23453675E}.Debug|x86.ActiveCfg = Debug|x86
+		{50B41810-4062-4FBF-AEB3-28C23453675E}.Debug|x86.Build.0 = Debug|x86
+		{50B41810-4062-4FBF-AEB3-28C23453675E}.Release|x86.ActiveCfg = Release|x86
+		{50B41810-4062-4FBF-AEB3-28C23453675E}.Release|x86.Build.0 = Release|x86
+		{38EA2B21-F5C9-4451-B1A8-A77D5AA01290}.Debug|x86.ActiveCfg = Debug|x86
+		{38EA2B21-F5C9-4451-B1A8-A77D5AA01290}.Release|x86.ActiveCfg = Release|x86
+		{7EDE8F9B-26A1-4FC3-80C7-C62343B15438}.Debug|x86.ActiveCfg = Debug|x86
+		{7EDE8F9B-26A1-4FC3-80C7-C62343B15438}.Debug|x86.Build.0 = Debug|x86
+		{7EDE8F9B-26A1-4FC3-80C7-C62343B15438}.Release|x86.ActiveCfg = Release|x86
+		{7EDE8F9B-26A1-4FC3-80C7-C62343B15438}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

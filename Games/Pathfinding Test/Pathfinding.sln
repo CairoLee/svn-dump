@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pathfinding", "Pathfinding.csproj", "{B27D74E8-7A79-4CAE-B715-6E0AEBC5F4F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pathfinding TestContent", "Content\Pathfinding TestContent.contentproj", "{31CD098A-B3B4-46E4-9725-B24E3C010451}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B27D74E8-7A79-4CAE-B715-6E0AEBC5F4F4}.Debug|x86.ActiveCfg = Debug|x86
+		{B27D74E8-7A79-4CAE-B715-6E0AEBC5F4F4}.Debug|x86.Build.0 = Debug|x86
+		{B27D74E8-7A79-4CAE-B715-6E0AEBC5F4F4}.Release|x86.ActiveCfg = Release|x86
+		{B27D74E8-7A79-4CAE-B715-6E0AEBC5F4F4}.Release|x86.Build.0 = Release|x86
+		{31CD098A-B3B4-46E4-9725-B24E3C010451}.Debug|x86.ActiveCfg = Debug|x86
+		{31CD098A-B3B4-46E4-9725-B24E3C010451}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

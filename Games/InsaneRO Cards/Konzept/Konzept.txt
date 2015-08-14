@@ -1,0 +1,28 @@
+
+Random Chaos:
+	- jedes Monster kann nur einmal angreifen
+	- Trennung zwischen Zauber und Fallen Karten
+		- Zauber können nur wärend der Kartenleg Phase gespielt werden, insofern nichts anderes vermerkt
+		- Fallen nur als Reaktion auf eine Aktion
+	- jede nicht-automatische Phase dauert maximal 5min; nach 30sec Idle wird sie abgebrochen
+
+Phasen:
+	- Zieh Phase, automatisch
+	- Kartenleg Phase
+		* Monster & Zauber
+	- Attack Phase
+		- Angreifer: Angreifer deklarieren
+		- Gegner: Verteidiger deklarieren
+		- Schaden abhandeln
+	- Kartenleg Phase 2
+		* nur Zauber
+	- End Phase, automatisch
+
+
+
+
+
+
+
+
+

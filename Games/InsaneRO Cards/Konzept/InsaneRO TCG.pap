@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="6E14E2C079A8921A">
+  <PROJECT FORMAT="1.00" NAME="InsaneRO TCG" AUTHOR="Administrator" CREATED="2010.06.25 20:44:06" MODIFIED="2010.06.27 15:22:05">
+    <DIAGRAMS>
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="Game Steps" CREATED="2010.06.25 20:44:16" MODIFIED="2010.06.27 15:22:05">
+        <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="12">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="18">
+                <TEXT><![CDATA[Attack declare]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="19">
+                <TEXT><![CDATA[Defence declare]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="20">
+                <TEXT><![CDATA[Damage calculation]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="8">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="27">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Game Steps]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="2">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Draw Phase]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="3">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[Standby Phase]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="4">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[Attack Phase]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="5">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="21">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="8">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="26">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="9">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[Standby Phase 2]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="10">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="12">
+                <TEXT><![CDATA[End Phase]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="11">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="2">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="16">
+                <TEXT><![CDATA[- läuft automatisch ab
+- Gegner kann mit Fallenkarten reagieren]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="3">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="17">
+                <TEXT><![CDATA[- alles kann gelegt werden
+- 1x normales Monster, beliebig viele "spezielle" Monster]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="4">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="31">
+                <TEXT><![CDATA[- Unterteilung in 3 Phasen]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="5">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="32">
+                <TEXT><![CDATA[- Spieler kann Monster bestimmen, die Angreifen
+- Spieler kann nicht bestimmen, welches Monster sie angreifen]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="6">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="33">
+                <TEXT><![CDATA[- Gegner kann Verteidiger bestimmen, die Monster blocken
+- jedes Monster kann nur 1x als Blocker gesetzt werden]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="7">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="34">
+                <TEXT><![CDATA[- Angriffe werden durchgeführt
+- Schaden wird verteilt]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="9">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="35">
+                <TEXT><![CDATA[- nur Zauberkarten können gelegt oder aktiviert werden]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="10">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="36">
+                <TEXT><![CDATA[- läuft automatisch ab
+- Gegner kann mit Fallenkarten reagieren]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="22" FROM="8" TO="21" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="11" FROM="10" TO="12" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="13" FROM="12" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="23" FROM="21" TO="18" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="24" FROM="18" TO="19" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="25" FROM="19" TO="20" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="28" FROM="20" TO="27" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="29" FROM="27" TO="26" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="30" FROM="26" TO="10" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+    </DIAGRAMS>
+  </PROJECT>
+</FRAME>

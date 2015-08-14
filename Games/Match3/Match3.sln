@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Match3", "Match3\Match3.csproj", "{C69C4722-B066-49C7-A028-3AD21DC86A20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Match3Content", "Match3Content\Match3Content.contentproj", "{A63F6C54-73AE-4811-9F14-D6936E11224F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodLesZ.Library.Xna", "..\..\GodLesZ\GodLesZ.Library.XNA\GodLesZ.Library.Xna.csproj", "{7B30DE1B-9BB0-47D0-ADA5-34BE422B4AC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C69C4722-B066-49C7-A028-3AD21DC86A20}.Debug|x86.ActiveCfg = Debug|x86
+		{C69C4722-B066-49C7-A028-3AD21DC86A20}.Debug|x86.Build.0 = Debug|x86
+		{C69C4722-B066-49C7-A028-3AD21DC86A20}.Release|x86.ActiveCfg = Release|x86
+		{C69C4722-B066-49C7-A028-3AD21DC86A20}.Release|x86.Build.0 = Release|x86
+		{A63F6C54-73AE-4811-9F14-D6936E11224F}.Debug|x86.ActiveCfg = Debug|x86
+		{A63F6C54-73AE-4811-9F14-D6936E11224F}.Release|x86.ActiveCfg = Release|x86
+		{7B30DE1B-9BB0-47D0-ADA5-34BE422B4AC0}.Debug|x86.ActiveCfg = Debug|x86
+		{7B30DE1B-9BB0-47D0-ADA5-34BE422B4AC0}.Debug|x86.Build.0 = Debug|x86
+		{7B30DE1B-9BB0-47D0-ADA5-34BE422B4AC0}.Release|x86.ActiveCfg = Release|x86
+		{7B30DE1B-9BB0-47D0-ADA5-34BE422B4AC0}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
