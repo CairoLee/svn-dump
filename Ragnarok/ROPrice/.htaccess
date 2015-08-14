@@ -1,0 +1,5 @@
+
+RewriteEngine On
+
+RewriteRule ^search.html$ index.php?p=ajax_search
+RewriteRule ^([0-9]+)-([^\.]+)\.html$ index.php?p=detail&id=$1

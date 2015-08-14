@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+(-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=)
+(                                  by GodLesZ                                  )
+(-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=)
+( Type        : Configuration file                                             )
+( Description : Packet definitions, used only internal                         )
+(-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=)
+-->
+<PacketList>
+
+  <PacketVersion Version="5">
+    <Packets>
+      <!-- Login Server -->
+
+      <Packet ID="0x64" Length="55" Description="Simple login">
+        <HandlerType>LoginServ</HandlerType>
+        <HandlerName>AccountLogin</HandlerName>
+      </Packet>
+
+      <!-- Char Server -->
+
+      <Packet ID="0x65" Length="17" Description="Char-server auth">
+        <HandlerType>CharServ</HandlerType>
+        <HandlerName>AccountAuth</HandlerName>
+      </Packet>
+
+      <Packet ID="0x67" Length="37" Description="Char creation">
+        <HandlerType>CharServ</HandlerType>
+        <HandlerName>CharacterCreation</HandlerName>
+      </Packet>
+
+      <Packet ID="0x187" Length="6" Description="Keep-alive">
+        <HandlerType>CharServ</HandlerType>
+        <HandlerName>KeepAlive</HandlerName>
+      </Packet>
+
+      <Packet ID="0x66" Length="3" Description="Char select">
+        <HandlerType>CharServ</HandlerType>
+        <HandlerName>CharacterSelect</HandlerName>
+      </Packet>
+
+      <!-- Map/World Server -->
+
+      <Packet ID="0x436" Length="19" Description="World server connect">
+        <HandlerType>WorldServ</HandlerType>
+        <HandlerName>WantToConnect</HandlerName>
+      </Packet>
+
+      <Packet ID="0x007D" Length="2" Description="Notification that the client ressource loading has completed">
+        <HandlerType>WorldServ</HandlerType>
+        <HandlerName>LoadEndAck</HandlerName>
+      </Packet>
+
+      <Packet ID="0x021D" Length="6" Description="Notification of the state of client command /effect">
+        <HandlerType>WorldServ</HandlerType>
+        <HandlerName>LessEffect</HandlerName>
+      </Packet>
+
+      <Packet ID="0x014F" Length="6" Description="Client requests guild infos">
+        <HandlerType>WorldServ</HandlerType>
+        <HandlerName>GuildRequestInfo</HandlerName>
+      </Packet>
+      <!--
+      <Packet ID="0x008C" Length="-1" Description="Global Message from client">
+        <HandlerType>WorldServ</HandlerType>
+        <HandlerName>GlobalMessage</HandlerName>
+      </Packet>
+-->
+      <Packet ID="0x00F3" Length="-1" Description="Global Message from client">
+        <HandlerType>WorldServ</HandlerType>
+        <HandlerName>GlobalMessage</HandlerName>
+      </Packet>
+
+      <Packet ID="0x0089" Length="11" Description="Request server ticks">
+        <HandlerType>WorldServ</HandlerType>
+        <HandlerName>TickSend</HandlerName>
+      </Packet>
+
+      <Packet ID="0x008C" Length="14" Description="Requesting units name">
+        <HandlerType>WorldServ</HandlerType>
+        <HandlerName>CharNameRequest</HandlerName>
+      </Packet>
+
+      <Packet ID="0x018A" Length="4" Description="Request for game exiting">
+        <HandlerType>WorldServ</HandlerType>
+        <HandlerName>QuitGame</HandlerName>
+      </Packet>
+
+      <Packet ID="0x00A7" Length="9" Description="Walking request">
+        <HandlerType>WorldServ</HandlerType>
+        <HandlerName>WalkToXY</HandlerName>
+      </Packet>
+
+      <Packet ID="0x0437" Length="7" Description="Action request (attack, sit, stand)">
+        <HandlerType>WorldServ</HandlerType>
+        <HandlerName>ActionRequest</HandlerName>
+      </Packet>
+
+      <Packet ID="0x0118" Length="7" Description="Stop attack">
+        <HandlerType>WorldServ</HandlerType>
+        <HandlerName>StopAttack</HandlerName>
+      </Packet>
+
+
+    </Packets>
+  </PacketVersion>
+
+</PacketList>

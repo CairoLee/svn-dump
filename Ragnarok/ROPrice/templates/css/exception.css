@@ -1,0 +1,76 @@
+
+
+div.exception {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #555555;
+	width: 100%;
+	min-height: 100%;
+	height: auto;
+	opacity: 0.8;
+}
+
+div.exception div.container {
+	background-color: #FFFFFF;
+	width: 600px;
+	height: 100%;
+	margin: 10px auto;
+	opacity: 1;
+	filter: Alpha(opacity=100); /* IE .. */
+	border: 2px solid darkred;
+	font-family: Arial, serif;
+	font-size: 11px;
+}
+
+div.exception div.container div.exCaption {
+	margin: 5px;
+	margin-bottom: 0px;
+	height: 20px;
+	font-size: 16px;
+	background: #880000;
+	color: #FFFFFF;
+	padding: 10px;
+}
+
+div.exception div.container div.exCaption a {
+	width: 16px;
+	height: 16px;
+	color: #FFFFFF;
+	padding: 5px;
+	margin-left: 398px;
+	border: 1px solid #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+div.exception div.container div.exInfo {
+	padding: 5px;
+	margin: 5px;
+	margin-top: 0px;
+	background: #C0C0C0;
+	color: #555555;
+}
+
+div.exception div.container fieldset {
+	margin: 5px;
+	padding: 10px;
+}
+div.exception div.container fieldset legend {
+	font-weight: bold;
+	padding: 5px;
+}
+
+div.exStacktrace {
+	font-family: Consolas,Courier New;
+	height: 100px;
+	overflow: auto;
+	white-space: nowrap;
+	width: 558px;
+}
+
+div.exFooter {
+	font-weight: bold;
+	margin: 10px;
+	text-align: center;
+}

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0"?>
+<!--
+(-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=)
+( ____                            ___             __                           )
+(/\  _`\                         /\_ \           /\ \__  __                    )
+(\ \ \L\ \    ___   __  __    ___\//\ \    __  __\ \ ,_\/\_\    ___     ___    )
+( \ \ ,  /   / __`\/\ \/\ \  / __`\\ \ \  /\ \/\ \\ \ \/\/\ \  / __`\ /' _ `\  )
+(  \ \ \\ \ /\ \L\ \ \ \_/ |/\ \L\ \\_\ \_\ \ \_\ \\ \ \_\ \ \/\ \L\ \/\ \/\ \ )
+(   \ \_\ \_\ \____/\ \___/ \ \____//\____\\ \____/ \ \__\\ \_\ \____/\ \_\ \_\)
+(    \/_/\/ /\/___/  \/__/   \/___/ \/____/ \/___/   \/__/ \/_/\/___/  \/_/\/_/)
+(                                                                              )
+(                                                                              )
+(                                  by GodLesZ                                  )
+(-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=)
+( Type        : Configuration file                                             )
+( Description :                                                                )
+(-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=)
+-->
+<PrivateSettingFileSerializeable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileName>Connection.cnfx</FileName>
+  <FileType>Connection</FileType>
+  <Settings>
+    <Setting Name="Server IP" Value="localhost" />
+    <Setting Name="Server Port" Value="6900" />
+    <Setting Name="DB Server" Value="127.0.0.1" />
+    <Setting Name="DB Port" Value="3306" />
+    <Setting Name="DB User" Value="root" />
+    <Setting Name="DB Password" Value="" />
+    <Setting Name="DB Database" Value="rovolution" />
+  </Settings>
+</PrivateSettingFileSerializeable>

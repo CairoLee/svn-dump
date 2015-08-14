@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenAIConfigPanel", "ZenAIConfigPanel.csproj", "{A2BA640B-76A5-45F3-870A-4103A9043E51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodLesZ.Library.AutoUpdater.Library", "..\..\GodLesZ\GodLesZ.Library.AutoUpdater.Library\GodLesZ.Library.AutoUpdater.Library.csproj", "{BCC23F67-1B7D-4266-B5BC-27FB2E1880D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2BA640B-76A5-45F3-870A-4103A9043E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2BA640B-76A5-45F3-870A-4103A9043E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2BA640B-76A5-45F3-870A-4103A9043E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2BA640B-76A5-45F3-870A-4103A9043E51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCC23F67-1B7D-4266-B5BC-27FB2E1880D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCC23F67-1B7D-4266-B5BC-27FB2E1880D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCC23F67-1B7D-4266-B5BC-27FB2E1880D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCC23F67-1B7D-4266-B5BC-27FB2E1880D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

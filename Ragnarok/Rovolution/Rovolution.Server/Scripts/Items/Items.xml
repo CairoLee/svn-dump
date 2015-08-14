@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<ScriptList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ScriptListEntry Type="Npc">
+    <Entrys>
+      <!-- Scripts to be used in items -->
+      
+      <!-- <Entry Type="Path" Path="ItemStruct.cs" />-->
+    </Entrys>
+  </ScriptListEntry>
+</ScriptList>

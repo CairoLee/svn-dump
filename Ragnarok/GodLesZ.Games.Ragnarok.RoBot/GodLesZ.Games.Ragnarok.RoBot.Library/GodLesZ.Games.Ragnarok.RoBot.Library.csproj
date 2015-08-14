@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8649A7D8-9855-45AE-BB79-F9C452E65B32}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GodLesZ.Games.Ragnarok.RoBot.Library</RootNamespace>
+    <AssemblyName>GodLesZ.Games.Ragnarok.RoBot.Library</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Events.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\IListExtensions.cs" />
+    <Compile Include="Extensions\IPAddressExtension.cs" />
+    <Compile Include="Extensions\NumberExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Geometry\ECollisionType.cs" />
+    <Compile Include="Geometry\EDirection.cs" />
+    <Compile Include="Geometry\IMap.cs" />
+    <Compile Include="Geometry\IPoint2D.cs" />
+    <Compile Include="Geometry\Location.cs" />
+    <Compile Include="Geometry\Map.cs" />
+    <Compile Include="Geometry\MapBlock.cs" />
+    <Compile Include="Geometry\Mapcache.cs" />
+    <Compile Include="Geometry\Point2D.cs" />
+    <Compile Include="Geometry\Rectangle2D.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Network\PacketHandler.cs" />
+    <Compile Include="Network\PacketHandlers.cs" />
+    <Compile Include="Network\PacketLoader.cs" />
+    <Compile Include="Objects\Path.Classes.cs" />
+    <Compile Include="Objects\PathHelper.cs" />
+    <Compile Include="Objects\WalkingHelper.cs" />
+    <Compile Include="Plugins\AbtractPlugin.cs" />
+    <Compile Include="Plugins\IPlugin.cs" />
+    <Compile Include="Plugins\PluginHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerConsole.cs" />
+    <Compile Include="Objects\WorldID.cs" />
+    <Compile Include="Objects\WorldObject.cs" />
+    <Compile Include="Objects\WorldObjectList.cs" />
+    <Compile Include="Objects\WorldObjectManager.cs" />
+    <Compile Include="Objects\WorldObjectUnit.cs" />
+    <Compile Include="Objects\Enumerations\EAccountLoadResult.cs" />
+    <Compile Include="Objects\Enumerations\EAccountSex.cs" />
+    <Compile Include="Objects\Enumerations\EAccountState.cs" />
+    <Compile Include="Objects\Enumerations\ECharacterClass.cs" />
+    <Compile Include="Objects\Enumerations\ECharacterClassUpper.cs" />
+    <Compile Include="Objects\Enumerations\ECharacterJobModifer.cs" />
+    <Compile Include="Objects\Enumerations\EClass.cs" />
+    <Compile Include="Objects\Enumerations\EClientClass.cs" />
+    <Compile Include="Objects\Enumerations\EDatabaseType.cs" />
+    <Compile Include="Objects\Enumerations\EElement.cs" />
+    <Compile Include="Objects\Enumerations\EEmotion.cs" />
+    <Compile Include="Objects\Enumerations\EHeadDirection.cs" />
+    <Compile Include="Objects\Enumerations\EItemEquipIndex.cs" />
+    <Compile Include="Objects\Enumerations\EItemEquipLocation.cs" />
+    <Compile Include="Objects\Enumerations\EItemEquipRestriction.cs" />
+    <Compile Include="Objects\Enumerations\EItemRestriction.cs" />
+    <Compile Include="Objects\Enumerations\EItemType.cs" />
+    <Compile Include="Objects\Enumerations\ELookType.cs" />
+    <Compile Include="Objects\Enumerations\ERace.cs" />
+    <Compile Include="Objects\Enumerations\ERaceGroup.cs" />
+    <Compile Include="Objects\Enumerations\ESize.cs" />
+    <Compile Include="Objects\Enumerations\EWeaponType.cs" />
+    <Compile Include="Objects\Interfaces\IClearDisposable.cs" />
+    <Compile Include="World.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\GodLesZ\GodLesZ.Library.Ragnarok\GodLesZ.Library.Ragnarok.csproj">
+      <Project>{CE3F016E-67A4-4F08-8E0E-5493D8E305AC}</Project>
+      <Name>GodLesZ.Library.Ragnarok</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\GodLesZ\GodLesZ.Library\GodLesZ.Library.csproj">
+      <Project>{22086451-A9A2-414C-8A81-5BE02FC5C8EE}</Project>
+      <Name>GodLesZ.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ai\" />
+    <Folder Include="Network\Packets\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

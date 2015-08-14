@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<ScriptList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ScriptListEntry Type="Npc">
+    <Entrys>
+      <!-- TODO: decide here includes for monster, floating and normal npcs -->
+
+      <!-- Test for threading -->
+      <Entry Type="Path" Path="ThreadTest.cs" />
+      <!-- Test for priority  -->
+      <Entry Type="Path" Path="PrioTest.cs" />
+      <!-- Test for mob spwn  -->
+      <Entry Type="Path" Path="SpawnTest.cs" />
+    </Entrys>
+  </ScriptListEntry>
+</ScriptList>

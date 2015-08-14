@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ScriptList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ScriptListEntry Type="Npc">
+    <Entrys>
+      <Entry Type="Include" Path="Internal/Core.xml" />
+      <Entry Type="Include" Path="Events/Events.xml" />
+      <Entry Type="Include" Path="Items/Items.xml" />
+      <Entry Type="Include" Path="NPCs/NPCs.xml" />
+    </Entrys>
+  </ScriptListEntry>
+</ScriptList>

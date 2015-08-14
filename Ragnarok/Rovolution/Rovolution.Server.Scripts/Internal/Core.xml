@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<ScriptList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ScriptListEntry Type="Npc">
+    <Entrys>
+      <!-- Packet Definitions -->
+      <Entry Type="Path" Path="Packets/LoginResponse.cs" />
+      <Entry Type="Path" Path="Packets/CharResponse.cs" />
+      <Entry Type="Path" Path="Packets/WorldResponse.cs" />
+      <Entry Type="Path" Path="Packets/LoginHandler.cs" />
+      <Entry Type="Path" Path="Packets/CharHandler.cs" />
+      <Entry Type="Path" Path="Packets/WorldHandler.cs" />
+            
+    </Entrys>
+  </ScriptListEntry>
+</ScriptList>

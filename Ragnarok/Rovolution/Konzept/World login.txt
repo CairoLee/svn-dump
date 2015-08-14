@@ -1,0 +1,32 @@
+clif	WantToConnect
+	- packetver guess
+	- dbl login check
+	- session creation
+	- pc_setnewpc
+	- 0x283
+	- chrif_authreq
+
+chrif	AuthOK
+	- checks
+	- register request
+	- pc_authok
+
+pc	AuthOK
+	- state.connect_new = 1
+	- motd
+	- clif_authok
+
+clif	AuthOK
+	- 0x73
+
+
+pc	reg_received
+	- if no cllif_parse_LoadEndAck called, call it manually
+
+clif	LoadEndAck
+	- rewarp check
+	- changelook
+	- inventory list
+	- map_addblock
+	- clif_spawn
+	- party, bg, duel, guild, ..

@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9EDB4345-A260-407E-B9D6-8B7253E5B33F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rovolution.Server</RootNamespace>
+    <AssemblyName>Rovolution.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>Rovolution.Server.Core</StartupObject>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>GodLesZ Software.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="Extensions\DataExtensions.cs" />
+    <Compile Include="Internal\Attributes.cs" />
+    <Compile Include="Config\ApplicationSettings.cs" />
+    <Compile Include="Core.cs" />
+    <Compile Include="Database\StoreableObjectUpdateParam.cs" />
+    <Compile Include="Extensions\IPAddressExtension.cs" />
+    <Compile Include="Internal\IClearable.cs" />
+    <Compile Include="Internal\Parser\JobBonusParser.cs" />
+    <Compile Include="Internal\Parser\JobModiferParser.cs" />
+    <Compile Include="Internal\Parser\SkillTreeParser.cs" />
+    <Compile Include="Internal\SafeDictionary.cs" />
+    <Compile Include="Network\Packets\PacketHandlers.cs" />
+    <Compile Include="Objects\Character\CharacterJobBonus.cs" />
+    <Compile Include="Objects\Character\CharacterJobModifer.cs" />
+    <Compile Include="Objects\Character\CharacterJobModiferValues.cs" />
+    <Compile Include="Objects\Character\CharacterRegenerationData.cs" />
+    <Compile Include="Objects\Character\CharacterRegistry.cs" />
+    <Compile Include="Objects\Character\CharacterSkillTree.cs" />
+    <Compile Include="Objects\Npc\NpcWarpScript.cs" />
+    <Compile Include="Objects\Npc\NpcWarpData.cs" />
+    <Compile Include="Objects\_Enumerations\ECharacterJobModifer.cs" />
+    <Compile Include="Objects\_Enumerations\EElement.cs" />
+    <Compile Include="Objects\_Enumerations\EHeadDirection.cs" />
+    <Compile Include="Objects\_Enumerations\EMonsterMode.cs" />
+    <Compile Include="Objects\_Enumerations\EMonsterDamageLogType.cs" />
+    <Compile Include="Objects\_Enumerations\ENpcScriptType.cs" />
+    <Compile Include="Objects\_Enumerations\ERace.cs" />
+    <Compile Include="Objects\_Enumerations\ERaceGroup.cs" />
+    <Compile Include="Objects\_Enumerations\EClientClass.cs" />
+    <Compile Include="Objects\_Enumerations\ESkill.cs" />
+    <Compile Include="Objects\_Enumerations\ESkillFlag.cs" />
+    <Compile Include="Objects\_Enumerations\EStatusAttribute.cs" />
+    <Compile Include="Objects\_Enumerations\EStatusCalcFlag.cs" />
+    <Compile Include="Objects\_Enumerations\EStatusParam.cs" />
+    <Compile Include="Objects\Guild\Guild.cs" />
+    <Compile Include="Objects\Guild\GuildCastleGuardian.cs" />
+    <Compile Include="Objects\Character\CharacterDatabaseData.cs" />
+    <Compile Include="Objects\Guild\GuildCastle.cs" />
+    <Compile Include="Objects\Guild\GuildDatabaseData.cs" />
+    <Compile Include="Objects\Guild\GuildMember.cs" />
+    <Compile Include="Objects\Guild\GuildMemberDatabaseData.cs" />
+    <Compile Include="Objects\Homunculus\Homunculus.cs" />
+    <Compile Include="Objects\_Interfaces\IClearDisposable.cs" />
+    <Compile Include="Objects\Skill\SkillDatabaseDataList.cs" />
+    <Compile Include="Scripting\EScriptContent.cs" />
+    <Compile Include="Scripting\EScriptType.cs" />
+    <Compile Include="Scripting\ScriptCompiler.cs" />
+    <Compile Include="Scripting\ScriptDatabase.cs" />
+    <Compile Include="Scripting\ScriptEntry.cs" />
+    <Compile Include="Scripting\ScriptList.cs" />
+    <Compile Include="Scripting\ScriptListEntry.cs" />
+    <Compile Include="Scripts\Events\OnWorldLoadFinishHandler.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Scripts\NPCs\SpawnTest.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Scripts\NPCs\PrioTest.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Scripts\NPCs\ThreadTest.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Helper\ElementHelper.cs" />
+    <Compile Include="Helper\FameListHelper.cs" />
+    <Compile Include="Helper\Subfiles\FameList.cs" />
+    <Compile Include="Helper\Subfiles\FameListEntry.cs" />
+    <Compile Include="Objects\Skill\SkillTree.cs" />
+    <Compile Include="Objects\World\WorldID.cs" />
+    <Compile Include="Objects\Mercenary\Mercenary.cs" />
+    <Compile Include="Objects\Monster\MonsterDamageLog.cs" />
+    <Compile Include="Objects\Monster\MonsterDamageLogEntry.cs" />
+    <Compile Include="Objects\Monster\MonsterSpawnInfo.cs" />
+    <Compile Include="Objects\Pet\Pet.cs" />
+    <Compile Include="Objects\WeaponAtk.cs" />
+    <Compile Include="Objects\WeaponData.cs" />
+    <Compile Include="Objects\World\WorldObjectList.cs" />
+    <Compile Include="Objects\World\WorldObjectManager.cs" />
+    <Compile Include="Database\StoreableObject.cs" />
+    <Compile Include="Database\RovolutionDatabase.cs" />
+    <Compile Include="Eventing\CrashedEventArgs.cs" />
+    <Compile Include="Eventing\ShutdownEventArgs.cs" />
+    <Compile Include="Eventing\SocketConnectEventArgs.cs" />
+    <Compile Include="Extensions\NumberExtensions.cs" />
+    <Compile Include="Geometry\ECollisionType.cs" />
+    <Compile Include="Geometry\Mapcache.cs" />
+    <Compile Include="Geometry\MapBlock.cs" />
+    <Compile Include="Geometry\Location.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Network\EPacketState.cs" />
+    <Compile Include="Network\Packets\Definitions\CharHandler.cs" />
+    <Compile Include="Network\Packets\Definitions\CharResponse.cs" />
+    <Compile Include="Network\Packets\Definitions\LoginHandler.cs" />
+    <Compile Include="Network\Packets\Definitions\LoginResponse.cs" />
+    <Compile Include="Network\Packets\Definitions\WorldHandler.cs" />
+    <Compile Include="Network\Packets\Definitions\WorldResponse.cs" />
+    <Compile Include="Network\Packets\Packet.cs" />
+    <Compile Include="Network\Packets\PacketDefinition.cs" />
+    <Compile Include="Network\Packets\PacketDefinitionList.cs" />
+    <Compile Include="Network\Packets\PacketHandler.cs" />
+    <Compile Include="Network\Packets\PacketList.cs" />
+    <Compile Include="Network\Packets\PacketLoader.cs" />
+    <Compile Include="Network\Packets\PacketReader.cs" />
+    <Compile Include="Network\Packets\PacketVersion.cs" />
+    <Compile Include="Network\Packets\PacketWriter.cs" />
+    <Compile Include="Objects\Item\AbstractItemStorage.cs" />
+    <Compile Include="Objects\Character\CharacterFriend.cs" />
+    <Compile Include="Objects\Character\CharacterFriendList.cs" />
+    <Compile Include="Objects\Character\CharacterHotkey.cs" />
+    <Compile Include="Objects\_Enumerations\EAccountLoadResult.cs" />
+    <Compile Include="Objects\_Enumerations\EAccountSex.cs" />
+    <Compile Include="Objects\_Enumerations\EAccountState.cs" />
+    <Compile Include="Objects\_Enumerations\EBattleFlag.cs" />
+    <Compile Include="Objects\_Enumerations\ECharacterClass.cs" />
+    <Compile Include="Objects\_Enumerations\ECharacterClassUpper.cs" />
+    <Compile Include="Objects\_Enumerations\ECharacterCreationResult.cs" />
+    <Compile Include="Objects\_Enumerations\EClass.cs" />
+    <Compile Include="Objects\_Enumerations\EEmotion.cs" />
+    <Compile Include="Objects\_Enumerations\EHotkeyType.cs" />
+    <Compile Include="Objects\_Enumerations\EItemEquipIndex.cs" />
+    <Compile Include="Objects\_Enumerations\EItemEquipLocation.cs" />
+    <Compile Include="Objects\_Enumerations\EItemRestriction.cs" />
+    <Compile Include="Objects\_Enumerations\EItemEquipRestriction.cs" />
+    <Compile Include="Objects\_Enumerations\EItemType.cs" />
+    <Compile Include="Objects\_Enumerations\EWeaponType.cs" />
+    <Compile Include="Objects\_Enumerations\ELookType.cs" />
+    <Compile Include="Objects\_Enumerations\EMonsterAiType.cs" />
+    <Compile Include="Objects\_Enumerations\EMonsterSkillCondition1.cs" />
+    <Compile Include="Objects\_Enumerations\EMonsterSkillCondition2.cs" />
+    <Compile Include="Objects\_Enumerations\EMonsterSkillState.cs" />
+    <Compile Include="Objects\_Enumerations\EMonsterSkillTarget.cs" />
+    <Compile Include="Objects\_Enumerations\ESize.cs" />
+    <Compile Include="Objects\_Enumerations\ESkillInf.cs" />
+    <Compile Include="Objects\_Enumerations\ESkillInf2.cs" />
+    <Compile Include="Objects\_Enumerations\ESkillNk.cs" />
+    <Compile Include="Objects\_Enumerations\EStatusChange.cs" />
+    <Compile Include="Objects\_Enumerations\EStatusChangeIcon.cs" />
+    <Compile Include="Objects\_Enumerations\EStatusOption.cs" />
+    <Compile Include="Objects\_Enumerations\EDatabaseType.cs" />
+    <Compile Include="Objects\_Enumerations\EStatusOption1.cs" />
+    <Compile Include="Objects\_Enumerations\EStatusOption2.cs" />
+    <Compile Include="Objects\_Enumerations\EStatusOption3.cs" />
+    <Compile Include="Objects\Item\ItemDatabaseData.cs" />
+    <Compile Include="Objects\Item\ItemInventory.cs" />
+    <Compile Include="Objects\Character\CharacterItem.cs" />
+    <Compile Include="Objects\Item\ItemInventoryCart.cs" />
+    <Compile Include="Objects\Item\ItemStorage.cs" />
+    <Compile Include="Objects\Monster\MonsterDatabaseData.cs" />
+    <Compile Include="Objects\Monster\MonsterDrop.cs" />
+    <Compile Include="Objects\Monster\MonsterDropList.cs" />
+    <Compile Include="Objects\Monster\MonsterSkill.cs" />
+    <Compile Include="Objects\Monster\MonsterSkillDatabaseData.cs" />
+    <Compile Include="Objects\Monster\MonsterSkillList.cs" />
+    <Compile Include="Objects\Monster\MonsterSpawnData.cs" />
+    <Compile Include="Objects\World\WorldObjectUnit.cs" />
+    <Compile Include="Objects\Database\DatabaseID.cs" />
+    <Compile Include="Diagnostics\PacketReceiveProfile.cs" />
+    <Compile Include="Diagnostics\PacketSendProfile.cs" />
+    <Compile Include="Diagnostics\TimerProfile.cs" />
+    <Compile Include="Eventing\Events.cs" />
+    <Compile Include="Internal\ExceptionHandler.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\IListExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Geometry\EDirection.cs" />
+    <Compile Include="Geometry\IMap.cs" />
+    <Compile Include="Geometry\IPoint2D.cs" />
+    <Compile Include="Geometry\Map.cs" />
+    <Compile Include="Geometry\Point2D.cs" />
+    <Compile Include="Geometry\Rectangle2D.cs" />
+    <Compile Include="Internal\LogoPrinter.cs" />
+    <Compile Include="Network\BufferPool.cs" />
+    <Compile Include="Network\ByteQueue.cs" />
+    <Compile Include="Diagnostics\BaseProfile.cs" />
+    <Compile Include="Diagnostics\BasePacketProfile.cs" />
+    <Compile Include="Network\NetState.cs" />
+    <Compile Include="Network\SendQueue.cs" />
+    <Compile Include="Network\SocketConnector.cs" />
+    <Compile Include="Network\SocketListener.cs" />
+    <Compile Include="Network\SocketPool.cs" />
+    <Compile Include="Objects\Account\Account.cs" />
+    <Compile Include="Objects\Item\Item.cs" />
+    <Compile Include="Objects\Monster\Monster.cs" />
+    <Compile Include="Objects\Npc\NpcScript.cs" />
+    <Compile Include="Objects\Character\Character.cs" />
+    <Compile Include="Objects\Database\DatabaseObject.cs" />
+    <Compile Include="Objects\Database\DatabaseObjectList.cs" />
+    <Compile Include="Objects\Database\DatabaseObjectManager.cs" />
+    <Compile Include="Objects\World\WorldObject.cs" />
+    <Compile Include="Objects\World\WorldObjectRegenerationData.cs" />
+    <Compile Include="Objects\World\WorldObjectStatus.cs" />
+    <Compile Include="Objects\Character\CharacterSkill.cs" />
+    <Compile Include="Objects\World\WorldObjectStatusChangeEntry.cs" />
+    <Compile Include="Objects\World\WorldObjectStatusChangeList.cs" />
+    <Compile Include="Objects\World\WorldObjectViewData.cs" />
+    <Compile Include="Objects\Skill\Skill.cs" />
+    <Compile Include="Objects\Skill\SkillCondition.cs" />
+    <Compile Include="Objects\Skill\SkillDatabaseData.cs" />
+    <Compile Include="Objects\Skill\SkillLevel.cs" />
+    <Compile Include="Objects\Skill\SkillRequireItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Scripting\CallPriorityComparer.cs" />
+    <Compile Include="Scripting\ESerialObjectScriptType.cs" />
+    <Compile Include="Scripting\ScriptRegistry.cs" />
+    <Compile Include="Scripting\ScriptRegistryEntry.cs" />
+    <Compile Include="Scripting\SerialObjectScriptList.cs" />
+    <Compile Include="Helper\BuyingStoreHelper.cs" />
+    <Compile Include="Helper\ChatHelper.cs" />
+    <Compile Include="Helper\MailHelper.cs" />
+    <Compile Include="Helper\QuestHelper.cs" />
+    <Compile Include="Helper\SearchStoreHelper.cs" />
+    <Compile Include="Helper\Subfiles\ESendTarget.cs" />
+    <Compile Include="Helper\Subfiles\PathHelper.Classes.cs" />
+    <Compile Include="Helper\PathHelper.cs" />
+    <Compile Include="Helper\Subfiles\PlayerCommandAttribute.cs" />
+    <Compile Include="Helper\PlayerCommandHelper.cs" />
+    <Compile Include="Objects\Skill\SkillTreeJob.cs" />
+    <Compile Include="Objects\Skill\SkillTreeJobSkill.cs" />
+    <Compile Include="Objects\Skill\SkillTreeJobSkillRequirement.cs" />
+    <Compile Include="Helper\WalkingHelper.cs" />
+    <Compile Include="Timer\ETimerPriority.cs" />
+    <Compile Include="Timer\Timer.cs" />
+    <Compile Include="Timer\TimerChangeEntry.cs" />
+    <Compile Include="Timer\TimerDelegates.cs" />
+    <Compile Include="Timer\TimerThread.cs" />
+    <Compile Include="Tools.cs" />
+    <Compile Include="World.cs" />
+    <Compile Include="Internal\ServerConsole.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config\Database\mapcellcache.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\ScriptAssemblies.conf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Server\Maplist.cnfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Config\Server\Connection.cnfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GodLesZ Software.ico" />
+    <Content Include="Scripts\Events\Events.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\Items\Items.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\NPCs\NPCs.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\ScriptList.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Config\Database\CharacterSkillTree.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Database\JobModifer.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Database\JobBonus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Database\Statpoint.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Config\Server\Messages.xml" />
+    <Content Include="Config\Server\Packets.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Objects\Party\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\GodLesZ\GodLesZ.Library.MySql\GodLesZ.Library.MySql.csproj">
+      <Project>{325a2f59-02f9-4f1e-88ec-6d282dd370f0}</Project>
+      <Name>GodLesZ.Library.MySql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\GodLesZ\GodLesZ.Library.Ragnarok\GodLesZ.Library.Ragnarok.csproj">
+      <Project>{ce3f016e-67a4-4f08-8e0e-5493d8e305ac}</Project>
+      <Name>GodLesZ.Library.Ragnarok</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\GodLesZ\GodLesZ.Library\GodLesZ.Library.csproj">
+      <Project>{22086451-a9a2-414c-8a81-5be02fc5c8ee}</Project>
+      <Name>GodLesZ.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

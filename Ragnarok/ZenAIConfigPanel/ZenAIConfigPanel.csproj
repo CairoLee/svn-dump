@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A2BA640B-76A5-45F3-870A-4103A9043E51}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZenAIConfigPanel</RootNamespace>
+    <AssemblyName>ZenAI 1.1a Config Panel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>ZenAIConfigPanel.Program</StartupObject>
+    <ApplicationIcon>GodLesZ Software.ico</ApplicationIcon>
+    <ApplicationManifest>ZenAI Config Panel.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Library\ConfigDescriptionAttribute.cs" />
+    <Compile Include="Library\ELoadingState.cs" />
+    <Compile Include="Library\HomuConfig.cs" />
+    <Compile Include="Library\EHomuBehavior.cs" />
+    <Compile Include="Library\EHomuSkillUsage.cs" />
+    <Compile Include="Library\HomuModHandler.cs" />
+    <Compile Include="Library\HomuSkill.cs" />
+    <Compile Include="Library\HomuTactList.cs" />
+    <Compile Include="Library\HomuTactListEntry.cs" />
+    <Compile Include="Controls\HomuBehaviorComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\HomuSkillUsageComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\HomuTactListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PercentMeter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PercentMeter.Designer.cs">
+      <DependentUpon>PercentMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ShadowLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SkillPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SkillPanel.Designer.cs">
+      <DependentUpon>SkillPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HomuTactListViewItem.cs" />
+    <Compile Include="Controls\Syntax\SyntaxRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Syntax\SyntaxRichTextBox.designer.cs">
+      <DependentUpon>SyntaxRichTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Syntax\RichTextboxHelper.cs" />
+    <Compile Include="Controls\Syntax\SyntaxHighlighter.cs" />
+    <Compile Include="Library\Evalation\BinaryHelper.cs" />
+    <Compile Include="Library\Evalation\BinaryOp.cs" />
+    <Compile Include="Library\Evalation\BinaryOps.cs" />
+    <Compile Include="Library\Evalation\ConditionalOp.cs" />
+    <Compile Include="Library\Evalation\Constant.cs" />
+    <Compile Include="Library\Evalation\Context.cs" />
+    <Compile Include="Library\Evalation\ConvertHelper.cs" />
+    <Compile Include="Library\Evalation\Error.cs" />
+    <Compile Include="Library\Evalation\ErrorFormator.cs" />
+    <Compile Include="Library\Evalation\EvalException.cs" />
+    <Compile Include="Library\Evalation\Evaluator.cs" />
+    <Compile Include="Library\Evalation\Executor.cs" />
+    <Compile Include="Library\Evalation\ExecutorContext.cs" />
+    <Compile Include="Library\Evalation\Executors.cs" />
+    <Compile Include="Library\Evalation\Expression.cs" />
+    <Compile Include="Library\Evalation\Identifier.cs" />
+    <Compile Include="Library\Evalation\IExecutor.cs" />
+    <Compile Include="Library\Evalation\IndexerOp.cs" />
+    <Compile Include="Library\Evalation\MemberId.cs" />
+    <Compile Include="Library\Evalation\MemberOp.cs" />
+    <Compile Include="Library\Evalation\Operand.cs" />
+    <Compile Include="Library\Evalation\Operator.cs" />
+    <Compile Include="Library\Evalation\OperatorPriority.cs" />
+    <Compile Include="Library\Evalation\Parameter.cs" />
+    <Compile Include="Library\Evalation\ParameterVariableHolder.cs" />
+    <Compile Include="Library\Evalation\Parser.cs" />
+    <Compile Include="Library\Evalation\ParserException.cs" />
+    <Compile Include="Library\Evalation\Scanner.cs" />
+    <Compile Include="Library\Evalation\ScannerException.cs" />
+    <Compile Include="Library\Evalation\SR.Designer.cs" />
+    <Compile Include="Library\Evalation\StringToken.cs" />
+    <Compile Include="Library\Evalation\Token.cs" />
+    <Compile Include="Library\Evalation\Tree.cs" />
+    <Compile Include="Library\Evalation\UnaryOp.cs" />
+    <Compile Include="Library\Evalation\Variable.cs" />
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAggroEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAggroEdit.Designer.cs">
+      <DependentUpon>frmAggroEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatrolEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatrolEdit.Designer.cs">
+      <DependentUpon>frmPatrolEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\PercentMeter.resx">
+      <DependentUpon>PercentMeter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SkillPanel.resx">
+      <DependentUpon>SkillPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Library\Evalation\SR.resx" />
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAggroEdit.resx">
+      <DependentUpon>frmAggroEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatrolEdit.resx">
+      <DependentUpon>frmPatrolEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Tools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GodLesZ Software.ico" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\plugin.png" />
+    <None Include="Resources\application_edit.png" />
+    <None Include="Resources\hvan_instruct.png" />
+    <None Include="Resources\hvan_explosion.png" />
+    <None Include="Resources\hvan_chaotic.png" />
+    <None Include="Resources\hvan_caprice.png" />
+    <None Include="Resources\hlif_heal.png" />
+    <None Include="Resources\hlif_change.png" />
+    <None Include="Resources\hlif_brain.png" />
+    <None Include="Resources\hlif_avoid.png" />
+    <None Include="Resources\hfli_speed.png" />
+    <None Include="Resources\hfli_sbr44.png" />
+    <None Include="Resources\hfli_moon.png" />
+    <None Include="Resources\hfli_fleet.png" />
+    <None Include="Resources\hami_skin.png" />
+    <None Include="Resources\hami_defence.png" />
+    <None Include="Resources\hami_castle.png" />
+    <None Include="Resources\hami_bloodlust.png" />
+    <None Include="Resources\GodLesZ Software.png" />
+    <None Include="Resources\warn.png" />
+    <None Include="Resources\success.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\application_form_magnify.png" />
+    <None Include="Resources\application.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="ZenAI Config Panel.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GodLesZ\GodLesZ.Library.AutoUpdater.Library\GodLesZ.Library.AutoUpdater.Library.csproj">
+      <Project>{BCC23F67-1B7D-4266-B5BC-27FB2E1880D1}</Project>
+      <Name>GodLesZ.Library.AutoUpdater.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

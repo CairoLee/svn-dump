@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="hvan_explosion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hvan_explosion.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hvan_chaotic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hvan_chaotic.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plugin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plugin.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hlif_heal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hlif_heal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hfli_speed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hfli_speed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="application_form_magnify" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\application_form_magnify.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hami_defence" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hami_defence.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warn.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hlif_avoid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hlif_avoid.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hami_castle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hami_castle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hami_bloodlust" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hami_bloodlust.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="success" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\success.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GodLesZ Software" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GodLesZ Software.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hfli_sbr44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hfli_sbr44.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hvan_instruct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hvan_instruct.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hlif_change" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hlif_change.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hfli_fleet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hfli_fleet.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hami_skin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hami_skin.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="application_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\application_edit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hvan_caprice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hvan_caprice.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hfli_moon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hfli_moon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hlif_brain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hlif_brain.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="application" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\application.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LuaFunctions" xml:space="preserve">
+    <value>_G,_VERSION,assert,collectgarbage,dofile,error,getfenv,getmetatable,ipairs,load,loadfile,loadstring,module,next,pairs,pcall,print,rawequal,rawget,rawset,require,select,setfenv,setmetatable,tonumber,tostring,type,unpack,xpcall,coroutine,create,resume,running,status,wrap,yield,debug,getfenv,gethook,getinfo,getlocal,getmetatable,getregistry,getupvalue,setfenv,sethook,setlocal,setmetatable,setupvalue,traceback,file,close,flush,lines,read,seek,setvbuf,write,io,close,flush,input,lines,open,output,popen,read,tmpfile,type,write,math,abs,acos,asin,atan2,atan,ceil,cosh,cos,deg,exp,floor,fmod,frexp,huge,ldexp,log10,log,max,min,modf,pi,pow,rad,random,randomseed,sinh,sin,sqrt,tanh,tan,os,clock,date,difftime,execute,exit,getenv,remove,rename,setlocale,time,tmpname,package,cpath,loaded,loadlib,path,preload,seeall,string,byte,char,dump,find,format,gmatch,gsub,len,lower,match,rep,reverse,sub,upper,table,concat,insert,maxn,remove,sort,lua_Alloc,lua_CFunction,lua_Debug,lua_Hook,lua_Integer,lua_Number,lua_Reader,lua_State,lua_Writer,lua_atpanic,lua_call,lua_checkstack,lua_close,lua_concat,lua_cpcall,lua_createtable,lua_dump,lua_equal,lua_error,lua_gc,lua_getallocf,lua_getfenv,lua_getfield,lua_getglobal,lua_gethook,lua_gethookcount,lua_gethookmask,lua_getinfo,lua_getlocal,lua_getmetatable,lua_getstack,lua_gettable,lua_gettop,lua_getupvalue,lua_insert,lua_isboolean,lua_iscfunction,lua_isfunction,lua_islightuserdata,lua_isnil,lua_isnumber,lua_isstring,lua_istable,lua_isthread,lua_isuserdata,lua_lessthan,lua_load,lua_newstate,lua_newtable,lua_newthread,lua_newuserdata,lua_next,lua_objlen,lua_pcall,lua_pop,lua_pushboolean,lua_pushcclosure,lua_pushcfunction,lua_pushfstring,lua_pushinteger,lua_pushlightuserdata,lua_pushlstring,lua_pushnil,lua_pushnumber,lua_pushstring,lua_pushthread,lua_pushvalue,lua_pushvfstring,lua_rawequal,lua_rawget,lua_rawgeti,lua_rawset,lua_rawseti,lua_register,lua_remove,lua_replace,lua_resume,lua_setallocf,lua_setfenv,lua_setfield,lua_setglobal,lua_sethook,lua_setlocal,lua_setmetatable,lua_settable,lua_settop,lua_setupvalue,lua_status,lua_toboolean,lua_tocfunction,lua_tointeger,lua_tolstring,lua_tonumber,lua_topointer,lua_tostring,lua_tothread,lua_touserdata,lua_type,lua_typename,lua_upvalueindex,lua_xmove,lua_yield,luaL_Buffer,luaL_Reg,luaL_addchar,luaL_addlstring,luaL_addsize,luaL_addstring,luaL_addvalue,luaL_argcheck,luaL_argerror,luaL_buffinit,luaL_callmeta,luaL_checkany,luaL_checkint,luaL_checkinteger,luaL_checklong,luaL_checklstring,luaL_checknumber,luaL_checkoption,luaL_checkstack,luaL_checkstring,luaL_checktype,luaL_checkudata,luaL_dofile,luaL_dostring,luaL_error,luaL_getmetafield,luaL_getmetatable,luaL_gsub,luaL_loadbuffer,luaL_loadfile,luaL_loadstring,luaL_newmetatable,luaL_newstate,luaL_openlibs,luaL_optint,luaL_optinteger,luaL_optlong,luaL_optlstring,luaL_optnumber,luaL_optstring,luaL_prepbuffer,luaL_pushresult,luaL_ref,luaL_register,luaL_typename,luaL_typerror,luaL_unref,luaL_where</value>
+  </data>
+  <data name="LuaKeywords" xml:space="preserve">
+    <value>and,break,do,else,elseif,end,false,for,function,if,in,local,nil,not,or,repeat,return,then,true,until,while</value>
+  </data>
+  <data name="RagnarokConstants" xml:space="preserve">
+    <value>V_OWNER,V_POSITION,V_TYPE,V_MOTION,V_ATTACKRANGE,V_TARGET,V_SKILLATTACKRANGE,V_HOMUNTYPE,V_HP,V_SP,V_MAXHP,V_MAXSP,V_MERTYPE,LIF,AMISTR,FILIR,VANILMIRTH,LIF2,AMISTR2,FILIR2,VANILMIRTH2,LIF_H,AMISTR_H,FILIR_H,VANILMIRTH_H,LIF_H2,AMISTR_H2,FILIR_H2,VANILMIRTH_H2,MOTION_STAND,MOTION_MOVE,MOTION_ATTACK,MOTION_DEAD,MOTION_DAMAGE,MOTION_BENDDOWN,MOTION_SIT,MOTION_SKILL,MOTION_CASTING,MOTION_ATTACK2,MOTION_TOSS,MOTION_COUNTER,MOTION_PERFORM,MOTION_JUMP_UP,MOTION_JUMP_FALL,MOTION_SOULLINK,MOTION_TUMBLE,MOTION_BIGTOSS,MOTION_DESPERADO,MOTION_FULLBLAST,ARCHER01,ARCHER02,ARCHER03,ARCHER04,ARCHER05,ARCHER06,ARCHER07,ARCHER08,ARCHER09,ARCHER10,LANCER01,LANCER02,LANCER03,LANCER04,LANCER05,LANCER06,LANCER07,LANCER08,LANCER09,LANCER10,SWORDMAN01,SWORDMAN02,SWORDMAN03,SWORDMAN04,SWORDMAN05,SWORDMAN06,SWORDMAN07,SWORDMAN08,SWORDMAN09,SWORDMAN10,NONE_CMD,MOVE_CMD,STOP_CMD,ATTACK_OBJECT_CMD,ATTACK_AREA_CMD,PATROL_CMD,HOLD_CMD,SKILL_OBJECT_CMD,SKILL_AREA_CMD,FOLLOW_CMD</value>
+  </data>
+  <data name="RagnarokFunctions" xml:space="preserve">
+    <value>TraceAI,MoveToOwner,Move,Attack,GetV,GetActors,GetTick,GetMsg,GetResMsg,SkillObject,SkillGround,IsMonster</value>
+  </data>
+</root>
