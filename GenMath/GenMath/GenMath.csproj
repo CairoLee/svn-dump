@@ -1,0 +1,73 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EFD3E1B1-75A2-4023-AF26-D3B9EFD39FBE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GenerationMath</RootNamespace>
+    <AssemblyName>GenMath</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dna\MathLiteral.cs" />
+    <Compile Include="Dna\MathOp.cs" />
+    <Compile Include="Dna\MathPI.cs" />
+    <Compile Include="Dna\MathValue.cs" />
+    <Compile Include="Dna\MathVariable.cs" />
+    <Compile Include="Dna\Operators\Add.cs" />
+    <Compile Include="Dna\Operators\BAnd.cs" />
+    <Compile Include="Dna\Operators\BOr.cs" />
+    <Compile Include="Dna\Operators\Div.cs" />
+    <Compile Include="Dna\Operators\Mul.cs" />
+    <Compile Include="Dna\Operators\Operator.cs" />
+    <Compile Include="Dna\Operators\Pow.cs" />
+    <Compile Include="Dna\Operators\Sub.cs" />
+    <Compile Include="Dna\Operators\Xor.cs" />
+    <Compile Include="Engine.cs" />
+    <Compile Include="IEngine.cs" />
+    <Compile Include="Organism.cs" />
+    <Compile Include="ProblemDomain\Case.cs" />
+    <Compile Include="ProblemDomain\Problem.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Dna\MathFunction.cs" />
+    <Compile Include="Tool.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
