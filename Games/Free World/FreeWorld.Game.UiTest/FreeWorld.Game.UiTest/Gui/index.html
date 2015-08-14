@@ -1,0 +1,191 @@
+﻿<html>
+	<head>
+
+		<link type="text/css" href="css/jquery-ui-smoothness/jquery-ui-1.8.20.custom.css" rel="Stylesheet" />	
+
+	    <link type="text/css" href="css/style.css" rel="Stylesheet" />	
+
+	    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery.layoutengine.min.js"></script>
+
+		<script type="text/javascript">
+
+			$(function() {
+				$( "#txtDialog" )
+					.dialog({
+						position: [10,440], 
+						closeOnEscape: false, 
+						dialogClass: "textDialog", 
+						resizable: true, 
+						width:'auto'
+					});
+			});
+
+			function ShowDialog(dialogID)
+			{		
+				$( "#"+dialogID ).dialog();
+			}
+
+			function addTextMessage(message)
+			{
+				textBox = document.getElementById('txtDialogTextArea');			
+				textBox.value =textBox.value + message + " \n";
+			}
+
+			$(document).ready(function() {	
+				// Make elements unselectable
+				$("*:not(input)").addClass("unselectable");
+
+				var layoutSettings =
+				{
+					Name: "Main",
+					Dock: $.layoutEngine.DOCK.FILL,
+					EleID: "main",
+					Margin: 5,
+					Children: 
+					[
+						{
+							Name: "Top",
+							Dock: $.layoutEngine.DOCK.TOP,
+							EleID: "top",
+							Margin: 5,
+							Height: 20
+						},
+						{
+							Name: "Left",
+							Dock: $.layoutEngine.DOCK.LEFT,
+							EleID: "left",
+							MarginLeft: 5,
+							MarginRight: 5,
+							Width: 30
+						},
+						{
+							Name: "Fill",
+							Dock: $.layoutEngine.DOCK.FILL,
+							EleID: "fill",
+							Margin: 5,
+						},
+						{
+							Name: "Right",
+							Dock: $.layoutEngine.DOCK.RIGHT,
+							EleID: "right",
+							MarginLeft: 5,
+							MarginRight: 5,
+							Width: 150
+						},
+						{
+							Name: "Bottom",
+							Dock: $.layoutEngine.DOCK.BOTTOM,
+							EleID: "bottom",
+							Margin: 5,
+							Height: 100
+						}
+					]
+
+				};
+
+				$.layoutEngine(layoutSettings);
+
+				$("#txtDialogInput").keyup(function (event) 
+				{
+					if (event.keyCode == 13) 
+					{
+						AnotherObject.ChatTextEntered($("#txtDialogInput").val());
+						$("#txtDialogInput").val('');
+					}
+				});		
+
+			});			
+		
+		</script>
+
+		
+		<title></title>
+	</head>
+	<body>
+
+
+
+	<div id="main">
+
+		<div id="top" class="baseBar">
+			Titten
+		</div>
+
+
+		<div id="left" class="baseBar" style=" display:none">
+			Left
+		</div>
+
+
+		<div id="fill" style="background-color:#FF3300; display:none">
+			Fill
+		</div>
+
+
+		<div id="right" class="baseBar">
+			Right
+			<br />
+			<button onclick='$("#dialog").dialog({size:[300,300]});' >Show dlg</button>
+			<br />
+			<button onclick='MyObject.SelectItem("Added via API routing!!!111");' >Add by routing</button>
+			<br />
+			<button onclick='addTextMessage("Aaah.");' >Add by JS</button>
+			<br />		
+			<button onclick='AnotherObject.ThisClicked("Options");' >Open opt dlg by API</button>
+			<br />		
+
+
+			
+
+		</div>
+
+
+		<div id="bottom"  class="baseBar center_box">
+
+			<table class="bottomBarTable">
+				<tr>
+					<td align="center">
+						<ul class="abilities_bar">
+							<li><img src='images/Icons1/sword.png' alt='Attack' onclick="AnotherObject.ThisClicked('Attack');"/></li>
+							<li><img src='images/Icons1/tome.png' alt='Spell' onclick="AnotherObject.ThisClicked('Cast spell!');" /></li>
+							<li><img src='images/Icons1/potion.png' alt='Healing Potion' onclick="AnotherObject.ThisClicked('Drink healing potion.');"/></li>
+							<li><img src='images/Icons1/potion_blu.png' alt='Mana Potion' onclick="AnotherObject.ThisClicked('Drink mana potion.');"/></li>
+							<li><img src='images/Icons1/backpack.png' alt='Inventory' onclick="AnotherObject.ThisClicked('Inventory');"/></li>
+							<li><img src='images/Icons2/Icon.3_83.png' alt='Character'onclick="AnotherObject.ThisClicked('Stats');"/></li>
+							<li><img src='images/Icons2/Icon.6_36.png' alt='Options' onclick="AnotherObject.ThisClicked('Options');"/></li> 
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+
+	<div id="dialog" title="Basic dialog"  style="display:none">
+		Moepse
+	</div>
+
+	<div id="txtDialog" title="Debug Text"  style="width: auto; height: auto;">
+		<textarea id="txtDialogTextArea" rows='10' cols='40' readonly="readonly" ></textarea>
+		<br />
+		<input id="txtDialogInput" type="text"   size='40'/>
+	</div>
+
+
+	<div id="dlgInventory" title="Inventory"  style="display:none">
+		<p>Inventory!!!!</p>
+		<p>Moep.</p>
+	</div>
+
+	<div id="dlgOptions" title="Options"  style="display:none">
+		<p>Settings.</p>			
+	</div>
+
+	<div id="dlgStats" title="Stats"  style="display:none">
+		<p>Character status.</p>			
+	</div>
+
+	</body>
+</html>

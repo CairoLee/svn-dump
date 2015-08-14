@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DE2A7124-C9DC-4529-B51E-FCB3B31CED79}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FreeWorld.Editor.Map</RootNamespace>
+    <AssemblyName>The Free World - Map Editor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <StartupObject>FreeWorld.Editor.Map.Program</StartupObject>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>FreeWorld.Editor.Map.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Converter30.cs" />
+    <Compile Include="EDrawMode.cs" />
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions.cs" />
+    <Compile Include="frmEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditor.Designer.cs">
+      <DependentUpon>frmEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFog.Designer.cs">
+      <DependentUpon>frmFog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewLayer.Designer.cs">
+      <DependentUpon>frmNewLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewMap.Designer.cs">
+      <DependentUpon>frmNewMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messagehelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UndoAction.cs" />
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditor.resx">
+      <DependentUpon>frmEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFog.resx">
+      <DependentUpon>frmFog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewLayer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmNewLayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewMap.resx">
+      <DependentUpon>frmNewMap.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\Animation_Pause.png" />
+    <None Include="Resources\Animation_Play.png" />
+    <None Include="Resources\Animation_Stop.png" />
+    <Content Include="Resources\Flip_H.png" />
+    <Content Include="Resources\Flip_V.png" />
+    <Content Include="Resources\Rotate.png" />
+    <None Include="Resources\Show_Fog.png" />
+    <None Include="Resources\Show_Animation.png" />
+    <Content Include="FreeWorld.Editor.Map.ico" />
+    <None Include="Resources\rauchen_macht_kastenförmig.jpg" />
+    <None Include="Resources\Undo.png" />
+    <None Include="Resources\Redo.png" />
+    <None Include="Resources\Zoom.png" />
+    <None Include="Resources\Show_All_Layers.png" />
+    <None Include="Resources\Program_Exit.png" />
+    <None Include="Resources\Mode_Select.png" />
+    <None Include="Resources\Mode_Fill.png" />
+    <None Include="Resources\Mode_Erase.png" />
+    <None Include="Resources\Mode_Edit.png" />
+    <None Include="Resources\Map_Save.png" />
+    <None Include="Resources\Map_Open.png" />
+    <None Include="Resources\Map_New.png" />
+    <None Include="Resources\Layer_Yellow.png" />
+    <None Include="Resources\Layer_Rename.png" />
+    <None Include="Resources\Layer_Red.png" />
+    <None Include="Resources\Layer_New.png" />
+    <None Include="Resources\Layer_Lila.png" />
+    <None Include="Resources\Layer_Green.png" />
+    <None Include="Resources\Layer_Delete.png" />
+    <None Include="Resources\Layer_Blue.png" />
+    <None Include="Resources\Show_Grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\GodLesZ\GodLesZ.Library.Xna\GodLesZ.Library.Xna.csproj">
+      <Project>{CEFE27FD-ACBE-4347-85A6-59638D75A806}</Project>
+      <Name>GodLesZ.Library.Xna</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\GodLesZ\GodLesZ.Library\GodLesZ.Library.csproj">
+      <Project>{22086451-a9a2-414c-8a81-5be02fc5c8ee}</Project>
+      <Name>GodLesZ.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FreeWorld.Engine\FreeWorld.Engine.csproj">
+      <Project>{10951B4C-B09E-4F4C-8A92-5121B53D3704}</Project>
+      <Name>FreeWorld.Engine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /i /e /s /y /f "$(ProjectDir)..\FreeWorld.Game\Content\AnimationTilesets\*" "$(TargetDir)\Content\AnimationTilesets"
+xcopy /i /e /s /y /f "$(ProjectDir)..\FreeWorld.Game\Content\Autotiles\*" "$(TargetDir)\Content\Autotiles"
+xcopy /i /e /s /y /f "$(ProjectDir)..\FreeWorld.Game\Content\bAnimations\*" "$(TargetDir)\Content\bAnimations"
+xcopy /i /e /s /y /f "$(ProjectDir)..\FreeWorld.Game\Content\bMaps\*" "$(TargetDir)\Content\bMaps"
+xcopy /i /e /s /y /f "$(ProjectDir)..\FreeWorld.Game\Content\Characters\*" "$(TargetDir)\Content\Characters"
+xcopy /i /e /s /y /f "$(ProjectDir)..\FreeWorld.Game\Content\Fogs\*" "$(TargetDir)\Content\Fogs"
+xcopy /i /e /s /y /f "$(ProjectDir)..\FreeWorld.Game\Content\Fonts\*" "$(TargetDir)\Content\Fonts"
+xcopy /i /e /s /y /f "$(ProjectDir)..\FreeWorld.Game\Content\Tilesets\*" "$(TargetDir)\Content\Tilesets"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

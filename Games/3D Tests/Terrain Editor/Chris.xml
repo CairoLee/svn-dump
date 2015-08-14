@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Terrain ID="01">
+  <drawskybox>True</drawskybox>
+  <skybox>clearblue</skybox>
+  <heightmap>Chris_height.bmp</heightmap>
+  <colormap>Chris_color.tga</colormap>
+  <cellsize>50;23</cellsize>
+  <maxheight>572</maxheight>
+  <smooth>True</smooth>
+  <drawdetail>True</drawdetail>
+  <ambientlight>0.25;0.25;0.25</ambientlight>
+  <layer0tex>detail02</layer0tex>
+  <layer0texScale>60</layer0texScale>
+  <layer1tex>dirt01</layer1tex>
+  <layer1texScale>25</layer1texScale>
+  <layer2tex>grass01</layer2tex>
+  <layer2texScale>25</layer2texScale>
+  <layer3tex>rock01</layer3tex>
+  <layer3texScale>25</layer3texScale>
+  <layer4tex>snow01</layer4tex>
+  <layer4texScale>25</layer4texScale>
+  <drawsun>True</drawsun>
+  <suncolor>1;1;1</suncolor>
+  <angle>342</angle>
+  <elevation>335</elevation>
+  <longitudespeed>0</longitudespeed>
+  <latitudespeed>0</latitudespeed>
+  <intensity>2.20000004768372</intensity>
+  <sunraycollision>False</sunraycollision>
+  <usefog>True</usefog>
+  <fogcolor>1;1;1</fogcolor>
+  <fogstart>1000</fogstart>
+  <fogend>10000</fogend>
+  <fogdensity>0.8</fogdensity>
+</Terrain>

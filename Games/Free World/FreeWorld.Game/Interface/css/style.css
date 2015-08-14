@@ -1,0 +1,274 @@
+﻿
+@font-face
+{
+    font-family: Pixel-PortLligatSlab;
+    src: url(../fonts/pixel-portlligatslab-regular.ttf);
+}
+
+@font-face
+{
+    font-family: Pixel-Hellovetica;
+    src: url(../fonts/pixel-hellovetica.ttf);
+}
+
+body
+{
+    background-color: transparent;
+    overflow: hidden;
+    font-family: Pixel-Hellovetica;
+}
+
+#main
+{
+    margin: 50px;
+}
+
+
+/**
+ * Helper classes
+ */
+
+.row
+{
+    margin-bottom: 10px;
+}
+
+    .row > *
+    {
+        float: left;
+    }
+
+    .row:before, .row:after
+    {
+        display: table;
+        content: "";
+        line-height: 0;
+        clear: both;
+    }
+
+    .row > *:not(:first-child)
+    {
+        margin-left: 5px;
+    }
+
+/**
+ * Icons like Bootstrap
+ */
+
+[class^="icon-"], [class*=" icon-"]
+{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    /**margin-right: .3em;*/
+    line-height: 14px;
+    vertical-align: text-top;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-top: 1px;
+}
+
+.icon.icon-x2
+{
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+}
+
+/* Icons */
+
+.icon-armor
+{
+    background-image: url(../icons/icon-armor.png);
+}
+
+.icon-close
+{
+    background-image: url(../icons/icon-close.png);
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+}
+
+
+/**
+ * General Button
+ */
+
+.btn
+{
+    padding: 1px;
+    background: #969696;
+    border: 1px solid #000;
+    height: 22px;
+    width: 96px;
+    display: block;
+    cursor: pointer;
+}
+
+    .btn .container
+    {
+        display: block;
+        height: 100%;
+        background: -webkit-linear-gradient(top, #575757, #707070);
+    }
+
+    .btn:hover .container, .btn.active .container
+    {
+        background: -webkit-linear-gradient(top, #707070, #575757);
+    }
+
+    .btn .container .btn-bar
+    {
+        display: block;
+        color: #FFF;
+        text-align: center;
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 6px;
+        font-size: 8px;
+        text-shadow: 0 0 1px #000;
+    }
+
+    /* Green button */
+
+    .btn.success
+    {
+        background: #5b9739;
+    }
+
+        .btn.success .container
+        {
+            background: -webkit-linear-gradient(top, #365922, #44712B);
+        }
+
+        .btn.success:hover .container, .btn.success.active .container
+        {
+            /*background: -webkit-linear-gradient(top, #44712B, #365922);*/
+            box-shadow: inset 0 0 16px #1B2B13;
+        }
+
+    /* Red button */
+
+    .btn.error
+    {
+        background: #974239;
+    }
+
+        .btn.error .container
+        {
+            background: -webkit-linear-gradient(top, #5a2722, #6f312a);
+        }
+
+        .btn.error:hover .container, .btn.error.active .container
+        {
+            /*background: -webkit-linear-gradient(top, #6f312a, #5a2722);*/
+            box-shadow: inset 0 0 16px #221514;
+        }
+
+
+/**
+ * Box
+ */
+
+.box
+{
+    border: 1px solid #000000;
+    box-shadow: 0 0 3px #000000;
+    min-width: 200px;
+    /*min-height: 100px;*/
+}
+
+    .box > .header
+    {
+        padding: 1px;
+        background: #5b9739;
+        border-bottom: 1px solid #000;
+        height: 19px;
+    }
+
+        .box > .header > .container
+        {
+            height: 100%;
+            background: -webkit-linear-gradient(top, #365922, #44712B);
+        }
+
+            .box > .header > .container > .box-bar
+            {
+                color: #FFFFFF;
+                vertical-align: middle;
+                font-size: 8px;
+                text-shadow: 0 0 1px #000000;
+                margin-left: 5px;
+                padding-top: 4px;
+                position: relative;
+            }
+
+                .box > .header > .container > .box-bar > .icon
+                {
+                    margin-left: -1px;
+                    margin-right: 3px;
+                    margin-top: -12px;
+                }
+
+                    .box > .header > .container > .box-bar > .icon.icon-close
+                    {
+                        margin: -1px 3px 0 0;
+                        cursor: pointer;
+                    }
+
+    .box > .body
+    {
+        /*height: 100%;*/
+        background: #4f3621;
+        border: 1px solid #946533;
+        border-top: 0 none;
+        margin: 0;
+        padding: 6px;
+    }
+
+        .box > .body > .container
+        {
+            border: 1px solid #ffefa4;
+            border-radius: 3px;
+            background-color: #dacaa1;
+            box-shadow: inset 0 0 32px 4px #C9B376;
+            padding: 6px 11px 6px 11px;
+        }
+
+
+/**
+ * Text Caption
+ */
+.caption
+{
+    height: 7px;
+    background-color: #837961;
+    border-radius: 5px;
+    margin: 4px 0 2px 0;
+    padding-bottom: 2px;
+    text-align: center;
+    position: relative;
+}
+
+    .caption span
+    {
+        display: block;
+        height: 100%;
+        font-size: 6px;
+        text-shadow: 0 0 3px #000;
+        color: #FFF;
+        position: relative;
+        top: -1px;
+    }
+
+
+/**
+ * Helper classes
+ */
+.push-right
+{
+    float: right;
+}

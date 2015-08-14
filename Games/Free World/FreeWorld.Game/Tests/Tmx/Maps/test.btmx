@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="001-Grassland01" tilewidth="32" tileheight="32">
+  <image source="../Tilesets/001-Grassland01.png" width="256" height="576"/>
+ </tileset>
+ <layer name="Background 01" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJztwwEJAAAMBKH7/qUHy6Hgqqmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqv8AX0MnEQ==
+  </data>
+ </layer>
+ <layer name="Background 02" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt1ElOAmEUhdE3cTG22CGCvYKKHe5/Nd4xIZUYlJ/AOck3qUoqd1Kvik10mI5SLx033kJVP12kQbpsvIWqm3Sb7tJ92ynEJD2nl/TaeMu22Vnw7DN9pVn6Xu2cjbab9tJ+Omi8haqTdJrO0vmS31r0H/E7wzRKV+m68RaqHtJjekrjuXddt8y/8D+m6S29p4+5d395y1ieW7Zeum4Zq9d1ywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGCd/QCHfw4W
+  </data>
+ </layer>
+ <layer name="Background 03" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJztzjsSggAQBcG9EGgimqAmgomf+5+GdwlqA7qrJp8qgGMa0phO6dz8QtUlTemabs0vVM3pnh7p2btCvNKS1vRufqHqk77pl/7NLwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwD42+Q8E4w==
+  </data>
+ </layer>
+</map>

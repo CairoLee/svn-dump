@@ -1,0 +1,52 @@
+Krieger -> Paladin
+		-> Ritter
+
+Dieb
+
+Jäger	-> Gunner
+
+Heiler
+
+Magier
+
+
+
+Krieger {
+	M: 001-Fighter01
+	F: 006-Fighter06
+
+	Paladin {
+		M: 009-Lancer01
+		F: 012-Lancer04
+	}
+
+	Ritter {
+		M: 013-Warrior01
+		F: 015-Warrior03
+	}
+}
+
+Dieb {
+	M: 016-Thief01
+	F: 019-Thief04
+}
+
+Jäger {
+	M: 020-Hunter01
+	F: 022-Hunter03
+
+	Gunner {
+		M: 023-Gunner01
+		F: 024-Gunner02
+	}
+}
+
+Heiler {
+	M: 025-Cleric01
+	F: 029-Cleric05
+}
+
+Magier {
+	M: 033-Mage01
+	F: 038-Mage06
+}
