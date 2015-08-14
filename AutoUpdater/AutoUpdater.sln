@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Updater", "Updater\Updater.csproj", "{2F55463A-1DC2-49CB-89CE-49DE8C500B96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Updater.Library", "Updater.Library\Updater.Library.csproj", "{DB4C5C13-4F6B-4FA8-A9D5-88DC736E0EEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F55463A-1DC2-49CB-89CE-49DE8C500B96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F55463A-1DC2-49CB-89CE-49DE8C500B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F55463A-1DC2-49CB-89CE-49DE8C500B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F55463A-1DC2-49CB-89CE-49DE8C500B96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB4C5C13-4F6B-4FA8-A9D5-88DC736E0EEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB4C5C13-4F6B-4FA8-A9D5-88DC736E0EEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB4C5C13-4F6B-4FA8-A9D5-88DC736E0EEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB4C5C13-4F6B-4FA8-A9D5-88DC736E0EEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
